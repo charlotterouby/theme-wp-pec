@@ -1,0 +1,115 @@
+//styles commun header & footer
+.menu {
+    ul {
+        margin: 0;
+        padding: 0;
+    }
+    li {
+        list-style: none;
+        position: relative;
+    }
+    a {
+        @extend %mdl-navigation__link;
+        color: palette(gris, light);
+        padding: 0;
+    }
+    // styles tablet & desktop
+    @include media($medium) {
+        .sub-menu,
+        .children {
+            display: none;
+        }
+        li:hover,
+        li:focus,
+        li:active {
+            background-color: palette(jaune);
+            & > .sub-menu,
+            & >.children {
+                // position
+                position: absolute;
+                z-index: 9999;
+                left: 0;
+                // box model
+                display: flex;
+                flex-direction: column;
+                align-items: stretch;
+                justify-content: flex-start;
+            }
+        }
+    }
+}
+
+// style menu principal dans header
+.primary-menu .menu {
+    @extend %mdl-navigation;
+    margin: 0;
+    & > li:last-of-type {
+        background-color: palette(jaune);
+        color: palette(gris);
+        box-shadow: 0 2px 4px palette(gris);
+        line-height: 2em;
+        border-radius: 2px;
+    }
+    // styles tablet & desktop
+    @include media($medium) {
+        justify-content: flex-end;
+        li:hover,
+        li:focus,
+        li:active {
+            & > .sub-menu {
+                //position
+                top: 3em;
+                // apparence
+                background-color: palette(vert, mid-light);
+            }
+        }
+    }
+}
+.mdl-layout__header-row .menu a {
+    line-height: 3em;
+}
+
+// styles menu secondaire dans le footer
+.secondary-menu .menu {
+    // styles par défaut
+    @extend %mdl-navigation;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    li {
+        padding: 1em;
+    }
+    a {
+        color: palette(gris);
+    }
+    //styles mobiles
+    flex-direction: column;
+    // styles tablet & desktop
+    @include media($medium) {
+        flex-direction: row;
+        .children {
+            //position
+            bottom: 3.65em;
+            //apparence
+            background-color: palette(gris, 10);
+        }
+    }
+}
+
+// style menu réseaux sociaux dans sidebar
+.social-navigation .menu {
+    li:hover,
+    li:focus,
+    li:active {
+        background-color: transparent;
+    }
+    a {
+        color: palette(bleu, mid-light);
+        &:hover,
+        &:focus,
+        &:active,
+        &:visited {
+            color: palette(bleu);
+        }
+    }
+}

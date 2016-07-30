@@ -1,0 +1,15 @@
+/* ========================================================================================== */
+/*  Theme Name: Provence Energie Citoyenne
+/*  Theme URI:
+/*  Version: 1.0
+/*  Author: Charlotte Rouby
+/*  Author URI: http://www.charlotterouby.ovh
+/*  Description: This is a cutomisation of Liquid, a fork of the "twentyfifteen" WordPress theme with some added customization. For information or documentation on Liquid, visit the <a href="https://github.com/ryanaltvater/liquid">GitHub repository</a>.
+/*
+/*  License: MIT
+/*  License URI: https://opensource.org/licenses/MIT
+/* ========================================================================================== */
+
+.sticky {}          /* DO NOT EDIT THESE SELECTORS! */
+.gallery-caption {} /* THEY ARE COMPLETELY USELESS */
+.bypostauthor {}    /* AND ONLY KEEP THE THEME CHECK HAPPY */

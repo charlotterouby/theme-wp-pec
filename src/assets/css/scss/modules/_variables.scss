@@ -1,0 +1,108 @@
+/* ==========================================================================================
+    MEDIA QUERIES
+========================================================================================== */
+
+$small: max-width 767px;
+$medium: min-width 768px;
+$large: min-width 1024px;
+$x-large: min-width 1280px;
+
+/* ==========================================================================================
+    FONTS - MODULAR SCALE
+========================================================================================== */
+
+$ms-base: 1em;
+$ms-ratio: $minor-second;
+
+/* ==========================================================================================
+    COLORS
+========================================================================================== */
+
+//    Site Colors
+$black: palette(gris, dark);
+$white: palette(gris, light);
+$palettes: (
+    bleu: (
+        150: darken(#308C9A, 50%),
+        140: darken(#308C9A, 40%),
+        130: darken(#308C9A, 30%),
+        120: darken(#308C9A, 20%),
+        110: darken(#308C9A, 10%),
+        base: #308C9A,
+        mid-light: #40BBCD,
+        light: #B3E4EB,
+        x-light: lighten(#B3E4EB, 15%)
+    ),
+    jaune: (
+        dark: #493200,
+        mid-dark: #DA9D39,
+        base: #FFB71B,
+        mid-light: #FFD476,
+        light: #FFF7E4,
+        x-light: lighten(#FFF7E4, 2%)
+    ),
+    vert: (
+        base: #91C160,
+        mid-light: #BDDAA0,
+        dark: darken(#91C160, 50%),
+        mid-dark: darken(#91C160, 20%),
+        light: lighten(#91C160, 35%)
+    ),
+    gris: (
+        dark: #000,
+        base: #4D4D4D,
+        20: darken(#fff, 20%),
+        10: darken(#fff, 10%),
+        light: #fff
+    )
+);
+//    Brand Colors
+$facebookBlue: #3b5998;
+$googleRed: #dd4b39;
+$linkedinBlue: #0976b4;
+$pinterestRed: #cc2127;
+$twitterBlue: #55acee;
+$youtubeRed: #e52d27;
+// Components Colors
+$action-color: palette(jaune);
+$base-border-color: palette(vert);
+$dark-gray: palette(gris);
+$base-font-color: palette(gris);
+
+/* ==========================================================================================
+    COMPONENTS
+========================================================================================== */
+
+//    Card
+$card-border: 1px solid palette(gris, light);
+$card-background: palette(gris, light);
+$card-header-background: palette(gris, light);
+$card-margin: 1em;
+$card-image-hover-opacity: 0.7;
+$card-image-hover-color: #F8F2B4;
+$base-spacing: 1em;
+//    Navigation
+$navigation-background: palette(vert);
+$navigation-color: transparentize(white, 0.3);
+$navigation-color-hover: white;
+$base-border-radius: 3px !default;
+$large-screen: $large;
+$navigation-padding: 1em;
+$navigation-height: 60px;
+$navigation-nav-button-background: palette(jaune);
+$navigation-nav-button-background-hover: palette(vert, mid(light));
+$navigation-nav-button-border: 1px solid palette(jaune, mid-light);
+$navigation-search-background: palette(gris, light);
+$navigation-search-border: 1px solid palette(gris);
+$navigation-active-link-color: transparentize(white, 0.5);
+$navigation-submenu-padding: 1em;
+$navigation-submenu-width: 12em;
+$horizontal-bar-mode: $large;
+// Comments
+$comment-gutter: 1.4em;
+$comment-image-padding: 0.7em;
+$comment-image-width: 4em;
+$comment-color: palette(gris);
+$comment-background: palette(gris, light);
+$comment-detail-color: palette(gris, 10);
+$comment-image-vert-alignment: top;

@@ -1,0 +1,87 @@
+// Structure Générale
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    outline: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+html {
+    @include outer-container(100%);
+    min-height: 100vh;
+    max-width: 100vw;
+}
+
+.container {
+    position: relative;
+    max-width: 960px;
+    padding: 20px;
+    margin: 0 auto;
+    &__video {
+        position: relative;
+        padding: 30px 0 56.25%;
+        iframe,
+        object,
+        embed {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+// Grid Contenus
+.content-area {
+    @include outer-container(100%);
+    min-height: 80vh;
+    display: flex;
+    align-items: stretch;
+}
+
+.width-66 {
+    @include span-columns(12);
+    display: flex;
+    flex-wrap: wrap;
+    @include media($medium) {
+        @include span-columns(9);
+        display: flex;
+    }
+}
+
+.width-100 {
+    @include span-columns(12);
+}
+
+// Responsive design
+.hide-desktop {
+    @include media($large) {
+        display: none;
+    }
+}
+
+.hide-mobile {
+    display: none;
+    @include media($large) {
+        display: inherit;
+    }
+}
+
+// Classes mdl
+.mdl-layout__header {
+    @extend %mdl-layout__header ;
+}
+.mdl-layout__header--scroll {
+    @extend %mdl-layout__header--scroll ;
+}
+.mdl-layout__header-row {
+    @extend %mdl-layout__header-row;
+}
+.mdl-layout-title {
+    @extend %mdl-layout-title;
+}
+.mdl-layout-spacer {
+    @extend %mdl-layout-spacer;
+}

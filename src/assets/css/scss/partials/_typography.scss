@@ -1,0 +1,209 @@
+/* ==============================
+    Icons
+   ============================== */
+@font-face {
+    src: url("../fonts/icons/icons.eot");
+    src: url("../fonts/icons/icons.eot#iefix") format("embedded-opentype"),
+         url("../fonts/icons/icons.svg#Icons") format("svg"),
+         url("../fonts/icons/icons.woff") format("woff"),
+         url("../fonts/icons/icons.ttf") format("truetype");
+    font-family: "Icons";
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon__"]:before,
+[class*=" icon__"]:before {
+    position: relative;
+    display: inline-block;
+    font-family: "Icons";
+    font-weight: normal;
+    font-style: normal;
+    font-variant: normal;
+    text-align: center;
+    text-decoration: inherit;
+    text-transform: none;
+
+    speak: none;
+}
+
+.icon {
+    &__menu {
+        &:before {
+            content: "\E001";
+        }
+    }
+
+    &__close {
+        &:before {
+            content: "\E002";
+        }
+    }
+
+    &__facebook {
+        &:before {
+            content: "\E003";
+        }
+    }
+
+    &__twitter {
+        &:before {
+            content: "\E004";
+        }
+    }
+
+    &__linkedin {
+        &:before {
+            content: "\E005";
+        }
+    }
+
+    &__google-plus {
+        &:before {
+            content: "\E006";
+        }
+    }
+
+    &__youtube {
+        &:before {
+            content: "\E007";
+        }
+    }
+}
+
+/* ==============================
+    Fonts
+   ============================== */
+// Gloria Hallelujah
+@font-face {
+    src: url("../fonts/Gloria_Hallelujah/GloriaHallelujah.ttf") format("truetype");
+    font-family: "Gloria Hallelujah";
+    font-weight: normal;
+    font-style: normal;
+}
+
+// Signika Negative
+@font-face {
+    src: url("../fonts/Signika_Negative/SignikaNegative-Regular.ttf") format("truetype");
+    font-family: "Signika Negative";
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    src: url("../fonts/Signika_Negative/SignikaNegative-Bold.ttf") format("truetype");
+    font-family: "Signika Negative";
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    src: url("../fonts/Signika_Negative/SignikaNegative-Semibold.ttf") format("truetype");
+    font-family: "Signika Negative";
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    src: url("../fonts/Signika_Negative/SignikaNegative-Light.ttf") format("truetype");
+    font-family: "Signika Negative";
+    font-weight: 100;
+    font-style: normal;
+}
+
+/* ==============================
+    General Rules
+   ============================== */
+
+* {
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+    font-size: 100%;
+}
+
+body {
+    @include primary-font;
+    @include font-size(14px);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    @include secondary-font;
+    margin-top: 0;
+    margin-bottom: ms(-5);
+}
+
+p {
+    margin-bottom: ms(-5);
+}
+
+ul,
+ol {
+    display: inline-block;
+    padding-left: 20px;
+    margin-bottom: ms(-5);
+    li {
+        margin-bottom: ms(-5);
+    }
+}
+
+a,
+a:active,
+a:focus,
+a:visited {
+    text-decoration: none;
+}
+
+a {
+    color: palette(bleu, mid-light);
+    &:active, &:focus, &:visited{
+        color: palette(bleu);
+    }
+}
+
+sup {
+    top: -5px;
+    margin-left: 2px;
+}
+
+/* ==============================
+    Modular Scale
+   ============================== */
+
+h1, .h1 {
+    font-size: ms(16);
+    color: palette(bleu);
+}
+
+h2, .h2 {
+    font-size: ms(14);
+    color: palette(vert);
+}
+
+h3, .h3 {
+    font-size: ms(12);
+    color: palette(jaune);
+}
+h4, .h4 {
+    font-size: ms(10);
+    color: palette(bleu);
+}
+h5, .h5 {
+    font-size: ms(8);
+    color: palette(vert);
+}
+h6, .h6 {
+    font-size: ms(6);
+    color: palette(jaune);
+}
+p, ul {
+    font-size: ms(0);
+    color: palette(gris);
+    line-height: 1.4;
+    max-width: 70em;
+}

@@ -1,0 +1,22 @@
+.header {
+    background-color: palette(vert);
+    color: palette(gris, light);
+    box-shadow: 0 2px 4px palette(gris);
+    z-index: 9998;
+    display: flex;
+    align-items: center;
+    //    flex-wrap: wrap;
+    min-height: 10vh;
+    background-color: palette(vert);
+
+    h1,
+    a {
+        color: palette(gris, light);
+        padding: 0;
+    }
+
+    &__logo,
+    &__logo a {
+        display: inline-block;
+    }
+}

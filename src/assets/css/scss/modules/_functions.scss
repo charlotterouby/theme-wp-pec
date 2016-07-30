@@ -1,0 +1,12 @@
+/* ========================================================================================== */
+/*  FUNCTIONS
+/* ========================================================================================== */
+
+@function calculateRem($size) {
+    $remSize: $size / 16px;
+    @return $remSize * 1rem;
+}
+
+@function palette($palette, $tone: 'base') {
+    @return map-get(map-get($palettes, $palette), $tone);
+}
