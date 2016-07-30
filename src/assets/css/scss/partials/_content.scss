@@ -1,64 +1,78 @@
+// INDEX / SEARCH / ARCHIVE
+// Masonry grid
+article.pec-thumbnail {
+    //
+    // card style
+    //
+    background-color: palette(gris, light);
+    border: palette(gris);
+    border-radius: $base-border-radius;
+    box-shadow: 0 2px 4px palette(gris);
+    cursor: pointer;
+    margin: 0 $card-margin $base-spacing $card-margin;
+    transition: all 0.2s ease-in-out;
+    position: relative;
+    //
+    //style mobile
+    //
+    flex-basis: 100%;
+    //
+    //style tablet & desktop
+    //
+    @include media($medium) {
+        flex-basis: 30%;
+    }
+    //
+    // img card
+    //
+    .post-thumbnail {
+        display: block;
+        height: 150px;
+        max-height: 150px;
+        overflow: hidden;
+        img {
+            @include border-top-radius($base-border-radius);
+            opacity: 1;
+            transition: all 0.2s ease-in-out;
+            width: 100%;
+            height: auto;
+        }
+    }
+    // card content text
+    .entry {
+        &-header,
+        &-content,
+        &-footer {
+            padding: 2%;
+        }
+    }
+    .entry-footer {
+        position: absolute;
+        bottom: 0;
+        //box model
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        //apparence
+        background-color: palette(gris, 10);
+        span {
+            flex-basis: 50%;
+            text-align: center;
+        }
+    }
+    .posted-on time:not(:last-of-type) {
+        display: none;
+    }
+}
+
+// General Content styles
 .site-main {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: flex-start;
     padding: 2% 0;
-    // INDEX / SEARCH / ARCHIVE
-    article.pec-thumbnail {
-        // card style
-        background-color: palette(gris, light);
-        border: palette(gris);
-        border-radius: $base-border-radius;
-        box-shadow: 0 2px 4px palette(gris);
-        cursor: pointer;
-        margin: 0 $card-margin $base-spacing $card-margin;
-        transition: all 0.2s ease-in-out;
-        //style mobile
-        flex-basis: 100%;
-        //style tablet & desktop
-        @include media($medium) {
-            flex-basis: 30%;
-        }
-        // img card
-        .post-thumbnail {
-            display: block;
-            height: 150px;
-            max-height: 150px;
-            overflow: hidden;
-            img {
-                @include border-top-radius($base-border-radius);
-                opacity: 1;
-                transition: all 0.2s ease-in-out;
-                width: 100%;
-                height: auto;
-            }
-        }
-        // card content text
-        .entry {
-            &-header,
-            &-content,
-            &-footer {
-                padding: 2%;
-            }
-        }
-        .entry-footer {
-            //box model
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-            //apparence
-            background-color: palette(gris, 10);
-
-            span {
-                flex-basis: 50%;
-                text-align: center;
-            }
-        }
-        .posted-on time:not(:last-of-type) {
-            display: none;
-        }
-    }
 }
 
 img {
@@ -68,5 +82,3 @@ img {
 hr {
     margin-bottom: ms(0);
 }
-
-

@@ -32,7 +32,7 @@
  * @since Twenty Fifteen 1.0
  */
 if ( ! isset( $content_width ) ) {
-    $content_width = 900;
+    $content_width = 1200;
 }
 
 /**
@@ -102,17 +102,11 @@ function twentyfifteen_setup() {
      * See: https://codex.wordpress.org/Post_Formats
      */
     add_theme_support( 'post-formats', array(
-        'aside', 'image', 'video', 'quote', 'link', 'gallery', 'status', 'audio', 'chat'
+        'aside', 'image', 'video', 'link'
     ) );
 
     $color_scheme  = twentyfifteen_get_color_scheme();
     $default_color = trim( $color_scheme[0], '#' );
-
-    // Setup the WordPress core custom background feature.
-    add_theme_support( 'custom-background', apply_filters( 'twentyfifteen_custom_background_args', array(
-        'default-color'      => $default_color,
-        'default-attachment' => 'fixed',
-    ) ) );
 
     /*
      * This theme styles the visual editor to resemble the theme style,
@@ -272,13 +266,6 @@ function twentyfifteen_search_form_modify( $html ) {
 add_filter( 'get_search_form', 'twentyfifteen_search_form_modify' );
 
 /**
- * Implement the Custom Header feature.
- *
- * @since Twenty Fifteen 1.0
- */
-require get_template_directory() . '/includes/custom-header.php';
-
-/**
  * Custom template tags for this theme.
  *
  * @since Twenty Fifteen 1.0
@@ -343,13 +330,21 @@ function enqueue_assets() {
 /* ============================== */
 /*  Scripts
 /* ============================== */
-
+    // deregister included jquery librairies
     wp_deregister_script( 'jquery' );
+    wp_deregister_script( 'jquery-masonry' );
 
-    wp_enqueue_script( 'jquery', 'http' . ($_SERVER['SERVER_PORT'] == 443 ? 's' : '') . '://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js', false, null );
-//	wp_enqueue_script( 'jquery-ui', 'http' . ($_SERVER['SERVER_PORT'] == 443 ? 's' : '') . '://code.jquery.com/ui/1.11.3/jquery-ui.js', false, null );
-    wp_enqueue_script( 'modernizr', get_template_directory_uri() . '/assets/js/modernizr/modernizr.js' );
-    wp_enqueue_script( 'material', get_template_directory_uri() . '/assets/js/material.min.js' );
+    // register scripts files
+    wp_register_script('modernizr', get_template_directory_uri() . '/assets/js/modernizr/modernizr.js', '', true);
+    wp_register_script('jquery', ("http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"), '', '', true);
+    wp_register_script( 'material', get_template_directory_uri() . '/assets/js/material.min.js', '', '', true );
+    wp_register_script( 'my-scripts', get_template_directory_uri() . '/assets/js/scripts.min.js', '', '', true );
+
+    // enqueue scipts
+    wp_enqueue_script( 'modernizr');
+    wp_enqueue_script( 'jquery' );
+    wp_enqueue_script( 'material' );
+    wp_enqueue_script( 'my-scripts' );
 }
 
 if ( !is_admin() ) add_action( 'wp_enqueue_scripts', 'enqueue_assets', 11 );
@@ -489,33 +484,6 @@ function register_plugins() {
 /* ============================== */
 
         array(
-            'name'               => 'Advanced Custom Fields',
-            'slug'               => 'advanced-custom-fields',
-            'source'             => 'https://downloads.wordpress.org/plugin/advanced-custom-fields.4.4.7.zip',
-            'required'           => false,
-            'force_activation'   => false,
-            'force_deactivation' => false,
-            'external_url'       => 'https://advancedcustomfields.com'
-        ),
-        array(
-            'name'               => 'Akismet',
-            'slug'               => 'akismet',
-            'source'             => 'https://downloads.wordpress.org/plugin/akismet.3.1.11.zip',
-            'required'           => false,
-            'force_activation'   => false,
-            'force_deactivation' => false,
-            'external_url'       => 'https://wordpress.org/plugins/akismet'
-        ),
-        array(
-            'name'               => 'Asset Queue Manager',
-            'slug'               => 'asset-queue-manager',
-            'source'             => 'https://downloads.wordpress.org/plugin/asset-queue-manager.1.0.3.zip',
-            'required'           => false,
-            'force_activation'   => false,
-            'force_deactivation' => false,
-            'external_url'       => 'https://wordpress.org/plugins/asset-queue-manager'
-        ),
-        array(
             'name'               => 'BJ Lazy Load',
             'slug'               => 'bj-lazy-load',
             'source'             => 'https://downloads.wordpress.org/plugin/bj-lazy-load.1.0.6.zip',
@@ -523,15 +491,6 @@ function register_plugins() {
             'force_activation'   => false,
             'force_deactivation' => false,
             'external_url'       => 'https://wordpress.org/plugins/bj-lazy-load'
-        ),
-        array(
-            'name'               => 'Breadcrumb NavXT',
-            'slug'               => 'breadcrumb-navxt',
-            'source'             => 'https://downloads.wordpress.org/plugin/breadcrumb-navxt.5.4.0.zip',
-            'required'           => false,
-            'force_activation'   => false,
-            'force_deactivation' => false,
-            'external_url'       => 'https://wordpress.org/plugins/breadcrumb-navxt'
         ),
         array(
             'name'               => 'Custom User Profile Photo',
@@ -543,33 +502,6 @@ function register_plugins() {
             'external_url'       => 'https://wordpress.org/plugins/custom-user-profile-photo'
         ),
         array(
-            'name'               => 'Formidable Forms',
-            'slug'               => 'formidable',
-            'source'             => 'https://downloads.wordpress.org/plugin/formidable.2.01.01.zip',
-            'required'           => false,
-            'force_activation'   => false,
-            'force_deactivation' => false,
-            'external_url'       => 'https://wordpress.org/plugins/formidable'
-        ),
-        array(
-            'name'               => 'Gravitate Event Tracking',
-            'slug'               => 'gravitate-event-tracking',
-            'source'             => 'https://downloads.wordpress.org/plugin/gravitate-event-tracking.zip',
-            'required'           => false,
-            'force_activation'   => false,
-            'force_deactivation' => false,
-            'external_url'       => 'https://wordpress.org/plugins/gravitate-event-tracking'
-        ),
-        array(
-            'name'               => 'JetPack',
-            'slug'               => 'jetpack',
-            'source'             => 'https://downloads.wordpress.org/plugin/jetpack.4.0.2.zip',
-            'required'           => false,
-            'force_activation'   => false,
-            'force_deactivation' => false,
-            'external_url'       => 'https://wordpress.org/plugins/jetpack'
-        ),
-        array(
             'name'               => 'Menu Image',
             'slug'               => 'menu-image',
             'source'             => 'https://downloads.wordpress.org/plugin/menu-image.zip',
@@ -579,23 +511,96 @@ function register_plugins() {
             'external_url'       => 'https://wordpress.org/plugins/menu-image'
         ),
         array(
-            'name'               => 'Pods',
-            'slug'               => 'pods',
-            'source'             => 'https://downloads.wordpress.org/plugin/pods.2.6.5.2.zip',
+            'name'               => 'The Events Calendar',
+            'slug'               => 'the-events-calendar',
+            'source'             => 'https://downloads.wordpress.org/plugin/the-events-calendar.4.2.3.zip',
             'required'           => false,
             'force_activation'   => false,
             'force_deactivation' => false,
-            'external_url'       => 'https://wordpress.org/plugins/pods'
+            'external_url'       => 'https://wordpress.org/plugins/the-events-calendar/'
         ),
         array(
-            'name'               => 'Uber Login Logo',
-            'slug'               => 'uber-login-logo',
-            'source'             => 'https://downloads.wordpress.org/plugin/uber-login-logo.1.5.1.zip',
+            'name'               => 'Event Tickets',
+            'slug'               => 'event-tickets',
+            'source'             => 'https://downloads.wordpress.org/plugin/event-tickets.4.2.3.zip',
             'required'           => false,
             'force_activation'   => false,
             'force_deactivation' => false,
-            'external_url'       => 'https://wordpress.org/plugins/uber-login-logo'
-        )
+            'external_url'       => 'https://wordpress.org/plugins/event-tickets/'
+        ),
+//        array(
+//            'name'               => 'Formidable Forms',
+//            'slug'               => 'formidable',
+//            'source'             => 'https://downloads.wordpress.org/plugin/formidable.2.01.01.zip',
+//            'required'           => false,
+//            'force_activation'   => false,
+//            'force_deactivation' => false,
+//            'external_url'       => 'https://wordpress.org/plugins/formidable'
+//        ),
+//        array(
+//            'name'               => 'Advanced Custom Fields',
+//            'slug'               => 'advanced-custom-fields',
+//            'source'             => 'https://downloads.wordpress.org/plugin/advanced-custom-fields.4.4.7.zip',
+//            'required'           => false,
+//            'force_activation'   => false,
+//            'force_deactivation' => false,
+//            'external_url'       => 'https://advancedcustomfields.com'
+//        ),
+//        array(
+//            'name'               => 'Akismet',
+//            'slug'               => 'akismet',
+//            'source'             => 'https://downloads.wordpress.org/plugin/akismet.3.1.11.zip',
+//            'required'           => false,
+//            'force_activation'   => false,
+//            'force_deactivation' => false,
+//            'external_url'       => 'https://wordpress.org/plugins/akismet'
+//        ),
+//        array(
+//            'name'               => 'Asset Queue Manager',
+//            'slug'               => 'asset-queue-manager',
+//            'source'             => 'https://downloads.wordpress.org/plugin/asset-queue-manager.1.0.3.zip',
+//            'required'           => false,
+//            'force_activation'   => false,
+//            'force_deactivation' => false,
+//            'external_url'       => 'https://wordpress.org/plugins/asset-queue-manager'
+//        ),
+        //  aide tracking pour Google Analytics
+//        array(
+//            'name'               => 'Gravitate Event Tracking',
+//            'slug'               => 'gravitate-event-tracking',
+//            'source'             => 'https://downloads.wordpress.org/plugin/gravitate-event-tracking.zip',
+//            'required'           => false,
+//            'force_activation'   => false,
+//            'force_deactivation' => false,
+//            'external_url'       => 'https://wordpress.org/plugins/gravitate-event-tracking'
+//        ),
+//        array(
+//            'name'               => 'JetPack',
+//            'slug'               => 'jetpack',
+//            'source'             => 'https://downloads.wordpress.org/plugin/jetpack.4.0.2.zip',
+//            'required'           => false,
+//            'force_activation'   => false,
+//            'force_deactivation' => false,
+//            'external_url'       => 'https://wordpress.org/plugins/jetpack'
+//        ),
+//        array(
+//            'name'               => 'Pods',
+//            'slug'               => 'pods',
+//            'source'             => 'https://downloads.wordpress.org/plugin/pods.2.6.5.2.zip',
+//            'required'           => false,
+//            'force_activation'   => false,
+//            'force_deactivation' => false,
+//            'external_url'       => 'https://wordpress.org/plugins/pods'
+//        ),
+//        array(
+//            'name'               => 'Uber Login Logo',
+//            'slug'               => 'uber-login-logo',
+//            'source'             => 'https://downloads.wordpress.org/plugin/uber-login-logo.1.5.1.zip',
+//            'required'           => false,
+//            'force_activation'   => false,
+//            'force_deactivation' => false,
+//            'external_url'       => 'https://wordpress.org/plugins/uber-login-logo'
+//        )
     );
 
 

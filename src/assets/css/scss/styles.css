@@ -1804,14 +1804,81 @@ html {
   .social-navigation .menu a:visited {
     color: #308C9A; }
 
-/* line 1, C:/wamp/www/pec/src/assets/css/scss/partials/_content.scss */
+/* Masonry */
+/* line 2, C:/wamp/www/pec/src/assets/css/scss/partials/_content.scss */
+.grid {
+  list-style: none;
+  margin: 0 auto;
+  padding: 0; }
+
+/* line 7, C:/wamp/www/pec/src/assets/css/scss/partials/_content.scss */
+.grid h2 {
+  font-size: 17px;
+  margin-top: 0; }
+
+/* line 11, C:/wamp/www/pec/src/assets/css/scss/partials/_content.scss */
+.grid article {
+  background-color: #FFFFFF;
+  border: 2px solid #C3C0AB;
+  display: block;
+  float: left;
+  margin: 10px;
+  width: 23%; }
+
+/* Infinite Scroll */
+/* line 22, C:/wamp/www/pec/src/assets/css/scss/partials/_content.scss */
+.load-more-manual #page-nav {
+  display: block !important; }
+
+/* line 25, C:/wamp/www/pec/src/assets/css/scss/partials/_content.scss */
+#page-nav {
+  display: none;
+  text-align: center; }
+
+/* line 29, C:/wamp/www/pec/src/assets/css/scss/partials/_content.scss */
+.load-more-manual #page-nav a {
+  margin: 20px auto 10px auto;
+  display: inline-block;
+  width: auto; }
+
+/* line 34, C:/wamp/www/pec/src/assets/css/scss/partials/_content.scss */
+.load-more-manual #page-nav a {
+  font-weight: bold;
+  display: inline-block;
+  font-size: 15px;
+  position: relative;
+  transition-duration: 150ms;
+  text-decoration: none; }
+
+/* line 42, C:/wamp/www/pec/src/assets/css/scss/partials/_content.scss */
+#infscr-loading {
+  text-align: center;
+  z-index: 100;
+  position: fixed;
+  left: 50%;
+  bottom: 40px;
+  width: 200px;
+  margin-left: -100px;
+  padding: 10px;
+  background: #000;
+  opacity: 0.8;
+  color: #FFF;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px; }
+
+/* line 58, C:/wamp/www/pec/src/assets/css/scss/partials/_content.scss */
+.more {
+  width: 300px; }
+
+/* line 63, C:/wamp/www/pec/src/assets/css/scss/partials/_content.scss */
 .site-main {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: flex-start;
   padding: 2% 0; }
-  /* line 8, C:/wamp/www/pec/src/assets/css/scss/partials/_content.scss */
+  /* line 71, C:/wamp/www/pec/src/assets/css/scss/partials/_content.scss */
   .site-main article.pec-thumbnail {
     background-color: #fff;
     border: #4D4D4D;
@@ -1822,16 +1889,16 @@ html {
     transition: all 0.2s ease-in-out;
     flex-basis: 100%; }
     @media screen and (min-width: 768px) {
-      /* line 8, C:/wamp/www/pec/src/assets/css/scss/partials/_content.scss */
+      /* line 71, C:/wamp/www/pec/src/assets/css/scss/partials/_content.scss */
       .site-main article.pec-thumbnail {
         flex-basis: 30%; } }
-    /* line 24, C:/wamp/www/pec/src/assets/css/scss/partials/_content.scss */
+    /* line 87, C:/wamp/www/pec/src/assets/css/scss/partials/_content.scss */
     .site-main article.pec-thumbnail .post-thumbnail {
       display: block;
       height: 150px;
       max-height: 150px;
       overflow: hidden; }
-      /* line 29, C:/wamp/www/pec/src/assets/css/scss/partials/_content.scss */
+      /* line 92, C:/wamp/www/pec/src/assets/css/scss/partials/_content.scss */
       .site-main article.pec-thumbnail .post-thumbnail img {
         border-top-left-radius: 3px;
         border-top-right-radius: 3px;
@@ -1839,30 +1906,30 @@ html {
         transition: all 0.2s ease-in-out;
         width: 100%;
         height: auto; }
-    /* line 41, C:/wamp/www/pec/src/assets/css/scss/partials/_content.scss */
+    /* line 104, C:/wamp/www/pec/src/assets/css/scss/partials/_content.scss */
     .site-main article.pec-thumbnail .entry-header,
     .site-main article.pec-thumbnail .entry-content,
     .site-main article.pec-thumbnail .entry-footer {
       padding: 2%; }
-    /* line 45, C:/wamp/www/pec/src/assets/css/scss/partials/_content.scss */
+    /* line 108, C:/wamp/www/pec/src/assets/css/scss/partials/_content.scss */
     .site-main article.pec-thumbnail .entry-footer {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-around;
       background-color: #e6e6e6; }
-      /* line 53, C:/wamp/www/pec/src/assets/css/scss/partials/_content.scss */
+      /* line 116, C:/wamp/www/pec/src/assets/css/scss/partials/_content.scss */
       .site-main article.pec-thumbnail .entry-footer span {
         flex-basis: 50%;
         text-align: center; }
-    /* line 58, C:/wamp/www/pec/src/assets/css/scss/partials/_content.scss */
+    /* line 121, C:/wamp/www/pec/src/assets/css/scss/partials/_content.scss */
     .site-main article.pec-thumbnail .posted-on time:not(:last-of-type) {
       display: none; }
 
-/* line 64, C:/wamp/www/pec/src/assets/css/scss/partials/_content.scss */
+/* line 127, C:/wamp/www/pec/src/assets/css/scss/partials/_content.scss */
 img {
   max-width: 100%; }
 
-/* line 68, C:/wamp/www/pec/src/assets/css/scss/partials/_content.scss */
+/* line 131, C:/wamp/www/pec/src/assets/css/scss/partials/_content.scss */
 hr {
   margin-bottom: 1em; }
 

@@ -44,7 +44,6 @@ html {
 .width-66 {
     @include span-columns(12);
     display: flex;
-    flex-wrap: wrap;
     @include media($medium) {
         @include span-columns(9);
         display: flex;

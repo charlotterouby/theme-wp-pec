@@ -28,10 +28,7 @@
     <div class="entry-content">
         <?php
             /* translators: %s: Name of current post */
-            the_excerpt( sprintf(
-                __( 'Continue reading %s', 'twentyfifteen' ),
-                the_title( '<q class="screen-reader-text">', '</q>', false )
-            ) );
+            the_excerpt();
 
             wp_link_pages( array(
                 'before'      => '<div class="page-links"><span class="page-links-title">' . __( 'Pages:', 'twentyfifteen' ) . '</span>',
