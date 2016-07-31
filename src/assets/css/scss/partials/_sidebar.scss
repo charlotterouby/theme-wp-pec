@@ -1,3 +1,6 @@
+/* ==============================
+    Sidebar
+   ============================== */
 .sidebar {
     background-color: palette(jaune, x-light);
     z-index: 1;
@@ -21,14 +24,22 @@
         position: static !important;
     }
 }
-// Widget
+/* ==============================
+    Widgets
+   ============================== */
 .widget {
     margin: {
         top: ms(2);
         bottom: ms(3);
     }
+    .widget-title {
+        font-size: ms(5);
+    }
+
 }
+
 // Widget Search Form
+// ==============================
 .search-form {
     @extend %mdl-textfield;
     display: flex;
@@ -62,6 +73,7 @@
 }
 
 // Widget Recent Comments
+// ==============================
 .widget_recent_comments {
     .recentcomments {
         @extend %mdl-list__item--two-line;
@@ -70,10 +82,34 @@
 
         a {
             @extend %mdl-list__item-sub-title;
+            width: 100%;
         }
     }
     .comment-author-link {
         @extend %mdl-list__item-primary-content;
         padding-right: 0.5em;
+        color: palette(gris, mid-light);
+    }
+}
+
+// Widget list event calendar
+// ==============================
+.tribe-events-list-widget {
+    .tribe-list-widget {
+        @extend %mdl-list;
+    }
+    .type-tribe_events {
+        @extend %mdl-list__item;
+        @extend %mdl-list__item--two-line;
+        @extend %mdl-list__item-primary-content;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .tribe-event-title {
+        @include primary-font();
+        font-size: ms(1);
+    }
+    .tribe-event-duration {
+        @extend %mdl-list__item-sub-title;
     }
 }

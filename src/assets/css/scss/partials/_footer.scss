@@ -1,14 +1,17 @@
 .footer {
     background-color: palette(gris, 20);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    align-items: baseline;
-    flex-wrap: wrap;
+    //    display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+    //    flex-wrap: wrap;
     //    min-height: 10vh;
-    padding: 2vh auto;
+    //    padding: 2vh auto;
     p {
         margin-bottom: 0;
     }
-}
 
+    .secondary-menu ul {
+        margin: 0;
+        padding: 0;
+    }
+}

@@ -615,160 +615,184 @@ textarea {
 /* SNACKBAR */
 /* TOOLTIP */
 /* line 25, C:/wamp/www/pec/src/assets/css/scss/mdl/_grid.scss */
-.content-area, .site-main, .sidebar {
+.content-area, .site-main, .masonry-grid, .sidebar, .footer {
   display: flex;
   flex-flow: row wrap;
   margin: 0 auto 0 auto;
   align-items: stretch; }
   /* line 31, C:/wamp/www/pec/src/assets/css/scss/mdl/_grid.scss */
-  .content-area {
+  .content-area, .footer {
     padding: 0; }
 
 /* line 36, C:/wamp/www/pec/src/assets/css/scss/mdl/_grid.scss */
-.width-75, .width-100, .site-main header, .breadcrumbs, .pec-thumbnail, .sidebar, .sidebar .widget-area, .sidebar .social-menu {
+.width-75, .width-100, .site-main header, .breadcrumbs, .masonry-grid, .pec-thumbnail, .sidebar, .sidebar .widget-area, .sidebar .social-menu, .footer .copyright, .footer .secondary-menu {
   box-sizing: border-box; }
 
 /* line 57, C:/wamp/www/pec/src/assets/css/scss/mdl/_grid.scss */
-.content-area > .width-75, .content-area > .width-100, .site-main .content-area > header, .site-main.content-area > header, .content-area > .breadcrumbs, .content-area > .pec-thumbnail, .content-area > .sidebar, .sidebar .content-area > .widget-area, .sidebar.content-area > .widget-area, .sidebar .content-area > .social-menu, .sidebar.content-area > .social-menu {
+.content-area > .width-75, .site-main.content-area > .width-75, .site-main.footer > .width-75, .masonry-grid.content-area > .width-75, .masonry-grid.footer > .width-75, .sidebar.content-area > .width-75, .sidebar.footer > .width-75, .footer > .width-75, .content-area > .width-100, .site-main.content-area > .width-100, .site-main.footer > .width-100, .masonry-grid.content-area > .width-100, .masonry-grid.footer > .width-100, .sidebar.content-area > .width-100, .sidebar.footer > .width-100, .footer > .width-100, .site-main .content-area > header, .site-main.content-area > header, .site-main.footer > header, .site-main .masonry-grid.content-area > header, .site-main .masonry-grid.footer > header, .site-main .sidebar.content-area > header, .site-main .sidebar.footer > header, .site-main .footer > header, .content-area > .breadcrumbs, .site-main.content-area > .breadcrumbs, .site-main.footer > .breadcrumbs, .masonry-grid.content-area > .breadcrumbs, .masonry-grid.footer > .breadcrumbs, .sidebar.content-area > .breadcrumbs, .sidebar.footer > .breadcrumbs, .footer > .breadcrumbs, .content-area > .masonry-grid, .site-main.content-area > .masonry-grid, .site-main.footer > .masonry-grid, .masonry-grid.content-area > .masonry-grid, .masonry-grid.footer > .masonry-grid, .sidebar.content-area > .masonry-grid, .sidebar.footer > .masonry-grid, .footer > .masonry-grid, .content-area > .pec-thumbnail, .site-main.content-area > .pec-thumbnail, .site-main.footer > .pec-thumbnail, .masonry-grid.content-area > .pec-thumbnail, .masonry-grid.footer > .pec-thumbnail, .sidebar.content-area > .pec-thumbnail, .sidebar.footer > .pec-thumbnail, .footer > .pec-thumbnail, .content-area > .sidebar, .site-main.content-area > .sidebar, .site-main.footer > .sidebar, .masonry-grid.content-area > .sidebar, .masonry-grid.footer > .sidebar, .sidebar.content-area > .sidebar, .sidebar.footer > .sidebar, .footer > .sidebar, .sidebar .content-area > .widget-area, .sidebar .site-main.content-area > .widget-area, .sidebar .site-main.footer > .widget-area, .sidebar .masonry-grid.content-area > .widget-area, .sidebar .masonry-grid.footer > .widget-area, .sidebar.content-area > .widget-area, .sidebar.footer > .widget-area, .sidebar .footer > .widget-area, .sidebar .content-area > .social-menu, .sidebar .site-main.content-area > .social-menu, .sidebar .site-main.footer > .social-menu, .sidebar .masonry-grid.content-area > .social-menu, .sidebar .masonry-grid.footer > .social-menu, .sidebar.content-area > .social-menu, .sidebar.footer > .social-menu, .sidebar .footer > .social-menu, .footer .content-area > .copyright, .footer .site-main.content-area > .copyright, .site-main.footer > .copyright, .footer .masonry-grid.content-area > .copyright, .masonry-grid.footer > .copyright, .footer .sidebar.content-area > .copyright, .sidebar.footer > .copyright, .footer > .copyright, .footer .content-area > .secondary-menu, .footer .site-main.content-area > .secondary-menu, .site-main.footer > .secondary-menu, .footer .masonry-grid.content-area > .secondary-menu, .masonry-grid.footer > .secondary-menu, .footer .sidebar.content-area > .secondary-menu, .sidebar.footer > .secondary-menu, .footer > .secondary-menu {
   margin: 0; }
 
 @media (max-width: 479px) {
   /* line 95, C:/wamp/www/pec/src/assets/css/scss/mdl/_grid.scss */
-  .content-area, .site-main, .sidebar {
+  .content-area, .site-main, .masonry-grid, .sidebar, .footer {
     padding: 8px; }
   /* line 99, C:/wamp/www/pec/src/assets/css/scss/mdl/_grid.scss */
-  .width-75, .width-100, .site-main header, .breadcrumbs, .pec-thumbnail, .sidebar, .sidebar .widget-area, .sidebar .social-menu {
+  .width-75, .width-100, .site-main header, .breadcrumbs, .masonry-grid, .pec-thumbnail, .sidebar, .sidebar .widget-area, .sidebar .social-menu, .footer .copyright, .footer .secondary-menu {
     margin: 8px;
     width: calc(100% - 16px); }
     /* line 73, C:/wamp/www/pec/src/assets/css/scss/mdl/_grid.scss */
-    .content-area > .width-75, .content-area > .width-100, .site-main .content-area > header, .content-area > .breadcrumbs, .content-area > .pec-thumbnail, .content-area > .sidebar, .sidebar .content-area > .widget-area, .sidebar .content-area > .social-menu {
+    .content-area > .width-75, .footer > .width-75, .content-area > .width-100, .footer > .width-100, .site-main .content-area > header, .site-main .footer > header, .content-area > .breadcrumbs, .footer > .breadcrumbs, .content-area > .masonry-grid, .footer > .masonry-grid, .content-area > .pec-thumbnail, .footer > .pec-thumbnail, .content-area > .sidebar, .footer > .sidebar, .sidebar .content-area > .widget-area, .sidebar .footer > .widget-area, .sidebar .content-area > .social-menu, .sidebar .footer > .social-menu, .footer .content-area > .copyright, .footer > .copyright, .footer .content-area > .secondary-menu, .footer > .secondary-menu {
       width: 100%; }
   /* line 117, C:/wamp/www/pec/src/assets/css/scss/mdl/_grid.scss */
   .sidebar {
     width: calc(75% - 16px); }
     /* line 73, C:/wamp/www/pec/src/assets/css/scss/mdl/_grid.scss */
-    .content-area > .sidebar {
+    .content-area > .sidebar,
+    .footer > .sidebar {
       width: 75%; }
   /* line 124, C:/wamp/www/pec/src/assets/css/scss/mdl/_grid.scss */
   .pec-thumbnail {
     width: calc(100% - 16px); }
     /* line 73, C:/wamp/www/pec/src/assets/css/scss/mdl/_grid.scss */
-    .content-area > .pec-thumbnail {
+    .content-area > .pec-thumbnail,
+    .footer > .pec-thumbnail {
       width: 100%; }
   /* line 124, C:/wamp/www/pec/src/assets/css/scss/mdl/_grid.scss */
   .width-75 {
     width: calc(100% - 16px); }
     /* line 73, C:/wamp/www/pec/src/assets/css/scss/mdl/_grid.scss */
-    .content-area > .width-75 {
+    .content-area > .width-75,
+    .footer > .width-75 {
       width: 100%; }
   /* line 124, C:/wamp/www/pec/src/assets/css/scss/mdl/_grid.scss */
   .width-100 {
     width: calc(100% - 16px); }
     /* line 73, C:/wamp/www/pec/src/assets/css/scss/mdl/_grid.scss */
-    .content-area > .width-100 {
+    .content-area > .width-100,
+    .footer > .width-100 {
       width: 100%; }
   /* line 124, C:/wamp/www/pec/src/assets/css/scss/mdl/_grid.scss */
   .site-main header,
   .breadcrumbs,
+  .masonry-grid,
   .sidebar .widget-area,
   .sidebar .social-menu,
   .width-75, .width-100, .pec-thumbnail, .sidebar {
     width: calc(100% - 16px); }
     /* line 73, C:/wamp/www/pec/src/assets/css/scss/mdl/_grid.scss */
-    .site-main .content-area > header, .content-area > .breadcrumbs,
-    .sidebar .content-area > .widget-area, .sidebar .content-area > .social-menu, .content-area > .width-75, .content-area > .width-100, .content-area > .pec-thumbnail, .content-area > .sidebar {
+    .site-main .content-area > header, .site-main .footer > header, .content-area > .breadcrumbs,
+    .footer > .breadcrumbs,
+    .content-area > .masonry-grid,
+    .footer > .masonry-grid,
+    .sidebar .content-area > .widget-area, .sidebar .footer > .widget-area, .sidebar .content-area > .social-menu, .sidebar .footer > .social-menu, .content-area > .width-75, .footer > .width-75, .content-area > .width-100, .footer > .width-100, .content-area > .pec-thumbnail, .footer > .pec-thumbnail, .content-area > .sidebar, .footer > .sidebar {
       width: 100%; } }
 
 @media (min-width: 480px) and (max-width: 839px) {
   /* line 142, C:/wamp/www/pec/src/assets/css/scss/mdl/_grid.scss */
-  .content-area, .site-main, .sidebar {
+  .content-area, .site-main, .masonry-grid, .sidebar, .footer {
     padding: 8px; }
   /* line 146, C:/wamp/www/pec/src/assets/css/scss/mdl/_grid.scss */
-  .width-75, .width-100, .site-main header, .breadcrumbs, .pec-thumbnail, .sidebar, .sidebar .widget-area, .sidebar .social-menu {
+  .width-75, .width-100, .site-main header, .breadcrumbs, .masonry-grid, .pec-thumbnail, .sidebar, .sidebar .widget-area, .sidebar .social-menu, .footer .copyright, .footer .secondary-menu {
     margin: 8px;
     width: calc(50% - 16px); }
     /* line 73, C:/wamp/www/pec/src/assets/css/scss/mdl/_grid.scss */
-    .content-area > .width-75, .content-area > .width-100, .site-main .content-area > header, .content-area > .breadcrumbs, .content-area > .pec-thumbnail, .content-area > .sidebar, .sidebar .content-area > .widget-area, .sidebar .content-area > .social-menu {
+    .content-area > .width-75, .footer > .width-75, .content-area > .width-100, .footer > .width-100, .site-main .content-area > header, .site-main .footer > header, .content-area > .breadcrumbs, .footer > .breadcrumbs, .content-area > .masonry-grid, .footer > .masonry-grid, .content-area > .pec-thumbnail, .footer > .pec-thumbnail, .content-area > .sidebar, .footer > .sidebar, .sidebar .content-area > .widget-area, .sidebar .footer > .widget-area, .sidebar .content-area > .social-menu, .sidebar .footer > .social-menu, .footer .content-area > .copyright, .footer > .copyright, .footer .content-area > .secondary-menu, .footer > .secondary-menu {
       width: 50%; }
   /* line 164, C:/wamp/www/pec/src/assets/css/scss/mdl/_grid.scss */
   .sidebar {
     width: calc(37.5% - 16px); }
     /* line 73, C:/wamp/www/pec/src/assets/css/scss/mdl/_grid.scss */
-    .content-area > .sidebar {
+    .content-area > .sidebar,
+    .footer > .sidebar {
       width: 37.5%; }
   /* line 164, C:/wamp/www/pec/src/assets/css/scss/mdl/_grid.scss */
   .pec-thumbnail {
     width: calc(50% - 16px); }
     /* line 73, C:/wamp/www/pec/src/assets/css/scss/mdl/_grid.scss */
-    .content-area > .pec-thumbnail {
+    .content-area > .pec-thumbnail,
+    .footer > .pec-thumbnail {
       width: 50%; }
   /* line 171, C:/wamp/www/pec/src/assets/css/scss/mdl/_grid.scss */
   .width-75 {
     width: calc(100% - 16px); }
     /* line 73, C:/wamp/www/pec/src/assets/css/scss/mdl/_grid.scss */
-    .content-area > .width-75 {
+    .content-area > .width-75,
+    .footer > .width-75 {
       width: 100%; }
   /* line 171, C:/wamp/www/pec/src/assets/css/scss/mdl/_grid.scss */
   .width-100 {
     width: calc(100% - 16px); }
     /* line 73, C:/wamp/www/pec/src/assets/css/scss/mdl/_grid.scss */
-    .content-area > .width-100 {
+    .content-area > .width-100,
+    .footer > .width-100 {
       width: 100%; }
   /* line 171, C:/wamp/www/pec/src/assets/css/scss/mdl/_grid.scss */
   .site-main header,
   .breadcrumbs,
+  .masonry-grid,
   .sidebar .widget-area,
   .sidebar .social-menu {
     width: calc(100% - 16px); }
     /* line 73, C:/wamp/www/pec/src/assets/css/scss/mdl/_grid.scss */
-    .site-main .content-area > header, .content-area > .breadcrumbs,
-    .sidebar .content-area > .widget-area, .sidebar .content-area > .social-menu {
+    .site-main .content-area > header, .site-main .footer > header, .content-area > .breadcrumbs,
+    .footer > .breadcrumbs,
+    .content-area > .masonry-grid,
+    .footer > .masonry-grid,
+    .sidebar .content-area > .widget-area, .sidebar .footer > .widget-area, .sidebar .content-area > .social-menu, .sidebar .footer > .social-menu {
       width: 100%; } }
 
 @media (min-width: 840px) {
   /* line 189, C:/wamp/www/pec/src/assets/css/scss/mdl/_grid.scss */
-  .content-area, .site-main, .sidebar {
+  .content-area, .site-main, .masonry-grid, .sidebar, .footer {
     padding: 8px; }
   /* line 193, C:/wamp/www/pec/src/assets/css/scss/mdl/_grid.scss */
-  .width-75, .width-100, .site-main header, .breadcrumbs, .pec-thumbnail, .sidebar, .sidebar .widget-area, .sidebar .social-menu {
+  .width-75, .width-100, .site-main header, .breadcrumbs, .masonry-grid, .pec-thumbnail, .sidebar, .sidebar .widget-area, .sidebar .social-menu, .footer .copyright, .footer .secondary-menu {
     margin: 8px;
     width: calc(33.33333% - 16px); }
     /* line 73, C:/wamp/www/pec/src/assets/css/scss/mdl/_grid.scss */
-    .content-area > .width-75, .content-area > .width-100, .site-main .content-area > header, .content-area > .breadcrumbs, .content-area > .pec-thumbnail, .content-area > .sidebar, .sidebar .content-area > .widget-area, .sidebar .content-area > .social-menu {
+    .content-area > .width-75, .footer > .width-75, .content-area > .width-100, .footer > .width-100, .site-main .content-area > header, .site-main .footer > header, .content-area > .breadcrumbs, .footer > .breadcrumbs, .content-area > .masonry-grid, .footer > .masonry-grid, .content-area > .pec-thumbnail, .footer > .pec-thumbnail, .content-area > .sidebar, .footer > .sidebar, .sidebar .content-area > .widget-area, .sidebar .footer > .widget-area, .sidebar .content-area > .social-menu, .sidebar .footer > .social-menu, .footer .content-area > .copyright, .footer > .copyright, .footer .content-area > .secondary-menu, .footer > .secondary-menu {
       width: 33.33333%; }
   /* line 211, C:/wamp/www/pec/src/assets/css/scss/mdl/_grid.scss */
   .sidebar {
     width: calc(25% - 16px); }
     /* line 73, C:/wamp/www/pec/src/assets/css/scss/mdl/_grid.scss */
-    .content-area > .sidebar {
+    .content-area > .sidebar,
+    .footer > .sidebar {
       width: 25%; }
   /* line 211, C:/wamp/www/pec/src/assets/css/scss/mdl/_grid.scss */
   .pec-thumbnail {
     width: calc(33.33333% - 16px); }
     /* line 73, C:/wamp/www/pec/src/assets/css/scss/mdl/_grid.scss */
-    .content-area > .pec-thumbnail {
+    .content-area > .pec-thumbnail,
+    .footer > .pec-thumbnail {
       width: 33.33333%; }
   /* line 211, C:/wamp/www/pec/src/assets/css/scss/mdl/_grid.scss */
   .width-75 {
     width: calc(75% - 16px); }
     /* line 73, C:/wamp/www/pec/src/assets/css/scss/mdl/_grid.scss */
-    .content-area > .width-75 {
+    .content-area > .width-75,
+    .footer > .width-75 {
       width: 75%; }
   /* line 211, C:/wamp/www/pec/src/assets/css/scss/mdl/_grid.scss */
   .width-100 {
     width: calc(83.33333% - 16px); }
     /* line 73, C:/wamp/www/pec/src/assets/css/scss/mdl/_grid.scss */
-    .content-area > .width-100 {
+    .content-area > .width-100,
+    .footer > .width-100 {
       width: 83.33333%; }
   /* line 211, C:/wamp/www/pec/src/assets/css/scss/mdl/_grid.scss */
   .site-main header,
   .breadcrumbs,
+  .masonry-grid,
   .sidebar .widget-area,
   .sidebar .social-menu {
     width: calc(100% - 16px); }
     /* line 73, C:/wamp/www/pec/src/assets/css/scss/mdl/_grid.scss */
-    .site-main .content-area > header, .content-area > .breadcrumbs,
-    .sidebar .content-area > .widget-area, .sidebar .content-area > .social-menu {
+    .site-main .content-area > header, .site-main .footer > header, .content-area > .breadcrumbs,
+    .footer > .breadcrumbs,
+    .content-area > .masonry-grid,
+    .footer > .masonry-grid,
+    .sidebar .content-area > .widget-area, .sidebar .footer > .widget-area, .sidebar .content-area > .social-menu, .sidebar .footer > .social-menu {
       width: 100%; } }
 
 /**
@@ -1366,12 +1390,12 @@ textarea {
 /* Animations */
 /* Dialog */
 /* line 19, C:/wamp/www/pec/src/assets/css/scss/mdl/_list.scss */
-.sidebar ul {
+.sidebar ul, .tribe-events-list-widget .tribe-list-widget {
   display: block;
   list-style: none; }
 
 /* line 25, C:/wamp/www/pec/src/assets/css/scss/mdl/_list.scss */
-.sidebar ul li {
+.sidebar ul li, .tribe-events-list-widget .type-tribe_events {
   display: flex;
   box-sizing: border-box;
   flex-direction: row;
@@ -1381,7 +1405,7 @@ textarea {
   color: rgba(0,0,0, 0.87);
   overflow: hidden; }
   /* line 38, C:/wamp/www/pec/src/assets/css/scss/mdl/_list.scss */
-  .sidebar ul li a, .sidebar ul li .widget_recent_comments .comment-author-link, .widget_recent_comments .sidebar ul li .comment-author-link {
+  .sidebar ul li a, .tribe-events-list-widget .type-tribe_events .sidebar ul a, .sidebar ul .tribe-events-list-widget .type-tribe_events a, .sidebar ul li .widget_recent_comments .comment-author-link, .widget_recent_comments .sidebar ul li .comment-author-link, .tribe-events-list-widget .type-tribe_events .widget_recent_comments .comment-author-link, .widget_recent_comments .tribe-events-list-widget .type-tribe_events .comment-author-link, .sidebar ul li .tribe-events-list-widget .type-tribe_events, .tribe-events-list-widget .sidebar ul li .type-tribe_events, .tribe-events-list-widget .type-tribe_events .type-tribe_events {
     order: 0;
     flex-grow: 2;
     text-decoration: none;
@@ -1390,7 +1414,7 @@ textarea {
     align-items: center; }
 
 /* line 109, C:/wamp/www/pec/src/assets/css/scss/mdl/_list.scss */
-.widget_recent_comments .recentcomments .sidebar ul a a, .sidebar ul .widget_recent_comments .recentcomments a a, .widget_recent_comments .recentcomments .comment-author-link a {
+.widget_recent_comments .recentcomments .sidebar ul a a, .sidebar ul .widget_recent_comments .recentcomments a a, .tribe-events-list-widget .type-tribe_events .sidebar ul a .widget_recent_comments .recentcomments a, .sidebar ul .tribe-events-list-widget .type-tribe_events a .widget_recent_comments .recentcomments a, .widget_recent_comments .recentcomments .comment-author-link a, .tribe-events-list-widget .type-tribe_events .widget_recent_comments .comment-author-link .recentcomments a, .widget_recent_comments .tribe-events-list-widget .type-tribe_events .comment-author-link .recentcomments a, .widget_recent_comments .recentcomments .tribe-events-list-widget .type-tribe_events a, .tribe-events-list-widget .widget_recent_comments .recentcomments .type-tribe_events a, .tribe-events-list-widget .type-tribe_events .type-tribe_events .widget_recent_comments .recentcomments a, .widget_recent_comments .recentcomments .sidebar ul a .tribe-events-list-widget .tribe-event-duration, .tribe-events-list-widget .widget_recent_comments .recentcomments .sidebar ul a .tribe-event-duration, .sidebar ul .widget_recent_comments .recentcomments a .tribe-events-list-widget .tribe-event-duration, .tribe-events-list-widget .sidebar ul .widget_recent_comments .recentcomments a .tribe-event-duration, .tribe-events-list-widget .type-tribe_events .sidebar ul a .tribe-event-duration, .sidebar ul .tribe-events-list-widget .type-tribe_events a .tribe-event-duration, .widget_recent_comments .recentcomments .comment-author-link .tribe-events-list-widget .tribe-event-duration, .tribe-events-list-widget .widget_recent_comments .recentcomments .comment-author-link .tribe-event-duration, .tribe-events-list-widget .type-tribe_events .widget_recent_comments .comment-author-link .tribe-event-duration, .widget_recent_comments .tribe-events-list-widget .type-tribe_events .comment-author-link .tribe-event-duration, .widget_recent_comments .recentcomments .tribe-events-list-widget .type-tribe_events .tribe-event-duration, .tribe-events-list-widget .widget_recent_comments .recentcomments .type-tribe_events .tribe-event-duration, .tribe-events-list-widget .type-tribe_events .type-tribe_events .tribe-event-duration {
   line-height: 18px;
   color: rgba(0,0,0, 0.54);
   display: block;
@@ -1706,7 +1730,7 @@ textarea {
   font-weight: normal;
   font-style: normal; }
 
-/* line 16, C:/wamp/www/pec/src/assets/css/scss/partials/_typography.scss */
+/* line 14, C:/wamp/www/pec/src/assets/css/scss/partials/_typography.scss */
 [class^="icon__"]:before,
 [class*=" icon__"]:before {
   position: relative;
@@ -1720,31 +1744,31 @@ textarea {
   text-transform: none;
   speak: none; }
 
-/* line 32, C:/wamp/www/pec/src/assets/css/scss/partials/_typography.scss */
+/* line 29, C:/wamp/www/pec/src/assets/css/scss/partials/_typography.scss */
 .icon__menu:before {
   content: "\E001"; }
 
-/* line 38, C:/wamp/www/pec/src/assets/css/scss/partials/_typography.scss */
+/* line 34, C:/wamp/www/pec/src/assets/css/scss/partials/_typography.scss */
 .icon__close:before {
   content: "\E002"; }
 
-/* line 44, C:/wamp/www/pec/src/assets/css/scss/partials/_typography.scss */
+/* line 39, C:/wamp/www/pec/src/assets/css/scss/partials/_typography.scss */
 .icon__facebook:before {
   content: "\E003"; }
 
-/* line 50, C:/wamp/www/pec/src/assets/css/scss/partials/_typography.scss */
+/* line 44, C:/wamp/www/pec/src/assets/css/scss/partials/_typography.scss */
 .icon__twitter:before {
   content: "\E004"; }
 
-/* line 56, C:/wamp/www/pec/src/assets/css/scss/partials/_typography.scss */
+/* line 49, C:/wamp/www/pec/src/assets/css/scss/partials/_typography.scss */
 .icon__linkedin:before {
   content: "\E005"; }
 
-/* line 62, C:/wamp/www/pec/src/assets/css/scss/partials/_typography.scss */
+/* line 54, C:/wamp/www/pec/src/assets/css/scss/partials/_typography.scss */
 .icon__google-plus:before {
   content: "\E006"; }
 
-/* line 68, C:/wamp/www/pec/src/assets/css/scss/partials/_typography.scss */
+/* line 59, C:/wamp/www/pec/src/assets/css/scss/partials/_typography.scss */
 .icon__youtube:before {
   content: "\E007"; }
 
@@ -1784,24 +1808,24 @@ textarea {
 /* ==============================
     General Rules
    ============================== */
-/* line 115, C:/wamp/www/pec/src/assets/css/scss/partials/_typography.scss */
+/* line 112, C:/wamp/www/pec/src/assets/css/scss/partials/_typography.scss */
 * {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
-/* line 121, C:/wamp/www/pec/src/assets/css/scss/partials/_typography.scss */
+/* line 118, C:/wamp/www/pec/src/assets/css/scss/partials/_typography.scss */
 html {
   font-size: 100%; }
 
-/* line 125, C:/wamp/www/pec/src/assets/css/scss/partials/_typography.scss */
+/* line 122, C:/wamp/www/pec/src/assets/css/scss/partials/_typography.scss */
 body {
   font-family: "Signika Negative", "Tahoma", "Geneva", sans-serif;
   font-weight: normal;
   font-size: 14px;
   font-size: 0.875rem; }
 
-/* line 135, C:/wamp/www/pec/src/assets/css/scss/partials/_typography.scss */
+/* line 132, C:/wamp/www/pec/src/assets/css/scss/partials/_typography.scss */
 h1,
 h2,
 h3,
@@ -1813,36 +1837,37 @@ h6 {
   margin-top: 0;
   margin-bottom: 0.7242em; }
 
-/* line 141, C:/wamp/www/pec/src/assets/css/scss/partials/_typography.scss */
+/* line 138, C:/wamp/www/pec/src/assets/css/scss/partials/_typography.scss */
 p {
   margin-bottom: 0.7242em; }
 
-/* line 146, C:/wamp/www/pec/src/assets/css/scss/partials/_typography.scss */
+/* line 143, C:/wamp/www/pec/src/assets/css/scss/partials/_typography.scss */
 ul,
 ol {
   display: inline-block;
   padding-left: 20px;
   margin-bottom: 0.7242em; }
-  /* line 150, C:/wamp/www/pec/src/assets/css/scss/partials/_typography.scss */
+  /* line 147, C:/wamp/www/pec/src/assets/css/scss/partials/_typography.scss */
   ul li,
   ol li {
     margin-bottom: 0.7242em; }
 
-/* line 158, C:/wamp/www/pec/src/assets/css/scss/partials/_typography.scss */
+/* line 155, C:/wamp/www/pec/src/assets/css/scss/partials/_typography.scss */
 a,
 a:active,
 a:focus,
 a:visited {
   text-decoration: none; }
 
-/* line 162, C:/wamp/www/pec/src/assets/css/scss/partials/_typography.scss */
+/* line 159, C:/wamp/www/pec/src/assets/css/scss/partials/_typography.scss */
 a {
-  color: #40BBCD; }
-  /* line 164, C:/wamp/www/pec/src/assets/css/scss/partials/_typography.scss */
-  a:active, a:focus, a:visited {
-    color: #308C9A; }
+  color: #308C9A; }
+  /* line 162, C:/wamp/www/pec/src/assets/css/scss/partials/_typography.scss */
+  a:hover,
+  a:active {
+    color: #40BBCD; }
 
-/* line 169, C:/wamp/www/pec/src/assets/css/scss/partials/_typography.scss */
+/* line 167, C:/wamp/www/pec/src/assets/css/scss/partials/_typography.scss */
 sup {
   top: -5px;
   margin-left: 2px; }
@@ -1851,37 +1876,44 @@ sup {
     Modular Scale
    ============================== */
 /* line 178, C:/wamp/www/pec/src/assets/css/scss/partials/_typography.scss */
-h1, .h1 {
+h1,
+.h1 {
   font-size: 2.8084em;
   color: #308C9A; }
 
-/* line 183, C:/wamp/www/pec/src/assets/css/scss/partials/_typography.scss */
-h2, .h2 {
+/* line 184, C:/wamp/www/pec/src/assets/css/scss/partials/_typography.scss */
+h2,
+.h2 {
   font-size: 2.46832em;
   color: #91C160; }
 
-/* line 188, C:/wamp/www/pec/src/assets/css/scss/partials/_typography.scss */
-h3, .h3 {
+/* line 190, C:/wamp/www/pec/src/assets/css/scss/partials/_typography.scss */
+h3,
+.h3 {
   font-size: 2.16943em;
   color: #FFB71B; }
 
-/* line 192, C:/wamp/www/pec/src/assets/css/scss/partials/_typography.scss */
-h4, .h4 {
+/* line 196, C:/wamp/www/pec/src/assets/css/scss/partials/_typography.scss */
+h4,
+.h4 {
   font-size: 1.90672em;
   color: #308C9A; }
 
-/* line 196, C:/wamp/www/pec/src/assets/css/scss/partials/_typography.scss */
-h5, .h5 {
+/* line 202, C:/wamp/www/pec/src/assets/css/scss/partials/_typography.scss */
+h5,
+.h5 {
   font-size: 1.67583em;
   color: #91C160; }
 
-/* line 200, C:/wamp/www/pec/src/assets/css/scss/partials/_typography.scss */
-h6, .h6 {
+/* line 208, C:/wamp/www/pec/src/assets/css/scss/partials/_typography.scss */
+h6,
+.h6 {
   font-size: 1.4729em;
   color: #FFB71B; }
 
-/* line 204, C:/wamp/www/pec/src/assets/css/scss/partials/_typography.scss */
-p, ul {
+/* line 214, C:/wamp/www/pec/src/assets/css/scss/partials/_typography.scss */
+p,
+ul {
   font-size: 1em;
   color: #4D4D4D;
   line-height: 1.4;
@@ -1953,39 +1985,43 @@ html {
 /* ==============================
     Grid
    ============================== */
-/* line 76, C:/wamp/www/pec/src/assets/css/scss/partials/_layout.scss */
+/* line 79, C:/wamp/www/pec/src/assets/css/scss/partials/_layout.scss */
 .content-area {
   padding: 0 !important;
   min-height: 80vh;
   justify-content: space-between; }
 
 /* line 89, C:/wamp/www/pec/src/assets/css/scss/partials/_layout.scss */
+.site-main {
+  flex-direction: column; }
+
+/* line 93, C:/wamp/www/pec/src/assets/css/scss/partials/_layout.scss */
 .width-75 {
   max-width: 100%; }
   @media screen and (min-width: 768px) {
-    /* line 89, C:/wamp/www/pec/src/assets/css/scss/partials/_layout.scss */
+    /* line 93, C:/wamp/www/pec/src/assets/css/scss/partials/_layout.scss */
     .width-75 {
       max-width: 75%; } }
 
-/* line 99, C:/wamp/www/pec/src/assets/css/scss/partials/_layout.scss */
+/* line 102, C:/wamp/www/pec/src/assets/css/scss/partials/_layout.scss */
 .width-100 {
   max-width: 100%;
   margin: auto; }
   @media screen and (min-width: 768px) {
-    /* line 99, C:/wamp/www/pec/src/assets/css/scss/partials/_layout.scss */
+    /* line 102, C:/wamp/www/pec/src/assets/css/scss/partials/_layout.scss */
     .width-100 {
       max-width: 83.33333%; } }
 
 @media screen and (min-width: 768px) {
-  /* line 124, C:/wamp/www/pec/src/assets/css/scss/partials/_layout.scss */
+  /* line 134, C:/wamp/www/pec/src/assets/css/scss/partials/_layout.scss */
   .pec-thumbnail {
     max-width: 30%; } }
 
-/* line 134, C:/wamp/www/pec/src/assets/css/scss/partials/_layout.scss */
+/* line 145, C:/wamp/www/pec/src/assets/css/scss/partials/_layout.scss */
 .sidebar {
   max-width: 100%; }
   @media screen and (min-width: 768px) {
-    /* line 134, C:/wamp/www/pec/src/assets/css/scss/partials/_layout.scss */
+    /* line 145, C:/wamp/www/pec/src/assets/css/scss/partials/_layout.scss */
     .sidebar {
       max-width: 25%; } }
 
@@ -2158,6 +2194,9 @@ article.pec-thumbnail {
   article.pec-thumbnail .entry-footer {
     padding: 2%; }
   /* line 59, C:/wamp/www/pec/src/assets/css/scss/partials/_content.scss */
+  article.pec-thumbnail .entry-content {
+    margin-bottom: 2.5em; }
+  /* line 62, C:/wamp/www/pec/src/assets/css/scss/partials/_content.scss */
   article.pec-thumbnail .entry-footer {
     position: absolute;
     bottom: 0;
@@ -2166,26 +2205,26 @@ article.pec-thumbnail {
     flex-wrap: wrap;
     justify-content: space-around;
     background-color: #e6e6e6; }
-    /* line 69, C:/wamp/www/pec/src/assets/css/scss/partials/_content.scss */
+    /* line 72, C:/wamp/www/pec/src/assets/css/scss/partials/_content.scss */
     article.pec-thumbnail .entry-footer span {
       flex-basis: 50%;
       text-align: center; }
-  /* line 74, C:/wamp/www/pec/src/assets/css/scss/partials/_content.scss */
+  /* line 77, C:/wamp/www/pec/src/assets/css/scss/partials/_content.scss */
   article.pec-thumbnail .posted-on time:not(:last-of-type) {
     display: none; }
 
 /* line 1, C:/wamp/www/pec/src/assets/css/scss/partials/_footer.scss */
 .footer {
   background-color: #cccccc;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  align-items: baseline;
-  flex-wrap: wrap;
-  padding: 2vh auto; }
-  /* line 10, C:/wamp/www/pec/src/assets/css/scss/partials/_footer.scss */
+  justify-content: space-between;
+  align-items: baseline; }
+  /* line 9, C:/wamp/www/pec/src/assets/css/scss/partials/_footer.scss */
   .footer p {
     margin-bottom: 0; }
+  /* line 13, C:/wamp/www/pec/src/assets/css/scss/partials/_footer.scss */
+  .footer .secondary-menu ul {
+    margin: 0;
+    padding: 0; }
 
 /* line 1, C:/wamp/www/pec/src/assets/css/scss/partials/_header.scss */
 .header {
@@ -2207,59 +2246,83 @@ article.pec-thumbnail {
   .header__logo a {
     display: inline-block; }
 
-/* line 1, C:/wamp/www/pec/src/assets/css/scss/partials/_sidebar.scss */
+/* ==============================
+    Sidebar
+   ============================== */
+/* line 4, C:/wamp/www/pec/src/assets/css/scss/partials/_sidebar.scss */
 .sidebar {
   background-color: #fffaee;
   z-index: 1;
   font-size: 1.13778em; }
-  /* line 6, C:/wamp/www/pec/src/assets/css/scss/partials/_sidebar.scss */
+  /* line 9, C:/wamp/www/pec/src/assets/css/scss/partials/_sidebar.scss */
   .sidebar h5 {
     color: #DA9D39; }
-  /* line 18, C:/wamp/www/pec/src/assets/css/scss/partials/_sidebar.scss */
+  /* line 21, C:/wamp/www/pec/src/assets/css/scss/partials/_sidebar.scss */
   .sidebar .screen-reader-text {
     clip: none;
     width: auto;
     position: static !important; }
 
-/* line 25, C:/wamp/www/pec/src/assets/css/scss/partials/_sidebar.scss */
+/* ==============================
+    Widgets
+   ============================== */
+/* line 30, C:/wamp/www/pec/src/assets/css/scss/partials/_sidebar.scss */
 .widget {
   margin-top: 1.13778em;
   margin-bottom: 1.21363em; }
+  /* line 35, C:/wamp/www/pec/src/assets/css/scss/partials/_sidebar.scss */
+  .widget .widget-title {
+    font-size: 1.38084em; }
 
-/* line 32, C:/wamp/www/pec/src/assets/css/scss/partials/_sidebar.scss */
+/* line 43, C:/wamp/www/pec/src/assets/css/scss/partials/_sidebar.scss */
 .search-form {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: stretch;
   min-height: 8em; }
-  /* line 39, C:/wamp/www/pec/src/assets/css/scss/partials/_sidebar.scss */
+  /* line 50, C:/wamp/www/pec/src/assets/css/scss/partials/_sidebar.scss */
   .search-form label span {
     display: none; }
-  /* line 45, C:/wamp/www/pec/src/assets/css/scss/partials/_sidebar.scss */
+  /* line 56, C:/wamp/www/pec/src/assets/css/scss/partials/_sidebar.scss */
   .search-form input[type=search]:active,
   .search-form input[type=search]:focus {
     border-bottom: 3px solid #FFB71B;
     transition: border-bottom 300ms ease-in; }
-  /* line 50, C:/wamp/www/pec/src/assets/css/scss/partials/_sidebar.scss */
+  /* line 61, C:/wamp/www/pec/src/assets/css/scss/partials/_sidebar.scss */
   .search-form .search-submit {
     background-color: #FFB71B;
     color: #4D4D4D; }
-    /* line 57, C:/wamp/www/pec/src/assets/css/scss/partials/_sidebar.scss */
+    /* line 68, C:/wamp/www/pec/src/assets/css/scss/partials/_sidebar.scss */
     .search-form .search-submit:hover,
     .search-form .search-submit:focus,
     .search-form .search-submit:active {
       background-color: #DA9D39;
       color: #fff; }
 
-/* line 66, C:/wamp/www/pec/src/assets/css/scss/partials/_sidebar.scss */
+/* line 78, C:/wamp/www/pec/src/assets/css/scss/partials/_sidebar.scss */
 .widget_recent_comments .recentcomments {
   flex-wrap: wrap;
   align-items: baseline; }
+  /* line 83, C:/wamp/www/pec/src/assets/css/scss/partials/_sidebar.scss */
+  .widget_recent_comments .recentcomments a {
+    width: 100%; }
 
-/* line 75, C:/wamp/www/pec/src/assets/css/scss/partials/_sidebar.scss */
+/* line 88, C:/wamp/www/pec/src/assets/css/scss/partials/_sidebar.scss */
 .widget_recent_comments .comment-author-link {
-  padding-right: 0.5em; }
+  padding-right: 0.5em;
+  color: rgba(0, 0, 0, 0.54); }
+
+/* line 101, C:/wamp/www/pec/src/assets/css/scss/partials/_sidebar.scss */
+.tribe-events-list-widget .type-tribe_events {
+  flex-direction: column;
+  align-items: flex-start; }
+
+/* line 108, C:/wamp/www/pec/src/assets/css/scss/partials/_sidebar.scss */
+.tribe-events-list-widget .tribe-event-title {
+  font-family: "Signika Negative", "Tahoma", "Geneva", sans-serif;
+  font-weight: normal;
+  font-size: 1.06667em; }
 
 /* line 4, C:/wamp/www/pec/src/assets/css/scss/pages/_single.scss */
 .single-article .post,

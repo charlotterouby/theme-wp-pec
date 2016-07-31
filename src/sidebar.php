@@ -9,29 +9,31 @@
 
 if ( has_nav_menu( 'social' ) || is_active_sidebar( 'sidebar-1' )  ) : ?>
     <?php if ( is_active_sidebar( 'sidebar-1' ) ) : ?>
+        <!-- .widget-area -->
         <div id="widget-area" class="widget-area" role="complementary">
             <?php dynamic_sidebar( 'sidebar-1' ); ?>
         </div>
-        <!-- .widget-area -->
     <?php endif; ?>
 
-    <?php if ( has_nav_menu( 'social' ) ) : ?>
+    <!-- .social-navigation -->
+<!--
+    <?php //if ( has_nav_menu( 'social' ) ) : ?>
             <div class="social-menu">
                 <h5>Retrouvez-nous sur</h5>
                 <nav id="social-navigation" class="social-navigation" role="navigation">
                     <?php
                     // Social links navigation menu.
-                    wp_nav_menu( array(
-                        'theme_location' => 'social',
-                        'depth'          => 1,
-                        'link_before'    => '<span class="screen-reader-text">',
-                        'link_after'     => '</span>',
-                    ) );
+//                    wp_nav_menu( array(
+//                        'theme_location' => 'social',
+//                        'depth'          => 1,
+//                        'link_before'    => '<span class="screen-reader-text">',
+//                        'link_after'     => '</span>',
+//                    ) );
                     ?>
                 </nav>
             </div>
-            <!-- .social-navigation -->
-    <?php endif; ?>
+    <?php //endif; ?>
+-->
 
     <!-- .secondary -->
 

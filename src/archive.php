@@ -21,22 +21,24 @@ get_header(); ?>
     <section id="primary" class="content-area">
         <main id="main" class="site-main width-75" role="main">
         <!-- Yoast SEO -->
-        <div class="breadcrumbs width-100">
-            <?php
-                if ( function_exists('yoast_breadcrumb') ) {
-                    yoast_breadcrumb('<p id="breadcrumbs">','</p>');
-                }
-            ?>
-        </div>
+        <?php
+            if ( function_exists('yoast_breadcrumb') ) {
+                yoast_breadcrumb('<p id="breadcrumbs" class="breadcrumbs">','</p>');
+            }
+        ?>
+
+        <!--   Content     -->
         <?php if ( have_posts() ) : ?>
 
-            <header class="page-header width-100">
+            <!-- .page-header -->
+            <header class="page-header">
                 <?php
                     the_archive_title( '<h1 class="page-title">', '</h1>' );
                     the_archive_description( '<div class="taxonomy-description">', '</div>' );
                 ?>
-            </header><!-- .page-header -->
-
+            </header>
+            <!-- .masonry-grid -->
+            <div class="masonry-grid">
             <?php
             // Start the Loop.
             while ( have_posts() ) : the_post();
@@ -49,8 +51,9 @@ get_header(); ?>
                 get_template_part( 'content', get_post_format() );
 
             // End the loop.
-            endwhile;
-
+            endwhile; ?>
+            </div>
+            <?php
             // Previous/next page navigation.
             the_posts_pagination( array(
                 'prev_text'          => __( 'Previous page', 'twentyfifteen' ),

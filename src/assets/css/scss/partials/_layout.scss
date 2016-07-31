@@ -73,6 +73,9 @@ html {
 /* ==============================
     Grid
    ============================== */
+
+// Conteneur zone principal
+// ==============================
 .content-area {
     @extend %mdl-grid;
     @extend %mdl-grid--no-spacing;
@@ -81,10 +84,11 @@ html {
     justify-content: space-between;
 }
 
-// Zone contenu principal
+// .site-main
 // ==============================
 .site-main {
     @extend %mdl-grid;
+    flex-direction: column;
 }
 .width-75 {
     @extend %mdl-cell;
@@ -95,7 +99,6 @@ html {
         max-width: 75%;
     }
 }
-
 .width-100 {
     @extend %mdl-cell;
     @extend %mdl-cell--10-col;
@@ -106,12 +109,14 @@ html {
         max-width: (100%/12)*10;
     }
 }
-// Header .title-page
+
+// header.title-page
 // ==============================
 .site-main header {
     @extend %mdl-cell;
     @extend %mdl-cell--12-col;
 }
+
 // Breadcrumbs
 // ==============================
 .breadcrumbs {
@@ -121,6 +126,11 @@ html {
 
 // Post Cards
 // ==============================
+.masonry-grid {
+    @extend %mdl-grid;
+    @extend %mdl-cell;
+    @extend %mdl-cell--12-col;
+}
 .pec-thumbnail {
     @extend %mdl-cell;
     @extend %mdl-cell--4-col;
@@ -129,6 +139,7 @@ html {
         max-width: 30%;
     }
 }
+
 // Zone sidebar
 // ==============================
 .sidebar {
@@ -147,3 +158,12 @@ html {
     }
 }
 
+// Footer
+// ==============================
+.footer {
+    @extend %mdl-grid;
+    @extend %mdl-grid--no-spacing;
+    .copyright, .secondary-menu {
+        @extend %mdl-cell;
+    }
+}
