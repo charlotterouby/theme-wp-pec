@@ -20,10 +20,13 @@ get_header(); ?>
         <!-- Content -->
         <?php if ( have_posts() ) : ?>
 
+            <!-- .page-header -->
             <header class="page-header">
-                <h1 class="page-title"><?php printf( __( 'Search Results for: %s', 'twentyfifteen' ), get_search_query() ); ?></h1>
-            </header><!-- .page-header -->
+                <h2 class="page-title h1"><?php printf( __( 'Search Results for: %s', 'twentyfifteen' ), get_search_query() ); ?></h2>
+            </header>
 
+            <!-- .masonry-grid -->
+            <div class="masonry-grid">
             <?php
             // Start the loop.
             while ( have_posts() ) : the_post(); ?>
@@ -37,8 +40,9 @@ get_header(); ?>
                 get_template_part( 'content', 'search' );
 
             // End the loop.
-            endwhile;
-
+            endwhile;?>
+            </div>
+            <?php
             // Previous/next page navigation.
             the_posts_pagination( array(
                 'prev_text'          => __( 'Previous page', 'twentyfifteen' ),
@@ -54,6 +58,9 @@ get_header(); ?>
         ?>
 
         </main><!-- .site-main -->
+        <aside class="sidebar">
+            <?php get_sidebar() ?>
+        </aside><!-- .sidebar -->
     </section><!-- .content-area -->
 
 <?php get_footer(); ?>

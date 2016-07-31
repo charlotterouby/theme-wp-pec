@@ -130,6 +130,7 @@ html {
     @extend %mdl-grid;
     @extend %mdl-cell;
     @extend %mdl-cell--12-col;
+    padding: 0 !important;
 }
 .pec-thumbnail {
     @extend %mdl-cell;

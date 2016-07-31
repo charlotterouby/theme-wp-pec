@@ -10,28 +10,38 @@
  */
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<?php twentyfifteen_post_thumbnail(); ?>
+<article id="post-<?php the_ID(); ?>" <?php post_class('pec-thumbnail'); ?>>
+    <!-- image thumbnail -->
+    <?php
+        if (has_post_thumbnail()):
+            twentyfifteen_post_thumbnail();
+        elseif (main_image()):
+            echo main_image();
+        endif;
+    ?>
 
-	<header class="entry-header">
-		<?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
-	</header><!-- .entry-header -->
+    <!-- .entry-header -->
+    <header class="entry-header">
+        <?php the_title( sprintf( '<h3 class="entry-title h6"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h3>' ); ?>
+    </header>
 
-	<div class="entry-summary">
-		<?php the_excerpt(); ?>
-	</div><!-- .entry-summary -->
+    <!-- .entry-content -->
+    <div class="entry-content">
+        <?php the_excerpt(); ?>
+    </div>
 
-	<?php if ( 'post' == get_post_type() ) : ?>
+    <?php if ( 'post' == get_post_type() ) : ?>
 
-		<footer class="entry-footer">
-			<?php twentyfifteen_entry_meta(); ?>
-			<?php edit_post_link( __( 'Edit', 'twentyfifteen' ), '<span class="edit-link">', '</span>' ); ?>
-		</footer><!-- .entry-footer -->
+        <!-- .entry-footer -->
+        <footer class="entry-footer">
+            <?php twentyfifteen_entry_meta(); ?>
+            <?php edit_post_link( __( 'Edit', 'twentyfifteen' ), '<span class="edit-link">', '</span>' ); ?>
+        </footer>
 
-	<?php else : ?>
+    <?php else : ?>
 
-		<?php edit_post_link( __( 'Edit', 'twentyfifteen' ), '<footer class="entry-footer"><span class="edit-link">', '</span></footer><!-- .entry-footer -->' ); ?>
+        <?php edit_post_link( __( 'Edit', 'twentyfifteen' ), '<footer class="entry-footer"><span class="edit-link">', '</span></footer><!-- .entry-footer -->' ); ?>
 
-	<?php endif; ?>
+    <?php endif; ?>
 
 </article><!-- #post-## -->

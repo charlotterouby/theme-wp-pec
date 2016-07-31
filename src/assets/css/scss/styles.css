@@ -1878,40 +1878,70 @@ sup {
 /* line 178, C:/wamp/www/pec/src/assets/css/scss/partials/_typography.scss */
 h1,
 .h1 {
-  font-size: 2.8084em;
+  font-size: 1.67583em;
   color: #308C9A; }
+  @media screen and (min-width: 768px) {
+    /* line 178, C:/wamp/www/pec/src/assets/css/scss/partials/_typography.scss */
+    h1,
+    .h1 {
+      font-size: 2.8084em; } }
 
-/* line 184, C:/wamp/www/pec/src/assets/css/scss/partials/_typography.scss */
+/* line 187, C:/wamp/www/pec/src/assets/css/scss/partials/_typography.scss */
 h2,
 .h2 {
-  font-size: 2.46832em;
+  font-size: 1.57109em;
   color: #91C160; }
-
-/* line 190, C:/wamp/www/pec/src/assets/css/scss/partials/_typography.scss */
-h3,
-.h3 {
-  font-size: 2.16943em;
-  color: #FFB71B; }
+  @media screen and (min-width: 768px) {
+    /* line 187, C:/wamp/www/pec/src/assets/css/scss/partials/_typography.scss */
+    h2,
+    .h2 {
+      font-size: 2.46832em; } }
 
 /* line 196, C:/wamp/www/pec/src/assets/css/scss/partials/_typography.scss */
-h4,
-.h4 {
-  font-size: 1.90672em;
-  color: #308C9A; }
-
-/* line 202, C:/wamp/www/pec/src/assets/css/scss/partials/_typography.scss */
-h5,
-.h5 {
-  font-size: 1.67583em;
-  color: #91C160; }
-
-/* line 208, C:/wamp/www/pec/src/assets/css/scss/partials/_typography.scss */
-h6,
-.h6 {
+h3,
+.h3 {
   font-size: 1.4729em;
   color: #FFB71B; }
+  @media screen and (min-width: 768px) {
+    /* line 196, C:/wamp/www/pec/src/assets/css/scss/partials/_typography.scss */
+    h3,
+    .h3 {
+      font-size: 2.16943em; } }
+
+/* line 205, C:/wamp/www/pec/src/assets/css/scss/partials/_typography.scss */
+h4,
+.h4 {
+  font-size: 1.38084em;
+  color: #308C9A; }
+  @media screen and (min-width: 768px) {
+    /* line 205, C:/wamp/www/pec/src/assets/css/scss/partials/_typography.scss */
+    h4,
+    .h4 {
+      font-size: 1.90672em; } }
 
 /* line 214, C:/wamp/www/pec/src/assets/css/scss/partials/_typography.scss */
+h5,
+.h5 {
+  font-size: 1.29454em;
+  color: #91C160; }
+  @media screen and (min-width: 768px) {
+    /* line 214, C:/wamp/www/pec/src/assets/css/scss/partials/_typography.scss */
+    h5,
+    .h5 {
+      font-size: 1.67583em; } }
+
+/* line 223, C:/wamp/www/pec/src/assets/css/scss/partials/_typography.scss */
+h6,
+.h6 {
+  font-size: 1.21363em;
+  color: #FFB71B; }
+  @media screen and (min-width: 768px) {
+    /* line 223, C:/wamp/www/pec/src/assets/css/scss/partials/_typography.scss */
+    h6,
+    .h6 {
+      font-size: 1.4729em; } }
+
+/* line 232, C:/wamp/www/pec/src/assets/css/scss/partials/_typography.scss */
 p,
 ul {
   font-size: 1em;
@@ -2012,16 +2042,20 @@ html {
     .width-100 {
       max-width: 83.33333%; } }
 
+/* line 129, C:/wamp/www/pec/src/assets/css/scss/partials/_layout.scss */
+.masonry-grid {
+  padding: 0 !important; }
+
 @media screen and (min-width: 768px) {
-  /* line 134, C:/wamp/www/pec/src/assets/css/scss/partials/_layout.scss */
+  /* line 135, C:/wamp/www/pec/src/assets/css/scss/partials/_layout.scss */
   .pec-thumbnail {
     max-width: 30%; } }
 
-/* line 145, C:/wamp/www/pec/src/assets/css/scss/partials/_layout.scss */
+/* line 146, C:/wamp/www/pec/src/assets/css/scss/partials/_layout.scss */
 .sidebar {
   max-width: 100%; }
   @media screen and (min-width: 768px) {
-    /* line 145, C:/wamp/www/pec/src/assets/css/scss/partials/_layout.scss */
+    /* line 146, C:/wamp/www/pec/src/assets/css/scss/partials/_layout.scss */
     .sidebar {
       max-width: 25%; } }
 
@@ -2209,7 +2243,7 @@ article.pec-thumbnail {
     article.pec-thumbnail .entry-footer span {
       flex-basis: 50%;
       text-align: center; }
-  /* line 77, C:/wamp/www/pec/src/assets/css/scss/partials/_content.scss */
+  /* line 78, C:/wamp/www/pec/src/assets/css/scss/partials/_content.scss */
   article.pec-thumbnail .posted-on time:not(:last-of-type) {
     display: none; }
 

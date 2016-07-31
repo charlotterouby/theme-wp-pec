@@ -55,23 +55,24 @@ article.pec-thumbnail {
         &-footer {
             padding: 2%;
         }
-    }
-    .entry-content {
-        margin-bottom: 2.5em;
-    }
-    .entry-footer {
-        position: absolute;
-        bottom: 0;
-        //box model
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        //apparence
-        background-color: palette(gris, 10);
-        span {
-            flex-basis: 50%;
-            text-align: center;
+
+        &-content {
+            margin-bottom: 2.5em;
+        }
+        &-footer {
+            position: absolute;
+            bottom: 0;
+            //box model
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            //apparence
+            background-color: palette(gris, 10);
+            span {
+                flex-basis: 50%;
+                text-align: center;
+            }
         }
     }
     .posted-on time:not(:last-of-type) {
