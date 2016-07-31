@@ -2,7 +2,8 @@
     $logo = ot_get_option( 'logo' );
 ?>
 
-    <header class="header ">
+    <header class="header">
+        <!--header horizontal start -->
         <div class="mdl-layout__header mdl-layout__header--scroll">
             <div class="mdl-layout__header-row">
                 <!-- LOGO / SITE TITLE start -->
@@ -28,9 +29,23 @@
                     }
                 ?>
                 <!-- NAVIGATION end -->
-
-
             </div>
         </div>
+        <!--header horizontal end-->
+        <!-- Drawer start-->
+        <div class="mdl-layout__drawer" aria-hidden="true">
+            <span class="mdl-layout-title"><?php bloginfo('name'); ?></span>
+            <?php
+                $navigationPath = TEMPLATEPATH . '/includes/include-navigation.php';
+
+                if ( file_exists( $navigationPath ) ) {
+                    include( $navigationPath );
+                }
+            ?>
+        </div>
+        <!-- button drawer -->
+        <div aria-expanded="false" role="button" tabindex="0" class="mdl-layout__drawer-button"><i class="icon__menu"></i></div>
+
+        <!-- Drawer end-->
     </header>
 

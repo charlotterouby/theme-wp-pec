@@ -1,6 +1,9 @@
 /* ==============================
     Classes mdl
    ============================== */
+.mdl-layout {
+    @extend %mdl-layout;
+}
 .mdl-layout__header {
     @extend %mdl-layout__header ;
 }
@@ -15,6 +18,12 @@
 }
 .mdl-layout-spacer {
     @extend %mdl-layout-spacer;
+}
+.mdl-layout__drawer-button {
+    @extend %mdl-layout__drawer-button;
+}
+.mdl-layout__drawer {
+    @extend %mdl-layout__drawer;
 }
 
 /* ==============================
@@ -164,6 +173,7 @@ html {
 .footer {
     @extend %mdl-grid;
     @extend %mdl-grid--no-spacing;
+    margin: 0;
     .copyright, .secondary-menu {
         @extend %mdl-cell;
     }

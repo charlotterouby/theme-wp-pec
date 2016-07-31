@@ -1,13 +1,17 @@
 .header {
+    // position
+    z-index: 9998;
+    position: relative;
+    // box model
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    min-height: 10vh;
+    // apparence
     background-color: palette(vert);
     color: palette(gris, light);
     box-shadow: 0 2px 4px palette(gris);
-    z-index: 9998;
-    display: flex;
-    align-items: center;
-    //    flex-wrap: wrap;
-    min-height: 10vh;
-    background-color: palette(vert);
+
 
     h1,
     a {
