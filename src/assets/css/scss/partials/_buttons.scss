@@ -1,0 +1,46 @@
+/* ==============================
+    Classes mdl
+   ============================== */
+.mdl-button {
+    @extend %mdl-button;
+}
+.mdl-button--raised {
+    @extend %mdl-button--raised;
+}
+
+/* ==============================
+    liens en forme de boutton
+   ============================== */
+
+// boutton vert
+// ==============================
+.comment-reply-link,
+.tribe-events-widget-link a {
+    @extend %mdl-button;
+    @extend %mdl-button--raised;
+    background: palette(vert);
+    color: palette(gris, light);
+    &:hover,
+    &:focus,
+    &:active {
+        color: palette(gris, light);
+        background: palette(vert, mid-dark);
+    }
+}
+
+// boutton gris
+// ==============================
+.post-edit-link,
+.comment-edit-link,
+#cancel-comment-reply-link {
+    @extend %mdl-button;
+    @extend %mdl-button--raised;
+    color: palette(gris);
+    &:hover,
+    &:focus,
+    &:active {
+        color: palette(gris, light);
+        background: palette(gris);
+    }
+}
+

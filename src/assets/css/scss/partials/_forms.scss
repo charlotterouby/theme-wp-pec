@@ -1,3 +1,60 @@
 * {
-	@include appearance(none);
+    @include appearance(none);
+}
+
+
+/* ==============================
+    Comment Form
+   ============================== */
+// grid
+// ==============================
+.comment-respond {
+    padding-top: ms(10);
+    margin-top: ms(10);
+    border-top: solid 1px palette(gris, 20);
+}
+.comment-form {
+    @extend %mdl-grid;
+    display: flex;
+
+    .logged-in-as, .comment-form-comment, .form-submit {
+        @extend %mdl-cell;
+    }
+
+    .logged-in-as {
+        @extend %mdl-cell--12-col;
+    }
+
+    .comment-form-comment {
+        @extend %mdl-cell--8-col;
+        position: relative;
+
+        textarea {
+            border-color: palette(jaune);
+        }
+    }
+
+    .form-submit {
+        @extend %mdl-cell--4-col;
+        display: flex;
+        align-items: flex-end;
+    }
+}
+
+// formulaire
+// ==============================
+// Ajout des classes material design "textfield" via javascript
+
+// boutton submit
+// ==============================
+.form-submit input {
+    @extend %mdl-button--raised;
+    color: palette(gris);
+    background: palette(jaune);
+    &:hover,
+    &:focus,
+    &:active {
+        color: palette(gris, light);
+        background: palette(jaune, mid-dark);
+    }
 }

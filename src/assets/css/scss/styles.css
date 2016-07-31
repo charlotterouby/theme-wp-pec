@@ -615,7 +615,7 @@ textarea {
 /* SNACKBAR */
 /* TOOLTIP */
 /* line 25, C:/wamp/www/pec/src/assets/css/scss/mdl/_grid.scss */
-.content-area, .site-main, .masonry-grid, .sidebar, .footer {
+.content-area, .site-main, .masonry-grid, .sidebar, .footer, .comment-form, .comment-body {
   display: flex;
   flex-flow: row wrap;
   margin: 0 auto 0 auto;
@@ -625,44 +625,56 @@ textarea {
     padding: 0; }
 
 /* line 36, C:/wamp/www/pec/src/assets/css/scss/mdl/_grid.scss */
-.width-75, .width-100, .site-main header, .breadcrumbs, .masonry-grid, .pec-thumbnail, .sidebar, .sidebar .widget-area, .sidebar .social-menu, .footer .copyright, .footer .secondary-menu {
+.width-75, .width-100, .site-main header, .breadcrumbs, .masonry-grid, .pec-thumbnail, .sidebar, .sidebar .widget-area, .sidebar .social-menu, .footer .copyright, .footer .secondary-menu, .comment-form .logged-in-as, .comment-form .comment-form-comment, .comment-form .form-submit, .comment-body .comment-meta, .comment-body .comment-content, .comment-body .reply {
   box-sizing: border-box; }
 
 /* line 57, C:/wamp/www/pec/src/assets/css/scss/mdl/_grid.scss */
-.content-area > .width-75, .site-main.content-area > .width-75, .site-main.footer > .width-75, .masonry-grid.content-area > .width-75, .masonry-grid.footer > .width-75, .sidebar.content-area > .width-75, .sidebar.footer > .width-75, .footer > .width-75, .content-area > .width-100, .site-main.content-area > .width-100, .site-main.footer > .width-100, .masonry-grid.content-area > .width-100, .masonry-grid.footer > .width-100, .sidebar.content-area > .width-100, .sidebar.footer > .width-100, .footer > .width-100, .site-main .content-area > header, .site-main.content-area > header, .site-main.footer > header, .site-main .masonry-grid.content-area > header, .site-main .masonry-grid.footer > header, .site-main .sidebar.content-area > header, .site-main .sidebar.footer > header, .site-main .footer > header, .content-area > .breadcrumbs, .site-main.content-area > .breadcrumbs, .site-main.footer > .breadcrumbs, .masonry-grid.content-area > .breadcrumbs, .masonry-grid.footer > .breadcrumbs, .sidebar.content-area > .breadcrumbs, .sidebar.footer > .breadcrumbs, .footer > .breadcrumbs, .content-area > .masonry-grid, .site-main.content-area > .masonry-grid, .site-main.footer > .masonry-grid, .masonry-grid.content-area > .masonry-grid, .masonry-grid.footer > .masonry-grid, .sidebar.content-area > .masonry-grid, .sidebar.footer > .masonry-grid, .footer > .masonry-grid, .content-area > .pec-thumbnail, .site-main.content-area > .pec-thumbnail, .site-main.footer > .pec-thumbnail, .masonry-grid.content-area > .pec-thumbnail, .masonry-grid.footer > .pec-thumbnail, .sidebar.content-area > .pec-thumbnail, .sidebar.footer > .pec-thumbnail, .footer > .pec-thumbnail, .content-area > .sidebar, .site-main.content-area > .sidebar, .site-main.footer > .sidebar, .masonry-grid.content-area > .sidebar, .masonry-grid.footer > .sidebar, .sidebar.content-area > .sidebar, .sidebar.footer > .sidebar, .footer > .sidebar, .sidebar .content-area > .widget-area, .sidebar .site-main.content-area > .widget-area, .sidebar .site-main.footer > .widget-area, .sidebar .masonry-grid.content-area > .widget-area, .sidebar .masonry-grid.footer > .widget-area, .sidebar.content-area > .widget-area, .sidebar.footer > .widget-area, .sidebar .footer > .widget-area, .sidebar .content-area > .social-menu, .sidebar .site-main.content-area > .social-menu, .sidebar .site-main.footer > .social-menu, .sidebar .masonry-grid.content-area > .social-menu, .sidebar .masonry-grid.footer > .social-menu, .sidebar.content-area > .social-menu, .sidebar.footer > .social-menu, .sidebar .footer > .social-menu, .footer .content-area > .copyright, .footer .site-main.content-area > .copyright, .site-main.footer > .copyright, .footer .masonry-grid.content-area > .copyright, .masonry-grid.footer > .copyright, .footer .sidebar.content-area > .copyright, .sidebar.footer > .copyright, .footer > .copyright, .footer .content-area > .secondary-menu, .footer .site-main.content-area > .secondary-menu, .site-main.footer > .secondary-menu, .footer .masonry-grid.content-area > .secondary-menu, .masonry-grid.footer > .secondary-menu, .footer .sidebar.content-area > .secondary-menu, .sidebar.footer > .secondary-menu, .footer > .secondary-menu {
+.content-area > .width-75, .site-main.content-area > .width-75, .site-main.footer > .width-75, .masonry-grid.content-area > .width-75, .masonry-grid.footer > .width-75, .sidebar.content-area > .width-75, .sidebar.footer > .width-75, .footer > .width-75, .comment-form.content-area > .width-75, .comment-form.footer > .width-75, .comment-body.content-area > .width-75, .comment-body.footer > .width-75, .content-area > .width-100, .site-main.content-area > .width-100, .site-main.footer > .width-100, .masonry-grid.content-area > .width-100, .masonry-grid.footer > .width-100, .sidebar.content-area > .width-100, .sidebar.footer > .width-100, .footer > .width-100, .comment-form.content-area > .width-100, .comment-form.footer > .width-100, .comment-body.content-area > .width-100, .comment-body.footer > .width-100, .site-main .content-area > header, .site-main.content-area > header, .site-main.footer > header, .site-main .masonry-grid.content-area > header, .site-main .masonry-grid.footer > header, .site-main .sidebar.content-area > header, .site-main .sidebar.footer > header, .site-main .footer > header, .site-main .comment-form.content-area > header, .site-main .comment-form.footer > header, .site-main .comment-body.content-area > header, .site-main .comment-body.footer > header, .content-area > .breadcrumbs, .site-main.content-area > .breadcrumbs, .site-main.footer > .breadcrumbs, .masonry-grid.content-area > .breadcrumbs, .masonry-grid.footer > .breadcrumbs, .sidebar.content-area > .breadcrumbs, .sidebar.footer > .breadcrumbs, .footer > .breadcrumbs, .comment-form.content-area > .breadcrumbs, .comment-form.footer > .breadcrumbs, .comment-body.content-area > .breadcrumbs, .comment-body.footer > .breadcrumbs, .content-area > .masonry-grid, .site-main.content-area > .masonry-grid, .site-main.footer > .masonry-grid, .masonry-grid.content-area > .masonry-grid, .masonry-grid.footer > .masonry-grid, .sidebar.content-area > .masonry-grid, .sidebar.footer > .masonry-grid, .footer > .masonry-grid, .comment-form.content-area > .masonry-grid, .comment-form.footer > .masonry-grid, .comment-body.content-area > .masonry-grid, .comment-body.footer > .masonry-grid, .content-area > .pec-thumbnail, .site-main.content-area > .pec-thumbnail, .site-main.footer > .pec-thumbnail, .masonry-grid.content-area > .pec-thumbnail, .masonry-grid.footer > .pec-thumbnail, .sidebar.content-area > .pec-thumbnail, .sidebar.footer > .pec-thumbnail, .footer > .pec-thumbnail, .comment-form.content-area > .pec-thumbnail, .comment-form.footer > .pec-thumbnail, .comment-body.content-area > .pec-thumbnail, .comment-body.footer > .pec-thumbnail, .content-area > .sidebar, .site-main.content-area > .sidebar, .site-main.footer > .sidebar, .masonry-grid.content-area > .sidebar, .masonry-grid.footer > .sidebar, .sidebar.content-area > .sidebar, .sidebar.footer > .sidebar, .footer > .sidebar, .comment-form.content-area > .sidebar, .comment-form.footer > .sidebar, .comment-body.content-area > .sidebar, .comment-body.footer > .sidebar, .sidebar .content-area > .widget-area, .sidebar .site-main.content-area > .widget-area, .sidebar .site-main.footer > .widget-area, .sidebar .masonry-grid.content-area > .widget-area, .sidebar .masonry-grid.footer > .widget-area, .sidebar.content-area > .widget-area, .sidebar.footer > .widget-area, .sidebar .footer > .widget-area, .sidebar .comment-form.content-area > .widget-area, .sidebar .comment-form.footer > .widget-area, .sidebar .comment-body.content-area > .widget-area, .sidebar .comment-body.footer > .widget-area, .sidebar .content-area > .social-menu, .sidebar .site-main.content-area > .social-menu, .sidebar .site-main.footer > .social-menu, .sidebar .masonry-grid.content-area > .social-menu, .sidebar .masonry-grid.footer > .social-menu, .sidebar.content-area > .social-menu, .sidebar.footer > .social-menu, .sidebar .footer > .social-menu, .sidebar .comment-form.content-area > .social-menu, .sidebar .comment-form.footer > .social-menu, .sidebar .comment-body.content-area > .social-menu, .sidebar .comment-body.footer > .social-menu, .footer .content-area > .copyright, .footer .site-main.content-area > .copyright, .site-main.footer > .copyright, .footer .masonry-grid.content-area > .copyright, .masonry-grid.footer > .copyright, .footer .sidebar.content-area > .copyright, .sidebar.footer > .copyright, .footer > .copyright, .footer .comment-form.content-area > .copyright, .comment-form.footer > .copyright, .footer .comment-body.content-area > .copyright, .comment-body.footer > .copyright, .footer .content-area > .secondary-menu, .footer .site-main.content-area > .secondary-menu, .site-main.footer > .secondary-menu, .footer .masonry-grid.content-area > .secondary-menu, .masonry-grid.footer > .secondary-menu, .footer .sidebar.content-area > .secondary-menu, .sidebar.footer > .secondary-menu, .footer > .secondary-menu, .footer .comment-form.content-area > .secondary-menu, .comment-form.footer > .secondary-menu, .footer .comment-body.content-area > .secondary-menu, .comment-body.footer > .secondary-menu, .comment-form .content-area > .logged-in-as, .comment-form .site-main.content-area > .logged-in-as, .comment-form .site-main.footer > .logged-in-as, .comment-form .masonry-grid.content-area > .logged-in-as, .comment-form .masonry-grid.footer > .logged-in-as, .comment-form .sidebar.content-area > .logged-in-as, .comment-form .sidebar.footer > .logged-in-as, .comment-form .footer > .logged-in-as, .comment-form.content-area > .logged-in-as, .comment-form.footer > .logged-in-as, .comment-form .comment-body.content-area > .logged-in-as, .comment-form .comment-body.footer > .logged-in-as, .comment-form .content-area > .comment-form-comment, .comment-form .site-main.content-area > .comment-form-comment, .comment-form .site-main.footer > .comment-form-comment, .comment-form .masonry-grid.content-area > .comment-form-comment, .comment-form .masonry-grid.footer > .comment-form-comment, .comment-form .sidebar.content-area > .comment-form-comment, .comment-form .sidebar.footer > .comment-form-comment, .comment-form .footer > .comment-form-comment, .comment-form.content-area > .comment-form-comment, .comment-form.footer > .comment-form-comment, .comment-form .comment-body.content-area > .comment-form-comment, .comment-form .comment-body.footer > .comment-form-comment, .comment-form .content-area > .form-submit, .comment-form .site-main.content-area > .form-submit, .comment-form .site-main.footer > .form-submit, .comment-form .masonry-grid.content-area > .form-submit, .comment-form .masonry-grid.footer > .form-submit, .comment-form .sidebar.content-area > .form-submit, .comment-form .sidebar.footer > .form-submit, .comment-form .footer > .form-submit, .comment-form.content-area > .form-submit, .comment-form.footer > .form-submit, .comment-form .comment-body.content-area > .form-submit, .comment-form .comment-body.footer > .form-submit, .comment-body .content-area > .comment-meta, .comment-body .site-main.content-area > .comment-meta, .comment-body .site-main.footer > .comment-meta, .comment-body .masonry-grid.content-area > .comment-meta, .comment-body .masonry-grid.footer > .comment-meta, .comment-body .sidebar.content-area > .comment-meta, .comment-body .sidebar.footer > .comment-meta, .comment-body .footer > .comment-meta, .comment-body .comment-form.content-area > .comment-meta, .comment-body .comment-form.footer > .comment-meta, .comment-body.content-area > .comment-meta, .comment-body.footer > .comment-meta, .comment-body .content-area > .comment-content, .comment-body .site-main.content-area > .comment-content, .comment-body .site-main.footer > .comment-content, .comment-body .masonry-grid.content-area > .comment-content, .comment-body .masonry-grid.footer > .comment-content, .comment-body .sidebar.content-area > .comment-content, .comment-body .sidebar.footer > .comment-content, .comment-body .footer > .comment-content, .comment-body .comment-form.content-area > .comment-content, .comment-body .comment-form.footer > .comment-content, .comment-body.content-area > .comment-content, .comment-body.footer > .comment-content, .comment-body .content-area > .reply, .comment-body .site-main.content-area > .reply, .comment-body .site-main.footer > .reply, .comment-body .masonry-grid.content-area > .reply, .comment-body .masonry-grid.footer > .reply, .comment-body .sidebar.content-area > .reply, .comment-body .sidebar.footer > .reply, .comment-body .footer > .reply, .comment-body .comment-form.content-area > .reply, .comment-body .comment-form.footer > .reply, .comment-body.content-area > .reply, .comment-body.footer > .reply {
   margin: 0; }
 
 @media (max-width: 479px) {
   /* line 95, C:/wamp/www/pec/src/assets/css/scss/mdl/_grid.scss */
-  .content-area, .site-main, .masonry-grid, .sidebar, .footer {
+  .content-area, .site-main, .masonry-grid, .sidebar, .footer, .comment-form, .comment-body {
     padding: 8px; }
   /* line 99, C:/wamp/www/pec/src/assets/css/scss/mdl/_grid.scss */
-  .width-75, .width-100, .site-main header, .breadcrumbs, .masonry-grid, .pec-thumbnail, .sidebar, .sidebar .widget-area, .sidebar .social-menu, .footer .copyright, .footer .secondary-menu {
+  .width-75, .width-100, .site-main header, .breadcrumbs, .masonry-grid, .pec-thumbnail, .sidebar, .sidebar .widget-area, .sidebar .social-menu, .footer .copyright, .footer .secondary-menu, .comment-form .logged-in-as, .comment-form .comment-form-comment, .comment-form .form-submit, .comment-body .comment-meta, .comment-body .comment-content, .comment-body .reply {
     margin: 8px;
     width: calc(100% - 16px); }
     /* line 73, C:/wamp/www/pec/src/assets/css/scss/mdl/_grid.scss */
-    .content-area > .width-75, .footer > .width-75, .content-area > .width-100, .footer > .width-100, .site-main .content-area > header, .site-main .footer > header, .content-area > .breadcrumbs, .footer > .breadcrumbs, .content-area > .masonry-grid, .footer > .masonry-grid, .content-area > .pec-thumbnail, .footer > .pec-thumbnail, .content-area > .sidebar, .footer > .sidebar, .sidebar .content-area > .widget-area, .sidebar .footer > .widget-area, .sidebar .content-area > .social-menu, .sidebar .footer > .social-menu, .footer .content-area > .copyright, .footer > .copyright, .footer .content-area > .secondary-menu, .footer > .secondary-menu {
+    .content-area > .width-75, .footer > .width-75, .content-area > .width-100, .footer > .width-100, .site-main .content-area > header, .site-main .footer > header, .content-area > .breadcrumbs, .footer > .breadcrumbs, .content-area > .masonry-grid, .footer > .masonry-grid, .content-area > .pec-thumbnail, .footer > .pec-thumbnail, .content-area > .sidebar, .footer > .sidebar, .sidebar .content-area > .widget-area, .sidebar .footer > .widget-area, .sidebar .content-area > .social-menu, .sidebar .footer > .social-menu, .footer .content-area > .copyright, .footer > .copyright, .footer .content-area > .secondary-menu, .footer > .secondary-menu, .comment-form .content-area > .logged-in-as, .comment-form .footer > .logged-in-as, .comment-form .content-area > .comment-form-comment, .comment-form .footer > .comment-form-comment, .comment-form .content-area > .form-submit, .comment-form .footer > .form-submit, .comment-body .content-area > .comment-meta, .comment-body .footer > .comment-meta, .comment-body .content-area > .comment-content, .comment-body .footer > .comment-content, .comment-body .content-area > .reply, .comment-body .footer > .reply {
       width: 100%; }
   /* line 117, C:/wamp/www/pec/src/assets/css/scss/mdl/_grid.scss */
-  .sidebar {
+  .sidebar,
+  .comment-body .comment-meta {
     width: calc(75% - 16px); }
     /* line 73, C:/wamp/www/pec/src/assets/css/scss/mdl/_grid.scss */
     .content-area > .sidebar,
-    .footer > .sidebar {
+    .footer > .sidebar,
+    .comment-body .content-area > .comment-meta, .comment-body .footer > .comment-meta {
       width: 75%; }
   /* line 124, C:/wamp/www/pec/src/assets/css/scss/mdl/_grid.scss */
-  .pec-thumbnail {
+  .pec-thumbnail,
+  .comment-form .form-submit {
     width: calc(100% - 16px); }
     /* line 73, C:/wamp/www/pec/src/assets/css/scss/mdl/_grid.scss */
     .content-area > .pec-thumbnail,
-    .footer > .pec-thumbnail {
+    .footer > .pec-thumbnail,
+    .comment-form .content-area > .form-submit, .comment-form .footer > .form-submit {
       width: 100%; }
   /* line 124, C:/wamp/www/pec/src/assets/css/scss/mdl/_grid.scss */
-  .width-75 {
+  .comment-form .comment-form-comment {
+    width: calc(100% - 16px); }
+    /* line 73, C:/wamp/www/pec/src/assets/css/scss/mdl/_grid.scss */
+    .comment-form .content-area > .comment-form-comment, .comment-form .footer > .comment-form-comment {
+      width: 100%; }
+  /* line 124, C:/wamp/www/pec/src/assets/css/scss/mdl/_grid.scss */
+  .width-75,
+  .comment-body .comment-content {
     width: calc(100% - 16px); }
     /* line 73, C:/wamp/www/pec/src/assets/css/scss/mdl/_grid.scss */
     .content-area > .width-75,
-    .footer > .width-75 {
+    .footer > .width-75,
+    .comment-body .content-area > .comment-content, .comment-body .footer > .comment-content {
       width: 100%; }
   /* line 124, C:/wamp/www/pec/src/assets/css/scss/mdl/_grid.scss */
   .width-100 {
@@ -677,6 +689,7 @@ textarea {
   .masonry-grid,
   .sidebar .widget-area,
   .sidebar .social-menu,
+  .comment-form .logged-in-as,
   .width-75, .width-100, .pec-thumbnail, .sidebar {
     width: calc(100% - 16px); }
     /* line 73, C:/wamp/www/pec/src/assets/css/scss/mdl/_grid.scss */
@@ -684,40 +697,58 @@ textarea {
     .footer > .breadcrumbs,
     .content-area > .masonry-grid,
     .footer > .masonry-grid,
-    .sidebar .content-area > .widget-area, .sidebar .footer > .widget-area, .sidebar .content-area > .social-menu, .sidebar .footer > .social-menu, .content-area > .width-75, .footer > .width-75, .content-area > .width-100, .footer > .width-100, .content-area > .pec-thumbnail, .footer > .pec-thumbnail, .content-area > .sidebar, .footer > .sidebar {
-      width: 100%; } }
+    .sidebar .content-area > .widget-area, .sidebar .footer > .widget-area, .sidebar .content-area > .social-menu, .sidebar .footer > .social-menu, .comment-form .content-area > .logged-in-as, .comment-form .footer > .logged-in-as, .content-area > .width-75, .footer > .width-75, .content-area > .width-100, .footer > .width-100, .content-area > .pec-thumbnail, .footer > .pec-thumbnail, .content-area > .sidebar, .footer > .sidebar {
+      width: 100%; }
+  /* line 131, C:/wamp/www/pec/src/assets/css/scss/mdl/_grid.scss */
+  .comment-body .reply {
+    margin-left: calc(75% + 8px); }
+    /* line 85, C:/wamp/www/pec/src/assets/css/scss/mdl/_grid.scss */
+    .comment-body .content-area > .reply, .comment-body .footer > .reply, .comment-body.content-area > .reply, .comment-body.footer > .reply {
+      margin-left: 75%; } }
 
 @media (min-width: 480px) and (max-width: 839px) {
   /* line 142, C:/wamp/www/pec/src/assets/css/scss/mdl/_grid.scss */
-  .content-area, .site-main, .masonry-grid, .sidebar, .footer {
+  .content-area, .site-main, .masonry-grid, .sidebar, .footer, .comment-form, .comment-body {
     padding: 8px; }
   /* line 146, C:/wamp/www/pec/src/assets/css/scss/mdl/_grid.scss */
-  .width-75, .width-100, .site-main header, .breadcrumbs, .masonry-grid, .pec-thumbnail, .sidebar, .sidebar .widget-area, .sidebar .social-menu, .footer .copyright, .footer .secondary-menu {
+  .width-75, .width-100, .site-main header, .breadcrumbs, .masonry-grid, .pec-thumbnail, .sidebar, .sidebar .widget-area, .sidebar .social-menu, .footer .copyright, .footer .secondary-menu, .comment-form .logged-in-as, .comment-form .comment-form-comment, .comment-form .form-submit, .comment-body .comment-meta, .comment-body .comment-content, .comment-body .reply {
     margin: 8px;
     width: calc(50% - 16px); }
     /* line 73, C:/wamp/www/pec/src/assets/css/scss/mdl/_grid.scss */
-    .content-area > .width-75, .footer > .width-75, .content-area > .width-100, .footer > .width-100, .site-main .content-area > header, .site-main .footer > header, .content-area > .breadcrumbs, .footer > .breadcrumbs, .content-area > .masonry-grid, .footer > .masonry-grid, .content-area > .pec-thumbnail, .footer > .pec-thumbnail, .content-area > .sidebar, .footer > .sidebar, .sidebar .content-area > .widget-area, .sidebar .footer > .widget-area, .sidebar .content-area > .social-menu, .sidebar .footer > .social-menu, .footer .content-area > .copyright, .footer > .copyright, .footer .content-area > .secondary-menu, .footer > .secondary-menu {
+    .content-area > .width-75, .footer > .width-75, .content-area > .width-100, .footer > .width-100, .site-main .content-area > header, .site-main .footer > header, .content-area > .breadcrumbs, .footer > .breadcrumbs, .content-area > .masonry-grid, .footer > .masonry-grid, .content-area > .pec-thumbnail, .footer > .pec-thumbnail, .content-area > .sidebar, .footer > .sidebar, .sidebar .content-area > .widget-area, .sidebar .footer > .widget-area, .sidebar .content-area > .social-menu, .sidebar .footer > .social-menu, .footer .content-area > .copyright, .footer > .copyright, .footer .content-area > .secondary-menu, .footer > .secondary-menu, .comment-form .content-area > .logged-in-as, .comment-form .footer > .logged-in-as, .comment-form .content-area > .comment-form-comment, .comment-form .footer > .comment-form-comment, .comment-form .content-area > .form-submit, .comment-form .footer > .form-submit, .comment-body .content-area > .comment-meta, .comment-body .footer > .comment-meta, .comment-body .content-area > .comment-content, .comment-body .footer > .comment-content, .comment-body .content-area > .reply, .comment-body .footer > .reply {
       width: 50%; }
   /* line 164, C:/wamp/www/pec/src/assets/css/scss/mdl/_grid.scss */
-  .sidebar {
+  .sidebar,
+  .comment-body .comment-meta {
     width: calc(37.5% - 16px); }
     /* line 73, C:/wamp/www/pec/src/assets/css/scss/mdl/_grid.scss */
     .content-area > .sidebar,
-    .footer > .sidebar {
+    .footer > .sidebar,
+    .comment-body .content-area > .comment-meta, .comment-body .footer > .comment-meta {
       width: 37.5%; }
   /* line 164, C:/wamp/www/pec/src/assets/css/scss/mdl/_grid.scss */
-  .pec-thumbnail {
+  .pec-thumbnail,
+  .comment-form .form-submit {
     width: calc(50% - 16px); }
     /* line 73, C:/wamp/www/pec/src/assets/css/scss/mdl/_grid.scss */
     .content-area > .pec-thumbnail,
-    .footer > .pec-thumbnail {
+    .footer > .pec-thumbnail,
+    .comment-form .content-area > .form-submit, .comment-form .footer > .form-submit {
       width: 50%; }
   /* line 171, C:/wamp/www/pec/src/assets/css/scss/mdl/_grid.scss */
-  .width-75 {
+  .comment-form .comment-form-comment {
+    width: calc(100% - 16px); }
+    /* line 73, C:/wamp/www/pec/src/assets/css/scss/mdl/_grid.scss */
+    .comment-form .content-area > .comment-form-comment, .comment-form .footer > .comment-form-comment {
+      width: 100%; }
+  /* line 171, C:/wamp/www/pec/src/assets/css/scss/mdl/_grid.scss */
+  .width-75,
+  .comment-body .comment-content {
     width: calc(100% - 16px); }
     /* line 73, C:/wamp/www/pec/src/assets/css/scss/mdl/_grid.scss */
     .content-area > .width-75,
-    .footer > .width-75 {
+    .footer > .width-75,
+    .comment-body .content-area > .comment-content, .comment-body .footer > .comment-content {
       width: 100%; }
   /* line 171, C:/wamp/www/pec/src/assets/css/scss/mdl/_grid.scss */
   .width-100 {
@@ -731,47 +762,66 @@ textarea {
   .breadcrumbs,
   .masonry-grid,
   .sidebar .widget-area,
-  .sidebar .social-menu {
+  .sidebar .social-menu,
+  .comment-form .logged-in-as {
     width: calc(100% - 16px); }
     /* line 73, C:/wamp/www/pec/src/assets/css/scss/mdl/_grid.scss */
     .site-main .content-area > header, .site-main .footer > header, .content-area > .breadcrumbs,
     .footer > .breadcrumbs,
     .content-area > .masonry-grid,
     .footer > .masonry-grid,
-    .sidebar .content-area > .widget-area, .sidebar .footer > .widget-area, .sidebar .content-area > .social-menu, .sidebar .footer > .social-menu {
-      width: 100%; } }
+    .sidebar .content-area > .widget-area, .sidebar .footer > .widget-area, .sidebar .content-area > .social-menu, .sidebar .footer > .social-menu, .comment-form .content-area > .logged-in-as, .comment-form .footer > .logged-in-as {
+      width: 100%; }
+  /* line 178, C:/wamp/www/pec/src/assets/css/scss/mdl/_grid.scss */
+  .comment-body .reply {
+    margin-left: calc(37.5% + 8px); }
+    /* line 85, C:/wamp/www/pec/src/assets/css/scss/mdl/_grid.scss */
+    .comment-body .content-area > .reply, .comment-body .footer > .reply, .comment-body.content-area > .reply, .comment-body.footer > .reply {
+      margin-left: 37.5%; } }
 
 @media (min-width: 840px) {
   /* line 189, C:/wamp/www/pec/src/assets/css/scss/mdl/_grid.scss */
-  .content-area, .site-main, .masonry-grid, .sidebar, .footer {
+  .content-area, .site-main, .masonry-grid, .sidebar, .footer, .comment-form, .comment-body {
     padding: 8px; }
   /* line 193, C:/wamp/www/pec/src/assets/css/scss/mdl/_grid.scss */
-  .width-75, .width-100, .site-main header, .breadcrumbs, .masonry-grid, .pec-thumbnail, .sidebar, .sidebar .widget-area, .sidebar .social-menu, .footer .copyright, .footer .secondary-menu {
+  .width-75, .width-100, .site-main header, .breadcrumbs, .masonry-grid, .pec-thumbnail, .sidebar, .sidebar .widget-area, .sidebar .social-menu, .footer .copyright, .footer .secondary-menu, .comment-form .logged-in-as, .comment-form .comment-form-comment, .comment-form .form-submit, .comment-body .comment-meta, .comment-body .comment-content, .comment-body .reply {
     margin: 8px;
     width: calc(33.33333% - 16px); }
     /* line 73, C:/wamp/www/pec/src/assets/css/scss/mdl/_grid.scss */
-    .content-area > .width-75, .footer > .width-75, .content-area > .width-100, .footer > .width-100, .site-main .content-area > header, .site-main .footer > header, .content-area > .breadcrumbs, .footer > .breadcrumbs, .content-area > .masonry-grid, .footer > .masonry-grid, .content-area > .pec-thumbnail, .footer > .pec-thumbnail, .content-area > .sidebar, .footer > .sidebar, .sidebar .content-area > .widget-area, .sidebar .footer > .widget-area, .sidebar .content-area > .social-menu, .sidebar .footer > .social-menu, .footer .content-area > .copyright, .footer > .copyright, .footer .content-area > .secondary-menu, .footer > .secondary-menu {
+    .content-area > .width-75, .footer > .width-75, .content-area > .width-100, .footer > .width-100, .site-main .content-area > header, .site-main .footer > header, .content-area > .breadcrumbs, .footer > .breadcrumbs, .content-area > .masonry-grid, .footer > .masonry-grid, .content-area > .pec-thumbnail, .footer > .pec-thumbnail, .content-area > .sidebar, .footer > .sidebar, .sidebar .content-area > .widget-area, .sidebar .footer > .widget-area, .sidebar .content-area > .social-menu, .sidebar .footer > .social-menu, .footer .content-area > .copyright, .footer > .copyright, .footer .content-area > .secondary-menu, .footer > .secondary-menu, .comment-form .content-area > .logged-in-as, .comment-form .footer > .logged-in-as, .comment-form .content-area > .comment-form-comment, .comment-form .footer > .comment-form-comment, .comment-form .content-area > .form-submit, .comment-form .footer > .form-submit, .comment-body .content-area > .comment-meta, .comment-body .footer > .comment-meta, .comment-body .content-area > .comment-content, .comment-body .footer > .comment-content, .comment-body .content-area > .reply, .comment-body .footer > .reply {
       width: 33.33333%; }
   /* line 211, C:/wamp/www/pec/src/assets/css/scss/mdl/_grid.scss */
-  .sidebar {
+  .sidebar,
+  .comment-body .comment-meta {
     width: calc(25% - 16px); }
     /* line 73, C:/wamp/www/pec/src/assets/css/scss/mdl/_grid.scss */
     .content-area > .sidebar,
-    .footer > .sidebar {
+    .footer > .sidebar,
+    .comment-body .content-area > .comment-meta, .comment-body .footer > .comment-meta {
       width: 25%; }
   /* line 211, C:/wamp/www/pec/src/assets/css/scss/mdl/_grid.scss */
-  .pec-thumbnail {
+  .pec-thumbnail,
+  .comment-form .form-submit {
     width: calc(33.33333% - 16px); }
     /* line 73, C:/wamp/www/pec/src/assets/css/scss/mdl/_grid.scss */
     .content-area > .pec-thumbnail,
-    .footer > .pec-thumbnail {
+    .footer > .pec-thumbnail,
+    .comment-form .content-area > .form-submit, .comment-form .footer > .form-submit {
       width: 33.33333%; }
   /* line 211, C:/wamp/www/pec/src/assets/css/scss/mdl/_grid.scss */
-  .width-75 {
+  .comment-form .comment-form-comment {
+    width: calc(66.66667% - 16px); }
+    /* line 73, C:/wamp/www/pec/src/assets/css/scss/mdl/_grid.scss */
+    .comment-form .content-area > .comment-form-comment, .comment-form .footer > .comment-form-comment {
+      width: 66.66667%; }
+  /* line 211, C:/wamp/www/pec/src/assets/css/scss/mdl/_grid.scss */
+  .width-75,
+  .comment-body .comment-content {
     width: calc(75% - 16px); }
     /* line 73, C:/wamp/www/pec/src/assets/css/scss/mdl/_grid.scss */
     .content-area > .width-75,
-    .footer > .width-75 {
+    .footer > .width-75,
+    .comment-body .content-area > .comment-content, .comment-body .footer > .comment-content {
       width: 75%; }
   /* line 211, C:/wamp/www/pec/src/assets/css/scss/mdl/_grid.scss */
   .width-100 {
@@ -785,15 +835,22 @@ textarea {
   .breadcrumbs,
   .masonry-grid,
   .sidebar .widget-area,
-  .sidebar .social-menu {
+  .sidebar .social-menu,
+  .comment-form .logged-in-as {
     width: calc(100% - 16px); }
     /* line 73, C:/wamp/www/pec/src/assets/css/scss/mdl/_grid.scss */
     .site-main .content-area > header, .site-main .footer > header, .content-area > .breadcrumbs,
     .footer > .breadcrumbs,
     .content-area > .masonry-grid,
     .footer > .masonry-grid,
-    .sidebar .content-area > .widget-area, .sidebar .footer > .widget-area, .sidebar .content-area > .social-menu, .sidebar .footer > .social-menu {
-      width: 100%; } }
+    .sidebar .content-area > .widget-area, .sidebar .footer > .widget-area, .sidebar .content-area > .social-menu, .sidebar .footer > .social-menu, .comment-form .content-area > .logged-in-as, .comment-form .footer > .logged-in-as {
+      width: 100%; }
+  /* line 218, C:/wamp/www/pec/src/assets/css/scss/mdl/_grid.scss */
+  .comment-body .reply {
+    margin-left: calc(25% + 8px); }
+    /* line 85, C:/wamp/www/pec/src/assets/css/scss/mdl/_grid.scss */
+    .comment-body .content-area > .reply, .comment-body .footer > .reply, .comment-body.content-area > .reply, .comment-body.footer > .reply {
+      margin-left: 25%; } }
 
 /**
  * Copyright 2015 Google Inc. All Rights Reserved.
@@ -961,7 +1018,10 @@ textarea {
 /* Animations */
 /* Dialog */
 /* line 20, C:/wamp/www/pec/src/assets/css/scss/mdl/_button.scss */
-.search-form .search-submit {
+.mdl-button, .comment-reply-link,
+.tribe-events-widget-link a, .post-edit-link,
+.comment-edit-link,
+#cancel-comment-reply-link, .search-form .search-submit {
   background: transparent;
   border: none;
   border-radius: 2px;
@@ -987,31 +1047,59 @@ textarea {
   line-height: 36px;
   vertical-align: middle; }
   /* line 41, C:/wamp/www/pec/src/assets/css/scss/mdl/_button.scss */
-  .search-form .search-submit::-moz-focus-inner {
+  .mdl-button::-moz-focus-inner, .comment-reply-link::-moz-focus-inner,
+  .tribe-events-widget-link a::-moz-focus-inner, .post-edit-link::-moz-focus-inner,
+  .comment-edit-link::-moz-focus-inner,
+  #cancel-comment-reply-link::-moz-focus-inner, .search-form .search-submit::-moz-focus-inner {
     border: 0; }
 
 /* line 63, C:/wamp/www/pec/src/assets/css/scss/mdl/_button.scss */
-.search-form input[type="submit"].search-submit {
+input[type="submit"].mdl-button, input[type="submit"].comment-reply-link,
+input[type="submit"].post-edit-link,
+input[type="submit"].comment-edit-link,
+input[type="submit"]#cancel-comment-reply-link, .search-form input[type="submit"].search-submit {
   -webkit-appearance: none; }
 
 /* line 68, C:/wamp/www/pec/src/assets/css/scss/mdl/_button.scss */
-.search-form .search-submit {
+.mdl-button--raised, .comment-reply-link,
+.tribe-events-widget-link a, .post-edit-link,
+.comment-edit-link,
+#cancel-comment-reply-link, .form-submit input, .search-form .search-submit {
   background: rgba(158,158,158, 0.20);
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12); }
   /* line 71, C:/wamp/www/pec/src/assets/css/scss/mdl/_button.scss */
-  .search-form .search-submit:active {
+  .mdl-button--raised:active, .comment-reply-link:active,
+  .tribe-events-widget-link a:active, .post-edit-link:active,
+  .comment-edit-link:active,
+  #cancel-comment-reply-link:active, .form-submit input:active, .search-form .search-submit:active {
     box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.2); }
   /* line 75, C:/wamp/www/pec/src/assets/css/scss/mdl/_button.scss */
-  .search-form .search-submit:focus:not(:active) {
+  .mdl-button--raised:focus:not(:active), .comment-reply-link:focus:not(:active),
+  .tribe-events-widget-link a:focus:not(:active), .post-edit-link:focus:not(:active),
+  .comment-edit-link:focus:not(:active),
+  #cancel-comment-reply-link:focus:not(:active), .form-submit input:focus:not(:active), .search-form .search-submit:focus:not(:active) {
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.18), 0 8px 16px rgba(0, 0, 0, 0.36); }
 
 /* line 237, C:/wamp/www/pec/src/assets/css/scss/mdl/_button.scss */
+[disabled][disabled].mdl-button,
+[disabled][disabled].comment-reply-link,
+.tribe-events-widget-link a[disabled][disabled],
+[disabled][disabled].post-edit-link,
+[disabled][disabled].comment-edit-link,
+[disabled][disabled]#cancel-comment-reply-link,
 .search-form [disabled][disabled].search-submit {
   color: rgba(0,0,0, 0.26);
   cursor: default;
   background-color: transparent; }
 
 /* line 253, C:/wamp/www/pec/src/assets/css/scss/mdl/_button.scss */
+[disabled][disabled].mdl-button--raised,
+[disabled][disabled].comment-reply-link,
+.tribe-events-widget-link a[disabled][disabled],
+[disabled][disabled].post-edit-link,
+[disabled][disabled].comment-edit-link,
+[disabled][disabled]#cancel-comment-reply-link,
+.form-submit input[disabled][disabled],
 .search-form [disabled][disabled].search-submit {
   background-color: rgba(0,0,0, 0.12);
   color: rgba(0,0,0, 0.26);
@@ -1183,7 +1271,7 @@ textarea {
 /* Animations */
 /* Dialog */
 /* line 20, C:/wamp/www/pec/src/assets/css/scss/mdl/_textfield.scss */
-.search-form {
+.mdl-textfield, .search-form {
   position: relative;
   font-size: 16px;
   display: inline-block;
@@ -1193,12 +1281,26 @@ textarea {
   margin: 0;
   padding: 20px 0; }
   /* line 30, C:/wamp/www/pec/src/assets/css/scss/mdl/_textfield.scss */
-  .search-form .search-submit {
+  .mdl-textfield .mdl-button, .search-form .mdl-button {
     position: absolute;
     bottom: 20px; }
 
+/* line 37, C:/wamp/www/pec/src/assets/css/scss/mdl/_textfield.scss */
+.mdl-textfield--align-right {
+  text-align: right; }
+
+/* line 42, C:/wamp/www/pec/src/assets/css/scss/mdl/_textfield.scss */
+.mdl-textfield--full-width {
+  width: 100%; }
+
+/* line 47, C:/wamp/www/pec/src/assets/css/scss/mdl/_textfield.scss */
+.mdl-textfield--expandable {
+  min-width: 32px;
+  width: auto;
+  min-height: 32px; }
+
 /* line 54, C:/wamp/www/pec/src/assets/css/scss/mdl/_textfield.scss */
-.search-form input[type=search] {
+.mdl-textfield__input, .search-form input[type=search] {
   border: none;
   border-bottom: 1px solid rgba(0,0,0, 0.12);
   display: block;
@@ -1211,18 +1313,133 @@ textarea {
   text-align: left;
   color: inherit; }
   /* line 66, C:/wamp/www/pec/src/assets/css/scss/mdl/_textfield.scss */
-  .search-form input[type='number'][type=search] {
+  .mdl-textfield__input[type='number'], .search-form input[type='number'][type=search] {
     -moz-appearance: textfield; }
   /* line 70, C:/wamp/www/pec/src/assets/css/scss/mdl/_textfield.scss */
+  .mdl-textfield__input[type='number']::-webkit-inner-spin-button,
   .search-form input[type='number'][type=search]::-webkit-inner-spin-button,
-  .search-form input[type='number'][type=search]::-webkit-outer-spin-button {
+  .mdl-textfield__input[type='number']::-webkit-outer-spin-button, .search-form input[type='number'][type=search]::-webkit-outer-spin-button {
     -webkit-appearance: none;
     margin: 0; }
+  /* line 74, C:/wamp/www/pec/src/assets/css/scss/mdl/_textfield.scss */
+  .mdl-textfield.is-focused .mdl-textfield__input, .is-focused.search-form .mdl-textfield__input, .mdl-textfield.is-focused .search-form input[type=search], .search-form .mdl-textfield.is-focused input[type=search], .is-focused.search-form input[type=search] {
+    outline: none; }
+  /* line 77, C:/wamp/www/pec/src/assets/css/scss/mdl/_textfield.scss */
+  .mdl-textfield.is-invalid .mdl-textfield__input, .is-invalid.search-form .mdl-textfield__input, .mdl-textfield.is-invalid .search-form input[type=search], .search-form .mdl-textfield.is-invalid input[type=search], .is-invalid.search-form input[type=search] {
+    border-color: rgb(213,0,0);
+    box-shadow: none; }
   /* line 82, C:/wamp/www/pec/src/assets/css/scss/mdl/_textfield.scss */
-  fieldset[disabled] .search-form input[type=search] {
+  fieldset[disabled] .mdl-textfield .mdl-textfield__input,
+  fieldset[disabled] .search-form .mdl-textfield__input,
+  .search-form fieldset[disabled] .mdl-textfield input[type=search], fieldset[disabled] .search-form input[type=search],
+  .mdl-textfield.is-disabled .mdl-textfield__input, .is-disabled.search-form .mdl-textfield__input, .mdl-textfield.is-disabled .search-form input[type=search], .search-form .mdl-textfield.is-disabled input[type=search], .is-disabled.search-form input[type=search] {
     background-color: transparent;
     border-bottom: 1px dotted rgba(0,0,0, 0.12);
     color: rgba(0,0,0, 0.26); }
+
+/* line 89, C:/wamp/www/pec/src/assets/css/scss/mdl/_textfield.scss */
+.mdl-textfield textarea.mdl-textfield__input, .search-form textarea.mdl-textfield__input {
+  display: block; }
+
+/* line 94, C:/wamp/www/pec/src/assets/css/scss/mdl/_textfield.scss */
+.mdl-textfield__label {
+  bottom: 0;
+  color: rgba(0,0,0, 0.26);
+  font-size: 16px;
+  left: 0;
+  right: 0;
+  pointer-events: none;
+  position: absolute;
+  display: block;
+  top: 24px;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-align: left; }
+  /* line 109, C:/wamp/www/pec/src/assets/css/scss/mdl/_textfield.scss */
+  .mdl-textfield.is-dirty .mdl-textfield__label,
+  .is-dirty.search-form .mdl-textfield__label,
+  .mdl-textfield.has-placeholder .mdl-textfield__label, .has-placeholder.search-form .mdl-textfield__label {
+    visibility: hidden; }
+  /* line 113, C:/wamp/www/pec/src/assets/css/scss/mdl/_textfield.scss */
+  .mdl-textfield--floating-label .mdl-textfield__label {
+    transition-duration: 0.2s;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); }
+  /* line 116, C:/wamp/www/pec/src/assets/css/scss/mdl/_textfield.scss */
+  .mdl-textfield--floating-label.has-placeholder .mdl-textfield__label {
+    transition: none; }
+  /* line 120, C:/wamp/www/pec/src/assets/css/scss/mdl/_textfield.scss */
+  fieldset[disabled] .mdl-textfield .mdl-textfield__label,
+  fieldset[disabled] .search-form .mdl-textfield__label,
+  .mdl-textfield.is-disabled.is-disabled .mdl-textfield__label, .is-disabled.is-disabled.search-form .mdl-textfield__label {
+    color: rgba(0,0,0, 0.26); }
+  /* line 125, C:/wamp/www/pec/src/assets/css/scss/mdl/_textfield.scss */
+  .mdl-textfield--floating-label.is-focused .mdl-textfield__label,
+  .mdl-textfield--floating-label.is-dirty .mdl-textfield__label,
+  .mdl-textfield--floating-label.has-placeholder .mdl-textfield__label {
+    color: rgb(63,81,181);
+    font-size: 12px;
+    top: 4px;
+    visibility: visible; }
+  /* line 133, C:/wamp/www/pec/src/assets/css/scss/mdl/_textfield.scss */
+  .mdl-textfield--floating-label.is-focused .mdl-textfield__expandable-holder .mdl-textfield__label,
+  .mdl-textfield--floating-label.is-dirty .mdl-textfield__expandable-holder .mdl-textfield__label,
+  .mdl-textfield--floating-label.has-placeholder .mdl-textfield__expandable-holder .mdl-textfield__label {
+    top: -16px; }
+  /* line 136, C:/wamp/www/pec/src/assets/css/scss/mdl/_textfield.scss */
+  .mdl-textfield--floating-label.is-invalid .mdl-textfield__label {
+    color: rgb(213,0,0);
+    font-size: 12px; }
+  /* line 141, C:/wamp/www/pec/src/assets/css/scss/mdl/_textfield.scss */
+  .mdl-textfield__label:after {
+    background-color: rgb(63,81,181);
+    bottom: 20px;
+    content: '';
+    height: 2px;
+    left: 45%;
+    position: absolute;
+    transition-duration: 0.2s;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    visibility: hidden;
+    width: 10px; }
+  /* line 152, C:/wamp/www/pec/src/assets/css/scss/mdl/_textfield.scss */
+  .mdl-textfield.is-focused .mdl-textfield__label:after, .is-focused.search-form .mdl-textfield__label:after {
+    left: 0;
+    visibility: visible;
+    width: 100%; }
+  /* line 157, C:/wamp/www/pec/src/assets/css/scss/mdl/_textfield.scss */
+  .mdl-textfield.is-invalid .mdl-textfield__label:after, .is-invalid.search-form .mdl-textfield__label:after {
+    background-color: rgb(213,0,0); }
+
+/* line 163, C:/wamp/www/pec/src/assets/css/scss/mdl/_textfield.scss */
+.mdl-textfield__error {
+  color: rgb(213,0,0);
+  position: absolute;
+  font-size: 12px;
+  margin-top: 3px;
+  visibility: hidden;
+  display: block; }
+  /* line 170, C:/wamp/www/pec/src/assets/css/scss/mdl/_textfield.scss */
+  .mdl-textfield.is-invalid .mdl-textfield__error, .is-invalid.search-form .mdl-textfield__error {
+    visibility: visible; }
+
+/* line 176, C:/wamp/www/pec/src/assets/css/scss/mdl/_textfield.scss */
+.mdl-textfield__expandable-holder {
+  display: inline-block;
+  position: relative;
+  margin-left: 32px;
+  transition-duration: 0.2s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  display: inline-block;
+  max-width: 0.1px; }
+  /* line 188, C:/wamp/www/pec/src/assets/css/scss/mdl/_textfield.scss */
+  .mdl-textfield.is-focused .mdl-textfield__expandable-holder,
+  .is-focused.search-form .mdl-textfield__expandable-holder,
+  .mdl-textfield.is-dirty .mdl-textfield__expandable-holder, .is-dirty.search-form .mdl-textfield__expandable-holder {
+    max-width: 600px; }
+  /* line 195, C:/wamp/www/pec/src/assets/css/scss/mdl/_textfield.scss */
+  .mdl-textfield__expandable-holder .mdl-textfield__label:after {
+    bottom: 0; }
 
 /**
  * Copyright 2015 Google Inc. All Rights Reserved.
@@ -2173,6 +2390,45 @@ html {
   .breadcrumbs a {
     color: #308C9A; }
 
+/* ==============================
+    Classes mdl
+   ============================== */
+/* ==============================
+    liens en forme de boutton
+   ============================== */
+/* line 18, C:/wamp/www/pec/src/assets/css/scss/partials/_buttons.scss */
+.comment-reply-link,
+.tribe-events-widget-link a {
+  background: #91C160;
+  color: #fff; }
+  /* line 25, C:/wamp/www/pec/src/assets/css/scss/partials/_buttons.scss */
+  .comment-reply-link:hover,
+  .comment-reply-link:focus,
+  .comment-reply-link:active,
+  .tribe-events-widget-link a:hover,
+  .tribe-events-widget-link a:focus,
+  .tribe-events-widget-link a:active {
+    color: #fff;
+    background: #5e8734; }
+
+/* line 35, C:/wamp/www/pec/src/assets/css/scss/partials/_buttons.scss */
+.post-edit-link,
+.comment-edit-link,
+#cancel-comment-reply-link {
+  color: #4D4D4D; }
+  /* line 41, C:/wamp/www/pec/src/assets/css/scss/partials/_buttons.scss */
+  .post-edit-link:hover,
+  .post-edit-link:focus,
+  .post-edit-link:active,
+  .comment-edit-link:hover,
+  .comment-edit-link:focus,
+  .comment-edit-link:active,
+  #cancel-comment-reply-link:hover,
+  #cancel-comment-reply-link:focus,
+  #cancel-comment-reply-link:active {
+    color: #fff;
+    background: #4D4D4D; }
+
 /* line 1, C:/wamp/www/pec/src/assets/css/scss/partials/_forms.scss */
 * {
   -webkit-appearance: none;
@@ -2180,6 +2436,40 @@ html {
   -ms-appearance: none;
   -o-appearance: none;
   appearance: none; }
+
+/* ==============================
+    Comment Form
+   ============================== */
+/* line 11, C:/wamp/www/pec/src/assets/css/scss/partials/_forms.scss */
+.comment-respond {
+  padding-top: 1.90672em;
+  margin-top: 1.90672em;
+  border-top: solid 1px #cccccc; }
+
+/* line 16, C:/wamp/www/pec/src/assets/css/scss/partials/_forms.scss */
+.comment-form {
+  display: flex; }
+  /* line 28, C:/wamp/www/pec/src/assets/css/scss/partials/_forms.scss */
+  .comment-form .comment-form-comment {
+    position: relative; }
+    /* line 32, C:/wamp/www/pec/src/assets/css/scss/partials/_forms.scss */
+    .comment-form .comment-form-comment textarea {
+      border-color: #FFB71B; }
+  /* line 37, C:/wamp/www/pec/src/assets/css/scss/partials/_forms.scss */
+  .comment-form .form-submit {
+    display: flex;
+    align-items: flex-end; }
+
+/* line 50, C:/wamp/www/pec/src/assets/css/scss/partials/_forms.scss */
+.form-submit input {
+  color: #4D4D4D;
+  background: #FFB71B; }
+  /* line 56, C:/wamp/www/pec/src/assets/css/scss/partials/_forms.scss */
+  .form-submit input:hover,
+  .form-submit input:focus,
+  .form-submit input:active {
+    color: #fff;
+    background: #DA9D39; }
 
 /* line 3, C:/wamp/www/pec/src/assets/css/scss/partials/_navigation.scss */
 .menu ul {
@@ -2464,6 +2754,34 @@ article.pec-thumbnail {
   font-family: "Signika Negative", "Tahoma", "Geneva", sans-serif;
   font-weight: normal;
   font-size: 1.06667em; }
+
+/* line 1, C:/wamp/www/pec/src/assets/css/scss/partials/_comments.scss */
+.comments-area {
+  padding-top: 1.90672em;
+  margin-top: 1.90672em;
+  border-top: solid 1px #cccccc; }
+
+/* line 7, C:/wamp/www/pec/src/assets/css/scss/partials/_comments.scss */
+.comment-body {
+  display: flex; }
+  /* line 11, C:/wamp/www/pec/src/assets/css/scss/partials/_comments.scss */
+  .comment-body .comment-meta {
+    max-width: 25%; }
+  /* line 17, C:/wamp/www/pec/src/assets/css/scss/partials/_comments.scss */
+  .comment-body .comment-author {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; }
+    /* line 21, C:/wamp/www/pec/src/assets/css/scss/partials/_comments.scss */
+    .comment-body .comment-author .fn {
+      padding: 5% 0; }
+    /* line 24, C:/wamp/www/pec/src/assets/css/scss/partials/_comments.scss */
+    .comment-body .comment-author .says {
+      display: none; }
+  /* line 29, C:/wamp/www/pec/src/assets/css/scss/partials/_comments.scss */
+  .comment-body .edit-link {
+    display: block;
+    margin: 5% 0; }
 
 /* line 4, C:/wamp/www/pec/src/assets/css/scss/pages/_single.scss */
 .single-article .post,

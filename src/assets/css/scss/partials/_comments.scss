@@ -1,67 +1,43 @@
-article.comment-body {
-    background-color: peru;
-    @include outer-container(100%);
-    .comment-meta {
-        @include span-columns(4);
-    }
-    .comment-content {
-        @include span-columns(8);
-    }
-    .reply a {
-        @extend .mdl-button;
-        @extend .mdl-button--raised;
-        background-color: palette(jaune);
-        color: palette(gris);
-        &:hover,
-        &:focus,
-        &:active {
-            background-color: palette(jaune, mid-dark);
-            color: palette(gris, light);
-        }
-    }
+.comments-area {
+    padding-top: ms(10);
+    margin-top: ms(10);
+    border-top: solid 1px palette(gris, 20);
 }
 
-.comments-area {
-    .pagination {
-        text-align: center;
-        ul {
-            display: inline;
-            margin: 0;
-            padding: 0;
-            text-align: center;
-            li {
-                display: inline;
-                list-style: none;
-            }
-            ul li {
-                display: none;
-                @include media($medium) {
-                    display: inline;
-                }
-                &:nth-child(1),
-                &:nth-child(2),
-                &:nth-child(3) {
-                    display: inline;
-                }
-            }
-            li a {
-                background: palette(gris, 10);
-                border-radius: 3px;
-                border: solid 1px palette(gris, 10);
-                color: palette(gris);
-                outline: none;
-                padding: ms(-5);
-                text-decoration: none;
-                transition: all 0.2s ease-in-out;
-                &:hover,
-                &:focus {
-                    background: palette(gris, 20);
-                    color: palette(gris, light);
-                }
-                &:active {
-                    background: palette(gris, 10);
-                }
-            }
+.comment-body {
+    @extend %mdl-grid;
+    display: flex;
+
+    .comment-meta {
+        @extend %mdl-cell;
+        @extend %mdl-cell--3-col;
+        max-width: 25%;
+    }
+
+    .comment-author {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        .fn {
+            padding: 5% 0;
         }
+        .says {
+            display: none;
+        }
+    }
+
+    .edit-link {
+        display: block;
+        margin: 5% 0;
+    }
+
+    .comment-content {
+        @extend %mdl-cell;
+        @extend %mdl-cell--9-col;
+    }
+
+    .reply {
+        @extend %mdl-cell;
+        @extend %mdl-cell--3-offset;
     }
 }

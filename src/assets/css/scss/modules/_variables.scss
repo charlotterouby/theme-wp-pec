@@ -42,10 +42,10 @@ $palettes: (
         x-light: lighten(#FFF7E4, 2%)
     ),
     vert: (
-        base: #91C160,
-        mid-light: #BDDAA0,
         dark: darken(#91C160, 50%),
         mid-dark: darken(#91C160, 20%),
+        base: #91C160,
+        mid-light: #BDDAA0,
         light: lighten(#91C160, 35%)
     ),
     gris: (

@@ -14,7 +14,13 @@ $(document).ready(function () {
         $(this).wrap('<div class="container__video"></div>');
     });
 
-
+    /* ==============================
+        Formulaire commentaires
+       ============================== */
+    $('.comment-form-comment').addClass('mdl-textfield mdl-js-textfield');
+    $('.comment-form-comment label').addClass('mdl-textfield__label');
+    $('.comment-form-comment textarea').addClass('mdl-textfield__input');
+    $('.form-submit input').addClass('mdl-button');
 
     /* ==============================
         Footer Copyright Year
