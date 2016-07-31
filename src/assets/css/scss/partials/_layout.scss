@@ -1,4 +1,41 @@
-// Structure Générale
+/* ==============================
+    Classes mdl
+   ============================== */
+.mdl-layout__header {
+    @extend %mdl-layout__header ;
+}
+.mdl-layout__header--scroll {
+    @extend %mdl-layout__header--scroll ;
+}
+.mdl-layout__header-row {
+    @extend %mdl-layout__header-row;
+}
+.mdl-layout-title {
+    @extend %mdl-layout-title;
+}
+.mdl-layout-spacer {
+    @extend %mdl-layout-spacer;
+}
+
+/* ==============================
+    Responsive design
+   ============================== */
+.hide-desktop {
+    @include media($medium) {
+        display: none;
+    }
+}
+
+.hide-mobile {
+    display: none;
+    @include media($medium) {
+        display: block;
+    }
+}
+
+/* ==============================
+    Structure Générale
+   ============================== */
 * {
     box-sizing: border-box;
     padding: 0;
@@ -33,54 +70,80 @@ html {
     }
 }
 
-// Grid Contenus
+/* ==============================
+    Grid
+   ============================== */
 .content-area {
-    @include outer-container(100%);
+    @extend %mdl-grid;
+    @extend %mdl-grid--no-spacing;
+    padding: 0 !important;
     min-height: 80vh;
-    display: flex;
-    align-items: stretch;
+    justify-content: space-between;
 }
 
-.width-66 {
-    @include span-columns(12);
-    display: flex;
+// Zone contenu principal
+// ==============================
+.site-main {
+    @extend %mdl-grid;
+}
+.width-75 {
+    @extend %mdl-cell;
+    @extend %mdl-cell--9-col;
+    @extend %mdl-cell--12-col-phone;
+    max-width: 100%;
     @include media($medium) {
-        @include span-columns(9);
-        display: flex;
+        max-width: 75%;
     }
 }
 
 .width-100 {
-    @include span-columns(12);
+    @extend %mdl-cell;
+    @extend %mdl-cell--10-col;
+    @extend %mdl-cell--12-col-phone;
+    max-width: 100%;
+    margin: auto;
+    @include media($medium) {
+        max-width: (100%/12)*10;
+    }
+}
+// Header .title-page
+// ==============================
+.site-main header {
+    @extend %mdl-cell;
+    @extend %mdl-cell--12-col;
+}
+// Breadcrumbs
+// ==============================
+.breadcrumbs {
+    @extend %mdl-cell;
+    @extend %mdl-cell--12-col;
 }
 
-// Responsive design
-.hide-desktop {
-    @include media($large) {
-        display: none;
+// Post Cards
+// ==============================
+.pec-thumbnail {
+    @extend %mdl-cell;
+    @extend %mdl-cell--4-col;
+    @extend %mdl-cell--12-col-phone;
+    @include media($medium){
+        max-width: 30%;
+    }
+}
+// Zone sidebar
+// ==============================
+.sidebar {
+    @extend %mdl-grid;
+    @extend %mdl-cell;
+    @extend %mdl-cell--3-col;
+    @extend %mdl-cell--12-col-phone;
+    max-width: 100%;
+    @include media($medium){
+        max-width: 25%;
+    }
+
+    .widget-area, .social-menu {
+        @extend %mdl-cell;
+        @extend %mdl-cell--12-col;
     }
 }
 
-.hide-mobile {
-    display: none;
-    @include media($large) {
-        display: inherit;
-    }
-}
-
-// Classes mdl
-.mdl-layout__header {
-    @extend %mdl-layout__header ;
-}
-.mdl-layout__header--scroll {
-    @extend %mdl-layout__header--scroll ;
-}
-.mdl-layout__header-row {
-    @extend %mdl-layout__header-row;
-}
-.mdl-layout-title {
-    @extend %mdl-layout-title;
-}
-.mdl-layout-spacer {
-    @extend %mdl-layout-spacer;
-}

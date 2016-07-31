@@ -17,15 +17,14 @@
 get_header(); ?>
 
     <div id="primary" class="content-area">
-        <main id="main" class="site-main width-66" role="main">
+        <main id="main" class="site-main width-75" role="main">
             <!-- Yoast SEO -->
-            <div class="breadcrumbs width-100">
-                <?php
+            <?php
                 if ( function_exists('yoast_breadcrumb') ) {
-                    yoast_breadcrumb('<p id="breadcrumbs">','</p>');
+                    yoast_breadcrumb('<p id="breadcrumbs" class="breadcrumbs">','</p>');
                 }
-                ?>
-            </div>
+            ?>
+            <!-- Content -->
             <?php if ( have_posts() ) : ?>
 
                 <?php if ( is_home() && ! is_front_page() ) : ?>
@@ -34,9 +33,7 @@ get_header(); ?>
                     </header>
                 <?php endif; ?>
                 <!--END HEADER -->
-
-<!--                <div class="grid-masonry">-->
-                    <?php
+                <?php
                     // Start the loop.
                     while ( have_posts() ) : the_post();
 
@@ -49,8 +46,7 @@ get_header(); ?>
 
                     // End the loop.
                     endwhile; ?>
-<!--                </div>-->
-                <!-- END .grid-masonry -->
+
             <?php
                 // If no content, include the "No posts found" template.
                 else :

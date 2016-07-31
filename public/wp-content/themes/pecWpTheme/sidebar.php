@@ -8,16 +8,18 @@
  */
 
 if ( has_nav_menu( 'social' ) || is_active_sidebar( 'sidebar-1' )  ) : ?>
-        <?php if ( is_active_sidebar( 'sidebar-1' ) ) : ?>
-            <div id="widget-area" class="widget-area" role="complementary">
-                <?php dynamic_sidebar( 'sidebar-1' ); ?>
-            </div><!-- .widget-area -->
-        <?php endif; ?>
+    <?php if ( is_active_sidebar( 'sidebar-1' ) ) : ?>
+        <div id="widget-area" class="widget-area" role="complementary">
+            <?php dynamic_sidebar( 'sidebar-1' ); ?>
+        </div>
+        <!-- .widget-area -->
+    <?php endif; ?>
 
-        <?php if ( has_nav_menu( 'social' ) ) : ?>
-           <h5>Retrouvez-nous sur</h5>
-            <nav id="social-navigation" class="social-navigation" role="navigation">
-                <?php
+    <?php if ( has_nav_menu( 'social' ) ) : ?>
+            <div class="social-menu">
+                <h5>Retrouvez-nous sur</h5>
+                <nav id="social-navigation" class="social-navigation" role="navigation">
+                    <?php
                     // Social links navigation menu.
                     wp_nav_menu( array(
                         'theme_location' => 'social',
@@ -25,10 +27,12 @@ if ( has_nav_menu( 'social' ) || is_active_sidebar( 'sidebar-1' )  ) : ?>
                         'link_before'    => '<span class="screen-reader-text">',
                         'link_after'     => '</span>',
                     ) );
-                ?>
-            </nav><!-- .social-navigation -->
-        <?php endif; ?>
+                    ?>
+                </nav>
+            </div>
+            <!-- .social-navigation -->
+    <?php endif; ?>
 
-<!-- .secondary -->
+    <!-- .secondary -->
 
 <?php endif; ?>

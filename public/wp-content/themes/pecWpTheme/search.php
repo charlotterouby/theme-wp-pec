@@ -10,15 +10,14 @@
 get_header(); ?>
 
     <section id="primary" class="content-area">
-        <main id="main" class="site-main" role="main">
+        <main id="main" class="site-main width-75" role="main">
         <!-- Yoast SEO -->
-        <div class="breadcrumbs width-100">
-            <?php
-                if ( function_exists('yoast_breadcrumb') ) {
-                    yoast_breadcrumb('<p id="breadcrumbs">','</p>');
-                }
-            ?>
-        </div>
+        <?php
+            if ( function_exists('yoast_breadcrumb') ) {
+                yoast_breadcrumb('<p id="breadcrumbs" class="breadcrumbs">','</p>');
+            }
+        ?>
+        <!-- Content -->
         <?php if ( have_posts() ) : ?>
 
             <header class="page-header">

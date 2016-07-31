@@ -12,13 +12,12 @@ get_header(); ?>
     <div id="primary" class="content-area">
         <main id="main" class="site-main" role="main">
         <!-- Yoast SEO -->
-        <div class="breadcrumbs width-100">
             <?php
                 if ( function_exists('yoast_breadcrumb') ) {
-                    yoast_breadcrumb('<p id="breadcrumbs">','</p>');
+                    yoast_breadcrumb('<p id="breadcrumbs" class="breadcrumbs">','</p>');
                 }
             ?>
-        </div>
+            <!-- Content -->
             <?php
                 // Start the loop.
                 while ( have_posts() ) : the_post();

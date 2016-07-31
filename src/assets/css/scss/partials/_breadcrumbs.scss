@@ -1,16 +1,13 @@
 .breadcrumbs {
-    width: 100%;
     padding:{
         top: ms(2);
         bottom: ms(2);
     }
 
-    p {color: palette(jaune, mid-dark);}
-
     a {
-        color: palette(jaune);
+        color: palette(bleu);
         &:hover, &:focus {
-            color: palette(jaune, dark);
+            color: palette(bleu, dark);
         }
     }
 }

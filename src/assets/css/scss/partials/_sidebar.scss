@@ -1,12 +1,8 @@
 .sidebar {
-    @include span-columns(12);
     background-color: palette(jaune, x-light);
-    padding: 2%;
     z-index: 1;
     font-size: ms(2);
-    @include media($medium) {
-        @include span-columns(3);
-    }
+
     h5 {
         color: palette(jaune, mid-dark);
     }

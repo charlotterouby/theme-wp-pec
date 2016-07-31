@@ -10,8 +10,14 @@
 get_header(); ?>
 
     <div id="primary" class="content-area">
-        <main id="main" class="site-main width-66 single-article" role="main">
-
+        <main id="main" class="site-main width-75 single-article" role="main">
+        <!-- Yoast SEO -->
+        <?php
+            if ( function_exists('yoast_breadcrumb') ) {
+                yoast_breadcrumb('<p id="breadcrumbs" class="breadcrumbs">','</p>');
+            }
+        ?>
+        <!-- Content -->
         <?php
         // Start the loop.
         while ( have_posts() ) : the_post();
