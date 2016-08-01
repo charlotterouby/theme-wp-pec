@@ -1,32 +1,4 @@
 /* ==============================
-    Classes mdl
-   ============================== */
-.mdl-layout {
-    @extend %mdl-layout;
-}
-.mdl-layout__header {
-    @extend %mdl-layout__header ;
-}
-.mdl-layout__header--scroll {
-    @extend %mdl-layout__header--scroll ;
-}
-.mdl-layout__header-row {
-    @extend %mdl-layout__header-row;
-}
-.mdl-layout-title {
-    @extend %mdl-layout-title;
-}
-.mdl-layout-spacer {
-    @extend %mdl-layout-spacer;
-}
-.mdl-layout__drawer-button {
-    @extend %mdl-layout__drawer-button;
-}
-.mdl-layout__drawer {
-    @extend %mdl-layout__drawer;
-}
-
-/* ==============================
     Responsive design
    ============================== */
 .hide-desktop {

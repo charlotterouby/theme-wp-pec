@@ -9,7 +9,7 @@
         position: relative;
     }
     a {
-        @extend %mdl-navigation__link;
+        @extend .mdl-navigation__link;
         color: palette(gris, light);
         padding: 0;
     }
@@ -23,8 +23,8 @@
         li:focus,
         li:active {
             background-color: palette(jaune);
-            & > .sub-menu,
-            & >.children {
+            > .sub-menu,
+            >.children {
                 // position
                 position: absolute;
                 z-index: 9999;
@@ -41,9 +41,9 @@
 
 // style menu principal dans header
 .primary-menu .menu {
-    @extend %mdl-navigation;
+    //    @extend .mdl-navigation;
     margin: 0;
-    & > li:last-of-type {
+    > li:last-of-type {
         background-color: palette(jaune);
         color: palette(gris);
         box-shadow: 0 2px 4px palette(gris);
@@ -56,7 +56,7 @@
         li:hover,
         li:focus,
         li:active {
-            & > .sub-menu {
+            > .sub-menu {
                 //position
                 top: 3em;
                 // apparence
@@ -65,14 +65,112 @@
         }
     }
 }
+
 .mdl-layout__header-row .menu a {
     line-height: 3em;
+}
+
+// styles overlay menu
+
+/*styling open close button*/
+
+.button-overlay-menu {
+    display: inline;
+    position: absolute;
+    right: 1em;
+    top: 6px;
+    z-index: 999;
+    font-size: 30px;
+    // overlay caché
+    .icon__menu::after {
+        transition-property: all 0.2s linear 0s;
+    }
+    .icon__menu:hover::after {
+        color: palette(vert);
+    }
+    // overlay ouvert
+    .icon__close::after {
+        transition-property: all 0.2s linear 0s;
+    }
+    .icon__close:hover::after {
+        color: palette(vert);
+    }
+}
+
+
+/*overlay*/
+
+.overlay-menu {
+    // position
+//    display: none;
+    position: fixed;
+    top: 0;
+    z-index: 99;
+    // box model
+    height: 100%;
+    width: 100%;
+    // apparence
+    background: palette(gris);
+    overflow: auto;
+    nav ul {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+.wrap-overlay-nemu {
+    color: palette(gris, light);
+    text-align: center;
+    max-width: 90%;
+    margin: 0 auto;
+    .wrap-nav {
+        border-bottom: 1px solid palette(gris, mid-light);
+        text-transform: capitalize;
+        padding: 3% 0 0;
+        li {
+            // position
+            position: relative;
+            vertical-align: top;
+            // box model
+            display: inline-block;
+            width: 100%;
+            padding: 20px 0;
+            // apparence
+            font-size: 20px;
+            border-bottom: 1px solid palette(gris, mid-light);
+            a {
+                color: palette(vert);
+                display: block;
+                padding: 8px 0;
+                text-decoration: none;
+                transition-property: all 0.2s linear 0s;
+                &:hover {
+                    color: palette(gris, light);
+                }
+            }
+        }
+        ul {
+            padding: 20px 0;
+            li {
+                display: block;
+                font-size: 13px;
+                width: 100%;
+                color: palette(gris, light);
+                a {
+                    color: palette(gris, light);
+                    &:hover {
+                        color: palette(vert);
+                    }
+                }
+            }
+        }
+    }
 }
 
 // styles menu secondaire dans le footer
 .secondary-menu .menu {
     // styles par défaut
-    @extend %mdl-navigation;
+    @extend .mdl-navigation;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;

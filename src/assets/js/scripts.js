@@ -15,6 +15,20 @@ $(document).ready(function () {
     });
 
     /* ==============================
+        Header - Navigation principale
+       ============================== */
+    $('.primary-menu .menu').addClass('mdl-navigation');
+    $('.primary-menu .menu a').addClass('mdl-navigation__link');
+
+    /* ==============================
+        Overlay Menu
+       ============================== */
+    $(".button-overlay-menu i").click(function(){
+        $(".overlay-menu").fadeToggle(200);
+        $(this).toggleClass('icon__menu').toggleClass('icon__close');
+    });
+
+    /* ==============================
         Formulaire commentaires
        ============================== */
     $('.comment-form-comment').addClass('mdl-textfield mdl-js-textfield');

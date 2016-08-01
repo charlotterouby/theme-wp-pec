@@ -66,7 +66,7 @@
     </head>
 
     <body <?php echo body_class(); ?>>
-    <div class='mdl-layout mdl-js-layout'>
+<!--    <div class='mdl-layout'>-->
 <!-- HEADER start -->
 
         <?php
@@ -78,5 +78,5 @@
         ?>
 
 <!-- HEADER end -->
-        <div class="mdl-layout__content">
-            <div class="page-content">
+<!--        <div class="mdl-layout__content">-->
+

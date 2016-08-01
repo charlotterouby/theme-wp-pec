@@ -1,5 +1,4 @@
-            </div>
-        </div>
+<!--        </div>-->
 <?php
 /**
  * The Footer for the theme
@@ -25,6 +24,6 @@
         <?php wp_footer(); ?>
 
 <!-- SCRIPTS end -->
-    </div>
+<!--    </div>-->
     </body>
 </html>

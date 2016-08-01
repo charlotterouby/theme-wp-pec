@@ -14,38 +14,34 @@
                         </a>
                     </div>
                 <?php else: ?>
-                    <h1 class="mdl-layout-title h4"><a href="/"><?php bloginfo('name'); ?></a></h1>
+                        <h1 class="mdl-layout-title h4"><a href="/"><?php bloginfo('name'); ?></a></h1>
                 <?php endif; ?>
+
                 <!-- LOGO / SITE TITLE end -->
 
                 <div class="mdl-layout-spacer"></div>
 
                 <!-- NAVIGATION start -->
-                <?php
-                    $navigationPath = TEMPLATEPATH . '/includes/include-navigation.php';
-
-                    if ( file_exists( $navigationPath ) ) {
-                        include( $navigationPath );
-                    }
-                ?>
+                <nav id="primary-menu" class="primary-menu" role="navigation">
+                    <?php wp_nav_menu( array( 'menu' => 'header' ) ); ?>
+                </nav>
                 <!-- NAVIGATION end -->
             </div>
         </div>
-        <!--header horizontal end-->
-        <!-- Drawer start-->
-        <div class="mdl-layout__drawer" aria-hidden="true">
-            <span class="mdl-layout-title"><?php bloginfo('name'); ?></span>
-            <?php
-                $navigationPath = TEMPLATEPATH . '/includes/include-navigation.php';
-
-                if ( file_exists( $navigationPath ) ) {
-                    include( $navigationPath );
-                }
-            ?>
+        <!-- header horizontal end-->
+        <!-- button overlay -->
+        <div role="button" class="button-overlay-menu hide-desktop">
+            <i class="icon__menu"></i>
         </div>
-        <!-- button drawer -->
-        <div aria-expanded="false" role="button" tabindex="0" class="mdl-layout__drawer-button"><i class="icon__menu"></i></div>
 
-        <!-- Drawer end-->
+        <!-- Overlay menu start-->
+        <div class="overlay-menu hide-desktop">
+           <div class="wrap-overlay-menu">
+            <span class="mdl-layout-title"><?php bloginfo('name'); ?></span>
+            <nav role="navigation">
+                <?php wp_nav_menu( array( 'menu' => 'header', 'menu_class' => 'wrap-nav' ) ); ?>
+            </nav>
+           </div>
+        </div>
+        <!-- Overlay menu end-->
     </header>
-
