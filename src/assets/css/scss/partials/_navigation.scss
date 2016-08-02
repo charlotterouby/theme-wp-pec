@@ -1,4 +1,7 @@
-//styles commun header & footer
+/* ============================================================
+ *   Styles commun header & footer
+ * ============================================================ */
+
 .menu {
     ul {
         margin: 0;
@@ -39,7 +42,11 @@
     }
 }
 
-// style menu principal dans header
+
+/* ============================================================
+ *    HEADER : Version desktop .primary-menu
+ * ============================================================ */
+
 .primary-menu .menu {
     //    @extend .mdl-navigation;
     margin: 0;
@@ -49,6 +56,9 @@
         box-shadow: 0 2px 4px palette(gris);
         line-height: 2em;
         border-radius: 2px;
+        &:hover {
+            background: palette(jaune, mid-dark);
+        }
     }
     // styles tablet & desktop
     @include media($medium) {
@@ -61,6 +71,17 @@
                 top: 3em;
                 // apparence
                 background-color: palette(vert, mid-light);
+                li {
+                    border-bottom: solid 1px palette(gris, 20);
+                }
+                a {
+                    color: palette(gris);
+                }
+                li:hover,
+                li:focus,
+                li:active {
+                    background: palette(jaune);
+                }
             }
         }
     }
@@ -70,104 +91,123 @@
     line-height: 3em;
 }
 
-// styles overlay menu
 
-/*styling open close button*/
+/* ============================================================
+ *   HEADER : Version mobile .overlay-menu
+ * ============================================================ */
 
+// styling open close button
+// ==============================
 .button-overlay-menu {
     display: inline;
     position: absolute;
-    right: 1em;
-    top: 6px;
-    z-index: 999;
-    font-size: 30px;
+    right: 10px;
+    top: 10px;
+    z-index: 19999;
+    font-size: 40px;
+    color: palette(gris, light);
     // overlay caché
-    .icon__menu::after {
-        transition-property: all 0.2s linear 0s;
+    .icon__menu {
+        transition-property: all 0.2s ease-in-out 0s;
     }
-    .icon__menu:hover::after {
-        color: palette(vert);
+    .icon__menu:hover {
+        color: palette(vert, dark);
     }
     // overlay ouvert
-    .icon__close::after {
-        transition-property: all 0.2s linear 0s;
+    .icon__close {
+        transition-property: all 0.2s ease-in-out 0s;
     }
-    .icon__close:hover::after {
+    .icon__close:hover {
         color: palette(vert);
+    }
+    &.is-open ~ .overlay-menu {
+        display: flex;
     }
 }
 
-
-/*overlay*/
-
+// overlay
+// ==============================
 .overlay-menu {
     // position
-//    display: none;
     position: fixed;
     top: 0;
-    z-index: 99;
+    z-index: 999;
     // box model
-    height: 100%;
-    width: 100%;
+    display: none; // toggle to 'flex' when open
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
     // apparence
     background: palette(gris);
     overflow: auto;
-    nav ul {
-        opacity: 0;
-        visibility: hidden;
-    }
 }
 
-.wrap-overlay-nemu {
-    color: palette(gris, light);
+.wrap-nav {
+    // box model
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    // apparence
     text-align: center;
-    max-width: 90%;
-    margin: 0 auto;
-    .wrap-nav {
-        border-bottom: 1px solid palette(gris, mid-light);
+    padding: 0;
+    margin: 0;
+
+    > li {
+        // position
+        position: relative;
+        vertical-align: top;
+        // box model
+        display: inline-block;
+        width: 100%;
+        padding: 2vh;
+        margin: 0;
+        // apparence
+        border-bottom: 1px solid palette(gris, 20);
         text-transform: capitalize;
-        padding: 3% 0 0;
-        li {
-            // position
-            position: relative;
-            vertical-align: top;
-            // box model
-            display: inline-block;
-            width: 100%;
-            padding: 20px 0;
-            // apparence
-            font-size: 20px;
-            border-bottom: 1px solid palette(gris, mid-light);
-            a {
-                color: palette(vert);
-                display: block;
-                padding: 8px 0;
-                text-decoration: none;
-                transition-property: all 0.2s linear 0s;
-                &:hover {
-                    color: palette(gris, light);
-                }
-            }
+        font-size: ms(2);
+
+        &:last-of-type {
+            border: none;
         }
-        ul {
-            padding: 20px 0;
-            li {
-                display: block;
-                font-size: 13px;
-                width: 100%;
+        > a {
+            // box model
+            display: block;
+            padding: 2vh;
+            // apparence
+            color: palette(vert);
+            text-decoration: none;
+            // animation
+            transition: all 0.2s linear 0s;
+        }
+    }
+    .sub-menu {
+        padding: 0;
+        li {
+            // box model
+            display: block;
+            width: 100%;
+            margin: 0;
+            // apparence
+            font-size: ms(-1);
+            font-weight: 100;
+            a {
+                padding: ms(-5) auto;
                 color: palette(gris, light);
-                a {
-                    color: palette(gris, light);
-                    &:hover {
-                        color: palette(vert);
-                    }
+                &:hover {
+                    color: palette(vert);
                 }
             }
         }
     }
 }
 
-// styles menu secondaire dans le footer
+
+/* ============================================================
+ *   FOOTER : .secondary-menu
+ * ============================================================ */
+
 .secondary-menu .menu {
     // styles par défaut
     @extend .mdl-navigation;
@@ -194,7 +234,11 @@
     }
 }
 
-// style menu réseaux sociaux dans sidebar
+
+/* ============================================================
+ *    Style menu réseaux sociaux
+ * ============================================================ */
+
 .social-navigation .menu {
     li:hover,
     li:focus,

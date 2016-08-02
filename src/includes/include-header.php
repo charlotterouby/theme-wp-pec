@@ -2,6 +2,7 @@
     $logo = ot_get_option( 'logo' );
 ?>
 
+    <!-- header start -->
     <header class="header">
         <!--header horizontal start -->
         <div class="mdl-layout__header mdl-layout__header--scroll">
@@ -29,15 +30,14 @@
             </div>
         </div>
         <!-- header horizontal end-->
+
         <!-- button overlay -->
         <div role="button" class="button-overlay-menu hide-desktop">
             <i class="icon__menu"></i>
         </div>
-
         <!-- Overlay menu start-->
         <div class="overlay-menu hide-desktop">
            <div class="wrap-overlay-menu">
-            <span class="mdl-layout-title"><?php bloginfo('name'); ?></span>
             <nav role="navigation">
                 <?php wp_nav_menu( array( 'menu' => 'header', 'menu_class' => 'wrap-nav' ) ); ?>
             </nav>

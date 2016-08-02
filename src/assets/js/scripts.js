@@ -23,8 +23,9 @@ $(document).ready(function () {
     /* ==============================
         Overlay Menu
        ============================== */
-    $(".button-overlay-menu i").click(function(){
-        $(".overlay-menu").fadeToggle(200);
+    $(".button-overlay-menu i").on('click', function(){
+        console.log('click on button overlay');
+        $(".button-overlay-menu").toggleClass('is-open');
         $(this).toggleClass('icon__menu').toggleClass('icon__close');
     });
 

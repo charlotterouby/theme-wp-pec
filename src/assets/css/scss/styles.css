@@ -2776,32 +2776,35 @@ html {
     color: #fff;
     background: #DA9D39; }
 
-/* line 3, C:/wamp/www/pec/src/assets/css/scss/partials/_navigation.scss */
+/* ============================================================
+ *   Styles commun header & footer
+ * ============================================================ */
+/* line 6, C:/wamp/www/pec/src/assets/css/scss/partials/_navigation.scss */
 .menu ul {
   margin: 0;
   padding: 0; }
 
-/* line 7, C:/wamp/www/pec/src/assets/css/scss/partials/_navigation.scss */
+/* line 10, C:/wamp/www/pec/src/assets/css/scss/partials/_navigation.scss */
 .menu li {
   list-style: none;
   position: relative; }
 
-/* line 11, C:/wamp/www/pec/src/assets/css/scss/partials/_navigation.scss */
+/* line 14, C:/wamp/www/pec/src/assets/css/scss/partials/_navigation.scss */
 .menu a {
   color: #fff;
   padding: 0; }
 
 @media screen and (min-width: 768px) {
-  /* line 19, C:/wamp/www/pec/src/assets/css/scss/partials/_navigation.scss */
+  /* line 22, C:/wamp/www/pec/src/assets/css/scss/partials/_navigation.scss */
   .menu .sub-menu,
   .menu .children {
     display: none; }
-  /* line 24, C:/wamp/www/pec/src/assets/css/scss/partials/_navigation.scss */
+  /* line 27, C:/wamp/www/pec/src/assets/css/scss/partials/_navigation.scss */
   .menu li:hover,
   .menu li:focus,
   .menu li:active {
     background-color: #FFB71B; }
-    /* line 27, C:/wamp/www/pec/src/assets/css/scss/partials/_navigation.scss */
+    /* line 30, C:/wamp/www/pec/src/assets/css/scss/partials/_navigation.scss */
     .menu li:hover > .sub-menu,
     .menu li:hover > .children,
     .menu li:focus > .sub-menu,
@@ -2816,145 +2819,184 @@ html {
       align-items: stretch;
       justify-content: flex-start; } }
 
-/* line 43, C:/wamp/www/pec/src/assets/css/scss/partials/_navigation.scss */
+/* ============================================================
+ *    HEADER : Version desktop .primary-menu
+ * ============================================================ */
+/* line 50, C:/wamp/www/pec/src/assets/css/scss/partials/_navigation.scss */
 .primary-menu .menu {
   margin: 0; }
-  /* line 46, C:/wamp/www/pec/src/assets/css/scss/partials/_navigation.scss */
+  /* line 53, C:/wamp/www/pec/src/assets/css/scss/partials/_navigation.scss */
   .primary-menu .menu > li:last-of-type {
     background-color: #FFB71B;
     color: #4D4D4D;
     box-shadow: 0 2px 4px #4D4D4D;
     line-height: 2em;
     border-radius: 2px; }
+    /* line 59, C:/wamp/www/pec/src/assets/css/scss/partials/_navigation.scss */
+    .primary-menu .menu > li:last-of-type:hover {
+      background: #DA9D39; }
   @media screen and (min-width: 768px) {
-    /* line 43, C:/wamp/www/pec/src/assets/css/scss/partials/_navigation.scss */
+    /* line 50, C:/wamp/www/pec/src/assets/css/scss/partials/_navigation.scss */
     .primary-menu .menu {
       justify-content: flex-end; }
-      /* line 59, C:/wamp/www/pec/src/assets/css/scss/partials/_navigation.scss */
+      /* line 69, C:/wamp/www/pec/src/assets/css/scss/partials/_navigation.scss */
       .primary-menu .menu li:hover > .sub-menu,
       .primary-menu .menu li:focus > .sub-menu,
       .primary-menu .menu li:active > .sub-menu {
         top: 3em;
-        background-color: #BDDAA0; } }
+        background-color: #BDDAA0; }
+        /* line 74, C:/wamp/www/pec/src/assets/css/scss/partials/_navigation.scss */
+        .primary-menu .menu li:hover > .sub-menu li,
+        .primary-menu .menu li:focus > .sub-menu li,
+        .primary-menu .menu li:active > .sub-menu li {
+          border-bottom: solid 1px #cccccc; }
+        /* line 77, C:/wamp/www/pec/src/assets/css/scss/partials/_navigation.scss */
+        .primary-menu .menu li:hover > .sub-menu a,
+        .primary-menu .menu li:focus > .sub-menu a,
+        .primary-menu .menu li:active > .sub-menu a {
+          color: #4D4D4D; }
+        /* line 82, C:/wamp/www/pec/src/assets/css/scss/partials/_navigation.scss */
+        .primary-menu .menu li:hover > .sub-menu li:hover,
+        .primary-menu .menu li:hover > .sub-menu li:focus,
+        .primary-menu .menu li:hover > .sub-menu li:active,
+        .primary-menu .menu li:focus > .sub-menu li:hover,
+        .primary-menu .menu li:focus > .sub-menu li:focus,
+        .primary-menu .menu li:focus > .sub-menu li:active,
+        .primary-menu .menu li:active > .sub-menu li:hover,
+        .primary-menu .menu li:active > .sub-menu li:focus,
+        .primary-menu .menu li:active > .sub-menu li:active {
+          background: #FFB71B; } }
 
-/* line 69, C:/wamp/www/pec/src/assets/css/scss/partials/_navigation.scss */
+/* line 90, C:/wamp/www/pec/src/assets/css/scss/partials/_navigation.scss */
 .mdl-layout__header-row .menu a {
   line-height: 3em; }
 
-/*styling open close button*/
-/* line 77, C:/wamp/www/pec/src/assets/css/scss/partials/_navigation.scss */
+/* ============================================================
+ *   HEADER : Version mobile .overlay-menu
+ * ============================================================ */
+/* line 101, C:/wamp/www/pec/src/assets/css/scss/partials/_navigation.scss */
 .button-overlay-menu {
   display: inline;
   position: absolute;
-  right: 1em;
-  top: 6px;
-  z-index: 999;
-  font-size: 30px; }
-  /* line 85, C:/wamp/www/pec/src/assets/css/scss/partials/_navigation.scss */
-  .button-overlay-menu .icon__menu::after {
-    transition-property: all 0.2s linear 0s; }
-  /* line 88, C:/wamp/www/pec/src/assets/css/scss/partials/_navigation.scss */
-  .button-overlay-menu .icon__menu:hover::after {
+  right: 10px;
+  top: 10px;
+  z-index: 19999;
+  font-size: 40px;
+  color: #fff; }
+  /* line 110, C:/wamp/www/pec/src/assets/css/scss/partials/_navigation.scss */
+  .button-overlay-menu .icon__menu {
+    transition-property: all 0.2s ease-in-out 0s; }
+  /* line 113, C:/wamp/www/pec/src/assets/css/scss/partials/_navigation.scss */
+  .button-overlay-menu .icon__menu:hover {
+    color: #11180a; }
+  /* line 117, C:/wamp/www/pec/src/assets/css/scss/partials/_navigation.scss */
+  .button-overlay-menu .icon__close {
+    transition-property: all 0.2s ease-in-out 0s; }
+  /* line 120, C:/wamp/www/pec/src/assets/css/scss/partials/_navigation.scss */
+  .button-overlay-menu .icon__close:hover {
     color: #91C160; }
-  /* line 92, C:/wamp/www/pec/src/assets/css/scss/partials/_navigation.scss */
-  .button-overlay-menu .icon__close::after {
-    transition-property: all 0.2s linear 0s; }
-  /* line 95, C:/wamp/www/pec/src/assets/css/scss/partials/_navigation.scss */
-  .button-overlay-menu .icon__close:hover::after {
-    color: #91C160; }
+  /* line 123, C:/wamp/www/pec/src/assets/css/scss/partials/_navigation.scss */
+  .button-overlay-menu.is-open ~ .overlay-menu {
+    display: flex; }
 
-/*overlay*/
-/* line 103, C:/wamp/www/pec/src/assets/css/scss/partials/_navigation.scss */
+/* line 130, C:/wamp/www/pec/src/assets/css/scss/partials/_navigation.scss */
 .overlay-menu {
   position: fixed;
   top: 0;
-  z-index: 99;
-  height: 100%;
-  width: 100%;
+  z-index: 999;
+  display: none;
+  height: 100vh;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
   background: #4D4D4D;
   overflow: auto; }
-  /* line 115, C:/wamp/www/pec/src/assets/css/scss/partials/_navigation.scss */
-  .overlay-menu nav ul {
-    opacity: 0;
-    visibility: hidden; }
 
-/* line 121, C:/wamp/www/pec/src/assets/css/scss/partials/_navigation.scss */
-.wrap-overlay-nemu {
-  color: #fff;
+/* line 146, C:/wamp/www/pec/src/assets/css/scss/partials/_navigation.scss */
+.wrap-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   text-align: center;
-  max-width: 90%;
-  margin: 0 auto; }
-  /* line 126, C:/wamp/www/pec/src/assets/css/scss/partials/_navigation.scss */
-  .wrap-overlay-nemu .wrap-nav {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.54);
+  padding: 0;
+  margin: 0; }
+  /* line 157, C:/wamp/www/pec/src/assets/css/scss/partials/_navigation.scss */
+  .wrap-nav > li {
+    position: relative;
+    vertical-align: top;
+    display: inline-block;
+    width: 100%;
+    padding: 2vh;
+    margin: 0;
+    border-bottom: 1px solid #cccccc;
     text-transform: capitalize;
-    padding: 3% 0 0; }
-    /* line 130, C:/wamp/www/pec/src/assets/css/scss/partials/_navigation.scss */
-    .wrap-overlay-nemu .wrap-nav li {
-      position: relative;
-      vertical-align: top;
-      display: inline-block;
+    font-size: 1.13778em; }
+    /* line 171, C:/wamp/www/pec/src/assets/css/scss/partials/_navigation.scss */
+    .wrap-nav > li:last-of-type {
+      border: none; }
+    /* line 174, C:/wamp/www/pec/src/assets/css/scss/partials/_navigation.scss */
+    .wrap-nav > li > a {
+      display: block;
+      padding: 2vh;
+      color: #91C160;
+      text-decoration: none;
+      transition: all 0.2s linear 0s; }
+  /* line 185, C:/wamp/www/pec/src/assets/css/scss/partials/_navigation.scss */
+  .wrap-nav .sub-menu {
+    padding: 0; }
+    /* line 187, C:/wamp/www/pec/src/assets/css/scss/partials/_navigation.scss */
+    .wrap-nav .sub-menu li {
+      display: block;
       width: 100%;
-      padding: 20px 0;
-      font-size: 20px;
-      border-bottom: 1px solid rgba(0, 0, 0, 0.54); }
-      /* line 141, C:/wamp/www/pec/src/assets/css/scss/partials/_navigation.scss */
-      .wrap-overlay-nemu .wrap-nav li a {
-        color: #91C160;
-        display: block;
-        padding: 8px 0;
-        text-decoration: none;
-        transition-property: all 0.2s linear 0s; }
-        /* line 147, C:/wamp/www/pec/src/assets/css/scss/partials/_navigation.scss */
-        .wrap-overlay-nemu .wrap-nav li a:hover {
-          color: #fff; }
-    /* line 152, C:/wamp/www/pec/src/assets/css/scss/partials/_navigation.scss */
-    .wrap-overlay-nemu .wrap-nav ul {
-      padding: 20px 0; }
-      /* line 154, C:/wamp/www/pec/src/assets/css/scss/partials/_navigation.scss */
-      .wrap-overlay-nemu .wrap-nav ul li {
-        display: block;
-        font-size: 13px;
-        width: 100%;
+      margin: 0;
+      font-size: 0.9375em;
+      font-weight: 100; }
+      /* line 195, C:/wamp/www/pec/src/assets/css/scss/partials/_navigation.scss */
+      .wrap-nav .sub-menu li a {
+        padding: 0.7242em auto;
         color: #fff; }
-        /* line 159, C:/wamp/www/pec/src/assets/css/scss/partials/_navigation.scss */
-        .wrap-overlay-nemu .wrap-nav ul li a {
-          color: #fff; }
-          /* line 161, C:/wamp/www/pec/src/assets/css/scss/partials/_navigation.scss */
-          .wrap-overlay-nemu .wrap-nav ul li a:hover {
-            color: #91C160; }
+        /* line 198, C:/wamp/www/pec/src/assets/css/scss/partials/_navigation.scss */
+        .wrap-nav .sub-menu li a:hover {
+          color: #91C160; }
 
-/* line 171, C:/wamp/www/pec/src/assets/css/scss/partials/_navigation.scss */
+/* ============================================================
+ *   FOOTER : .secondary-menu
+ * ============================================================ */
+/* line 211, C:/wamp/www/pec/src/assets/css/scss/partials/_navigation.scss */
 .secondary-menu .menu {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   flex-direction: column; }
-  /* line 177, C:/wamp/www/pec/src/assets/css/scss/partials/_navigation.scss */
+  /* line 217, C:/wamp/www/pec/src/assets/css/scss/partials/_navigation.scss */
   .secondary-menu .menu li {
     padding: 1em; }
-  /* line 180, C:/wamp/www/pec/src/assets/css/scss/partials/_navigation.scss */
+  /* line 220, C:/wamp/www/pec/src/assets/css/scss/partials/_navigation.scss */
   .secondary-menu .menu a {
     color: #4D4D4D; }
   @media screen and (min-width: 768px) {
-    /* line 171, C:/wamp/www/pec/src/assets/css/scss/partials/_navigation.scss */
+    /* line 211, C:/wamp/www/pec/src/assets/css/scss/partials/_navigation.scss */
     .secondary-menu .menu {
       flex-direction: row; }
-      /* line 188, C:/wamp/www/pec/src/assets/css/scss/partials/_navigation.scss */
+      /* line 228, C:/wamp/www/pec/src/assets/css/scss/partials/_navigation.scss */
       .secondary-menu .menu .children {
         bottom: 3.65em;
         background-color: #e6e6e6; } }
 
-/* line 201, C:/wamp/www/pec/src/assets/css/scss/partials/_navigation.scss */
+/* ============================================================
+ *    Style menu réseaux sociaux
+ * ============================================================ */
+/* line 245, C:/wamp/www/pec/src/assets/css/scss/partials/_navigation.scss */
 .social-navigation .menu li:hover,
 .social-navigation .menu li:focus,
 .social-navigation .menu li:active {
   background-color: transparent; }
 
-/* line 204, C:/wamp/www/pec/src/assets/css/scss/partials/_navigation.scss */
+/* line 248, C:/wamp/www/pec/src/assets/css/scss/partials/_navigation.scss */
 .social-navigation .menu a {
   color: #40BBCD; }
-  /* line 209, C:/wamp/www/pec/src/assets/css/scss/partials/_navigation.scss */
+  /* line 253, C:/wamp/www/pec/src/assets/css/scss/partials/_navigation.scss */
   .social-navigation .menu a:hover,
   .social-navigation .menu a:focus,
   .social-navigation .menu a:active,
