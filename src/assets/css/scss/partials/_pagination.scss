@@ -6,30 +6,53 @@
         margin: 0;
         padding: 0;
         text-align: center;
+        list-style: none;
+        // pagination commentaires
+        li.page-next.nav-next,
+        li.page-prev.nav-previous
+        {
+            display: inline;
+            list-style: none;
+                @extend %mdl-button;
+            a {
+                background: palette(gris, light);
+                border-radius: 3px;
+                border: 1px solid palette(gris, 10);
+                color: palette(gris);
+                outline: none;
+                padding: (1.5em / 4) ($gutter / 2);
+                text-decoration: none;
+                transition: all 0.2s ease-in-out;
+                &:hover,
+                &:focus {
+                    background: palette(bleu, x-light);
+                    color: palette(bleu);
+                }
+                &:active {
+                    background: palette(gris, light);
+                }
+            }
+        }
+        // pagination pages catégories
         .page-numbers {
             @extend %mdl-button;
             // box model
             display: inline;
-
             // dimensions
             padding: (1.5em / 4) ($gutter / 2);
-
             // apparence
             background: palette(gris, light);
             border-radius: 3px;
             border: 1px solid palette(gris, 10);
             outline: none;
-
             // text
             color: palette(gris);
             text-decoration: none;
-
             // animations
             transition: all 0.2s ease-in-out;
-
             &:hover,
             &:focus {
-                background: palette(bleu, light);
+                background: palette(bleu, x-light);
                 color: palette(bleu);
             }
             &:active {
