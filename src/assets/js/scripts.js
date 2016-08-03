@@ -27,13 +27,12 @@ $(document).ready(function () {
         console.log('click on button overlay');
         $('.button-overlay-menu').toggleClass('is-open');
         $(this).toggleClass('icon__menu').toggleClass('icon__close');
-
+        // changer la propriété 'position' du boutton en fonction de l'ouverture du menu
         var overlayOpen = $(".button-overlay-menu").hasClass("is-open");
         if(overlayOpen === true){
             $('.button-overlay-menu').css('position', 'fixed');
         } else {
             $('.button-overlay-menu').css('position', 'absolute');
-
         }
 
     });
@@ -44,7 +43,20 @@ $(document).ready(function () {
     $('.comment-form-comment').addClass('mdl-textfield mdl-js-textfield');
     $('.comment-form-comment label').addClass('mdl-textfield__label');
     $('.comment-form-comment textarea').addClass('mdl-textfield__input');
-    $('.form-submit input').addClass('mdl-button');
+
+    $('.comment-form-author').addClass('mdl-textfield mdl-js-textfield');
+    $('.comment-form-author label').addClass('mdl-textfield__label');
+    $('.comment-form-author input').addClass('mdl-textfield__input');
+
+    $('.comment-form-email').addClass('mdl-textfield mdl-js-textfield');
+    $('.comment-form-email label').addClass('mdl-textfield__label');
+    $('.comment-form-email input').addClass('mdl-textfield__input');
+
+    $('.comment-form-url').addClass('mdl-textfield mdl-js-textfield');
+    $('.comment-form-url label').addClass('mdl-textfield__label');
+    $('.comment-form-url input').addClass('mdl-textfield__input');
+
+    $('.form-submit input[type="submit"]').addClass('mdl-button');
 
     /* ==============================
         Footer Copyright Year

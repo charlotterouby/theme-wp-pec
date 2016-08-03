@@ -1,11 +1,13 @@
 .footer {
     background-color: palette(gris, 20);
-    //    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    @include media($medium){
         justify-content: space-between;
         align-items: baseline;
-    //    flex-wrap: wrap;
-    //    min-height: 10vh;
-    //    padding: 2vh auto;
+    }
+
     p {
         margin-bottom: 0;
     }

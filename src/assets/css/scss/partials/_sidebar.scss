@@ -54,15 +54,15 @@
         @extend .mdl-textfield__input;
         &:active,
         &:focus {
-            border-bottom: 3px solid palette(jaune);
-            transition: border-bottom 300ms ease-in;
+            border-bottom: 2px solid palette(jaune);
+            transition: border-bottom 300ms cubic-bezier(0, 1.68, 0.58, 1);
         }
     }
     .search-submit {
         @extend %mdl-button;
         @extend %mdl-button--raised;
         background-color: palette(jaune);
-        color: palette(gris);
+        color: palette(gris, light);
         &:hover,
         &:focus,
         &:active {
