@@ -99,19 +99,28 @@
 // styling open close button
 // ==============================
 .button-overlay-menu {
-    display: inline;
+    // position
     position: absolute;
-    right: 10px;
-    top: 10px;
+    right: 2vw;
+    top: 1vh;
     z-index: 19999;
+    // box model
+    display: inline;
+    // dimensions
     font-size: 40px;
+    // apparence
     color: palette(gris, light);
+
+    &:active,
+    &:focus {
+        color: palette(gris, 20);
+    }
     // overlay caché
     .icon__menu {
         transition-property: all 0.2s ease-in-out 0s;
     }
     .icon__menu:hover {
-        color: palette(vert, dark);
+        color: palette(vert, mid-dark);
     }
     // overlay ouvert
     .icon__close {
@@ -131,15 +140,17 @@
     // position
     position: fixed;
     top: 0;
+    left: 0;
     z-index: 999;
     // box model
     display: none; // toggle to 'flex' when open
+    justify-content: center;
+    align-items: flex-start;
+    // dimensions
     height: 100vh;
     width: 100vw;
-    justify-content: center;
-    align-items: center;
     // apparence
-    background: palette(gris);
+    background: transparentize(palette(gris, dark), 0.2);
     overflow: auto;
 }
 
@@ -169,7 +180,7 @@
         font-size: ms(2);
 
         &:last-of-type {
-            border: none;
+            border: 0;
         }
         > a {
             // box model

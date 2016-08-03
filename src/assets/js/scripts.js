@@ -25,8 +25,17 @@ $(document).ready(function () {
        ============================== */
     $(".button-overlay-menu i").on('click', function(){
         console.log('click on button overlay');
-        $(".button-overlay-menu").toggleClass('is-open');
+        $('.button-overlay-menu').toggleClass('is-open');
         $(this).toggleClass('icon__menu').toggleClass('icon__close');
+
+        var overlayOpen = $(".button-overlay-menu").hasClass("is-open");
+        if(overlayOpen === true){
+            $('.button-overlay-menu').css('position', 'fixed');
+        } else {
+            $('.button-overlay-menu').css('position', 'absolute');
+
+        }
+
     });
 
     /* ==============================

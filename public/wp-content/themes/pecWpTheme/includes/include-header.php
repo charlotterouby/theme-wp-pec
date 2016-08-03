@@ -30,7 +30,7 @@
             </div>
         </div>
         <!-- header horizontal end-->
-
+        <h1 class="h6 hide-desktop site-mobile-title"><a href="/"><?php bloginfo('name'); ?></a></h1>
         <!-- button overlay -->
         <div role="button" class="button-overlay-menu hide-desktop">
             <i class="icon__menu"></i>

@@ -6,7 +6,7 @@
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    min-height: 10vh;
+    min-height: 50px;
     // apparence
     background-color: palette(vert);
     color: palette(gris, light);
@@ -22,5 +22,10 @@
     &__logo,
     &__logo a {
         display: inline-block;
+    }
+
+    .site-mobile-title {
+        padding-left: 2vw;
+        padding-top: 2vh;
     }
 }

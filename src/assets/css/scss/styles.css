@@ -2876,43 +2876,48 @@ html {
  * ============================================================ */
 /* line 101, C:/wamp/www/pec/src/assets/css/scss/partials/_navigation.scss */
 .button-overlay-menu {
-  display: inline;
   position: absolute;
-  right: 10px;
-  top: 10px;
+  right: 2vw;
+  top: 1vh;
   z-index: 19999;
+  display: inline;
   font-size: 40px;
   color: #fff; }
-  /* line 110, C:/wamp/www/pec/src/assets/css/scss/partials/_navigation.scss */
+  /* line 115, C:/wamp/www/pec/src/assets/css/scss/partials/_navigation.scss */
+  .button-overlay-menu:active,
+  .button-overlay-menu:focus {
+    color: #cccccc; }
+  /* line 119, C:/wamp/www/pec/src/assets/css/scss/partials/_navigation.scss */
   .button-overlay-menu .icon__menu {
     transition-property: all 0.2s ease-in-out 0s; }
-  /* line 113, C:/wamp/www/pec/src/assets/css/scss/partials/_navigation.scss */
+  /* line 122, C:/wamp/www/pec/src/assets/css/scss/partials/_navigation.scss */
   .button-overlay-menu .icon__menu:hover {
-    color: #11180a; }
-  /* line 117, C:/wamp/www/pec/src/assets/css/scss/partials/_navigation.scss */
+    color: #5e8734; }
+  /* line 126, C:/wamp/www/pec/src/assets/css/scss/partials/_navigation.scss */
   .button-overlay-menu .icon__close {
     transition-property: all 0.2s ease-in-out 0s; }
-  /* line 120, C:/wamp/www/pec/src/assets/css/scss/partials/_navigation.scss */
+  /* line 129, C:/wamp/www/pec/src/assets/css/scss/partials/_navigation.scss */
   .button-overlay-menu .icon__close:hover {
     color: #91C160; }
-  /* line 123, C:/wamp/www/pec/src/assets/css/scss/partials/_navigation.scss */
+  /* line 132, C:/wamp/www/pec/src/assets/css/scss/partials/_navigation.scss */
   .button-overlay-menu.is-open ~ .overlay-menu {
     display: flex; }
 
-/* line 130, C:/wamp/www/pec/src/assets/css/scss/partials/_navigation.scss */
+/* line 139, C:/wamp/www/pec/src/assets/css/scss/partials/_navigation.scss */
 .overlay-menu {
   position: fixed;
   top: 0;
+  left: 0;
   z-index: 999;
   display: none;
+  justify-content: center;
+  align-items: flex-start;
   height: 100vh;
   width: 100vw;
-  justify-content: center;
-  align-items: center;
-  background: #4D4D4D;
+  background: rgba(0, 0, 0, 0.8);
   overflow: auto; }
 
-/* line 146, C:/wamp/www/pec/src/assets/css/scss/partials/_navigation.scss */
+/* line 157, C:/wamp/www/pec/src/assets/css/scss/partials/_navigation.scss */
 .wrap-nav {
   display: flex;
   flex-direction: column;
@@ -2921,7 +2926,7 @@ html {
   text-align: center;
   padding: 0;
   margin: 0; }
-  /* line 157, C:/wamp/www/pec/src/assets/css/scss/partials/_navigation.scss */
+  /* line 168, C:/wamp/www/pec/src/assets/css/scss/partials/_navigation.scss */
   .wrap-nav > li {
     position: relative;
     vertical-align: top;
@@ -2932,54 +2937,54 @@ html {
     border-bottom: 1px solid #cccccc;
     text-transform: capitalize;
     font-size: 1.13778em; }
-    /* line 171, C:/wamp/www/pec/src/assets/css/scss/partials/_navigation.scss */
+    /* line 182, C:/wamp/www/pec/src/assets/css/scss/partials/_navigation.scss */
     .wrap-nav > li:last-of-type {
-      border: none; }
-    /* line 174, C:/wamp/www/pec/src/assets/css/scss/partials/_navigation.scss */
+      border: 0; }
+    /* line 185, C:/wamp/www/pec/src/assets/css/scss/partials/_navigation.scss */
     .wrap-nav > li > a {
       display: block;
       padding: 2vh;
       color: #91C160;
       text-decoration: none;
       transition: all 0.2s linear 0s; }
-  /* line 185, C:/wamp/www/pec/src/assets/css/scss/partials/_navigation.scss */
+  /* line 196, C:/wamp/www/pec/src/assets/css/scss/partials/_navigation.scss */
   .wrap-nav .sub-menu {
     padding: 0; }
-    /* line 187, C:/wamp/www/pec/src/assets/css/scss/partials/_navigation.scss */
+    /* line 198, C:/wamp/www/pec/src/assets/css/scss/partials/_navigation.scss */
     .wrap-nav .sub-menu li {
       display: block;
       width: 100%;
       margin: 0;
       font-size: 0.9375em;
       font-weight: 100; }
-      /* line 195, C:/wamp/www/pec/src/assets/css/scss/partials/_navigation.scss */
+      /* line 206, C:/wamp/www/pec/src/assets/css/scss/partials/_navigation.scss */
       .wrap-nav .sub-menu li a {
         padding: 0.7242em auto;
         color: #fff; }
-        /* line 198, C:/wamp/www/pec/src/assets/css/scss/partials/_navigation.scss */
+        /* line 209, C:/wamp/www/pec/src/assets/css/scss/partials/_navigation.scss */
         .wrap-nav .sub-menu li a:hover {
           color: #91C160; }
 
 /* ============================================================
  *   FOOTER : .secondary-menu
  * ============================================================ */
-/* line 211, C:/wamp/www/pec/src/assets/css/scss/partials/_navigation.scss */
+/* line 222, C:/wamp/www/pec/src/assets/css/scss/partials/_navigation.scss */
 .secondary-menu .menu {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   flex-direction: column; }
-  /* line 217, C:/wamp/www/pec/src/assets/css/scss/partials/_navigation.scss */
+  /* line 228, C:/wamp/www/pec/src/assets/css/scss/partials/_navigation.scss */
   .secondary-menu .menu li {
     padding: 1em; }
-  /* line 220, C:/wamp/www/pec/src/assets/css/scss/partials/_navigation.scss */
+  /* line 231, C:/wamp/www/pec/src/assets/css/scss/partials/_navigation.scss */
   .secondary-menu .menu a {
     color: #4D4D4D; }
   @media screen and (min-width: 768px) {
-    /* line 211, C:/wamp/www/pec/src/assets/css/scss/partials/_navigation.scss */
+    /* line 222, C:/wamp/www/pec/src/assets/css/scss/partials/_navigation.scss */
     .secondary-menu .menu {
       flex-direction: row; }
-      /* line 228, C:/wamp/www/pec/src/assets/css/scss/partials/_navigation.scss */
+      /* line 239, C:/wamp/www/pec/src/assets/css/scss/partials/_navigation.scss */
       .secondary-menu .menu .children {
         bottom: 3.65em;
         background-color: #e6e6e6; } }
@@ -2987,16 +2992,16 @@ html {
 /* ============================================================
  *    Style menu réseaux sociaux
  * ============================================================ */
-/* line 245, C:/wamp/www/pec/src/assets/css/scss/partials/_navigation.scss */
+/* line 256, C:/wamp/www/pec/src/assets/css/scss/partials/_navigation.scss */
 .social-navigation .menu li:hover,
 .social-navigation .menu li:focus,
 .social-navigation .menu li:active {
   background-color: transparent; }
 
-/* line 248, C:/wamp/www/pec/src/assets/css/scss/partials/_navigation.scss */
+/* line 259, C:/wamp/www/pec/src/assets/css/scss/partials/_navigation.scss */
 .social-navigation .menu a {
   color: #40BBCD; }
-  /* line 253, C:/wamp/www/pec/src/assets/css/scss/partials/_navigation.scss */
+  /* line 264, C:/wamp/www/pec/src/assets/css/scss/partials/_navigation.scss */
   .social-navigation .menu a:hover,
   .social-navigation .menu a:focus,
   .social-navigation .menu a:active,
@@ -3093,7 +3098,7 @@ article.pec-thumbnail {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  min-height: 10vh;
+  min-height: 50px;
   background-color: #91C160;
   color: #fff;
   box-shadow: 0 2px 4px #4D4D4D; }
@@ -3106,6 +3111,10 @@ article.pec-thumbnail {
   .header__logo,
   .header__logo a {
     display: inline-block; }
+  /* line 27, C:/wamp/www/pec/src/assets/css/scss/partials/_header.scss */
+  .header .site-mobile-title {
+    padding-left: 2vw;
+    padding-top: 2vh; }
 
 /* ==============================
     Sidebar
