@@ -1,0 +1,40 @@
+.pagination {
+    text-align: center;
+    margin: 2% 0;
+    .nav-links {
+        display: inline;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        .page-numbers {
+            @extend %mdl-button;
+            // box model
+            display: inline;
+
+            // dimensions
+            padding: (1.5em / 4) ($gutter / 2);
+
+            // apparence
+            background: palette(gris, light);
+            border-radius: 3px;
+            border: 1px solid palette(gris, 10);
+            outline: none;
+
+            // text
+            color: palette(gris);
+            text-decoration: none;
+
+            // animations
+            transition: all 0.2s ease-in-out;
+
+            &:hover,
+            &:focus {
+                background: palette(bleu, light);
+                color: palette(bleu);
+            }
+            &:active {
+                background: palette(gris, light);
+            }
+        }
+    }
+}

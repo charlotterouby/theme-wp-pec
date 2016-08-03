@@ -1168,7 +1168,7 @@ textarea {
 .mdl-button, .comment-reply-link,
 .tribe-events-widget-link a, .post-edit-link,
 .comment-edit-link,
-#cancel-comment-reply-link, .search-form .search-submit {
+#cancel-comment-reply-link, .pagination .nav-links .page-numbers, .search-form .search-submit {
   background: transparent;
   border: none;
   border-radius: 2px;
@@ -1179,7 +1179,7 @@ textarea {
   min-width: 64px;
   padding: 0 16px;
   display: inline-block;
-  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-family: "Signika Negative", "Tahoma", "Geneva", sans-serif;
   font-size: 14px;
   font-weight: 500;
   text-transform: uppercase;
@@ -1197,14 +1197,14 @@ textarea {
   .mdl-button::-moz-focus-inner, .comment-reply-link::-moz-focus-inner,
   .tribe-events-widget-link a::-moz-focus-inner, .post-edit-link::-moz-focus-inner,
   .comment-edit-link::-moz-focus-inner,
-  #cancel-comment-reply-link::-moz-focus-inner, .search-form .search-submit::-moz-focus-inner {
+  #cancel-comment-reply-link::-moz-focus-inner, .pagination .nav-links .page-numbers::-moz-focus-inner, .search-form .search-submit::-moz-focus-inner {
     border: 0; }
 
 /* line 63, C:/wamp/www/pec/src/assets/css/scss/mdl/_button.scss */
 input[type="submit"].mdl-button, input[type="submit"].comment-reply-link,
 input[type="submit"].post-edit-link,
 input[type="submit"].comment-edit-link,
-input[type="submit"]#cancel-comment-reply-link, .search-form input[type="submit"].search-submit {
+input[type="submit"]#cancel-comment-reply-link, .pagination .nav-links input[type="submit"].page-numbers, .search-form input[type="submit"].search-submit {
   -webkit-appearance: none; }
 
 /* line 68, C:/wamp/www/pec/src/assets/css/scss/mdl/_button.scss */
@@ -1234,6 +1234,7 @@ input[type="submit"]#cancel-comment-reply-link, .search-form input[type="submit"
 [disabled][disabled].post-edit-link,
 [disabled][disabled].comment-edit-link,
 [disabled][disabled]#cancel-comment-reply-link,
+.pagination .nav-links [disabled][disabled].page-numbers,
 .search-form [disabled][disabled].search-submit {
   color: rgba(0,0,0, 0.26);
   cursor: default;
@@ -1452,7 +1453,7 @@ input[type="submit"]#cancel-comment-reply-link, .search-form input[type="submit"
   border-bottom: 1px solid rgba(0,0,0, 0.12);
   display: block;
   font-size: 16px;
-  font-family: "Helvetica", "Arial", sans-serif;
+  font-family: "Tahoma", "Geneva", sans-serif;
   margin: 0;
   padding: 4px 0;
   width: 100%;
@@ -3153,6 +3154,36 @@ html {
   .social-navigation .menu a:active,
   .social-navigation .menu a:visited {
     color: #308C9A; }
+
+/* line 1, C:/wamp/www/pec/src/assets/css/scss/partials/_pagination.scss */
+.pagination {
+  text-align: center;
+  margin: 2% 0; }
+  /* line 4, C:/wamp/www/pec/src/assets/css/scss/partials/_pagination.scss */
+  .pagination .nav-links {
+    display: inline;
+    margin: 0;
+    padding: 0;
+    text-align: center; }
+    /* line 9, C:/wamp/www/pec/src/assets/css/scss/partials/_pagination.scss */
+    .pagination .nav-links .page-numbers {
+      display: inline;
+      padding: 0.375em 0.809em;
+      background: #fff;
+      border-radius: 3px;
+      border: 1px solid #e6e6e6;
+      outline: none;
+      color: #4D4D4D;
+      text-decoration: none;
+      transition: all 0.2s ease-in-out; }
+      /* line 31, C:/wamp/www/pec/src/assets/css/scss/partials/_pagination.scss */
+      .pagination .nav-links .page-numbers:hover,
+      .pagination .nav-links .page-numbers:focus {
+        background: #B3E4EB;
+        color: #308C9A; }
+      /* line 35, C:/wamp/www/pec/src/assets/css/scss/partials/_pagination.scss */
+      .pagination .nav-links .page-numbers:active {
+        background: #fff; }
 
 /* ==============================
     INDEX / SEARCH / ARCHIVE
