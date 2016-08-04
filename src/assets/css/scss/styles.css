@@ -3813,7 +3813,7 @@ li.page-prev.nav-previous a:active {
   font-size: 1.06667em; }
 
 /* line 1, C:/wamp/www/pec/src/assets/css/scss/partials/_comments.scss */
-.comments-area {
+.comments-display-list {
   padding-top: 1.90672em;
   margin-top: 1.90672em;
   border-top: solid 1px #cccccc; }
@@ -3864,27 +3864,27 @@ li.page-prev.nav-previous a:active {
   padding: 0; }
 
 /* line 5, C:/wamp/www/pec/src/assets/css/scss/pages/_page.scss */
-.page .entry-header, .post .entry-header {
+.page .entry-header, .single-post .entry-header {
   padding-top: 2.63288em;
   background: url("../img/default-banner.jpg") fixed no-repeat;
   background-size: 100% !important; }
   /* line 10, C:/wamp/www/pec/src/assets/css/scss/pages/_page.scss */
-  .page .entry-header .content-header, .post .entry-header .content-header {
+  .page .entry-header .content-header, .single-post .entry-header .content-header {
     margin-bottom: 2.63288em;
     padding: 1em 1.618em;
     background: rgba(240, 250, 251, 0.8); }
     /* line 15, C:/wamp/www/pec/src/assets/css/scss/pages/_page.scss */
-    .page .entry-header .content-header h2, .post .entry-header .content-header h2 {
+    .page .entry-header .content-header h2, .single-post .entry-header .content-header h2 {
       margin: 0.37981em 0; }
 
 /* line 20, C:/wamp/www/pec/src/assets/css/scss/pages/_page.scss */
-.page .page-breadcrumbs, .post .page-breadcrumbs {
+.page .page-breadcrumbs, .single-post .page-breadcrumbs {
   background: rgba(240, 250, 251, 0.8);
   padding: 0.7242em 0;
   margin-top: 2.63288em; }
 
 /* line 26, C:/wamp/www/pec/src/assets/css/scss/pages/_page.scss */
-.page .entry-content, .post .entry-content {
+.page .entry-content, .single-post .entry-content {
   padding-top: 3.63559em; }
 
 /* line 31, C:/wamp/www/pec/src/assets/css/scss/pages/_page.scss */

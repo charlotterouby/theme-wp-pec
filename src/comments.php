@@ -20,9 +20,9 @@ if ( post_password_required() ) {
 }
 ?>
 
-<div id="comments" class="comments-area">
-
+<div id="comments" class="comments-area width-100">
     <?php if ( have_comments() ) : ?>
+    <div class="comments-display-list">
         <h5 class="comments-title">
             <?php
                 printf( _nx( 'One thought on &ldquo;%2$s&rdquo;', '%1$s thoughts on &ldquo;%2$s&rdquo;', get_comments_number(), 'comments title', 'twentyfifteen' ),
@@ -51,6 +51,7 @@ if ( post_password_required() ) {
         if ( ! comments_open() && get_comments_number() && post_type_supports( get_post_type(), 'comments' ) ) :
     ?>
         <p class="no-comments"><?php _e( 'Comments are closed.', 'twentyfifteen' ); ?></p>
+    </div>
     <?php endif; ?>
 
     <?php comment_form(); ?>
