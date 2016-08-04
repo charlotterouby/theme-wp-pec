@@ -1,24 +1,38 @@
-.gallery {
-    @extend %mdl-grid;
-
-    &.gallery-columns-3 {
+@for $i from 1 through 9 {
+    .gallery-columns-#{$i} {
         .gallery-item {
-            @extend %mdl-cell--4-col;
+            @include partial-size($i, $i, $grid-phone-gutter);
+            @include media($medium){
+                @include partial-size(1, $i, $grid-desktop-gutter);
+            }
         }
     }
 }
 
+.gallery {
+    @extend %mdl-grid;
+}
+
 .gallery-item {
-    @extend %mdl-card;
     @extend %mdl-cell;
+    @extend %mdl-card;
+
 }
 
 .gallery-icon {
-    @extend %mdl-card__media;
+//    @extend %mdl-card__media;
     overflow: hidden;
+    text-align: center;
+    a {
+//        display: block;
+    }
+    img{
+//        margin: auto;
+        height: auto;
+    }
 }
 .gallery-caption {
     @extend %mdl-card__title;
     @extend %mdl-card--expand;
-//    @extend %mdl-card__title-text;
+    text-align: center;
 }

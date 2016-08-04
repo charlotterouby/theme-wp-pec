@@ -333,26 +333,42 @@ if ( !is_admin() ) add_action( 'wp_enqueue_scripts', 'enqueue_assets', 11 );
 
 //function to call first uploaded image in functions file
 function main_image() {
-$files = get_children('post_parent='.get_the_ID().'&post_type=attachment
-&post_mime_type=image&order=desc');
-  if($files) :
-    $permalink= get_permalink();
-    $keys = array_reverse(array_keys($files));
-    $j=0;
-    $num = $keys[$j];
-    $image=wp_get_attachment_image($num, 'large', true);
-    $imagepieces = explode('"', $image);
-    $imagepath = $imagepieces[1];
-    $main=wp_get_attachment_url($num);
+    $files = get_children('post_parent='.get_the_ID().'&post_type=attachment&post_mime_type=image&order=desc');
+      if($files) :
+        $permalink= get_permalink();
+        $keys = array_reverse(array_keys($files));
+        $j=0;
+        $num = $keys[$j];
+        $image=wp_get_attachment_image($num, 'large', true);
+        $imagepieces = explode('"', $image);
+        $imagepath = $imagepieces[1];
+        $main=wp_get_attachment_url($num);
         $template=get_template_directory();
         $the_title=get_the_title();
-    print "<a class='post-thumbnail' href='$permalink' aria-hidden='true'><img src='$main' alt='$the_title' class='frame' /></a>";
-  else :
-    $src = get_template_directory_uri();
-    $alt = get_the_title();
-    $permalink= get_permalink();
-    print "<a class='post-thumbnail' href='$permalink' aria-hidden='true'><img src='$src/assets/img/default-image.jpg' alt='$alt' /></a>";
-  endif;
+        print "<a class='post-thumbnail' href='$permalink' aria-hidden='true'><img src='$main' alt='$the_title' class='frame' /></a>";
+      else :
+        $src = get_template_directory_uri();
+        $alt = get_the_title();
+        $permalink= get_permalink();
+        print "<a class='post-thumbnail' href='$permalink' aria-hidden='true'><img src='$src/assets/img/default-image.jpg' alt='$alt' /></a>";
+      endif;
+}
+
+function url_main_image(){
+    $files = get_children('post_parent='.get_the_ID().'&post_type=attachment&post_mime_type=image&order=desc');
+    if($files):
+        $permalink= get_permalink();
+        $keys = array_reverse(array_keys($files));
+        $j=0;
+        $num = $keys[$j];
+        $image=wp_get_attachment_image($num, 'large', true);
+        $imagepieces = explode('"', $image);
+        $imagepath = $imagepieces[1];
+        $main=wp_get_attachment_url($num);
+        $template=get_template_directory();
+        $the_title=get_the_title();
+        print $main;
+    endif;
 }
 
 /* ========================================================================================== */
