@@ -1,0 +1,24 @@
+.gallery {
+    @extend %mdl-grid;
+
+    &.gallery-columns-3 {
+        .gallery-item {
+            @extend %mdl-cell--4-col;
+        }
+    }
+}
+
+.gallery-item {
+    @extend %mdl-card;
+    @extend %mdl-cell;
+}
+
+.gallery-icon {
+    @extend %mdl-card__media;
+    overflow: hidden;
+}
+.gallery-caption {
+    @extend %mdl-card__title;
+    @extend %mdl-card--expand;
+//    @extend %mdl-card__title-text;
+}

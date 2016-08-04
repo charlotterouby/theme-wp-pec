@@ -283,17 +283,16 @@ require get_template_directory() . '/includes/customizer.php';
 /* ========================================================================================== */
 /*  OPTIONTREE
 /* ========================================================================================== */
-
-/* ============================== */
-/*  Filter
-/* ============================== */
+/* ==============================
+ *  Filter
+ * ============================== */
 
 add_filter( 'ot_theme_mode', '__return_true' );
 
 
-/* ============================== */
-/*  Include
-/* ============================== */
+/* ==============================
+ *  Include
+ * ============================== */
 
 require( trailingslashit( get_template_directory() ) . 'option-tree/ot-loader.php' );
 
@@ -310,27 +309,14 @@ require( trailingslashit( get_template_directory() ) . 'option-tree/theme-option
 /* ========================================================================================== */
 
 function enqueue_assets() {
-
-
-/* ============================== */
-/*  Fonts
-/* ============================== */
-
-//	wp_enqueue_style( 'google-fonts', 'http' . ($_SERVER['SERVER_PORT'] == 443 ? 's' : '') . '://fonts.googleapis.com/css?family=Open+Sans', false, null );
-
-
 /* ============================== */
 /*  Styles
 /* ============================== */
-
-//	wp_enqueue_style( 'jquery-ui', 'http' . ($_SERVER['SERVER_PORT'] == 443 ? 's' : '') . '://code.jquery.com/ui/1.11.3/themes/smoothness/jquery-ui.css', false, null );
     wp_enqueue_style( 'styles', get_template_directory_uri() . '/assets/css/styles.css' );
-
 
 /* ============================== */
 /*  Scripts
 /* ============================== */
-
     wp_deregister_script( 'jquery' );
 
     wp_enqueue_script( 'jquery', 'http' . ($_SERVER['SERVER_PORT'] == 443 ? 's' : '') . '://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js', false, null, true );

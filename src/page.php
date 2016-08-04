@@ -13,16 +13,10 @@
 
 get_header(); ?>
 
-    <div id="primary" class="content-area">
-        <main id="main" class="site-main width-100" role="main">
-        <!-- Yoast SEO -->
-        <div class="breadcrumbs width-100">
-            <?php
-                if ( function_exists('yoast_breadcrumb') ) {
-                    yoast_breadcrumb('<p id="breadcrumbs">','</p>');
-                }
-            ?>
-        </div>
+    <!-- .content-area -->
+    <div id="primary" class="content-area page-content">
+        <!-- .site-main -->
+        <main id="main" class="site-content width-75" role="main">
         <?php
         // Start the loop.
         while ( have_posts() ) : the_post();
@@ -38,8 +32,11 @@ get_header(); ?>
         // End the loop.
         endwhile;
         ?>
-
-        </main><!-- .site-main -->
-    </div><!-- .content-area -->
+        </main>
+        <!-- .sidebar -->
+        <aside class="sidebar">
+            <?php get_sidebar() ?>
+        </aside>
+    </div>
 
 <?php get_footer(); ?>

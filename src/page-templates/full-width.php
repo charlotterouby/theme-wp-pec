@@ -9,17 +9,10 @@
 
 get_header(); ?>
 
-<div id="main-content" class="main-content">
-
-<?php
-    if ( is_front_page() && twentyfourteen_has_featured_posts() ) {
-        // Include the featured content template.
-        get_template_part( 'featured-content' );
-    }
-?>
-
-    <div id="primary" class="content-area">
-        <div id="content" class="site-content width-100" role="main">
+    <!-- #primary -->
+    <div id="primary" class="content-area page-content">
+        <!-- #content -->
+        <div id="content" class="site-main" role="main">
             <?php
                 // Start the Loop.
                 while ( have_posts() ) : the_post();
@@ -33,10 +26,7 @@ get_header(); ?>
                     }
                 endwhile;
             ?>
-        </div><!-- #content -->
-    </div><!-- #primary -->
-</div><!-- #main-content -->
+        </div>
+    </div>
 
-<?php
-get_sidebar();
-get_footer();
+<?php get_footer(); ?>

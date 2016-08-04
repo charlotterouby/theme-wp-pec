@@ -8,9 +8,9 @@
     Bourbon & Neat
    ============================== */
 
-'bourbon/bourbon',
-'neat/neat',
-'bower/modular-scale/stylesheets/modular-scale',
+'vendors/bourbon/bourbon',
+'vendors/neat/neat',
+'vendors/bower/modular-scale/stylesheets/modular-scale',
 
 /* ==============================
     Modules
@@ -25,40 +25,43 @@
     Bower
    ============================== */
 
-'bower/normalize.css/normalize',
+'vendors/bower/normalize.css/normalize',
 
 /* ==============================
     Material Design Lite
    ============================== */
 
-'mdl/grid',
-'mdl/button',
-'mdl/textfield',
-'mdl/list',
-'mdl/nav-mdl',
+'vendors/mdl/grid',
+'vendors/mdl/button',
+'vendors/mdl/textfield',
+'vendors/mdl/list',
+'vendors/mdl/nav-mdl',
+'vendors/mdl/card',
 
 /* ==============================
     Partials
    ============================== */
 
-    // General
-'partials/typography',
-'partials/layout',
+    // General Structure
+'structure/typography',
+'structure/layout',
+'structure/content',
 
     // Components
-'partials/alerts',
-'partials/breadcrumbs',
-'partials/buttons',
-'partials/forms',
-'partials/navigation',
-'partials/pagination',
+'components/navigation',
+'components/alerts',
+'components/breadcrumbs',
+'components/buttons',
+'components/cards',
+'components/forms',
+'components/pagination',
+'components/gallery',
 
     // Template parts
-'partials/content',
-'partials/footer',
 'partials/header',
 'partials/sidebar',
 'partials/comments',
+'partials/footer',
 
 
 /* ==============================
@@ -66,6 +69,7 @@
    ============================== */
 
 'pages/home',
+'pages/page',
 'pages/single',
 
 /* ==============================

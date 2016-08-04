@@ -1,6 +1,6 @@
 <?php
 /**
- * The template used for displaying default single post content
+ * used for default single post content
  *
  * @package WordPress
  * @subpackage Twenty_Fifteen
@@ -12,13 +12,6 @@
 
     <!-- .entry-header -->
     <header class="entry-header">
-       <?php
-            if (has_post_thumbnail()):
-                twentyfifteen_post_thumbnail();
-            elseif (main_image()):
-                echo main_image();
-            endif;
-        ?>
         <?php the_title( '<h2 class="entry-title h1 width-100">', '</h2>' ); ?>
     </header>
 
