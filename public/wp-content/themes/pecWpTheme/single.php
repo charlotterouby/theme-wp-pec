@@ -9,14 +9,8 @@
 
 get_header(); ?>
 
-    <div id="primary" class="content-area">
-        <main id="main" class="site-main width-75 single-article" role="main">
-        <!-- Yoast SEO -->
-        <?php
-            if ( function_exists('yoast_breadcrumb') ) {
-                yoast_breadcrumb('<p id="breadcrumbs" class="breadcrumbs">','</p>');
-            }
-        ?>
+    <div id="primary" class="content-area page-content">
+        <main id="main" class="site-content width-75 single-article" role="main">
         <!-- Content -->
         <?php
         // Start the loop.

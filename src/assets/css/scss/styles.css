@@ -778,8 +778,7 @@ textarea {
   .comment-form .comment-form-author,
   .comment-form .comment-form-email,
   .comment-form .comment-form-url,
-  .comment-form .form-submit,
-  .gallery.gallery-columns-3 .gallery-item {
+  .comment-form .form-submit {
     width: calc(100% - 16px); }
     /* line 73, C:/wamp/www/pec/src/assets/css/scss/vendors/mdl/_grid.scss */
     .content-area > .pec-thumbnail,
@@ -794,7 +793,7 @@ textarea {
     .comment-form .content-area > .comment-form-url,
     .comment-form .site-main > .comment-form-url,
     .comment-form .footer > .comment-form-url,
-    .comment-form .content-area > .form-submit, .comment-form .site-main > .form-submit, .comment-form .footer > .form-submit, .gallery.gallery-columns-3 .content-area > .gallery-item, .gallery.gallery-columns-3 .site-main > .gallery-item, .gallery.gallery-columns-3 .footer > .gallery-item {
+    .comment-form .content-area > .form-submit, .comment-form .site-main > .form-submit, .comment-form .footer > .form-submit {
       width: 100%; }
   /* line 124, C:/wamp/www/pec/src/assets/css/scss/vendors/mdl/_grid.scss */
   .width-75,
@@ -898,8 +897,7 @@ textarea {
   .comment-form .comment-form-author,
   .comment-form .comment-form-email,
   .comment-form .comment-form-url,
-  .comment-form .form-submit,
-  .gallery.gallery-columns-3 .gallery-item {
+  .comment-form .form-submit {
     width: calc(50% - 16px); }
     /* line 73, C:/wamp/www/pec/src/assets/css/scss/vendors/mdl/_grid.scss */
     .content-area > .pec-thumbnail,
@@ -914,7 +912,7 @@ textarea {
     .comment-form .content-area > .comment-form-url,
     .comment-form .site-main > .comment-form-url,
     .comment-form .footer > .comment-form-url,
-    .comment-form .content-area > .form-submit, .comment-form .site-main > .form-submit, .comment-form .footer > .form-submit, .gallery.gallery-columns-3 .content-area > .gallery-item, .gallery.gallery-columns-3 .site-main > .gallery-item, .gallery.gallery-columns-3 .footer > .gallery-item {
+    .comment-form .content-area > .form-submit, .comment-form .site-main > .form-submit, .comment-form .footer > .form-submit {
       width: 50%; }
   /* line 171, C:/wamp/www/pec/src/assets/css/scss/vendors/mdl/_grid.scss */
   .width-75,
@@ -1017,8 +1015,7 @@ textarea {
   .comment-form .comment-form-author,
   .comment-form .comment-form-email,
   .comment-form .comment-form-url,
-  .comment-form .form-submit,
-  .gallery.gallery-columns-3 .gallery-item {
+  .comment-form .form-submit {
     width: calc(33.33333% - 16px); }
     /* line 73, C:/wamp/www/pec/src/assets/css/scss/vendors/mdl/_grid.scss */
     .content-area > .pec-thumbnail,
@@ -1033,7 +1030,7 @@ textarea {
     .comment-form .content-area > .comment-form-url,
     .comment-form .site-main > .comment-form-url,
     .comment-form .footer > .comment-form-url,
-    .comment-form .content-area > .form-submit, .comment-form .site-main > .form-submit, .comment-form .footer > .form-submit, .gallery.gallery-columns-3 .content-area > .gallery-item, .gallery.gallery-columns-3 .site-main > .gallery-item, .gallery.gallery-columns-3 .footer > .gallery-item {
+    .comment-form .content-area > .form-submit, .comment-form .site-main > .form-submit, .comment-form .footer > .form-submit {
       width: 33.33333%; }
   /* line 211, C:/wamp/www/pec/src/assets/css/scss/vendors/mdl/_grid.scss */
   .width-75,
@@ -2750,16 +2747,6 @@ li[disabled][disabled].page-prev.nav-previous,
   border-radius: 2px;
   box-sizing: border-box; }
 
-/* line 34, C:/wamp/www/pec/src/assets/css/scss/vendors/mdl/_card.scss */
-.gallery-icon {
-  background-color: rgb(255,64,129);
-  background-repeat: repeat;
-  background-position: 50% 50%;
-  background-size: cover;
-  background-origin: padding-box;
-  background-attachment: scroll;
-  box-sizing: border-box; }
-
 /* line 44, C:/wamp/www/pec/src/assets/css/scss/vendors/mdl/_card.scss */
 .gallery-caption {
   align-items: center;
@@ -3584,9 +3571,143 @@ li.page-prev.nav-previous a:active {
       .pagination .nav-links .page-numbers:active {
         background: #fff; }
 
-/* line 16, C:/wamp/www/pec/src/assets/css/scss/components/_gallery.scss */
+/* line 3, C:/wamp/www/pec/src/assets/css/scss/components/_gallery.scss */
+.gallery-columns-1 .gallery-item {
+  width: calc(100% - 16px); }
+  /* line 73, C:/wamp/www/pec/src/assets/css/scss/vendors/mdl/_grid.scss */
+  .content-area > .gallery-columns-1 .gallery-item, .site-main > .gallery-columns-1 .gallery-item, .footer > .gallery-columns-1 .gallery-item {
+    width: 100%; }
+  @media screen and (min-width: 768px) {
+    /* line 3, C:/wamp/www/pec/src/assets/css/scss/components/_gallery.scss */
+    .gallery-columns-1 .gallery-item {
+      width: calc(100% - 16px); }
+      /* line 73, C:/wamp/www/pec/src/assets/css/scss/vendors/mdl/_grid.scss */
+      .content-area > .gallery-columns-1 .gallery-item, .site-main > .gallery-columns-1 .gallery-item, .footer > .gallery-columns-1 .gallery-item {
+        width: 100%; } }
+
+/* line 3, C:/wamp/www/pec/src/assets/css/scss/components/_gallery.scss */
+.gallery-columns-2 .gallery-item {
+  width: calc(100% - 16px); }
+  /* line 73, C:/wamp/www/pec/src/assets/css/scss/vendors/mdl/_grid.scss */
+  .content-area > .gallery-columns-2 .gallery-item, .site-main > .gallery-columns-2 .gallery-item, .footer > .gallery-columns-2 .gallery-item {
+    width: 100%; }
+  @media screen and (min-width: 768px) {
+    /* line 3, C:/wamp/www/pec/src/assets/css/scss/components/_gallery.scss */
+    .gallery-columns-2 .gallery-item {
+      width: calc(50% - 16px); }
+      /* line 73, C:/wamp/www/pec/src/assets/css/scss/vendors/mdl/_grid.scss */
+      .content-area > .gallery-columns-2 .gallery-item, .site-main > .gallery-columns-2 .gallery-item, .footer > .gallery-columns-2 .gallery-item {
+        width: 50%; } }
+
+/* line 3, C:/wamp/www/pec/src/assets/css/scss/components/_gallery.scss */
+.gallery-columns-3 .gallery-item {
+  width: calc(100% - 16px); }
+  /* line 73, C:/wamp/www/pec/src/assets/css/scss/vendors/mdl/_grid.scss */
+  .content-area > .gallery-columns-3 .gallery-item, .site-main > .gallery-columns-3 .gallery-item, .footer > .gallery-columns-3 .gallery-item {
+    width: 100%; }
+  @media screen and (min-width: 768px) {
+    /* line 3, C:/wamp/www/pec/src/assets/css/scss/components/_gallery.scss */
+    .gallery-columns-3 .gallery-item {
+      width: calc(33.33333% - 16px); }
+      /* line 73, C:/wamp/www/pec/src/assets/css/scss/vendors/mdl/_grid.scss */
+      .content-area > .gallery-columns-3 .gallery-item, .site-main > .gallery-columns-3 .gallery-item, .footer > .gallery-columns-3 .gallery-item {
+        width: 33.33333%; } }
+
+/* line 3, C:/wamp/www/pec/src/assets/css/scss/components/_gallery.scss */
+.gallery-columns-4 .gallery-item {
+  width: calc(100% - 16px); }
+  /* line 73, C:/wamp/www/pec/src/assets/css/scss/vendors/mdl/_grid.scss */
+  .content-area > .gallery-columns-4 .gallery-item, .site-main > .gallery-columns-4 .gallery-item, .footer > .gallery-columns-4 .gallery-item {
+    width: 100%; }
+  @media screen and (min-width: 768px) {
+    /* line 3, C:/wamp/www/pec/src/assets/css/scss/components/_gallery.scss */
+    .gallery-columns-4 .gallery-item {
+      width: calc(25% - 16px); }
+      /* line 73, C:/wamp/www/pec/src/assets/css/scss/vendors/mdl/_grid.scss */
+      .content-area > .gallery-columns-4 .gallery-item, .site-main > .gallery-columns-4 .gallery-item, .footer > .gallery-columns-4 .gallery-item {
+        width: 25%; } }
+
+/* line 3, C:/wamp/www/pec/src/assets/css/scss/components/_gallery.scss */
+.gallery-columns-5 .gallery-item {
+  width: calc(100% - 16px); }
+  /* line 73, C:/wamp/www/pec/src/assets/css/scss/vendors/mdl/_grid.scss */
+  .content-area > .gallery-columns-5 .gallery-item, .site-main > .gallery-columns-5 .gallery-item, .footer > .gallery-columns-5 .gallery-item {
+    width: 100%; }
+  @media screen and (min-width: 768px) {
+    /* line 3, C:/wamp/www/pec/src/assets/css/scss/components/_gallery.scss */
+    .gallery-columns-5 .gallery-item {
+      width: calc(20% - 16px); }
+      /* line 73, C:/wamp/www/pec/src/assets/css/scss/vendors/mdl/_grid.scss */
+      .content-area > .gallery-columns-5 .gallery-item, .site-main > .gallery-columns-5 .gallery-item, .footer > .gallery-columns-5 .gallery-item {
+        width: 20%; } }
+
+/* line 3, C:/wamp/www/pec/src/assets/css/scss/components/_gallery.scss */
+.gallery-columns-6 .gallery-item {
+  width: calc(100% - 16px); }
+  /* line 73, C:/wamp/www/pec/src/assets/css/scss/vendors/mdl/_grid.scss */
+  .content-area > .gallery-columns-6 .gallery-item, .site-main > .gallery-columns-6 .gallery-item, .footer > .gallery-columns-6 .gallery-item {
+    width: 100%; }
+  @media screen and (min-width: 768px) {
+    /* line 3, C:/wamp/www/pec/src/assets/css/scss/components/_gallery.scss */
+    .gallery-columns-6 .gallery-item {
+      width: calc(16.66667% - 16px); }
+      /* line 73, C:/wamp/www/pec/src/assets/css/scss/vendors/mdl/_grid.scss */
+      .content-area > .gallery-columns-6 .gallery-item, .site-main > .gallery-columns-6 .gallery-item, .footer > .gallery-columns-6 .gallery-item {
+        width: 16.66667%; } }
+
+/* line 3, C:/wamp/www/pec/src/assets/css/scss/components/_gallery.scss */
+.gallery-columns-7 .gallery-item {
+  width: calc(100% - 16px); }
+  /* line 73, C:/wamp/www/pec/src/assets/css/scss/vendors/mdl/_grid.scss */
+  .content-area > .gallery-columns-7 .gallery-item, .site-main > .gallery-columns-7 .gallery-item, .footer > .gallery-columns-7 .gallery-item {
+    width: 100%; }
+  @media screen and (min-width: 768px) {
+    /* line 3, C:/wamp/www/pec/src/assets/css/scss/components/_gallery.scss */
+    .gallery-columns-7 .gallery-item {
+      width: calc(14.28571% - 16px); }
+      /* line 73, C:/wamp/www/pec/src/assets/css/scss/vendors/mdl/_grid.scss */
+      .content-area > .gallery-columns-7 .gallery-item, .site-main > .gallery-columns-7 .gallery-item, .footer > .gallery-columns-7 .gallery-item {
+        width: 14.28571%; } }
+
+/* line 3, C:/wamp/www/pec/src/assets/css/scss/components/_gallery.scss */
+.gallery-columns-8 .gallery-item {
+  width: calc(100% - 16px); }
+  /* line 73, C:/wamp/www/pec/src/assets/css/scss/vendors/mdl/_grid.scss */
+  .content-area > .gallery-columns-8 .gallery-item, .site-main > .gallery-columns-8 .gallery-item, .footer > .gallery-columns-8 .gallery-item {
+    width: 100%; }
+  @media screen and (min-width: 768px) {
+    /* line 3, C:/wamp/www/pec/src/assets/css/scss/components/_gallery.scss */
+    .gallery-columns-8 .gallery-item {
+      width: calc(12.5% - 16px); }
+      /* line 73, C:/wamp/www/pec/src/assets/css/scss/vendors/mdl/_grid.scss */
+      .content-area > .gallery-columns-8 .gallery-item, .site-main > .gallery-columns-8 .gallery-item, .footer > .gallery-columns-8 .gallery-item {
+        width: 12.5%; } }
+
+/* line 3, C:/wamp/www/pec/src/assets/css/scss/components/_gallery.scss */
+.gallery-columns-9 .gallery-item {
+  width: calc(100% - 16px); }
+  /* line 73, C:/wamp/www/pec/src/assets/css/scss/vendors/mdl/_grid.scss */
+  .content-area > .gallery-columns-9 .gallery-item, .site-main > .gallery-columns-9 .gallery-item, .footer > .gallery-columns-9 .gallery-item {
+    width: 100%; }
+  @media screen and (min-width: 768px) {
+    /* line 3, C:/wamp/www/pec/src/assets/css/scss/components/_gallery.scss */
+    .gallery-columns-9 .gallery-item {
+      width: calc(11.11111% - 16px); }
+      /* line 73, C:/wamp/www/pec/src/assets/css/scss/vendors/mdl/_grid.scss */
+      .content-area > .gallery-columns-9 .gallery-item, .site-main > .gallery-columns-9 .gallery-item, .footer > .gallery-columns-9 .gallery-item {
+        width: 11.11111%; } }
+
+/* line 22, C:/wamp/www/pec/src/assets/css/scss/components/_gallery.scss */
 .gallery-icon {
-  overflow: hidden; }
+  overflow: hidden;
+  text-align: center; }
+  /* line 29, C:/wamp/www/pec/src/assets/css/scss/components/_gallery.scss */
+  .gallery-icon img {
+    height: auto; }
+
+/* line 34, C:/wamp/www/pec/src/assets/css/scss/components/_gallery.scss */
+.gallery-caption {
+  text-align: center; }
 
 /* line 1, C:/wamp/www/pec/src/assets/css/scss/partials/_header.scss */
 .header {
@@ -3743,78 +3864,35 @@ li.page-prev.nav-previous a:active {
   padding: 0; }
 
 /* line 5, C:/wamp/www/pec/src/assets/css/scss/pages/_page.scss */
-.page .entry-header {
+.page .entry-header, .post .entry-header {
   padding-top: 2.63288em;
   background: url("../img/default-banner.jpg") fixed no-repeat;
-  background-size: 80%; }
+  background-size: 100% !important; }
   /* line 10, C:/wamp/www/pec/src/assets/css/scss/pages/_page.scss */
-  .page .entry-header .content-header {
+  .page .entry-header .content-header, .post .entry-header .content-header {
     margin-bottom: 2.63288em;
     padding: 1em 1.618em;
     background: rgba(240, 250, 251, 0.8); }
     /* line 15, C:/wamp/www/pec/src/assets/css/scss/pages/_page.scss */
-    .page .entry-header .content-header h2 {
+    .page .entry-header .content-header h2, .post .entry-header .content-header h2 {
       margin: 0.37981em 0; }
 
 /* line 20, C:/wamp/www/pec/src/assets/css/scss/pages/_page.scss */
-.page .page-breadcrumbs {
+.page .page-breadcrumbs, .post .page-breadcrumbs {
   background: rgba(240, 250, 251, 0.8);
   padding: 0.7242em 0;
   margin-top: 2.63288em; }
 
 /* line 26, C:/wamp/www/pec/src/assets/css/scss/pages/_page.scss */
-.page .entry-content {
+.page .entry-content, .post .entry-content {
   padding-top: 3.63559em; }
 
-/* line 4, C:/wamp/www/pec/src/assets/css/scss/pages/_single.scss */
-.single-article .post,
-.single-article .post-navigation,
-.single-article .comments-area {
-  float: left;
-  display: block;
-  margin-right: 3.16844%;
-  width: 88.53684%;
-  display: block;
-  margin-right: auto;
-  margin-left: auto;
-  margin-top: 1.06667em;
-  margin-bottom: 1.06667em; }
-  /* line 89, C:/wamp/www/pec/src/assets/css/scss/vendors/neat/grid/_span-columns.scss */
-  .single-article .post:last-child,
-  .single-article .post-navigation:last-child,
-  .single-article .comments-area:last-child {
-    margin-right: 0; }
-  /* line 20, C:/wamp/www/pec/src/assets/css/scss/vendors/bourbon/addons/_clearfix.scss */
-  .single-article .post::after,
-  .single-article .post-navigation::after,
-  .single-article .comments-area::after {
-    display: table;
-    clear: both;
-    content: ""; }
-  /* line 14, C:/wamp/www/pec/src/assets/css/scss/pages/_single.scss */
-  .single-article .post:last-child,
-  .single-article .post-navigation:last-child,
-  .single-article .comments-area:last-child {
-    margin-right: auto; }
-
-/* line 19, C:/wamp/www/pec/src/assets/css/scss/pages/_single.scss */
-.single-article .entry-header {
+/* line 31, C:/wamp/www/pec/src/assets/css/scss/pages/_page.scss */
+.entry-footer {
   display: flex;
-  align-items: center; }
-  /* line 22, C:/wamp/www/pec/src/assets/css/scss/pages/_single.scss */
-  .single-article .entry-header .post-thumbnail {
-    flex-basis: 25%;
-    border-radius: 50%;
-    margin-right: 1.13778em;
-    overflow: hidden; }
-    /* line 27, C:/wamp/www/pec/src/assets/css/scss/pages/_single.scss */
-    .single-article .entry-header .post-thumbnail img {
-      max-width: 100%;
-      height: auto; }
-  /* line 32, C:/wamp/www/pec/src/assets/css/scss/pages/_single.scss */
-  .single-article .entry-header .entry-title {
-    flex-basis: 75%;
-    margin-bottom: 0; }
+  justify-content: center;
+  align-items: center;
+  padding: 1em; }
 
 @media print {
   /* line 2, C:/wamp/www/pec/src/assets/css/scss/partials/_print.scss */

@@ -11,12 +11,27 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
     <!-- .entry-header -->
-    <header class="entry-header">
-        <?php the_title( '<h2 class="entry-title h1 width-100">', '</h2>' ); ?>
+    <header class="entry-header"
+           <?php
+            if (has_post_thumbnail()): ?>
+            style="background: url(<?php the_post_thumbnail_url('full'); ?>) no-repeat fixed;"
+            <?php endif; ?>>
+        <!-- title -->
+       <div class="content-header width-100">
+            <?php the_title( '<h2 class="entry-title h1">', '</h2>' ); ?>
+       </div>
+        <!-- Yoast SEO -->
+        <div class="page-breadcrumbs">
+            <?php
+                if ( function_exists('yoast_breadcrumb') ) {
+                    yoast_breadcrumb('<p id="breadcrumbs" class="width-100">','</p>');
+                }
+            ?>
+        </div>
     </header>
 
     <!-- .entry-content -->
-    <div class="entry-content">
+    <div class="entry-content width-100">
         <?php the_content(); ?>
         <?php
             wp_link_pages( array(

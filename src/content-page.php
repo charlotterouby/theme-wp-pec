@@ -9,13 +9,11 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-    <?php
-        // Post thumbnail.
-        twentyfifteen_post_thumbnail();
-    ?>
-
     <!-- .entry-header -->
-    <header class="entry-header">
+    <header class="entry-header" <?php
+            if (has_post_thumbnail()): ?>
+            style="background: url(<?php the_post_thumbnail_url('full'); ?>) no-repeat fixed;"
+            <?php endif; ?>>
         <!-- title -->
        <div class="content-header width-100">
             <?php the_title( '<h2 class="entry-title h1">', '</h2>' ); ?>

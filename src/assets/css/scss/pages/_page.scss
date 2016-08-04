@@ -1,11 +1,11 @@
 .page-content .site-main {
     padding: 0;
 }
-.page {
+.page, .post {
     .entry-header {
         padding-top: ms(15);
         background: url('../img/default-banner.jpg') fixed no-repeat;
-        background-size: cover;
+        background-size: 100% !important;
 
         .content-header {
             margin-bottom: ms(15);
@@ -26,4 +26,11 @@
     .entry-content {
         padding-top: ms(20);
     }
+}
+
+.entry-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: ms(0);
 }
