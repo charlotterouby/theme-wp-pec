@@ -331,7 +331,7 @@ if ( !is_admin() ) add_action( 'wp_enqueue_scripts', 'enqueue_assets', 11 );
 /*  CUSTOM PROPERTIES
 /* ========================================================================================== */
 
-//function to call first uploaded image in functions file
+//function to call first uploaded image of the post
 function main_image() {
     $files = get_children('post_parent='.get_the_ID().'&post_type=attachment&post_mime_type=image&order=desc');
       if($files) :
@@ -354,6 +354,7 @@ function main_image() {
       endif;
 }
 
+// function to call url of the first uploaded image of the post
 function url_main_image(){
     $files = get_children('post_parent='.get_the_ID().'&post_type=attachment&post_mime_type=image&order=desc');
     if($files):
@@ -371,6 +372,16 @@ function url_main_image(){
     endif;
 }
 
+// Filtre widget Nuage de tags
+function custom_tag_cloud($args) {
+  $args['unit'] = 'em';
+  $args['smallest'] = 0.8;
+  $args['largest'] = 2;
+  $args['order'] = 'RAND';
+  $args['number'] = 20;
+  return $args;
+}
+add_filter('widget_tag_cloud_args', 'custom_tag_cloud');
 /* ========================================================================================== */
 /*  REGISTER PLUGINS
 /* ========================================================================================== */

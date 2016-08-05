@@ -72,6 +72,32 @@
     }
 }
 
+// Tag cloud
+// ==============================
+.tagcloud {
+    text-align: center;
+}
+
+@for $i from 1 through 20 {
+    .tag-link-position-#{$i} {
+        @if $i%3 == 0 {
+            color: palette(vert);
+        } @else if $i%2 == 0 {
+            color: palette(jaune);
+        }
+    }
+    .tag-link-position-#{$i}:hover,
+    .tag-link-position-#{$i}:focus,
+    .tag-link-position-#{$i}:active {
+        @if $i%3 == 0 {
+            color: palette(vert, mid-dark);
+        } @else if $i%2 == 0 {
+            color: palette(jaune, dark);
+        }
+    }
+
+}
+
 // Widget Recent Comments
 // ==============================
 .widget_recent_comments {
