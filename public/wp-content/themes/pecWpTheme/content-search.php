@@ -10,7 +10,7 @@
  */
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class('pec-thumbnail'); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class('pec-thumbnail mdl-cell mdl-cell--4-col mdl-cell--12-col-phone'); ?>>
     <!-- image thumbnail -->
     <?php
         if (has_post_thumbnail()):

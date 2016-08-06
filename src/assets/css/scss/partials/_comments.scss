@@ -5,12 +5,12 @@
 }
 
 .comment-body {
-    @extend %mdl-grid;
+    @extend .mdl-grid;
     display: flex;
 
     .comment-meta {
-        @extend %mdl-cell;
-        @extend %mdl-cell--3-col;
+        @extend .mdl-cell;
+        @extend .mdl-cell--3-col;
         max-width: 25%;
     }
 
@@ -32,12 +32,12 @@
     }
 
     .comment-content {
-        @extend %mdl-cell;
-        @extend %mdl-cell--9-col;
+        @extend .mdl-cell;
+        @extend .mdl-cell--9-col;
     }
 
     .reply {
-        @extend %mdl-cell;
-        @extend %mdl-cell--3-offset;
+        @extend .mdl-cell;
+        @extend .mdl-cell--3-offset;
     }
 }

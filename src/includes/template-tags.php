@@ -194,7 +194,7 @@ function twentyfifteen_post_thumbnail() {
 
     <?php else : ?>
 
-    <a class="post-thumbnail" href="<?php the_permalink(); ?>" aria-hidden="true">
+    <a class="post-thumbnail mdl-cell mdl-cell--12-col" href="<?php the_permalink(); ?>" aria-hidden="true">
         <?php
             the_post_thumbnail( 'post-thumbnail', array( 'alt' => get_the_title() ) );
         ?>

@@ -345,12 +345,12 @@ function main_image() {
         $main=wp_get_attachment_url($num);
         $template=get_template_directory();
         $the_title=get_the_title();
-        print "<a class='post-thumbnail' href='$permalink' aria-hidden='true'><img src='$main' alt='$the_title' class='frame' /></a>";
+        print "<a class='post-thumbnail mdl-cell mdl-cell--12-col' href='$permalink' aria-hidden='true'><img src='$main' alt='$the_title' class='frame' /></a>";
       else :
         $src = get_template_directory_uri();
         $alt = get_the_title();
         $permalink= get_permalink();
-        print "<a class='post-thumbnail' href='$permalink' aria-hidden='true'><img src='$src/assets/img/default-image.jpg' alt='$alt' /></a>";
+        print "<a class='post-thumbnail mdl-cell mdl-cell--12-col' href='$permalink' aria-hidden='true'><img src='$src/assets/img/default-image.jpg' alt='$alt' /></a>";
       endif;
 }
 

@@ -10,7 +10,7 @@
 if ( has_nav_menu( 'social' ) || is_active_sidebar( 'sidebar-1' )  ) : ?>
     <?php if ( is_active_sidebar( 'sidebar-1' ) ) : ?>
         <!-- .widget-area -->
-        <div id="widget-area" class="widget-area" role="complementary">
+        <div id="widget-area" class="widget-area mdl-cell mdl-cell--12-col" role="complementary">
             <?php dynamic_sidebar( 'sidebar-1' ); ?>
         </div>
     <?php endif; ?>
@@ -18,7 +18,7 @@ if ( has_nav_menu( 'social' ) || is_active_sidebar( 'sidebar-1' )  ) : ?>
     <!-- .social-navigation -->
 <!--
     <?php //if ( has_nav_menu( 'social' ) ) : ?>
-            <div class="social-menu">
+            <div class="social-menu mdl-cell mdl-cell--12-col">
                 <h5>Retrouvez-nous sur</h5>
                 <nav id="social-navigation" class="social-navigation" role="navigation">
                     <?php

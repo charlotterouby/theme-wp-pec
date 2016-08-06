@@ -20,7 +20,7 @@ if ( post_password_required() ) {
 }
 ?>
 
-<div id="comments" class="comments-area width-100">
+<div id="comments" class="comments-area width-100 mdl-cell mdl-cell--10-col mdl-cell--12-col-phone">
     <?php if ( have_comments() ) : ?>
     <div class="comments-display-list">
         <h5 class="comments-title">

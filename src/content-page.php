@@ -15,21 +15,21 @@
             style="background: url(<?php the_post_thumbnail_url('full'); ?>) no-repeat fixed;"
             <?php endif; ?>>
         <!-- title -->
-       <div class="content-header width-100">
+       <div class="content-header width-100 mdl-cell mdl-cell--10-col mdl-cell--12-col-phone">
             <?php the_title( '<h2 class="entry-title h1">', '</h2>' ); ?>
        </div>
         <!-- Yoast SEO -->
         <div class="page-breadcrumbs">
             <?php
                 if ( function_exists('yoast_breadcrumb') ) {
-                    yoast_breadcrumb('<p id="breadcrumbs" class="width-100">','</p>');
+                    yoast_breadcrumb('<p id="breadcrumbs" class="width-100 mdl-cell mdl-cell--10-col mdl-cell--12-col-phone">','</p>');
                 }
             ?>
         </div>
     </header>
 
     <!-- .entry-content -->
-    <div class="entry-content width-100">
+    <div class="entry-content width-100 mdl-cell mdl-cell--10-col mdl-cell--12-col-phone">
         <?php the_content(); ?>
         <?php
             wp_link_pages( array(

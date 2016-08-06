@@ -2,6 +2,7 @@
     .gallery-columns-#{$i} {
         .gallery-item {
             @include partial-size($i, $i, $grid-phone-gutter);
+            // tablet + desktop
             @include media($medium){
                 @include partial-size(1, $i, $grid-desktop-gutter);
             }
@@ -10,11 +11,11 @@
 }
 
 .gallery {
-    @extend %mdl-grid;
+    @extend .mdl-grid;
 }
 
 .gallery-item {
-    @extend %mdl-cell;
+    @extend .mdl-cell;
     @extend %mdl-card;
 
 }
@@ -35,4 +36,5 @@
     @extend %mdl-card__title;
     @extend %mdl-card--expand;
     text-align: center;
+    justify-content: center;
 }

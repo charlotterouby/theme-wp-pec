@@ -14,7 +14,7 @@
     border-top: solid 1px palette(gris, 20);
 }
 .comment-form {
-    @extend %mdl-grid;
+    @extend .mdl-grid;
     display: flex;
 //    flex-direction: column;
     flex-wrap: wrap;
@@ -26,13 +26,13 @@
     .comment-form-email,
     .comment-form-url,
     .form-submit {
-        @extend %mdl-cell;
+        @extend .mdl-cell;
     }
 
     .comment-form-comment,
     .logged-in-as,
     .comment-notes {
-        @extend %mdl-cell--12-col;
+        @extend .mdl-cell--12-col;
     }
 
 
@@ -40,7 +40,7 @@
     .comment-form-email,
     .comment-form-url,
     .form-submit {
-        @extend %mdl-cell--4-col;
+        @extend .mdl-cell--4-col;
 //        display: flex;
 //        align-items: flex-end;
     }

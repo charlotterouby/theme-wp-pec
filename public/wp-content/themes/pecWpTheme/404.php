@@ -9,11 +9,11 @@
 
 get_header(); ?>
 
-    <div id="primary" class="content-area">
-        <main id="main" class="site-main width-100" role="main">
+    <div id="primary" class="content-area mdl-grid mdl-grid--no-spacing">
+        <main id="main" class="site-main mdl-grid mdl-grid--no-spacing width-100 mdl-cell mdl-cell--10-col mdl-cell--12-col-phone" role="main">
 
             <section class="error-404 not-found">
-                <header class="page-header">
+                <header class="page-header mdl-cell mdl-cell mdl-cell--12-col">
                     <h1 class="page-title"><?php _e( 'Oops! That page can&rsquo;t be found.', 'twentyfifteen' ); ?></h1>
                 </header><!-- .page-header -->
 

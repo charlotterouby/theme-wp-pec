@@ -21,6 +21,7 @@
         height: 150px;
         max-height: 150px;
         overflow: hidden;
+        align-items: flex-start;
         img {
             @include border-top-radius($base-border-radius);
             opacity: 1;
@@ -36,14 +37,11 @@
         &-header,
         &-content,
         &-footer {
-            padding: 2%;
+            padding: 4%;
         }
 
-        &-content {
-            margin-bottom: 2.5em;
-        }
         &-footer {
-            position: absolute;
+//            position: absolute;
             bottom: 0;
             //box model
             width: 100%;
@@ -55,6 +53,9 @@
             span {
                 flex-basis: 50%;
                 text-align: center;
+            }
+            .tags-links {
+                display: none;
             }
         }
     }

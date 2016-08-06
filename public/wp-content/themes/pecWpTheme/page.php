@@ -14,9 +14,9 @@
 get_header(); ?>
 
     <!-- .content-area -->
-    <div id="primary" class="content-area page-content">
+    <div id="primary" class="content-area mdl-grid mdl-grid--no-spacing page-content">
         <!-- .site-main -->
-        <main id="main" class="site-content width-75" role="main">
+        <main id="main" class="site-content width-75 mdl-cell mdl-cell--9-col mdl-cell--12-col-phone" role="main">
         <?php
         // Start the loop.
         while ( have_posts() ) : the_post();
@@ -34,7 +34,7 @@ get_header(); ?>
         ?>
         </main>
         <!-- .sidebar -->
-        <aside class="sidebar">
+        <aside class="sidebar mdl-grid mdl-cell mdl-cell--3-col mdl-cell--12-col-phone">
             <?php get_sidebar() ?>
         </aside>
     </div>

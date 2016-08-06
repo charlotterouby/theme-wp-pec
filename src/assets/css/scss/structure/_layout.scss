@@ -39,8 +39,6 @@ html {
 // Conteneur zone principal
 // ==============================
 .content-area {
-    @extend %mdl-grid;
-    @extend %mdl-grid--no-spacing;
     padding: 0 !important;
     min-height: 80vh;
     justify-content: space-between;
@@ -49,25 +47,17 @@ html {
 // .site-main
 // ==============================
 .site-main {
-    @extend %mdl-grid;
-    @extend %mdl-grid--no-spacing;
     flex-direction: column;
     padding: 2% 0;
 }
 
 .width-75 {
-    @extend %mdl-cell;
-    @extend %mdl-cell--9-col;
-    @extend %mdl-cell--12-col-phone;
     max-width: 100%;
     @include media($medium) {
         max-width: 75%;
     }
 }
 .width-100 {
-    @extend %mdl-cell;
-    @extend %mdl-cell--10-col;
-    @extend %mdl-cell--12-col-phone;
     max-width: 100%;
     margin: 0 auto !important;
 
@@ -75,30 +65,18 @@ html {
 
 // header.title-page
 // ==============================
-.site-main header {
-    @extend %mdl-cell;
-    @extend %mdl-cell--12-col;
-}
+.site-main header {}
 
 // Breadcrumbs
 // ==============================
-.breadcrumbs {
-    @extend %mdl-cell;
-    @extend %mdl-cell--12-col;
-}
+.breadcrumbs {}
 
 // Post Cards
 // ==============================
 .masonry-grid {
-    @extend %mdl-grid;
-    @extend %mdl-cell;
-    @extend %mdl-cell--12-col;
     padding: 0 !important;
 }
 .pec-thumbnail {
-    @extend %mdl-cell;
-    @extend %mdl-cell--4-col;
-    @extend %mdl-cell--12-col-phone;
     @include media($medium){
         max-width: 30%;
     }
@@ -107,28 +85,17 @@ html {
 // Zone sidebar
 // ==============================
 .sidebar {
-    @extend %mdl-grid;
-    @extend %mdl-cell;
-    @extend %mdl-cell--3-col;
-    @extend %mdl-cell--12-col-phone;
     max-width: 100%;
     @include media($medium){
         max-width: 25%;
     }
 
-    .widget-area, .social-menu {
-        @extend %mdl-cell;
-        @extend %mdl-cell--12-col;
-    }
+    .widget-area, .social-menu {}
 }
 
 // Footer
 // ==============================
 .footer {
-    @extend %mdl-grid;
-    @extend %mdl-grid--no-spacing;
     margin: 0;
-    .copyright, .secondary-menu {
-        @extend %mdl-cell;
-    }
+    .copyright, .secondary-menu {}
 }

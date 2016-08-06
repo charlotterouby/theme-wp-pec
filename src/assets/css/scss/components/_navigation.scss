@@ -75,12 +75,15 @@
                     border-bottom: solid 1px palette(gris, 20);
                 }
                 a {
-                    color: palette(gris);
+                    color: palette(vert, dark);
                 }
                 li:hover,
                 li:focus,
                 li:active {
                     background: palette(jaune);
+                    a {
+                        color: palette(gris, light);
+                    }
                 }
             }
         }
@@ -221,7 +224,6 @@
 
 .secondary-menu .menu {
     // styles par défaut
-    @extend .mdl-navigation;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -229,7 +231,7 @@
     justify-content: center;
     @include media($medium){
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: flex-end;
     }
     li {
         padding: 0.5em;

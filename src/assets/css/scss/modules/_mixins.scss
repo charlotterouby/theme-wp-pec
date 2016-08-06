@@ -4,6 +4,46 @@
 
 
 /* ==============================
+    mixins grid d'après .mdl-grid et .mdl-cell
+============================== */
+@mixin mdl-grid {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 0 auto 0 auto;
+    align-items: stretch;
+    // mobile
+    @media (max-width: $grid-tablet-breakpoint - 1) {
+        padding: $grid-phone-margin - ($grid-phone-gutter / 2);
+    }
+    // tablet
+    @media (min-width: $grid-tablet-breakpoint) and (max-width: $grid-desktop-breakpoint - 1) {
+        padding: $grid-tablet-margin - ($grid-tablet-gutter / 2);
+    }
+    // desktop
+    @media (min-width: $grid-desktop-breakpoint) {
+        padding: $grid-desktop-margin - ($grid-desktop-gutter / 2);
+    }
+}
+@mixin mdl-cell {
+    box-sizing: border-box;
+    // mobile
+    @media (max-width: $grid-tablet-breakpoint - 1) {
+        margin: $grid-phone-gutter / 2;
+        @include partial-size($grid-cell-default-columns, $grid-phone-columns, $grid-phone-gutter);
+    }
+    // tablet
+    @media (min-width: $grid-tablet-breakpoint) and (max-width: $grid-desktop-breakpoint - 1) {
+        margin: $grid-tablet-gutter / 2;
+        @include partial-size($grid-cell-default-columns, $grid-tablet-columns, $grid-tablet-gutter);
+    }
+    // desktop
+    @media (min-width: $grid-desktop-breakpoint) {
+        margin: $grid-desktop-gutter / 2;
+        @include partial-size($grid-cell-default-columns, $grid-desktop-columns, $grid-desktop-gutter);
+    }
+}
+
+/* ==============================
     Align - Center (Horizontally & Vertically)
 ============================== */
 

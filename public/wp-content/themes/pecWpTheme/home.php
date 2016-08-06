@@ -16,24 +16,24 @@
 
 get_header(); ?>
 
-    <div id="primary" class="content-area">
-        <main id="main" class="site-main width-75" role="main">
+    <div id="primary" class="content-area mdl-grid mdl-grid--no-spacing">
+        <main id="main" class="site-main mdl-grid mdl-grid--no-spacing width-75 mdl-cell mdl-cell--9-col mdl-cell--12-col-phone" role="main">
             <!-- Yoast SEO -->
             <?php
                 if ( function_exists('yoast_breadcrumb') ) {
-                    yoast_breadcrumb('<p id="breadcrumbs" class="breadcrumbs">','</p>');
+                    yoast_breadcrumb('<p id="breadcrumbs" class="breadcrumbs mdl-cell mdl-cell mdl-cell--12-col">','</p>');
                 }
             ?>
             <!-- Content -->
             <?php if ( have_posts() ) : ?>
 
                 <?php if ( is_home() && ! is_front_page() ) : ?>
-                    <header>
+                    <header class="mdl-cell mdl-cell mdl-cell--12-col">
                         <h2 class="page-title screen-reader-text h1"><?php single_post_title(); ?></h2>
                     </header>
                 <?php endif; ?>
                 <!--END HEADER -->
-                <div class="masonry-grid">
+                <div class="masonry-grid mdl-grid mdl-cell mdl-cell--12-col">
                 <?php
                     // Start the loop.
                     while ( have_posts() ) : the_post();
@@ -59,7 +59,7 @@ get_header(); ?>
         </main>
         <!-- .site-main -->
 
-        <aside class="sidebar">
+        <aside class="sidebar mdl-grid mdl-cell mdl-cell--3-col mdl-cell--12-col-phone">
             <?php get_sidebar() ?>
         </aside>
         <!-- .sidebar -->
