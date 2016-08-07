@@ -40,6 +40,10 @@ $(document).ready(function () {
     /* ==============================
         Formulaire commentaires
        ============================== */
+    $('.entry-meta-event .cart').addClass('mdl-textfield mdl-js-textfield');
+    $('.entry-meta-event .cart .tribe-ticket input[type="number"]').addClass('mdl-textfield__input');
+    $('.entry-meta-event .cart .tribe-events-tickets input[type="submit"]').addClass('mdl-button');
+
     $('.comment-form-comment').addClass('mdl-textfield mdl-js-textfield');
     $('.comment-form-comment label').addClass('mdl-textfield__label');
     $('.comment-form-comment textarea').addClass('mdl-textfield__input');

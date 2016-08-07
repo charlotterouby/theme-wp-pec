@@ -1649,8 +1649,14 @@ textarea {
 .tribe-events-widget-link a, .post-edit-link,
 .comment-edit-link,
 #cancel-comment-reply-link, .pagination .nav-links li.page-next.nav-next,
-.pagination .nav-links
-li.page-prev.nav-previous, .pagination .nav-links .page-numbers, .search-form .search-submit {
+.pagination .nav-links li.page-prev.nav-previous,
+.pagination .nav-links li.tribe-events-nav-previous,
+.pagination .nav-links li.tribe-events-nav-next,
+.pagination ul.nav-links li.page-next.nav-next,
+.pagination ul.nav-links li.page-prev.nav-previous,
+.pagination ul.nav-links li.tribe-events-nav-previous,
+.pagination ul.nav-links li.tribe-events-nav-next, .pagination .nav-links .page-numbers,
+.pagination ul.nav-links .page-numbers, .search-form .search-submit {
   background: transparent;
   border: none;
   border-radius: 2px;
@@ -1680,15 +1686,19 @@ li.page-prev.nav-previous, .pagination .nav-links .page-numbers, .search-form .s
   .tribe-events-widget-link a::-moz-focus-inner, .post-edit-link::-moz-focus-inner,
   .comment-edit-link::-moz-focus-inner,
   #cancel-comment-reply-link::-moz-focus-inner, .pagination .nav-links li.page-next.nav-next::-moz-focus-inner,
-  .pagination .nav-links
-li.page-prev.nav-previous::-moz-focus-inner, .pagination .nav-links .page-numbers::-moz-focus-inner, .search-form .search-submit::-moz-focus-inner {
+  .pagination .nav-links li.page-prev.nav-previous::-moz-focus-inner,
+  .pagination .nav-links li.tribe-events-nav-previous::-moz-focus-inner,
+  .pagination .nav-links li.tribe-events-nav-next::-moz-focus-inner,
+  .pagination .nav-links .page-numbers::-moz-focus-inner,
+  .search-form .search-submit::-moz-focus-inner {
     border: 0; }
 
 /* line 63, C:/wamp/www/pec/src/assets/css/scss/vendors/mdl/_button.scss */
 input[type="submit"].mdl-button, input[type="submit"].comment-reply-link,
 input[type="submit"].post-edit-link,
 input[type="submit"].comment-edit-link,
-input[type="submit"]#cancel-comment-reply-link, .pagination .nav-links input[type="submit"].page-numbers, .search-form input[type="submit"].search-submit {
+input[type="submit"]#cancel-comment-reply-link, .pagination .nav-links input[type="submit"].page-numbers,
+.search-form input[type="submit"].search-submit {
   -webkit-appearance: none; }
 
 /* line 68, C:/wamp/www/pec/src/assets/css/scss/vendors/mdl/_button.scss */
@@ -1719,8 +1729,9 @@ input[type="submit"]#cancel-comment-reply-link, .pagination .nav-links input[typ
 [disabled][disabled].comment-edit-link,
 [disabled][disabled]#cancel-comment-reply-link,
 .pagination .nav-links li[disabled][disabled].page-next.nav-next,
-.pagination .nav-links
-li[disabled][disabled].page-prev.nav-previous,
+.pagination .nav-links li[disabled][disabled].page-prev.nav-previous,
+.pagination .nav-links li[disabled][disabled].tribe-events-nav-previous,
+.pagination .nav-links li[disabled][disabled].tribe-events-nav-next,
 .pagination .nav-links [disabled][disabled].page-numbers,
 .search-form [disabled][disabled].search-submit {
   color: rgba(0,0,0, 0.26);
@@ -3949,23 +3960,34 @@ hr {
 .pagination {
   text-align: center;
   margin: 2% 0; }
-  /* line 4, C:/wamp/www/pec/src/assets/css/scss/components/_pagination.scss */
-  .pagination .nav-links {
+  /* line 5, C:/wamp/www/pec/src/assets/css/scss/components/_pagination.scss */
+  .pagination .nav-links,
+  .pagination ul.nav-links {
     display: inline;
     margin: 0;
     padding: 0;
     text-align: center;
     list-style: none; }
-    /* line 12, C:/wamp/www/pec/src/assets/css/scss/components/_pagination.scss */
+    /* line 16, C:/wamp/www/pec/src/assets/css/scss/components/_pagination.scss */
     .pagination .nav-links li.page-next.nav-next,
-    .pagination .nav-links
-li.page-prev.nav-previous {
+    .pagination .nav-links li.page-prev.nav-previous,
+    .pagination .nav-links li.tribe-events-nav-previous,
+    .pagination .nav-links li.tribe-events-nav-next,
+    .pagination ul.nav-links li.page-next.nav-next,
+    .pagination ul.nav-links li.page-prev.nav-previous,
+    .pagination ul.nav-links li.tribe-events-nav-previous,
+    .pagination ul.nav-links li.tribe-events-nav-next {
       display: inline;
       list-style: none; }
-      /* line 17, C:/wamp/www/pec/src/assets/css/scss/components/_pagination.scss */
+      /* line 20, C:/wamp/www/pec/src/assets/css/scss/components/_pagination.scss */
       .pagination .nav-links li.page-next.nav-next a,
-      .pagination .nav-links
-li.page-prev.nav-previous a {
+      .pagination .nav-links li.page-prev.nav-previous a,
+      .pagination .nav-links li.tribe-events-nav-previous a,
+      .pagination .nav-links li.tribe-events-nav-next a,
+      .pagination ul.nav-links li.page-next.nav-next a,
+      .pagination ul.nav-links li.page-prev.nav-previous a,
+      .pagination ul.nav-links li.tribe-events-nav-previous a,
+      .pagination ul.nav-links li.tribe-events-nav-next a {
         background: #fff;
         border-radius: 3px;
         border: 1px solid #e6e6e6;
@@ -3974,22 +3996,38 @@ li.page-prev.nav-previous a {
         padding: 0.375em 0.809em;
         text-decoration: none;
         transition: all 0.2s ease-in-out; }
-        /* line 27, C:/wamp/www/pec/src/assets/css/scss/components/_pagination.scss */
+        /* line 30, C:/wamp/www/pec/src/assets/css/scss/components/_pagination.scss */
         .pagination .nav-links li.page-next.nav-next a:hover,
         .pagination .nav-links li.page-next.nav-next a:focus,
-        .pagination .nav-links
-li.page-prev.nav-previous a:hover,
-        .pagination .nav-links
-li.page-prev.nav-previous a:focus {
+        .pagination .nav-links li.page-prev.nav-previous a:hover,
+        .pagination .nav-links li.page-prev.nav-previous a:focus,
+        .pagination .nav-links li.tribe-events-nav-previous a:hover,
+        .pagination .nav-links li.tribe-events-nav-previous a:focus,
+        .pagination .nav-links li.tribe-events-nav-next a:hover,
+        .pagination .nav-links li.tribe-events-nav-next a:focus,
+        .pagination ul.nav-links li.page-next.nav-next a:hover,
+        .pagination ul.nav-links li.page-next.nav-next a:focus,
+        .pagination ul.nav-links li.page-prev.nav-previous a:hover,
+        .pagination ul.nav-links li.page-prev.nav-previous a:focus,
+        .pagination ul.nav-links li.tribe-events-nav-previous a:hover,
+        .pagination ul.nav-links li.tribe-events-nav-previous a:focus,
+        .pagination ul.nav-links li.tribe-events-nav-next a:hover,
+        .pagination ul.nav-links li.tribe-events-nav-next a:focus {
           background: #f0fafb;
           color: #308C9A; }
-        /* line 31, C:/wamp/www/pec/src/assets/css/scss/components/_pagination.scss */
+        /* line 34, C:/wamp/www/pec/src/assets/css/scss/components/_pagination.scss */
         .pagination .nav-links li.page-next.nav-next a:active,
-        .pagination .nav-links
-li.page-prev.nav-previous a:active {
+        .pagination .nav-links li.page-prev.nav-previous a:active,
+        .pagination .nav-links li.tribe-events-nav-previous a:active,
+        .pagination .nav-links li.tribe-events-nav-next a:active,
+        .pagination ul.nav-links li.page-next.nav-next a:active,
+        .pagination ul.nav-links li.page-prev.nav-previous a:active,
+        .pagination ul.nav-links li.tribe-events-nav-previous a:active,
+        .pagination ul.nav-links li.tribe-events-nav-next a:active {
           background: #fff; }
-    /* line 37, C:/wamp/www/pec/src/assets/css/scss/components/_pagination.scss */
-    .pagination .nav-links .page-numbers {
+    /* line 40, C:/wamp/www/pec/src/assets/css/scss/components/_pagination.scss */
+    .pagination .nav-links .page-numbers,
+    .pagination ul.nav-links .page-numbers {
       display: inline;
       padding: 0.375em 0.809em;
       background: #fff;
@@ -3999,13 +4037,16 @@ li.page-prev.nav-previous a:active {
       color: #4D4D4D;
       text-decoration: none;
       transition: all 0.2s ease-in-out; }
-      /* line 54, C:/wamp/www/pec/src/assets/css/scss/components/_pagination.scss */
+      /* line 57, C:/wamp/www/pec/src/assets/css/scss/components/_pagination.scss */
       .pagination .nav-links .page-numbers:hover,
-      .pagination .nav-links .page-numbers:focus {
+      .pagination .nav-links .page-numbers:focus,
+      .pagination ul.nav-links .page-numbers:hover,
+      .pagination ul.nav-links .page-numbers:focus {
         background: #f0fafb;
         color: #308C9A; }
-      /* line 58, C:/wamp/www/pec/src/assets/css/scss/components/_pagination.scss */
-      .pagination .nav-links .page-numbers:active {
+      /* line 61, C:/wamp/www/pec/src/assets/css/scss/components/_pagination.scss */
+      .pagination .nav-links .page-numbers:active,
+      .pagination ul.nav-links .page-numbers:active {
         background: #fff; }
 
 /* line 3, C:/wamp/www/pec/src/assets/css/scss/components/_gallery.scss */

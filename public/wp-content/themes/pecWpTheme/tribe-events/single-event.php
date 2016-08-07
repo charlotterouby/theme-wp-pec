@@ -22,41 +22,37 @@ $event_id = get_the_ID();
 
 ?>
 
-<div id="tribe-events-content" class="tribe-events-single">
+<div id="tribe-events-content content-area mdl-grid mdl-grid--no-spacing" class="tribe-events-single single-post">
 
-    <p class="tribe-events-back">
-        <a href="<?php echo esc_url( tribe_get_events_link() ); ?>"> <?php printf( '&laquo; ' . esc_html__( 'All %s', 'the-events-calendar' ), $events_label_plural ); ?></a>
-    </p>
+    <!-- Notices / .entry-header -->
+    <div class="entry-header" <?php if (has_post_thumbnail()): ?> style="background: url(<?php the_post_thumbnail_url('full'); ?>) no-repeat fixed;"<?php endif; ?>>
+        <!-- .content-header-->
+        <div class="content-header width-100 mdl-cell mdl-cell--10-col mdl-cell--12-col-phone">
+            <?php tribe_the_notices() ?>
 
-    <!-- Notices -->
-    <?php tribe_the_notices() ?>
+            <?php the_title( '<h2 class="tribe-events-single-event-title h1">', '</h2>' ); ?>
 
-    <?php the_title( '<h2 class="tribe-events-single-event-title h1">', '</h2>' ); ?>
+            <div class="tribe-events-schedule tribe-clearfix">
+                <?php echo tribe_events_event_schedule_details( $event_id, '<p><strong>', '</strong></p>' ); ?>
+                <?php if ( tribe_get_cost() ) : ?>
+                    <span class="tribe-events-cost"><?php echo tribe_get_cost( null, true ) ?></span>
+                <?php endif; ?>
+            </div>
+        </div>
 
-    <div class="tribe-events-schedule tribe-clearfix">
-        <?php echo tribe_events_event_schedule_details( $event_id, '<p><strong>', '</strong></p>' ); ?>
-        <?php if ( tribe_get_cost() ) : ?>
-            <span class="tribe-events-cost"><?php echo tribe_get_cost( null, true ) ?></span>
-        <?php endif; ?>
+        <!-- Yoast SEO -->
+        <div class="page-breadcrumbs">
+            <?php
+                if ( function_exists('yoast_breadcrumb') ) {
+                    yoast_breadcrumb('<p id="breadcrumbs" class="width-100 mdl-cell mdl-cell--10-col mdl-cell--12-col-phone">','</p>');
+                }
+            ?>
+        </div>
     </div>
 
-    <!-- Event header -->
-    <div id="tribe-events-header" <?php tribe_events_the_header_attributes() ?>>
-        <!-- Navigation -->
-        <h3 class="tribe-events-visuallyhidden"><?php printf( esc_html__( '%s Navigation', 'the-events-calendar' ), $events_label_singular ); ?></h3>
-        <ul class="tribe-events-sub-nav">
-            <li class="tribe-events-nav-previous"><?php tribe_the_prev_event_link( '<span>&laquo;</span> %title%' ) ?></li>
-            <li class="tribe-events-nav-next"><?php tribe_the_next_event_link( '%title% <span>&raquo;</span>' ) ?></li>
-        </ul>
-        <!-- .tribe-events-sub-nav -->
-    </div>
-    <!-- #tribe-events-header -->
-
+    <!-- .entry-content-->
     <?php while ( have_posts() ) :  the_post(); ?>
-        <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-            <!-- Event featured image, but exclude link -->
-            <?php echo tribe_event_featured_image( $event_id, 'full', false ); ?>
-
+        <div id="post-<?php the_ID(); ?>" <?php post_class("entry-content width-100 mdl-cell mdl-cell--10-col mdl-cell--12-col-phone"); ?>>
             <!-- Event content -->
             <?php do_action( 'tribe_events_single_event_before_the_content' ) ?>
             <div class="tribe-events-single-event-description tribe-events-content">
@@ -66,23 +62,28 @@ $event_id = get_the_ID();
             <?php do_action( 'tribe_events_single_event_after_the_content' ) ?>
 
             <!-- Event meta -->
-            <?php do_action( 'tribe_events_single_event_before_the_meta' ) ?>
-            <?php tribe_get_template_part( 'modules/meta' ); ?>
-            <?php do_action( 'tribe_events_single_event_after_the_meta' ) ?>
-        </div> <!-- #post-x -->
+            <div class="entry-meta-event mdl-grid mdl-grid--no-spacing">
+                <?php do_action( 'tribe_events_single_event_before_the_meta' ) ?>
+                <?php tribe_get_template_part( 'modules/meta' ); ?>
+                <?php do_action( 'tribe_events_single_event_after_the_meta' ) ?>
+            </div>
+        </div>
+
+        <!-- Event footer / pagination -->
+        <div id="tribe-events-footer" class="pagination">
+            <!-- Navigation -->
+            <p class="tribe-events-visuallyhidden"><?php printf( esc_html__( '%s Navigation', 'the-events-calendar' ), $events_label_singular ); ?></p>
+            <ul class="tribe-events-sub-nav nav-links">
+                <li class="tribe-events-nav-previous"><?php tribe_the_prev_event_link( '<span>&laquo;</span> <span>Précédent :</span> %title%' ) ?></li>
+                <li class="tribe-events-nav-next"><?php tribe_the_next_event_link( '<span> Suivant :</span> %title% <span>&raquo;</span>' ) ?></li>
+            </ul>
+            <!-- .tribe-events-sub-nav -->
+        </div>
+
+        <!-- #tribe-events-footer -->
+
+        <!-- comments -->
         <?php if ( get_post_type() == Tribe__Events__Main::POSTTYPE && tribe_get_option( 'showComments', false ) ) comments_template() ?>
     <?php endwhile; ?>
-
-    <!-- Event footer -->
-    <div id="tribe-events-footer">
-        <!-- Navigation -->
-        <h3 class="tribe-events-visuallyhidden"><?php printf( esc_html__( '%s Navigation', 'the-events-calendar' ), $events_label_singular ); ?></h3>
-        <ul class="tribe-events-sub-nav">
-            <li class="tribe-events-nav-previous"><?php tribe_the_prev_event_link( '<span>&laquo;</span> %title%' ) ?></li>
-            <li class="tribe-events-nav-next"><?php tribe_the_next_event_link( '%title% <span>&raquo;</span>' ) ?></li>
-        </ul>
-        <!-- .tribe-events-sub-nav -->
-    </div>
-    <!-- #tribe-events-footer -->
 
 </div><!-- #tribe-events-content -->

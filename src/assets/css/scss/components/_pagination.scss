@@ -1,19 +1,22 @@
 .pagination {
     text-align: center;
     margin: 2% 0;
-    .nav-links {
+    .nav-links,
+    ul.nav-links {
         display: inline;
         margin: 0;
         padding: 0;
         text-align: center;
         list-style: none;
-        // pagination commentaires
+
+        // pagination commentaires et des événements events-tribe
         li.page-next.nav-next,
-        li.page-prev.nav-previous
-        {
+        li.page-prev.nav-previous,
+        li.tribe-events-nav-previous,
+        li.tribe-events-nav-next {
+            @extend %mdl-button;
             display: inline;
             list-style: none;
-                @extend %mdl-button;
             a {
                 background: palette(gris, light);
                 border-radius: 3px;
