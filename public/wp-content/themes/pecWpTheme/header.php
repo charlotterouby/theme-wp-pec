@@ -44,8 +44,6 @@
 
         <?php wp_head(); ?>
 
-        <script>window.jQuery || document.write('<script src="<?php echo get_template_directory_uri(); ?>/assets/js/jquery/jquery.min.js"><\/script>')</script>
-
 <!-- FONTS | STYLESHEETS | LIBRARIES end -->
 
 <!-- ANALYTICS start -->
@@ -78,5 +76,4 @@
         ?>
 
 <!-- HEADER end -->
-<!--        <div class="mdl-layout__content">-->
 

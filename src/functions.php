@@ -105,9 +105,6 @@ function twentyfifteen_setup() {
         'aside', 'image', 'video', 'link'
     ) );
 
-    $color_scheme  = twentyfifteen_get_color_scheme();
-    $default_color = trim( $color_scheme[0], '#' );
-
     /*
      * This theme styles the visual editor to resemble the theme style,
      * specifically font, colors, icons, and column width.
@@ -272,116 +269,115 @@ add_filter( 'get_search_form', 'twentyfifteen_search_form_modify' );
  */
 require get_template_directory() . '/includes/template-tags.php';
 
-/**
- * Customizer additions.
- *
- * @since Twenty Fifteen 1.0
- */
-require get_template_directory() . '/includes/customizer.php';
-
 
 /* ========================================================================================== */
 /*  OPTIONTREE
 /* ========================================================================================== */
-/* ==============================
- *  Filter
- * ============================== */
+    /* ==============================
+     *  Filter
+     * ============================== */
 
-add_filter( 'ot_theme_mode', '__return_true' );
-
-
-/* ==============================
- *  Include
- * ============================== */
-
-require( trailingslashit( get_template_directory() ) . 'option-tree/ot-loader.php' );
+    add_filter( 'ot_theme_mode', '__return_true' );
 
 
-/* ============================== */
-/*  Theme Options
-/* ============================== */
+    /* ==============================
+     *  Include
+     * ============================== */
 
-require( trailingslashit( get_template_directory() ) . 'option-tree/theme-options.php' );
+    require( trailingslashit( get_template_directory() ) . 'option-tree/ot-loader.php' );
+
+
+    /* ============================== */
+    /*  Theme Options
+    /* ============================== */
+
+    require( trailingslashit( get_template_directory() ) . 'option-tree/theme-options.php' );
 
 
 /* ========================================================================================== */
-/*  ENQUEUE SCRIPTS
+/*  ENQUEUE ASSETS
 /* ========================================================================================== */
 
-function enqueue_assets() {
-/* ============================== */
-/*  Styles
-/* ============================== */
-    wp_enqueue_style( 'styles', get_template_directory_uri() . '/assets/css/styles.css' );
+    function enqueue_assets() {
+    /* ============================== */
+    /*  Styles
+    /* ============================== */
+        wp_enqueue_style( 'styles', get_template_directory_uri() . '/assets/css/styles.css' );
 
-/* ============================== */
-/*  Scripts
-/* ============================== */
-    wp_deregister_script( 'jquery' );
+    /* ============================== */
+    /*  Scripts
+    /* ============================== */
+        wp_deregister_script( 'jquery' );
 
-    wp_enqueue_script( 'jquery', 'http' . ($_SERVER['SERVER_PORT'] == 443 ? 's' : '') . '://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js', false, null, true );
-    wp_enqueue_script( 'modernizr', get_template_directory_uri() . '/assets/js/modernizr/modernizr.js', false, false, true );
-    wp_enqueue_script( 'material', get_template_directory_uri() . '/assets/js/mdl/material.min.js', false, false, true );
-}
+        wp_enqueue_script( 'jquery', 'http' . ($_SERVER['SERVER_PORT'] == 443 ? 's' : '') . '://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js', false, null, true );
+        wp_enqueue_script( 'modernizr', get_template_directory_uri() . '/assets/js/modernizr/modernizr.js', false, false, true );
+        wp_enqueue_script( 'material', get_template_directory_uri() . '/assets/js/mdl/material.min.js', false, false, true );
+    }
 
-if ( !is_admin() ) add_action( 'wp_enqueue_scripts', 'enqueue_assets', 11 );
+    if ( !is_admin() ) add_action( 'wp_enqueue_scripts', 'enqueue_assets', 11 );
 
 
 /* ========================================================================================== */
 /*  CUSTOM PROPERTIES
 /* ========================================================================================== */
 
-//function to call first uploaded image of the post
-function main_image() {
-    $files = get_children('post_parent='.get_the_ID().'&post_type=attachment&post_mime_type=image&order=desc');
-      if($files) :
-        $permalink= get_permalink();
-        $keys = array_reverse(array_keys($files));
-        $j=0;
-        $num = $keys[$j];
-        $image=wp_get_attachment_image($num, 'large', true);
-        $imagepieces = explode('"', $image);
-        $imagepath = $imagepieces[1];
-        $main=wp_get_attachment_url($num);
-        $template=get_template_directory();
-        $the_title=get_the_title();
-        print "<a class='post-thumbnail mdl-cell mdl-cell--12-col' href='$permalink' aria-hidden='true'><img src='$main' alt='$the_title' class='frame' /></a>";
-      else :
-        $src = get_template_directory_uri();
-        $alt = get_the_title();
-        $permalink= get_permalink();
-        print "<a class='post-thumbnail mdl-cell mdl-cell--12-col' href='$permalink' aria-hidden='true'><img src='$src/assets/img/default-image.jpg' alt='$alt' /></a>";
-      endif;
-}
+    /* ============================================================ */
+    /*  Function to call first uploaded image of the post
+    /* ============================================================ */
+    function main_image() {
+        $files = get_children('post_parent='.get_the_ID().'&post_type=attachment&post_mime_type=image&order=desc');
+          if($files) :
+            $permalink= get_permalink();
+            $keys = array_reverse(array_keys($files));
+            $j=0;
+            $num = $keys[$j];
+            $image=wp_get_attachment_image($num, 'large', true);
+            $imagepieces = explode('"', $image);
+            $imagepath = $imagepieces[1];
+            $main=wp_get_attachment_url($num);
+            $template=get_template_directory();
+            $the_title=get_the_title();
+            print "<a class='post-thumbnail mdl-cell mdl-cell--12-col' href='$permalink' aria-hidden='true'><img src='$main' alt='$the_title' class='frame' /></a>";
+          else :
+            $src = get_template_directory_uri();
+            $alt = get_the_title();
+            $permalink= get_permalink();
+            print "<a class='post-thumbnail mdl-cell mdl-cell--12-col' href='$permalink' aria-hidden='true'><img src='$src/assets/img/default-image.jpg' alt='$alt' /></a>";
+          endif;
+    }
 
-// function to call url of the first uploaded image of the post
-function url_main_image(){
-    $files = get_children('post_parent='.get_the_ID().'&post_type=attachment&post_mime_type=image&order=desc');
-    if($files):
-        $permalink= get_permalink();
-        $keys = array_reverse(array_keys($files));
-        $j=0;
-        $num = $keys[$j];
-        $image=wp_get_attachment_image($num, 'large', true);
-        $imagepieces = explode('"', $image);
-        $imagepath = $imagepieces[1];
-        $main=wp_get_attachment_url($num);
-        $template=get_template_directory();
-        $the_title=get_the_title();
-        print $main;
-    endif;
-}
+    /* ============================================================ */
+    /*  Function to call url of the first uploaded image of the post
+    /* ============================================================ */
+    function url_main_image(){
+        $files = get_children('post_parent='.get_the_ID().'&post_type=attachment&post_mime_type=image&order=desc');
+        if($files):
+            $permalink= get_permalink();
+            $keys = array_reverse(array_keys($files));
+            $j=0;
+            $num = $keys[$j];
+            $image=wp_get_attachment_image($num, 'large', true);
+            $imagepieces = explode('"', $image);
+            $imagepath = $imagepieces[1];
+            $main=wp_get_attachment_url($num);
+            $template=get_template_directory();
+            $the_title=get_the_title();
+            print $main;
+        endif;
+    }
 
-// Filtre widget Nuage de tags
-function custom_tag_cloud($args) {
-  $args['unit'] = 'em';
-  $args['smallest'] = 0.8;
-  $args['largest'] = 2;
-  $args['order'] = 'RAND';
-  $args['number'] = 20;
-  return $args;
-}
-add_filter('widget_tag_cloud_args', 'custom_tag_cloud');
+    /* ============================== */
+    /*  Filtre widget Nuage de tags
+    /* ============================== */
+    function custom_tag_cloud($args) {
+      $args['unit'] = 'em';
+      $args['smallest'] = 0.8;
+      $args['largest'] = 2;
+      $args['order'] = 'RAND';
+      $args['number'] = 20;
+      return $args;
+    }
+    add_filter('widget_tag_cloud_args', 'custom_tag_cloud');
 /* ========================================================================================== */
 /*  REGISTER PLUGINS
 /* ========================================================================================== */

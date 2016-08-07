@@ -1,0 +1,60 @@
+//Container Front Page
+.container-front-page {
+    flex-grow: 1;
+    margin: 0;
+    background-size: cover;
+    @include media($small) {
+        background: url('../img/background-1.jpg') top no-repeat;
+    }
+    @include media($medium){
+        animation: background-animation 20s linear 0s 5 forwards;
+    }
+}
+// animation background
+@keyframes background-animation {
+    0%, 16% {
+        background: url('../img/background-1.jpg') top no-repeat;
+    }
+    33%, 50% {
+        background: url('../img/background-2.jpg') top no-repeat;
+    }
+    66%, 83% {
+        background: url('../img/background-3.jpg') top no-repeat;
+    }
+    100% {
+        background: url('../img/background-1.jpg') top no-repeat;
+    }
+}
+
+//Content Front-Page
+.content-front-page {
+    background: transparentize(palette(gris, light), 0.2);
+    align-self: center;
+    padding: ms(5);
+    min-height: 40vh;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 2px;
+    // tablet + desktop
+    @include media($medium){
+        background: transparentize(palette(gris, light), 0.02);
+        box-shadow: 0 8px 16px palette(gris, mid-light);
+    }
+}
+.site-logo {
+    text-align: center;
+
+    img {
+        padding: 2% 0;
+    }
+
+    q {
+        padding: ms(0) 0;
+        font-size: ms(8);
+        color: palette(bleu, 110);
+
+        &::before, &::after {
+            padding: 0 $grid-desktop-gutter/4;
+        }
+    }
+}

@@ -31,6 +31,14 @@ html {
     max-width: 100vw;
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-between;
+    min-height: 100vh;
+}
+
 
 /* ==============================
     Grid
@@ -69,12 +77,15 @@ html {
 
 // Breadcrumbs
 // ==============================
-.breadcrumbs {}
+.breadcrumbs {
+    margin: 0 auto !important;
+}
 
 // Post Cards
 // ==============================
 .masonry-grid {
-    padding: 0 !important;
+//    padding: 0 !important;
+    justify-content: space-around;
 }
 .pec-thumbnail {
     @include media($medium){

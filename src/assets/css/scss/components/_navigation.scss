@@ -53,7 +53,7 @@
     > li:last-of-type {
         background-color: palette(jaune);
         color: palette(gris);
-        box-shadow: 0 2px 4px palette(gris);
+        box-shadow: 0 2px 4px palette(gris, mid-light);
         line-height: 2em;
         border-radius: 2px;
         &:hover {

@@ -28,6 +28,33 @@
     }
 }
 
+// boutton jaune
+// ==============================
+
+#button-decouvrir {
+    background: palette(jaune);
+    color: palette(gris, light);
+    &:hover,
+    &:focus,
+    &:active {
+        color: palette(gris, light);
+        background: palette(jaune, mid-dark);
+    }
+}
+
+// boutton bleu
+// ==============================
+#button-actualites {
+    background: palette(bleu);
+    color: palette(gris, light);
+    &:hover,
+    &:focus,
+    &:active {
+        color: palette(gris, light);
+        background: palette(bleu, 110);
+    }
+}
+
 // boutton gris
 // ==============================
 .post-edit-link,

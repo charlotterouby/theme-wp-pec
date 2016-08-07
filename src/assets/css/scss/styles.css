@@ -3429,51 +3429,63 @@ html {
     clear: both;
     content: ""; }
 
+/* line 34, C:/wamp/www/pec/src/assets/css/scss/structure/_layout.scss */
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: space-between;
+  min-height: 100vh; }
+
 /* ==============================
     Grid
    ============================== */
-/* line 41, C:/wamp/www/pec/src/assets/css/scss/structure/_layout.scss */
+/* line 49, C:/wamp/www/pec/src/assets/css/scss/structure/_layout.scss */
 .content-area {
   padding: 0 !important;
   min-height: 80vh;
   justify-content: space-between; }
 
-/* line 49, C:/wamp/www/pec/src/assets/css/scss/structure/_layout.scss */
+/* line 57, C:/wamp/www/pec/src/assets/css/scss/structure/_layout.scss */
 .site-main {
   flex-direction: column;
   padding: 2% 0; }
 
-/* line 54, C:/wamp/www/pec/src/assets/css/scss/structure/_layout.scss */
+/* line 62, C:/wamp/www/pec/src/assets/css/scss/structure/_layout.scss */
 .width-75 {
   max-width: 100%; }
   @media screen and (min-width: 768px) {
-    /* line 54, C:/wamp/www/pec/src/assets/css/scss/structure/_layout.scss */
+    /* line 62, C:/wamp/www/pec/src/assets/css/scss/structure/_layout.scss */
     .width-75 {
       max-width: 75%; } }
 
-/* line 60, C:/wamp/www/pec/src/assets/css/scss/structure/_layout.scss */
+/* line 68, C:/wamp/www/pec/src/assets/css/scss/structure/_layout.scss */
 .width-100 {
   max-width: 100%;
   margin: 0 auto !important; }
 
-/* line 76, C:/wamp/www/pec/src/assets/css/scss/structure/_layout.scss */
+/* line 80, C:/wamp/www/pec/src/assets/css/scss/structure/_layout.scss */
+.breadcrumbs {
+  margin: 0 auto !important; }
+
+/* line 86, C:/wamp/www/pec/src/assets/css/scss/structure/_layout.scss */
 .masonry-grid {
-  padding: 0 !important; }
+  justify-content: space-around; }
 
 @media screen and (min-width: 768px) {
-  /* line 79, C:/wamp/www/pec/src/assets/css/scss/structure/_layout.scss */
+  /* line 90, C:/wamp/www/pec/src/assets/css/scss/structure/_layout.scss */
   .pec-thumbnail {
     max-width: 30%; } }
 
-/* line 87, C:/wamp/www/pec/src/assets/css/scss/structure/_layout.scss */
+/* line 98, C:/wamp/www/pec/src/assets/css/scss/structure/_layout.scss */
 .sidebar {
   max-width: 100%; }
   @media screen and (min-width: 768px) {
-    /* line 87, C:/wamp/www/pec/src/assets/css/scss/structure/_layout.scss */
+    /* line 98, C:/wamp/www/pec/src/assets/css/scss/structure/_layout.scss */
     .sidebar {
       max-width: 25%; } }
 
-/* line 98, C:/wamp/www/pec/src/assets/css/scss/structure/_layout.scss */
+/* line 109, C:/wamp/www/pec/src/assets/css/scss/structure/_layout.scss */
 .footer {
   margin: 0; }
 
@@ -3581,7 +3593,7 @@ hr {
   .primary-menu .menu > li:last-of-type {
     background-color: #FFB71B;
     color: #4D4D4D;
-    box-shadow: 0 2px 4px #4D4D4D;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.54);
     line-height: 2em;
     border-radius: 2px; }
     /* line 59, C:/wamp/www/pec/src/assets/css/scss/components/_navigation.scss */
@@ -3808,12 +3820,34 @@ hr {
     color: #fff;
     background: #5e8734; }
 
-/* line 35, C:/wamp/www/pec/src/assets/css/scss/components/_buttons.scss */
+/* line 34, C:/wamp/www/pec/src/assets/css/scss/components/_buttons.scss */
+#button-decouvrir {
+  background: #FFB71B;
+  color: #fff; }
+  /* line 39, C:/wamp/www/pec/src/assets/css/scss/components/_buttons.scss */
+  #button-decouvrir:hover,
+  #button-decouvrir:focus,
+  #button-decouvrir:active {
+    color: #fff;
+    background: #DA9D39; }
+
+/* line 47, C:/wamp/www/pec/src/assets/css/scss/components/_buttons.scss */
+#button-actualites {
+  background: #308C9A;
+  color: #fff; }
+  /* line 52, C:/wamp/www/pec/src/assets/css/scss/components/_buttons.scss */
+  #button-actualites:hover,
+  #button-actualites:focus,
+  #button-actualites:active {
+    color: #fff;
+    background: #246973; }
+
+/* line 62, C:/wamp/www/pec/src/assets/css/scss/components/_buttons.scss */
 .post-edit-link,
 .comment-edit-link,
 #cancel-comment-reply-link {
   color: #4D4D4D; }
-  /* line 41, C:/wamp/www/pec/src/assets/css/scss/components/_buttons.scss */
+  /* line 68, C:/wamp/www/pec/src/assets/css/scss/components/_buttons.scss */
   .post-edit-link:hover,
   .post-edit-link:focus,
   .post-edit-link:active,
@@ -4394,8 +4428,62 @@ li.page-prev.nav-previous a:active {
     margin-bottom: 0; }
   /* line 15, C:/wamp/www/pec/src/assets/css/scss/partials/_footer.scss */
   .footer .secondary-menu .menu {
-    margin: 0 2%;
+    margin: 0;
     padding: 0; }
+
+/* line 2, C:/wamp/www/pec/src/assets/css/scss/pages/_home.scss */
+.container-front-page {
+  flex-grow: 1;
+  margin: 0;
+  background-size: cover; }
+  @media screen and (max-width: 767px) {
+    /* line 2, C:/wamp/www/pec/src/assets/css/scss/pages/_home.scss */
+    .container-front-page {
+      background: url("../img/background-1.jpg") top no-repeat; } }
+  @media screen and (min-width: 768px) {
+    /* line 2, C:/wamp/www/pec/src/assets/css/scss/pages/_home.scss */
+    .container-front-page {
+      animation: background-animation 20s linear 0s 5 forwards; } }
+
+@keyframes background-animation {
+  0%, 16% {
+    background: url("../img/background-1.jpg") top no-repeat; }
+  33%, 50% {
+    background: url("../img/background-2.jpg") top no-repeat; }
+  66%, 83% {
+    background: url("../img/background-3.jpg") top no-repeat; }
+  100% {
+    background: url("../img/background-1.jpg") top no-repeat; } }
+
+/* line 30, C:/wamp/www/pec/src/assets/css/scss/pages/_home.scss */
+.content-front-page {
+  background: rgba(255, 255, 255, 0.8);
+  align-self: center;
+  padding: 1.38084em;
+  min-height: 40vh;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 2px; }
+  @media screen and (min-width: 768px) {
+    /* line 30, C:/wamp/www/pec/src/assets/css/scss/pages/_home.scss */
+    .content-front-page {
+      background: rgba(255, 255, 255, 0.98);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.54); } }
+
+/* line 44, C:/wamp/www/pec/src/assets/css/scss/pages/_home.scss */
+.site-logo {
+  text-align: center; }
+  /* line 47, C:/wamp/www/pec/src/assets/css/scss/pages/_home.scss */
+  .site-logo img {
+    padding: 2% 0; }
+  /* line 51, C:/wamp/www/pec/src/assets/css/scss/pages/_home.scss */
+  .site-logo q {
+    padding: 1em 0;
+    font-size: 1.67583em;
+    color: #246973; }
+    /* line 56, C:/wamp/www/pec/src/assets/css/scss/pages/_home.scss */
+    .site-logo q::before, .site-logo q::after {
+      padding: 0 4px; }
 
 /* line 1, C:/wamp/www/pec/src/assets/css/scss/pages/_page.scss */
 .page-content .site-main {
