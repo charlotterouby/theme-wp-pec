@@ -3,9 +3,7 @@
     flex-grow: 1;
     margin: 0;
     background-size: cover;
-    @include media($small) {
-        background: url('../img/background-1.jpg') top no-repeat;
-    }
+    background: url('../img/background-1.jpg') top no-repeat;
     @include media($medium){
         animation: background-animation 20s linear 0s 5 forwards;
     }
