@@ -18,7 +18,7 @@ $set_venue_apart = apply_filters( 'tribe_events_single_event_the_meta_group_venu
 ?>
 
 <?php if ( $not_skeleton ) : ?>
-	<div class="tribe-events-single-section tribe-events-event-meta primary tribe-clearfix">
+    <div class="tribe-events-single-section mdl-grid tribe-events-event-meta primary tribe-clearfix">
 <?php endif; ?>
 
 <?php
@@ -29,47 +29,47 @@ tribe_get_template_part( 'modules/meta/details' );
 
 // If we have no map to embed and no need to keep the venue separate...
 if ( ! $set_venue_apart && ! tribe_embed_google_map() ) {
-	tribe_get_template_part( 'modules/meta/venue' );
+    tribe_get_template_part( 'modules/meta/venue' );
 } elseif ( ! $set_venue_apart && ! tribe_has_organizer() && tribe_embed_google_map() ) {
-	// If we have no organizer, no need to separate the venue but we have a map to embed...
-	tribe_get_template_part( 'modules/meta/venue' );
-	echo '<div class="tribe-events-meta-group tribe-events-meta-group-gmap">';
-	tribe_get_template_part( 'modules/meta/map' );
-	echo '</div>';
+    // If we have no organizer, no need to separate the venue but we have a map to embed...
+    tribe_get_template_part( 'modules/meta/venue' );
+    echo '<div class="tribe-events-meta-group mdl-cell mdl-grid mdl-grid--no-spacing tribe-events-meta-group-gmap">';
+    tribe_get_template_part( 'modules/meta/map' );
+    echo '</div>';
 } else {
-	// If the venue meta has not already been displayed then it will be printed separately by default
-	$set_venue_apart = true;
+    // If the venue meta has not already been displayed then it will be printed separately by default
+    $set_venue_apart = true;
 }
 
 // Include organizer meta if appropriate
 if ( tribe_has_organizer() ) {
-	tribe_get_template_part( 'modules/meta/organizer' );
+    tribe_get_template_part( 'modules/meta/organizer' );
 }
 
 do_action( 'tribe_events_single_event_meta_primary_section_end' );
 ?>
 
 <?php if ( $not_skeleton ) : ?>
-	</div>
+    </div>
 <?php endif; ?>
 
 
 <?php if ( $set_venue_apart ) : ?>
-	<?php if ( $not_skeleton ) : ?>
-		<div class="tribe-events-single-section tribe-events-event-meta secondary tribe-clearfix">
-	<?php endif; ?>
-	<?php
-	do_action( 'tribe_events_single_event_meta_secondary_section_start' );
+    <?php if ( $not_skeleton ) : ?>
+        <div class="tribe-events-single-section mdl-grid tribe-events-event-meta secondary tribe-clearfix">
+    <?php endif; ?>
+    <?php
+    do_action( 'tribe_events_single_event_meta_secondary_section_start' );
 
-	tribe_get_template_part( 'modules/meta/venue' );
-	tribe_get_template_part( 'modules/meta/map' );
+    tribe_get_template_part( 'modules/meta/venue' );
+    tribe_get_template_part( 'modules/meta/map' );
 
-	do_action( 'tribe_events_single_event_meta_secondary_section_end' );
-	?>
-	<?php
-	if ( $not_skeleton ) : ?>
-		</div>
-	<?php endif; ?>
+    do_action( 'tribe_events_single_event_meta_secondary_section_end' );
+    ?>
+    <?php
+    if ( $not_skeleton ) : ?>
+        </div>
+    <?php endif; ?>
 <?php
 endif;
 do_action( 'tribe_events_single_meta_after' );

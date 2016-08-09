@@ -1,7 +1,7 @@
 // conteneur
 .tribe-events-single-section {
-    @extend .mdl-grid;
     margin: 0 !important;
+    padding: 0 !important;
 }
 
 // suppression border-top
@@ -10,9 +10,8 @@
 }
 
 // style cards
-.tribe-events-meta-group, .entry-meta-event .cart {
+.tribe-events-meta-group {
     @extend %mdl-card;
-    @extend .mdl-cell;
     flex-grow: 1;
 
     color: palette(gris);
@@ -20,7 +19,7 @@
     border-radius: 2px;
 
     dl {
-        @extend %mdl-card__supporting-text, .mdl-cell, .mdl-cell--12-col, .mdl-grid;
+        @extend %mdl-card__supporting-text;
         display: flex;
         flex-wrap: wrap;
 
@@ -34,11 +33,6 @@
                 flex-basis: 100%;
                 padding-bottom: ms(-5);
             }
-            &.tribe-venue,
-            &.tribe-venue-location {
-                flex-basis: 50%;
-                padding-bottom: ms(-5);
-            }
             flex-basis: 66%;
             color: palette(gris);
             font-weight: 100;
@@ -49,8 +43,7 @@
     }
 }
 
-.tribe-events-single-section-title,
-.tribe-events-tickets-title {
+.tribe-events-single-section-title {
     @extend %mdl-card__title, %mdl-card__title-text;
     color: palette(gris, light);
     background: palette(vert);
@@ -58,29 +51,59 @@
     border-bottom: 1px solid $card-border-color;
 }
 
-// tickets
-.entry-meta-event .cart table td {
-    @extend .mdl-grid;
-    tr {
-        @extend .mdl-cell, .mdl-cell--6-col, .mdl-grid;
+// table + form résa ticket rsvp
+.cart {
+    button[type="submit"].mdl-button {
+        position: static;
+        bottom: auto;
+        background: palette(jaune);
+        color: palette(gris, light);
+        &:hover,
+        &:focus,
+        &:active {
+            color: palette(gris, light);
+            background: palette(jaune, mid-dark);
+        }
     }
-    td {
-        @extend .mdl-cell, .mdl-cell--12-col;
+
+    .mdl-data-table {
+        border: none;
+        width: 100%;
+
+        tbody tr {
+            border: 0 solid palette(gris, light);
+            &:hover {
+                background: none;
+            }
+        }
+        td {
+            border: 0 solid palette(gris, light);
+            height: auto;
+        }
     }
-    .tribe-tickets-remaining {
-        padding: ms(-5) 0;
-    }
+
 }
 
-.entry-meta-event .cart .tribe-ticket input[type="number"] {
-    &:active,
-    &:focus {
-        border-bottom: 2px solid palette(jaune);
-        transition: border-bottom 300ms cubic-bezier(0, 1.68, 0.58, 1);
-    }
+// counting remaining ticket
+.tribe-tickets-remaining {
+    font-size: ms(-2);
+    margin-top: ms(-5);
+}
+
+// confirmation RSVP
+.tribe-link-tickets-message {
+    @extend .mdl-grid, .mdl-cell, .mdl-cell--12-col;
+    background-color: palette(bleu, x-light);
+    border: 0.5px solid palette(bleu, x-light);
+    color: palette(bleu, 110);
+    box-shadow: 0 2px 4px palette(gris, mid-light);
+    border-radius: 2px;
 }
 
 // buttons
+.button-google-map {
+    text-align: center;
+}
 .tribe-events-gmap, .tribe-events-button {
     @extend %mdl-button;
     background: palette(bleu);

@@ -38,6 +38,10 @@ $(document).ready(function () {
     });
 
     /* ==============================
+        Formulaire RSVP
+       ============================== */
+    $(".tribe-tickets-order_status-row select").addClass('mdl-textfield__input');
+    /* ==============================
         Formulaire commentaires
        ============================== */
     $('.entry-meta-event .cart').addClass('mdl-textfield mdl-js-textfield');

@@ -11,11 +11,7 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class('single-post'); ?>>
 
     <!-- .entry-header -->
-    <header class="entry-header"
-           <?php
-            if (has_post_thumbnail()): ?>
-            style="background: url(<?php the_post_thumbnail_url('full'); ?>) no-repeat fixed;"
-            <?php endif; ?>>
+    <header class="entry-header" <?php if (has_post_thumbnail()): ?> style="background: url(<?php the_post_thumbnail_url('full'); ?>) no-repeat fixed;" <?php endif; ?>>
         <!-- title -->
        <div class="content-header width-100 mdl-cell mdl-cell--10-col mdl-cell--12-col-phone">
             <?php the_title( '<h2 class="entry-title h1">', '</h2>' ); ?>

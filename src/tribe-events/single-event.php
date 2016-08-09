@@ -21,8 +21,8 @@ $events_label_plural = tribe_get_event_label_plural();
 $event_id = get_the_ID();
 
 ?>
-
-<div id="tribe-events-content content-area mdl-grid mdl-grid--no-spacing" class="tribe-events-single single-post">
+<!-- #tribe-events-content -->
+<article id="tribe-events-content mdl-grid mdl-grid--no-spacing" class="tribe-events-single single-post">
 
     <!-- Notices / .entry-header -->
     <div class="entry-header" <?php if (has_post_thumbnail()): ?> style="background: url(<?php the_post_thumbnail_url('full'); ?>) no-repeat fixed;"<?php endif; ?>>
@@ -62,7 +62,7 @@ $event_id = get_the_ID();
             <?php do_action( 'tribe_events_single_event_after_the_content' ) ?>
 
             <!-- Event meta -->
-            <div class="entry-meta-event mdl-grid mdl-grid--no-spacing">
+            <div class="entry-meta-event mdl-grid">
                 <?php do_action( 'tribe_events_single_event_before_the_meta' ) ?>
                 <?php tribe_get_template_part( 'modules/meta' ); ?>
                 <?php do_action( 'tribe_events_single_event_after_the_meta' ) ?>
@@ -86,4 +86,4 @@ $event_id = get_the_ID();
         <?php if ( get_post_type() == Tribe__Events__Main::POSTTYPE && tribe_get_option( 'showComments', false ) ) comments_template() ?>
     <?php endwhile; ?>
 
-</div><!-- #tribe-events-content -->
+</article>

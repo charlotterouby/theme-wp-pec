@@ -16,10 +16,21 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 get_header();
 ?>
-<div id="tribe-events-pg-template">
+
+<!-- CONTENT -->
+<div id="primary" class="content-area mdl-grid mdl-grid--no-spacing">
+    <!-- site-main -->
+    <main id="main" class="site-main mdl-grid mdl-grid--no-spacing width-75 mdl-cell mdl-cell--9-col mdl-cell--12-col-phone" role="main">
     <?php tribe_events_before_html(); ?>
     <?php tribe_get_view(); ?>
     <?php tribe_events_after_html(); ?>
-</div> <!-- #tribe-events-pg-template -->
-<?php
-get_footer(); ?>
+    </main>
+    <!-- .sidebar -->
+    <aside class="sidebar mdl-grid mdl-cell mdl-cell--3-col mdl-cell--12-col-phone">
+            <?php get_sidebar() ?>
+    </aside>
+</div>
+<!-- #tribe-events-pg-template -->
+
+<!-- FOOTER -->
+<?php  get_footer(); ?>
