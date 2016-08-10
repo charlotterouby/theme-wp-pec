@@ -42,6 +42,7 @@
             ) );
         ?>
     </div>
+    <?php wpb_list_child_pages(); ?>
 
     <?php edit_post_link( __( 'Edit', 'twentyfifteen' ), '<footer class="entry-footer"><span class="edit-link">', '</span></footer><!-- .entry-footer -->' ); ?>
 
