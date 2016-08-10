@@ -52,6 +52,7 @@
     }
     input[type=search] {
         @extend .mdl-textfield__input;
+        border-bottom-color: palette(jaune, mid-light);
         &:active,
         &:focus {
             border-bottom: 2px solid palette(jaune);

@@ -59,7 +59,6 @@ $now = current_time( 'timestamp' );
                             if ( $ticket->is_in_stock() ) {
                                 $is_there_any_product_to_sell = true;
                                 ?>
-                                <label class="mdl-textfield_label" for="quantity-tickets">Nombre de tickets</label>
                                 <input type="number"
                                     id="quantity-tickets"
                                     name="quantity_<?php echo absint( $ticket->ID ); ?>"
@@ -69,6 +68,7 @@ $now = current_time( 'timestamp' );
                                     placeholder="0"
                                     <?php disabled( $must_login ); ?>
                                 >
+                                <label class="mdl-textfield_label" for="quantity-tickets">Nombre de tickets</label>
                                 <?php
 
                                 if ( $ticket->managing_stock() ) {
@@ -121,38 +121,38 @@ $now = current_time( 'timestamp' );
                             do_action( 'event_tickets_rsvp_before_confirmation_fields', $tickets );
                         ?>
                         <table class="tribe-tickets-table mdl-data-table mdl-js-data-table">
-                            <tr class="tribe-tickets-full-name-row">
-                                <td class="mdl-data-table__cell--non-numeric mdl-textfield mdl-js-textfield">
-                                    <label for="tribe-tickets-full-name" class="mdl-textfield__label">
-                                        <?php esc_html_e( 'Full Name', 'event-tickets' ); ?>:
-                                    </label>
+                            <tr class="tribe-tickets-full-name-row mdl-grid">
+                                <td class="mdl-cell mdl-cell--12-col mdl-data-table__cell--non-numeric mdl-textfield mdl-js-textfield">
                                     <input type="text"
                                         name="attendee[full_name]"
                                         id="tribe-tickets-full-name"
                                         class="mdl-textfield__input"
                                     >
+                                    <label for="tribe-tickets-full-name" class="mdl-textfield__label">
+                                        <?php esc_html_e( 'Full Name', 'event-tickets' ); ?>:
+                                    </label>
                                 </td>
                             </tr>
-                            <tr class="tribe-tickets-email-row">
-                                <td class="mdl-data-table__cell--non-numeric mdl-textfield mdl-js-textfield">
+                            <tr class="tribe-tickets-email-row mdl-grid">
+                                <td class="mdl-cell mdl-cell--12-col mdl-data-table__cell--non-numeric mdl-textfield mdl-js-textfield">
+                                    <input type="email" name="attendee[email]" id="tribe-tickets-email" class="mdl-textfield__input">
                                     <label for="tribe-tickets-email" class="mdl-textfield__label">
                                         <?php esc_html_e( 'Email', 'event-tickets' ); ?>:
                                     </label>
-                                    <input type="email" name="attendee[email]" id="tribe-tickets-email" class="mdl-textfield__input">
                                 </td>
                             </tr>
-                            <tr class="tribe-tickets-order_status-row">
-                                <td class="mdl-data-table__cell--non-numeric mdl-textfield mdl-js-textfield">
+                            <tr class="tribe-tickets-order_status-row mdl-grid">
+                                <td class="mdl-cell mdl-cell--12-col mdl-data-table__cell--non-numeric mdl-textfield mdl-js-textfield">
+                                    <?php Tribe__Tickets__Tickets_View::instance()->render_rsvp_selector( 'attendee[order_status]', '' ); ?>
                                     <label for="tribe-tickets-order_status" class="mdl-textfield__label">
                                         <?php esc_html_e( 'RSVP', 'event-tickets' ); ?>:
                                     </label>
-                                    <?php Tribe__Tickets__Tickets_View::instance()->render_rsvp_selector( 'attendee[order_status]', '' ); ?>
                                 </td>
                             </tr>
 
                             <?php if ( class_exists( 'Tribe__Tickets_Plus__Attendees_List' ) && ! Tribe__Tickets_Plus__Attendees_List::is_hidden_on( get_the_ID() ) ) : ?>
                                 <tr class="tribe-tickets-attendees-list-optout">
-                                    <td class="mdl-data-table__cell--non-numeric mdl-textfield mdl-js-textfield" colspan="4">
+                                    <td class="mdl-data-table__cell--non-numeric" colspan="4">
                                         <label for="tribe-tickets-attendees-list-optout" class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
                                             <input type="checkbox" name="attendee[optout]" id="tribe-tickets-attendees-list-optout" class="mdl-checkbox__input">
                                             <span class="mdl-checkbox__label"><?php esc_html_e( 'Don\'t list me on the public attendee list', 'event-tickets' ); ?></span>

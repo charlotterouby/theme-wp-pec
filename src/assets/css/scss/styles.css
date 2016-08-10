@@ -634,7 +634,7 @@ textarea {
 .comment-form .comment-form-author,
 .comment-form .comment-form-email,
 .comment-form .comment-form-url,
-.comment-form .form-submit, .gallery-item, .comment-body .comment-meta, .comment-body .comment-content, .comment-body .reply, .tribe-link-tickets-message {
+.comment-form .form-submit, .gallery-item, .comment-body .comment-meta, .comment-body .comment-content, .comment-body .reply, .tribe-events-list-separator-month, .tribe-link-tickets-message {
   box-sizing: border-box; }
 
 /* line 41, C:/wamp/www/pec/src/assets/css/scss/vendors/mdl/_grid.scss */
@@ -678,7 +678,7 @@ textarea {
 .mdl-grid--no-spacing.comment-form > .comment-form-url, .comment-form .mdl-grid--no-spacing.gallery > .comment-form-url,
 .comment-form .mdl-grid--no-spacing.comment-body > .comment-form-url,
 .comment-form .mdl-grid--no-spacing.tribe-link-tickets-message > .comment-form-url,
-.comment-form .mdl-grid.mdl-grid--no-spacing > .form-submit, .mdl-grid--no-spacing.comment-form > .form-submit, .comment-form .mdl-grid--no-spacing.gallery > .form-submit, .comment-form .mdl-grid--no-spacing.comment-body > .form-submit, .comment-form .mdl-grid--no-spacing.tribe-link-tickets-message > .form-submit, .mdl-grid.mdl-grid--no-spacing > .gallery-item, .mdl-grid--no-spacing.comment-form > .gallery-item, .mdl-grid--no-spacing.gallery > .gallery-item, .mdl-grid--no-spacing.comment-body > .gallery-item, .mdl-grid--no-spacing.tribe-link-tickets-message > .gallery-item, .comment-body .mdl-grid.mdl-grid--no-spacing > .comment-meta, .comment-body .mdl-grid--no-spacing.comment-form > .comment-meta, .comment-body .mdl-grid--no-spacing.gallery > .comment-meta, .mdl-grid--no-spacing.comment-body > .comment-meta, .comment-body .mdl-grid--no-spacing.tribe-link-tickets-message > .comment-meta, .comment-body .mdl-grid.mdl-grid--no-spacing > .comment-content, .comment-body .mdl-grid--no-spacing.comment-form > .comment-content, .comment-body .mdl-grid--no-spacing.gallery > .comment-content, .mdl-grid--no-spacing.comment-body > .comment-content, .comment-body .mdl-grid--no-spacing.tribe-link-tickets-message > .comment-content, .comment-body .mdl-grid.mdl-grid--no-spacing > .reply, .comment-body .mdl-grid--no-spacing.comment-form > .reply, .comment-body .mdl-grid--no-spacing.gallery > .reply, .mdl-grid--no-spacing.comment-body > .reply, .comment-body .mdl-grid--no-spacing.tribe-link-tickets-message > .reply, .mdl-grid.mdl-grid--no-spacing > .tribe-link-tickets-message, .mdl-grid--no-spacing.comment-form > .tribe-link-tickets-message, .mdl-grid--no-spacing.gallery > .tribe-link-tickets-message, .mdl-grid--no-spacing.comment-body > .tribe-link-tickets-message, .mdl-grid--no-spacing.tribe-link-tickets-message > .tribe-link-tickets-message {
+.comment-form .mdl-grid.mdl-grid--no-spacing > .form-submit, .mdl-grid--no-spacing.comment-form > .form-submit, .comment-form .mdl-grid--no-spacing.gallery > .form-submit, .comment-form .mdl-grid--no-spacing.comment-body > .form-submit, .comment-form .mdl-grid--no-spacing.tribe-link-tickets-message > .form-submit, .mdl-grid.mdl-grid--no-spacing > .gallery-item, .mdl-grid--no-spacing.comment-form > .gallery-item, .mdl-grid--no-spacing.gallery > .gallery-item, .mdl-grid--no-spacing.comment-body > .gallery-item, .mdl-grid--no-spacing.tribe-link-tickets-message > .gallery-item, .comment-body .mdl-grid.mdl-grid--no-spacing > .comment-meta, .comment-body .mdl-grid--no-spacing.comment-form > .comment-meta, .comment-body .mdl-grid--no-spacing.gallery > .comment-meta, .mdl-grid--no-spacing.comment-body > .comment-meta, .comment-body .mdl-grid--no-spacing.tribe-link-tickets-message > .comment-meta, .comment-body .mdl-grid.mdl-grid--no-spacing > .comment-content, .comment-body .mdl-grid--no-spacing.comment-form > .comment-content, .comment-body .mdl-grid--no-spacing.gallery > .comment-content, .mdl-grid--no-spacing.comment-body > .comment-content, .comment-body .mdl-grid--no-spacing.tribe-link-tickets-message > .comment-content, .comment-body .mdl-grid.mdl-grid--no-spacing > .reply, .comment-body .mdl-grid--no-spacing.comment-form > .reply, .comment-body .mdl-grid--no-spacing.gallery > .reply, .mdl-grid--no-spacing.comment-body > .reply, .comment-body .mdl-grid--no-spacing.tribe-link-tickets-message > .reply, .mdl-grid.mdl-grid--no-spacing > .tribe-events-list-separator-month, .mdl-grid--no-spacing.comment-form > .tribe-events-list-separator-month, .mdl-grid--no-spacing.gallery > .tribe-events-list-separator-month, .mdl-grid--no-spacing.comment-body > .tribe-events-list-separator-month, .mdl-grid--no-spacing.tribe-link-tickets-message > .tribe-events-list-separator-month, .mdl-grid.mdl-grid--no-spacing > .tribe-link-tickets-message, .mdl-grid--no-spacing.comment-form > .tribe-link-tickets-message, .mdl-grid--no-spacing.gallery > .tribe-link-tickets-message, .mdl-grid--no-spacing.comment-body > .tribe-link-tickets-message, .mdl-grid--no-spacing.tribe-link-tickets-message > .tribe-link-tickets-message {
   margin: 0; }
 
 /* line 62, C:/wamp/www/pec/src/assets/css/scss/vendors/mdl/_grid.scss */
@@ -740,7 +740,7 @@ textarea {
   .comment-form .comment-form-author,
   .comment-form .comment-form-email,
   .comment-form .comment-form-url,
-  .comment-form .form-submit, .gallery-item, .comment-body .comment-meta, .comment-body .comment-content, .comment-body .reply, .tribe-link-tickets-message {
+  .comment-form .form-submit, .gallery-item, .comment-body .comment-meta, .comment-body .comment-content, .comment-body .reply, .tribe-events-list-separator-month, .tribe-link-tickets-message {
     margin: 8px;
     width: calc(100% - 16px); }
     /* line 73, C:/wamp/www/pec/src/assets/css/scss/vendors/mdl/_grid.scss */
@@ -750,7 +750,7 @@ textarea {
     .comment-form .mdl-grid--no-spacing > .comment-form-author,
     .comment-form .mdl-grid--no-spacing > .comment-form-email,
     .comment-form .mdl-grid--no-spacing > .comment-form-url,
-    .comment-form .mdl-grid--no-spacing > .form-submit, .mdl-grid--no-spacing > .gallery-item, .comment-body .mdl-grid--no-spacing > .comment-meta, .comment-body .mdl-grid--no-spacing > .comment-content, .comment-body .mdl-grid--no-spacing > .reply, .mdl-grid--no-spacing > .tribe-link-tickets-message {
+    .comment-form .mdl-grid--no-spacing > .form-submit, .mdl-grid--no-spacing > .gallery-item, .comment-body .mdl-grid--no-spacing > .comment-meta, .comment-body .mdl-grid--no-spacing > .comment-content, .comment-body .mdl-grid--no-spacing > .reply, .mdl-grid--no-spacing > .tribe-events-list-separator-month, .mdl-grid--no-spacing > .tribe-link-tickets-message {
       width: 100%; }
   /* line 105, C:/wamp/www/pec/src/assets/css/scss/vendors/mdl/_grid.scss */
   .mdl-cell--hide-phone {
@@ -893,6 +893,7 @@ textarea {
   .comment-form .comment-form-comment,
   .comment-form .logged-in-as,
   .comment-form .comment-notes,
+  .tribe-events-list-separator-month,
   .tribe-link-tickets-message,
   .mdl-cell--12-col-phone.mdl-cell--12-col-phone {
     width: calc(100% - 16px); }
@@ -900,7 +901,8 @@ textarea {
     .mdl-grid--no-spacing > .mdl-cell--12-col,
     .comment-form .mdl-grid--no-spacing > .comment-form-comment,
     .comment-form .mdl-grid--no-spacing > .logged-in-as,
-    .comment-form .mdl-grid--no-spacing > .comment-notes, .mdl-grid--no-spacing > .tribe-link-tickets-message,
+    .comment-form .mdl-grid--no-spacing > .comment-notes, .mdl-grid--no-spacing > .tribe-events-list-separator-month,
+    .mdl-grid--no-spacing > .tribe-link-tickets-message,
     .mdl-grid--no-spacing > .mdl-cell--12-col-phone.mdl-cell--12-col-phone {
       width: 100%; }
   /* line 131, C:/wamp/www/pec/src/assets/css/scss/vendors/mdl/_grid.scss */
@@ -953,7 +955,7 @@ textarea {
   .comment-form .comment-form-author,
   .comment-form .comment-form-email,
   .comment-form .comment-form-url,
-  .comment-form .form-submit, .gallery-item, .comment-body .comment-meta, .comment-body .comment-content, .comment-body .reply, .tribe-link-tickets-message {
+  .comment-form .form-submit, .gallery-item, .comment-body .comment-meta, .comment-body .comment-content, .comment-body .reply, .tribe-events-list-separator-month, .tribe-link-tickets-message {
     margin: 8px;
     width: calc(50% - 16px); }
     /* line 73, C:/wamp/www/pec/src/assets/css/scss/vendors/mdl/_grid.scss */
@@ -963,7 +965,7 @@ textarea {
     .comment-form .mdl-grid--no-spacing > .comment-form-author,
     .comment-form .mdl-grid--no-spacing > .comment-form-email,
     .comment-form .mdl-grid--no-spacing > .comment-form-url,
-    .comment-form .mdl-grid--no-spacing > .form-submit, .mdl-grid--no-spacing > .gallery-item, .comment-body .mdl-grid--no-spacing > .comment-meta, .comment-body .mdl-grid--no-spacing > .comment-content, .comment-body .mdl-grid--no-spacing > .reply, .mdl-grid--no-spacing > .tribe-link-tickets-message {
+    .comment-form .mdl-grid--no-spacing > .form-submit, .mdl-grid--no-spacing > .gallery-item, .comment-body .mdl-grid--no-spacing > .comment-meta, .comment-body .mdl-grid--no-spacing > .comment-content, .comment-body .mdl-grid--no-spacing > .reply, .mdl-grid--no-spacing > .tribe-events-list-separator-month, .mdl-grid--no-spacing > .tribe-link-tickets-message {
       width: 50%; }
   /* line 152, C:/wamp/www/pec/src/assets/css/scss/vendors/mdl/_grid.scss */
   .mdl-cell--hide-tablet {
@@ -1106,6 +1108,7 @@ textarea {
   .comment-form .comment-form-comment,
   .comment-form .logged-in-as,
   .comment-form .comment-notes,
+  .tribe-events-list-separator-month,
   .tribe-link-tickets-message,
   .mdl-cell--12-col-tablet.mdl-cell--12-col-tablet {
     width: calc(100% - 16px); }
@@ -1113,7 +1116,8 @@ textarea {
     .mdl-grid--no-spacing > .mdl-cell--12-col,
     .comment-form .mdl-grid--no-spacing > .comment-form-comment,
     .comment-form .mdl-grid--no-spacing > .logged-in-as,
-    .comment-form .mdl-grid--no-spacing > .comment-notes, .mdl-grid--no-spacing > .tribe-link-tickets-message,
+    .comment-form .mdl-grid--no-spacing > .comment-notes, .mdl-grid--no-spacing > .tribe-events-list-separator-month,
+    .mdl-grid--no-spacing > .tribe-link-tickets-message,
     .mdl-grid--no-spacing > .mdl-cell--12-col-tablet.mdl-cell--12-col-tablet {
       width: 100%; }
   /* line 178, C:/wamp/www/pec/src/assets/css/scss/vendors/mdl/_grid.scss */
@@ -1214,7 +1218,7 @@ textarea {
   .comment-form .comment-form-author,
   .comment-form .comment-form-email,
   .comment-form .comment-form-url,
-  .comment-form .form-submit, .gallery-item, .comment-body .comment-meta, .comment-body .comment-content, .comment-body .reply, .tribe-link-tickets-message {
+  .comment-form .form-submit, .gallery-item, .comment-body .comment-meta, .comment-body .comment-content, .comment-body .reply, .tribe-events-list-separator-month, .tribe-link-tickets-message {
     margin: 8px;
     width: calc(33.33333% - 16px); }
     /* line 73, C:/wamp/www/pec/src/assets/css/scss/vendors/mdl/_grid.scss */
@@ -1224,7 +1228,7 @@ textarea {
     .comment-form .mdl-grid--no-spacing > .comment-form-author,
     .comment-form .mdl-grid--no-spacing > .comment-form-email,
     .comment-form .mdl-grid--no-spacing > .comment-form-url,
-    .comment-form .mdl-grid--no-spacing > .form-submit, .mdl-grid--no-spacing > .gallery-item, .comment-body .mdl-grid--no-spacing > .comment-meta, .comment-body .mdl-grid--no-spacing > .comment-content, .comment-body .mdl-grid--no-spacing > .reply, .mdl-grid--no-spacing > .tribe-link-tickets-message {
+    .comment-form .mdl-grid--no-spacing > .form-submit, .mdl-grid--no-spacing > .gallery-item, .comment-body .mdl-grid--no-spacing > .comment-meta, .comment-body .mdl-grid--no-spacing > .comment-content, .comment-body .mdl-grid--no-spacing > .reply, .mdl-grid--no-spacing > .tribe-events-list-separator-month, .mdl-grid--no-spacing > .tribe-link-tickets-message {
       width: 33.33333%; }
   /* line 199, C:/wamp/www/pec/src/assets/css/scss/vendors/mdl/_grid.scss */
   .mdl-cell--hide-desktop {
@@ -1367,6 +1371,7 @@ textarea {
   .comment-form .comment-form-comment,
   .comment-form .logged-in-as,
   .comment-form .comment-notes,
+  .tribe-events-list-separator-month,
   .tribe-link-tickets-message,
   .mdl-cell--12-col-desktop.mdl-cell--12-col-desktop {
     width: calc(100% - 16px); }
@@ -1374,7 +1379,8 @@ textarea {
     .mdl-grid--no-spacing > .mdl-cell--12-col,
     .comment-form .mdl-grid--no-spacing > .comment-form-comment,
     .comment-form .mdl-grid--no-spacing > .logged-in-as,
-    .comment-form .mdl-grid--no-spacing > .comment-notes, .mdl-grid--no-spacing > .tribe-link-tickets-message,
+    .comment-form .mdl-grid--no-spacing > .comment-notes, .mdl-grid--no-spacing > .tribe-events-list-separator-month,
+    .mdl-grid--no-spacing > .tribe-link-tickets-message,
     .mdl-grid--no-spacing > .mdl-cell--12-col-desktop.mdl-cell--12-col-desktop {
       width: 100%; }
   /* line 218, C:/wamp/www/pec/src/assets/css/scss/vendors/mdl/_grid.scss */
@@ -1981,7 +1987,10 @@ input[type="submit"]#cancel-comment-reply-link, .pagination .nav-links input[typ
   min-height: 32px; }
 
 /* line 54, C:/wamp/www/pec/src/assets/css/scss/vendors/mdl/_textfield.scss */
-.mdl-textfield__input, .search-form input[type=search] {
+.mdl-textfield__input, .search-form input[type=search], .tribe-bar-filters-inner .input-filter-container input,
+.tribe-bar-filters-inner .tribe-bar-views-select,
+.tribe-bar-views-inner .input-filter-container input,
+.tribe-bar-views-inner .tribe-bar-views-select {
   border: none;
   border-bottom: 1px solid rgba(0,0,0, 0.12);
   display: block;
@@ -1994,32 +2003,76 @@ input[type="submit"]#cancel-comment-reply-link, .pagination .nav-links input[typ
   text-align: left;
   color: inherit; }
   /* line 66, C:/wamp/www/pec/src/assets/css/scss/vendors/mdl/_textfield.scss */
-  .mdl-textfield__input[type='number'], .search-form input[type='number'][type=search] {
+  .mdl-textfield__input[type='number'], .search-form input[type='number'][type=search], .tribe-bar-filters-inner .input-filter-container input[type='number'],
+  .tribe-bar-filters-inner [type='number'].tribe-bar-views-select,
+  .tribe-bar-views-inner .input-filter-container input[type='number'],
+  .tribe-bar-views-inner [type='number'].tribe-bar-views-select {
     -moz-appearance: textfield; }
   /* line 70, C:/wamp/www/pec/src/assets/css/scss/vendors/mdl/_textfield.scss */
   .mdl-textfield__input[type='number']::-webkit-inner-spin-button,
   .search-form input[type='number'][type=search]::-webkit-inner-spin-button,
-  .mdl-textfield__input[type='number']::-webkit-outer-spin-button, .search-form input[type='number'][type=search]::-webkit-outer-spin-button {
+  .tribe-bar-filters-inner .input-filter-container input[type='number']::-webkit-inner-spin-button,
+  .tribe-bar-filters-inner [type='number'].tribe-bar-views-select::-webkit-inner-spin-button,
+  .tribe-bar-views-inner .input-filter-container input[type='number']::-webkit-inner-spin-button,
+  .tribe-bar-views-inner [type='number'].tribe-bar-views-select::-webkit-inner-spin-button,
+  .mdl-textfield__input[type='number']::-webkit-outer-spin-button, .search-form input[type='number'][type=search]::-webkit-outer-spin-button, .tribe-bar-filters-inner .input-filter-container input[type='number']::-webkit-outer-spin-button,
+  .tribe-bar-filters-inner [type='number'].tribe-bar-views-select::-webkit-outer-spin-button,
+  .tribe-bar-views-inner .input-filter-container input[type='number']::-webkit-outer-spin-button,
+  .tribe-bar-views-inner [type='number'].tribe-bar-views-select::-webkit-outer-spin-button {
     -webkit-appearance: none;
     margin: 0; }
   /* line 74, C:/wamp/www/pec/src/assets/css/scss/vendors/mdl/_textfield.scss */
-  .mdl-textfield.is-focused .mdl-textfield__input, .is-focused.search-form .mdl-textfield__input, .mdl-textfield.is-focused .search-form input[type=search], .search-form .mdl-textfield.is-focused input[type=search], .is-focused.search-form input[type=search] {
+  .mdl-textfield.is-focused .mdl-textfield__input, .is-focused.search-form .mdl-textfield__input, .mdl-textfield.is-focused .search-form input[type=search], .search-form .mdl-textfield.is-focused input[type=search], .is-focused.search-form input[type=search], .mdl-textfield.is-focused .tribe-bar-filters-inner .input-filter-container input, .tribe-bar-filters-inner .input-filter-container .mdl-textfield.is-focused input,
+  .is-focused.search-form .tribe-bar-filters-inner .input-filter-container input, .tribe-bar-filters-inner .input-filter-container .is-focused.search-form input,
+  .mdl-textfield.is-focused .tribe-bar-filters-inner .tribe-bar-views-select, .tribe-bar-filters-inner .mdl-textfield.is-focused .tribe-bar-views-select,
+  .is-focused.search-form .tribe-bar-filters-inner .tribe-bar-views-select, .tribe-bar-filters-inner .is-focused.search-form .tribe-bar-views-select,
+  .mdl-textfield.is-focused .tribe-bar-views-inner .input-filter-container input, .tribe-bar-views-inner .input-filter-container .mdl-textfield.is-focused input,
+  .is-focused.search-form .tribe-bar-views-inner .input-filter-container input, .tribe-bar-views-inner .input-filter-container .is-focused.search-form input,
+  .mdl-textfield.is-focused .tribe-bar-views-inner .tribe-bar-views-select, .tribe-bar-views-inner .mdl-textfield.is-focused .tribe-bar-views-select, .is-focused.search-form .tribe-bar-views-inner .tribe-bar-views-select, .tribe-bar-views-inner .is-focused.search-form .tribe-bar-views-select {
     outline: none; }
   /* line 77, C:/wamp/www/pec/src/assets/css/scss/vendors/mdl/_textfield.scss */
-  .mdl-textfield.is-invalid .mdl-textfield__input, .is-invalid.search-form .mdl-textfield__input, .mdl-textfield.is-invalid .search-form input[type=search], .search-form .mdl-textfield.is-invalid input[type=search], .is-invalid.search-form input[type=search] {
+  .mdl-textfield.is-invalid .mdl-textfield__input, .is-invalid.search-form .mdl-textfield__input, .mdl-textfield.is-invalid .search-form input[type=search], .search-form .mdl-textfield.is-invalid input[type=search], .is-invalid.search-form input[type=search], .mdl-textfield.is-invalid .tribe-bar-filters-inner .input-filter-container input, .tribe-bar-filters-inner .input-filter-container .mdl-textfield.is-invalid input,
+  .is-invalid.search-form .tribe-bar-filters-inner .input-filter-container input, .tribe-bar-filters-inner .input-filter-container .is-invalid.search-form input,
+  .mdl-textfield.is-invalid .tribe-bar-filters-inner .tribe-bar-views-select, .tribe-bar-filters-inner .mdl-textfield.is-invalid .tribe-bar-views-select,
+  .is-invalid.search-form .tribe-bar-filters-inner .tribe-bar-views-select, .tribe-bar-filters-inner .is-invalid.search-form .tribe-bar-views-select,
+  .mdl-textfield.is-invalid .tribe-bar-views-inner .input-filter-container input, .tribe-bar-views-inner .input-filter-container .mdl-textfield.is-invalid input,
+  .is-invalid.search-form .tribe-bar-views-inner .input-filter-container input, .tribe-bar-views-inner .input-filter-container .is-invalid.search-form input,
+  .mdl-textfield.is-invalid .tribe-bar-views-inner .tribe-bar-views-select, .tribe-bar-views-inner .mdl-textfield.is-invalid .tribe-bar-views-select, .is-invalid.search-form .tribe-bar-views-inner .tribe-bar-views-select, .tribe-bar-views-inner .is-invalid.search-form .tribe-bar-views-select {
     border-color: rgb(213,0,0);
     box-shadow: none; }
   /* line 82, C:/wamp/www/pec/src/assets/css/scss/vendors/mdl/_textfield.scss */
   fieldset[disabled] .mdl-textfield .mdl-textfield__input,
   fieldset[disabled] .search-form .mdl-textfield__input,
   .search-form fieldset[disabled] .mdl-textfield input[type=search], fieldset[disabled] .search-form input[type=search],
-  .mdl-textfield.is-disabled .mdl-textfield__input, .is-disabled.search-form .mdl-textfield__input, .mdl-textfield.is-disabled .search-form input[type=search], .search-form .mdl-textfield.is-disabled input[type=search], .is-disabled.search-form input[type=search] {
+  fieldset[disabled] .mdl-textfield .tribe-bar-filters-inner .input-filter-container input,
+  .tribe-bar-filters-inner .input-filter-container fieldset[disabled] .mdl-textfield input,
+  fieldset[disabled] .search-form .tribe-bar-filters-inner .input-filter-container input,
+  .tribe-bar-filters-inner .input-filter-container fieldset[disabled] .search-form input,
+  fieldset[disabled] .mdl-textfield .tribe-bar-filters-inner .tribe-bar-views-select,
+  .tribe-bar-filters-inner fieldset[disabled] .mdl-textfield .tribe-bar-views-select,
+  fieldset[disabled] .search-form .tribe-bar-filters-inner .tribe-bar-views-select,
+  .tribe-bar-filters-inner fieldset[disabled] .search-form .tribe-bar-views-select,
+  fieldset[disabled] .mdl-textfield .tribe-bar-views-inner .input-filter-container input,
+  .tribe-bar-views-inner .input-filter-container fieldset[disabled] .mdl-textfield input,
+  fieldset[disabled] .search-form .tribe-bar-views-inner .input-filter-container input,
+  .tribe-bar-views-inner .input-filter-container fieldset[disabled] .search-form input,
+  fieldset[disabled] .mdl-textfield .tribe-bar-views-inner .tribe-bar-views-select,
+  .tribe-bar-views-inner fieldset[disabled] .mdl-textfield .tribe-bar-views-select, fieldset[disabled] .search-form .tribe-bar-views-inner .tribe-bar-views-select,
+  .tribe-bar-views-inner fieldset[disabled] .search-form .tribe-bar-views-select, .mdl-textfield.is-disabled .mdl-textfield__input, .is-disabled.search-form .mdl-textfield__input, .mdl-textfield.is-disabled .search-form input[type=search], .search-form .mdl-textfield.is-disabled input[type=search], .is-disabled.search-form input[type=search], .mdl-textfield.is-disabled .tribe-bar-filters-inner .input-filter-container input, .tribe-bar-filters-inner .input-filter-container .mdl-textfield.is-disabled input,
+  .is-disabled.search-form .tribe-bar-filters-inner .input-filter-container input, .tribe-bar-filters-inner .input-filter-container .is-disabled.search-form input,
+  .mdl-textfield.is-disabled .tribe-bar-filters-inner .tribe-bar-views-select, .tribe-bar-filters-inner .mdl-textfield.is-disabled .tribe-bar-views-select,
+  .is-disabled.search-form .tribe-bar-filters-inner .tribe-bar-views-select, .tribe-bar-filters-inner .is-disabled.search-form .tribe-bar-views-select,
+  .mdl-textfield.is-disabled .tribe-bar-views-inner .input-filter-container input, .tribe-bar-views-inner .input-filter-container .mdl-textfield.is-disabled input,
+  .is-disabled.search-form .tribe-bar-views-inner .input-filter-container input, .tribe-bar-views-inner .input-filter-container .is-disabled.search-form input,
+  .mdl-textfield.is-disabled .tribe-bar-views-inner .tribe-bar-views-select, .tribe-bar-views-inner .mdl-textfield.is-disabled .tribe-bar-views-select, .is-disabled.search-form .tribe-bar-views-inner .tribe-bar-views-select, .tribe-bar-views-inner .is-disabled.search-form .tribe-bar-views-select {
     background-color: transparent;
     border-bottom: 1px dotted rgba(0,0,0, 0.12);
     color: rgba(0,0,0, 0.26); }
 
 /* line 89, C:/wamp/www/pec/src/assets/css/scss/vendors/mdl/_textfield.scss */
-.mdl-textfield textarea.mdl-textfield__input, .search-form textarea.mdl-textfield__input {
+.mdl-textfield textarea.mdl-textfield__input, .search-form textarea.mdl-textfield__input, .mdl-textfield .tribe-bar-filters-inner textarea.tribe-bar-views-select, .tribe-bar-filters-inner .mdl-textfield textarea.tribe-bar-views-select,
+.search-form .tribe-bar-filters-inner textarea.tribe-bar-views-select, .tribe-bar-filters-inner .search-form textarea.tribe-bar-views-select,
+.mdl-textfield .tribe-bar-views-inner textarea.tribe-bar-views-select, .tribe-bar-views-inner .mdl-textfield textarea.tribe-bar-views-select, .search-form .tribe-bar-views-inner textarea.tribe-bar-views-select, .tribe-bar-views-inner .search-form textarea.tribe-bar-views-select {
   display: block; }
 
 /* line 94, C:/wamp/www/pec/src/assets/css/scss/vendors/mdl/_textfield.scss */
@@ -3999,13 +4052,13 @@ h4,
 
 /* line 214, C:/wamp/www/pec/src/assets/css/scss/structure/_typography.scss */
 h5,
-.h5 {
+.h5, #tribe-bar-collapse-toggle {
   font-size: 1.29454em;
   color: #91C160; }
   @media screen and (min-width: 768px) {
     /* line 214, C:/wamp/www/pec/src/assets/css/scss/structure/_typography.scss */
     h5,
-    .h5 {
+    .h5, #tribe-bar-collapse-toggle {
       font-size: 1.67583em; } }
 
 /* line 223, C:/wamp/www/pec/src/assets/css/scss/structure/_typography.scss */
@@ -4117,13 +4170,15 @@ body {
 
 /* line 98, C:/wamp/www/pec/src/assets/css/scss/structure/_layout.scss */
 .sidebar {
-  max-width: 100%; }
+  max-width: 100%;
+  max-width: 100vw; }
   @media screen and (min-width: 768px) {
     /* line 98, C:/wamp/www/pec/src/assets/css/scss/structure/_layout.scss */
     .sidebar {
-      max-width: 25%; } }
+      max-width: 25%;
+      max-width: 25vw; } }
 
-/* line 109, C:/wamp/www/pec/src/assets/css/scss/structure/_layout.scss */
+/* line 111, C:/wamp/www/pec/src/assets/css/scss/structure/_layout.scss */
 .footer {
   margin: 0; }
 
@@ -4878,175 +4933,178 @@ hr {
   /* line 50, C:/wamp/www/pec/src/assets/css/scss/partials/_sidebar.scss */
   .search-form label span {
     display: none; }
-  /* line 56, C:/wamp/www/pec/src/assets/css/scss/partials/_sidebar.scss */
-  .search-form input[type=search]:active,
-  .search-form input[type=search]:focus {
-    border-bottom: 2px solid #FFB71B;
-    transition: border-bottom 300ms cubic-bezier(0, 1.68, 0.58, 1); }
-  /* line 61, C:/wamp/www/pec/src/assets/css/scss/partials/_sidebar.scss */
+  /* line 53, C:/wamp/www/pec/src/assets/css/scss/partials/_sidebar.scss */
+  .search-form input[type=search] {
+    border-bottom-color: #FFD476; }
+    /* line 57, C:/wamp/www/pec/src/assets/css/scss/partials/_sidebar.scss */
+    .search-form input[type=search]:active,
+    .search-form input[type=search]:focus {
+      border-bottom: 2px solid #FFB71B;
+      transition: border-bottom 300ms cubic-bezier(0, 1.68, 0.58, 1); }
+  /* line 62, C:/wamp/www/pec/src/assets/css/scss/partials/_sidebar.scss */
   .search-form .search-submit {
     background-color: #FFB71B;
     color: #fff; }
-    /* line 68, C:/wamp/www/pec/src/assets/css/scss/partials/_sidebar.scss */
+    /* line 69, C:/wamp/www/pec/src/assets/css/scss/partials/_sidebar.scss */
     .search-form .search-submit:hover,
     .search-form .search-submit:focus,
     .search-form .search-submit:active {
       background-color: #DA9D39;
       color: #fff; }
 
-/* line 77, C:/wamp/www/pec/src/assets/css/scss/partials/_sidebar.scss */
+/* line 78, C:/wamp/www/pec/src/assets/css/scss/partials/_sidebar.scss */
 .tagcloud {
   text-align: center; }
 
-/* line 81, C:/wamp/www/pec/src/assets/css/scss/partials/_sidebar.scss */
+/* line 82, C:/wamp/www/pec/src/assets/css/scss/partials/_sidebar.scss */
 .tag-link-position-2 {
   color: #FFB71B; }
 
-/* line 88, C:/wamp/www/pec/src/assets/css/scss/partials/_sidebar.scss */
+/* line 89, C:/wamp/www/pec/src/assets/css/scss/partials/_sidebar.scss */
 .tag-link-position-2:hover,
 .tag-link-position-2:focus,
 .tag-link-position-2:active {
   color: #493200; }
 
-/* line 81, C:/wamp/www/pec/src/assets/css/scss/partials/_sidebar.scss */
+/* line 82, C:/wamp/www/pec/src/assets/css/scss/partials/_sidebar.scss */
 .tag-link-position-3 {
   color: #91C160; }
 
-/* line 88, C:/wamp/www/pec/src/assets/css/scss/partials/_sidebar.scss */
+/* line 89, C:/wamp/www/pec/src/assets/css/scss/partials/_sidebar.scss */
 .tag-link-position-3:hover,
 .tag-link-position-3:focus,
 .tag-link-position-3:active {
   color: #5e8734; }
 
-/* line 81, C:/wamp/www/pec/src/assets/css/scss/partials/_sidebar.scss */
+/* line 82, C:/wamp/www/pec/src/assets/css/scss/partials/_sidebar.scss */
 .tag-link-position-4 {
   color: #FFB71B; }
 
-/* line 88, C:/wamp/www/pec/src/assets/css/scss/partials/_sidebar.scss */
+/* line 89, C:/wamp/www/pec/src/assets/css/scss/partials/_sidebar.scss */
 .tag-link-position-4:hover,
 .tag-link-position-4:focus,
 .tag-link-position-4:active {
   color: #493200; }
 
-/* line 81, C:/wamp/www/pec/src/assets/css/scss/partials/_sidebar.scss */
+/* line 82, C:/wamp/www/pec/src/assets/css/scss/partials/_sidebar.scss */
 .tag-link-position-6 {
   color: #91C160; }
 
-/* line 88, C:/wamp/www/pec/src/assets/css/scss/partials/_sidebar.scss */
+/* line 89, C:/wamp/www/pec/src/assets/css/scss/partials/_sidebar.scss */
 .tag-link-position-6:hover,
 .tag-link-position-6:focus,
 .tag-link-position-6:active {
   color: #5e8734; }
 
-/* line 81, C:/wamp/www/pec/src/assets/css/scss/partials/_sidebar.scss */
+/* line 82, C:/wamp/www/pec/src/assets/css/scss/partials/_sidebar.scss */
 .tag-link-position-8 {
   color: #FFB71B; }
 
-/* line 88, C:/wamp/www/pec/src/assets/css/scss/partials/_sidebar.scss */
+/* line 89, C:/wamp/www/pec/src/assets/css/scss/partials/_sidebar.scss */
 .tag-link-position-8:hover,
 .tag-link-position-8:focus,
 .tag-link-position-8:active {
   color: #493200; }
 
-/* line 81, C:/wamp/www/pec/src/assets/css/scss/partials/_sidebar.scss */
+/* line 82, C:/wamp/www/pec/src/assets/css/scss/partials/_sidebar.scss */
 .tag-link-position-9 {
   color: #91C160; }
 
-/* line 88, C:/wamp/www/pec/src/assets/css/scss/partials/_sidebar.scss */
+/* line 89, C:/wamp/www/pec/src/assets/css/scss/partials/_sidebar.scss */
 .tag-link-position-9:hover,
 .tag-link-position-9:focus,
 .tag-link-position-9:active {
   color: #5e8734; }
 
-/* line 81, C:/wamp/www/pec/src/assets/css/scss/partials/_sidebar.scss */
+/* line 82, C:/wamp/www/pec/src/assets/css/scss/partials/_sidebar.scss */
 .tag-link-position-10 {
   color: #FFB71B; }
 
-/* line 88, C:/wamp/www/pec/src/assets/css/scss/partials/_sidebar.scss */
+/* line 89, C:/wamp/www/pec/src/assets/css/scss/partials/_sidebar.scss */
 .tag-link-position-10:hover,
 .tag-link-position-10:focus,
 .tag-link-position-10:active {
   color: #493200; }
 
-/* line 81, C:/wamp/www/pec/src/assets/css/scss/partials/_sidebar.scss */
+/* line 82, C:/wamp/www/pec/src/assets/css/scss/partials/_sidebar.scss */
 .tag-link-position-12 {
   color: #91C160; }
 
-/* line 88, C:/wamp/www/pec/src/assets/css/scss/partials/_sidebar.scss */
+/* line 89, C:/wamp/www/pec/src/assets/css/scss/partials/_sidebar.scss */
 .tag-link-position-12:hover,
 .tag-link-position-12:focus,
 .tag-link-position-12:active {
   color: #5e8734; }
 
-/* line 81, C:/wamp/www/pec/src/assets/css/scss/partials/_sidebar.scss */
+/* line 82, C:/wamp/www/pec/src/assets/css/scss/partials/_sidebar.scss */
 .tag-link-position-14 {
   color: #FFB71B; }
 
-/* line 88, C:/wamp/www/pec/src/assets/css/scss/partials/_sidebar.scss */
+/* line 89, C:/wamp/www/pec/src/assets/css/scss/partials/_sidebar.scss */
 .tag-link-position-14:hover,
 .tag-link-position-14:focus,
 .tag-link-position-14:active {
   color: #493200; }
 
-/* line 81, C:/wamp/www/pec/src/assets/css/scss/partials/_sidebar.scss */
+/* line 82, C:/wamp/www/pec/src/assets/css/scss/partials/_sidebar.scss */
 .tag-link-position-15 {
   color: #91C160; }
 
-/* line 88, C:/wamp/www/pec/src/assets/css/scss/partials/_sidebar.scss */
+/* line 89, C:/wamp/www/pec/src/assets/css/scss/partials/_sidebar.scss */
 .tag-link-position-15:hover,
 .tag-link-position-15:focus,
 .tag-link-position-15:active {
   color: #5e8734; }
 
-/* line 81, C:/wamp/www/pec/src/assets/css/scss/partials/_sidebar.scss */
+/* line 82, C:/wamp/www/pec/src/assets/css/scss/partials/_sidebar.scss */
 .tag-link-position-16 {
   color: #FFB71B; }
 
-/* line 88, C:/wamp/www/pec/src/assets/css/scss/partials/_sidebar.scss */
+/* line 89, C:/wamp/www/pec/src/assets/css/scss/partials/_sidebar.scss */
 .tag-link-position-16:hover,
 .tag-link-position-16:focus,
 .tag-link-position-16:active {
   color: #493200; }
 
-/* line 81, C:/wamp/www/pec/src/assets/css/scss/partials/_sidebar.scss */
+/* line 82, C:/wamp/www/pec/src/assets/css/scss/partials/_sidebar.scss */
 .tag-link-position-18 {
   color: #91C160; }
 
-/* line 88, C:/wamp/www/pec/src/assets/css/scss/partials/_sidebar.scss */
+/* line 89, C:/wamp/www/pec/src/assets/css/scss/partials/_sidebar.scss */
 .tag-link-position-18:hover,
 .tag-link-position-18:focus,
 .tag-link-position-18:active {
   color: #5e8734; }
 
-/* line 81, C:/wamp/www/pec/src/assets/css/scss/partials/_sidebar.scss */
+/* line 82, C:/wamp/www/pec/src/assets/css/scss/partials/_sidebar.scss */
 .tag-link-position-20 {
   color: #FFB71B; }
 
-/* line 88, C:/wamp/www/pec/src/assets/css/scss/partials/_sidebar.scss */
+/* line 89, C:/wamp/www/pec/src/assets/css/scss/partials/_sidebar.scss */
 .tag-link-position-20:hover,
 .tag-link-position-20:focus,
 .tag-link-position-20:active {
   color: #493200; }
 
-/* line 102, C:/wamp/www/pec/src/assets/css/scss/partials/_sidebar.scss */
+/* line 103, C:/wamp/www/pec/src/assets/css/scss/partials/_sidebar.scss */
 .widget_recent_comments .recentcomments {
   flex-wrap: wrap;
   align-items: baseline; }
-  /* line 107, C:/wamp/www/pec/src/assets/css/scss/partials/_sidebar.scss */
+  /* line 108, C:/wamp/www/pec/src/assets/css/scss/partials/_sidebar.scss */
   .widget_recent_comments .recentcomments a {
     width: 100%; }
 
-/* line 112, C:/wamp/www/pec/src/assets/css/scss/partials/_sidebar.scss */
+/* line 113, C:/wamp/www/pec/src/assets/css/scss/partials/_sidebar.scss */
 .widget_recent_comments .comment-author-link {
   padding-right: 0.5em;
   color: rgba(0, 0, 0, 0.54); }
 
-/* line 125, C:/wamp/www/pec/src/assets/css/scss/partials/_sidebar.scss */
+/* line 126, C:/wamp/www/pec/src/assets/css/scss/partials/_sidebar.scss */
 .tribe-events-list-widget .type-tribe_events {
   flex-direction: column;
   align-items: flex-start; }
 
-/* line 132, C:/wamp/www/pec/src/assets/css/scss/partials/_sidebar.scss */
+/* line 133, C:/wamp/www/pec/src/assets/css/scss/partials/_sidebar.scss */
 .tribe-events-list-widget .tribe-event-title {
   font-family: "Signika Negative", "Tahoma", "Geneva", sans-serif;
   font-weight: normal;
@@ -5185,99 +5243,18 @@ hr {
   align-items: center;
   padding: 1em; }
 
-/* line 2, C:/wamp/www/pec/src/assets/css/scss/pages/_events.scss */
-.tribe-events-single-section {
-  margin: 0 !important;
-  padding: 0 !important; }
-
-/* line 8, C:/wamp/www/pec/src/assets/css/scss/pages/_events.scss */
-.tribe-events-event-meta:first-child {
-  border: none; }
-
-/* line 13, C:/wamp/www/pec/src/assets/css/scss/pages/_events.scss */
-.tribe-events-meta-group {
-  flex-grow: 1;
-  color: #4D4D4D;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.54);
-  border-radius: 2px; }
-  /* line 21, C:/wamp/www/pec/src/assets/css/scss/pages/_events.scss */
-  .tribe-events-meta-group dl {
-    display: flex;
-    flex-wrap: wrap; }
-    /* line 26, C:/wamp/www/pec/src/assets/css/scss/pages/_events.scss */
-    .tribe-events-meta-group dl dt {
-      flex-basis: 33%;
-      color: #4D4D4D; }
-    /* line 31, C:/wamp/www/pec/src/assets/css/scss/pages/_events.scss */
-    .tribe-events-meta-group dl dd {
-      flex-basis: 66%;
-      color: #4D4D4D;
-      font-weight: 100; }
-      /* line 32, C:/wamp/www/pec/src/assets/css/scss/pages/_events.scss */
-      .tribe-events-meta-group dl dd.tribe-organizer {
-        flex-basis: 100%;
-        padding-bottom: 0.7242em; }
-      /* line 39, C:/wamp/www/pec/src/assets/css/scss/pages/_events.scss */
-      .tribe-events-meta-group dl dd .tribe-events-abbr {
-        text-decoration: none; }
-
-/* line 46, C:/wamp/www/pec/src/assets/css/scss/pages/_events.scss */
-.tribe-events-single-section-title {
-  color: #fff;
-  background: #91C160;
-  align-self: auto;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
-
-/* line 56, C:/wamp/www/pec/src/assets/css/scss/pages/_events.scss */
-.cart button[type="submit"].mdl-button {
-  position: static;
-  bottom: auto;
-  background: #FFB71B;
-  color: #fff; }
-  /* line 63, C:/wamp/www/pec/src/assets/css/scss/pages/_events.scss */
-  .cart button[type="submit"].mdl-button:hover,
-  .cart button[type="submit"].mdl-button:focus,
-  .cart button[type="submit"].mdl-button:active {
-    color: #fff;
-    background: #DA9D39; }
-
-/* line 69, C:/wamp/www/pec/src/assets/css/scss/pages/_events.scss */
-.cart .mdl-data-table {
-  border: none;
-  width: 100%; }
-  /* line 73, C:/wamp/www/pec/src/assets/css/scss/pages/_events.scss */
-  .cart .mdl-data-table tbody tr {
-    border: 0 solid #fff; }
-    /* line 75, C:/wamp/www/pec/src/assets/css/scss/pages/_events.scss */
-    .cart .mdl-data-table tbody tr:hover {
-      background: none; }
-  /* line 79, C:/wamp/www/pec/src/assets/css/scss/pages/_events.scss */
-  .cart .mdl-data-table td {
-    border: 0 solid #fff;
-    height: auto; }
-
-/* line 88, C:/wamp/www/pec/src/assets/css/scss/pages/_events.scss */
-.tribe-tickets-remaining {
-  font-size: 0.87891em;
-  margin-top: 0.7242em; }
-
-/* line 94, C:/wamp/www/pec/src/assets/css/scss/pages/_events.scss */
-.tribe-link-tickets-message {
-  background-color: #f0fafb;
-  border: 0.5px solid #f0fafb;
-  color: #246973;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.54);
-  border-radius: 2px; }
-
-/* line 104, C:/wamp/www/pec/src/assets/css/scss/pages/_events.scss */
+/* ==============================
+    Buttons
+   ============================== */
+/* line 4, C:/wamp/www/pec/src/assets/css/scss/pages/_events.scss */
 .button-google-map {
   text-align: center; }
 
-/* line 107, C:/wamp/www/pec/src/assets/css/scss/pages/_events.scss */
+/* line 7, C:/wamp/www/pec/src/assets/css/scss/pages/_events.scss */
 .tribe-events-gmap, .tribe-events-button {
   background: #308C9A;
   color: #fff; }
-  /* line 113, C:/wamp/www/pec/src/assets/css/scss/pages/_events.scss */
+  /* line 13, C:/wamp/www/pec/src/assets/css/scss/pages/_events.scss */
   .tribe-events-gmap:hover,
   .tribe-events-gmap:focus,
   .tribe-events-gmap:active, .tribe-events-button:hover,
@@ -5286,13 +5263,235 @@ hr {
     color: #fff;
     background: #246973; }
 
-/* line 118, C:/wamp/www/pec/src/assets/css/scss/pages/_events.scss */
+/* line 18, C:/wamp/www/pec/src/assets/css/scss/pages/_events.scss */
 .tribe-events-gmap {
   margin: 0.7242em 0; }
 
-/* line 121, C:/wamp/www/pec/src/assets/css/scss/pages/_events.scss */
+/* line 21, C:/wamp/www/pec/src/assets/css/scss/pages/_events.scss */
 .tribe-events-button {
   margin: 0.7242em 4px; }
+
+/* ==============================
+    BAR
+   ============================== */
+/* line 28, C:/wamp/www/pec/src/assets/css/scss/pages/_events.scss */
+#tribe-events-bar {
+  color: #4D4D4D;
+  background-color: rgba(230, 230, 230, 0.5); }
+
+/* line 32, C:/wamp/www/pec/src/assets/css/scss/pages/_events.scss */
+#tribe-bar-collapse-toggle {
+  font-family: "Gloria Hallelujah", "Comic Sans MS", cursive, sans-serif;
+  font-weight: normal;
+  color: #246973;
+  margin-top: 1.13778em; }
+
+/* line 40, C:/wamp/www/pec/src/assets/css/scss/pages/_events.scss */
+.tribe-bar-filters-inner label,
+.tribe-bar-views-inner label {
+  color: #4D4D4D; }
+
+/* line 44, C:/wamp/www/pec/src/assets/css/scss/pages/_events.scss */
+.tribe-bar-filters-inner .input-filter-container input,
+.tribe-bar-filters-inner .tribe-bar-views-select,
+.tribe-bar-views-inner .input-filter-container input,
+.tribe-bar-views-inner .tribe-bar-views-select {
+  padding: 0.7242em;
+  border-bottom-color: #e6e6e6; }
+  /* line 49, C:/wamp/www/pec/src/assets/css/scss/pages/_events.scss */
+  .tribe-bar-filters-inner .input-filter-container input:active,
+  .tribe-bar-filters-inner .input-filter-container input:focus,
+  .tribe-bar-filters-inner .tribe-bar-views-select:active,
+  .tribe-bar-filters-inner .tribe-bar-views-select:focus,
+  .tribe-bar-views-inner .input-filter-container input:active,
+  .tribe-bar-views-inner .input-filter-container input:focus,
+  .tribe-bar-views-inner .tribe-bar-views-select:active,
+  .tribe-bar-views-inner .tribe-bar-views-select:focus {
+    border-bottom: 2px solid rgba(0, 0, 0, 0.54);
+    transition: border-bottom 300ms cubic-bezier(0, 1.68, 0.58, 1); }
+
+/* ==============================
+    LIST
+   ============================== */
+/* line 58, C:/wamp/www/pec/src/assets/css/scss/pages/_events.scss */
+.tribe-events-page-title {
+  margin-top: 0.7242em; }
+
+/* line 61, C:/wamp/www/pec/src/assets/css/scss/pages/_events.scss */
+.tribe-events-list-separator-month {
+  color: #246973;
+  background-color: #f0fafb;
+  padding: 0.7242em;
+  font-size: 1.13778em;
+  text-transform: capitalize; }
+
+/* line 69, C:/wamp/www/pec/src/assets/css/scss/pages/_events.scss */
+.type-tribe_events {
+  font-size: .875rem; }
+  /* line 71, C:/wamp/www/pec/src/assets/css/scss/pages/_events.scss */
+  .type-tribe_events .entry-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    flex-grow: 1; }
+
+/* line 85, C:/wamp/www/pec/src/assets/css/scss/pages/_events.scss */
+.tribe-events-event-cost,
+.tribe-events-event-meta,
+.tribe-event-schedule-details,
+.tribe-event-date-start,
+.tribe-event-time,
+.tribe-events-venue-details,
+.tribe-events-address,
+.tribe-address {
+  font-size: 0.9375em; }
+
+/* line 89, C:/wamp/www/pec/src/assets/css/scss/pages/_events.scss */
+.tribe-events-content {
+  flex-grow: 1; }
+
+/* ==============================
+    PAGE SINGLE EVENT
+   ============================== */
+/* line 96, C:/wamp/www/pec/src/assets/css/scss/pages/_events.scss */
+.tribe-events-single-section {
+  margin: 0 !important;
+  padding: 0 !important; }
+
+/* line 102, C:/wamp/www/pec/src/assets/css/scss/pages/_events.scss */
+.tribe-events-event-meta:first-child {
+  border: none; }
+
+/* line 107, C:/wamp/www/pec/src/assets/css/scss/pages/_events.scss */
+.tribe-events-meta-group {
+  flex-grow: 1;
+  color: #4D4D4D;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.54);
+  border-radius: 2px; }
+  /* line 115, C:/wamp/www/pec/src/assets/css/scss/pages/_events.scss */
+  .tribe-events-meta-group dl {
+    display: flex;
+    flex-wrap: wrap; }
+    /* line 120, C:/wamp/www/pec/src/assets/css/scss/pages/_events.scss */
+    .tribe-events-meta-group dl dt {
+      flex-basis: 33%;
+      color: #4D4D4D; }
+    /* line 125, C:/wamp/www/pec/src/assets/css/scss/pages/_events.scss */
+    .tribe-events-meta-group dl dd {
+      flex-basis: 66%;
+      color: #4D4D4D;
+      font-weight: 100; }
+      /* line 126, C:/wamp/www/pec/src/assets/css/scss/pages/_events.scss */
+      .tribe-events-meta-group dl dd.tribe-organizer {
+        flex-basis: 100%;
+        padding-bottom: 0.7242em; }
+      /* line 133, C:/wamp/www/pec/src/assets/css/scss/pages/_events.scss */
+      .tribe-events-meta-group dl dd .tribe-events-abbr {
+        text-decoration: none; }
+
+/* line 140, C:/wamp/www/pec/src/assets/css/scss/pages/_events.scss */
+.tribe-events-single-section-title {
+  color: #fff;
+  background: #91C160;
+  align-self: auto;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
+
+/* ==============================
+    RSVP
+   ============================== */
+/* line 153, C:/wamp/www/pec/src/assets/css/scss/pages/_events.scss */
+.cart button[type="submit"].mdl-button {
+  position: static;
+  bottom: auto;
+  background: #FFB71B;
+  color: #fff; }
+  /* line 160, C:/wamp/www/pec/src/assets/css/scss/pages/_events.scss */
+  .cart button[type="submit"].mdl-button:hover,
+  .cart button[type="submit"].mdl-button:focus,
+  .cart button[type="submit"].mdl-button:active {
+    color: #fff;
+    background: #DA9D39; }
+
+/* line 166, C:/wamp/www/pec/src/assets/css/scss/pages/_events.scss */
+.cart .mdl-data-table {
+  border: none;
+  width: 100%; }
+  /* line 170, C:/wamp/www/pec/src/assets/css/scss/pages/_events.scss */
+  .cart .mdl-data-table tbody tr {
+    border: 0 solid #fff; }
+    /* line 172, C:/wamp/www/pec/src/assets/css/scss/pages/_events.scss */
+    .cart .mdl-data-table tbody tr:hover {
+      background: none; }
+  /* line 176, C:/wamp/www/pec/src/assets/css/scss/pages/_events.scss */
+  .cart .mdl-data-table td {
+    border: 0 solid #fff;
+    height: auto; }
+
+/* line 185, C:/wamp/www/pec/src/assets/css/scss/pages/_events.scss */
+.tribe-tickets-remaining {
+  font-size: 0.87891em;
+  margin-top: 0.7242em; }
+
+/* line 195, C:/wamp/www/pec/src/assets/css/scss/pages/_events.scss */
+.tribe-tickets-full-name-row .mdl-textfield__input:active,
+.tribe-tickets-full-name-row .search-form input[type=search]:active,
+.search-form .tribe-tickets-full-name-row input[type=search]:active, .tribe-tickets-full-name-row .tribe-bar-filters-inner .input-filter-container input:active,
+.tribe-bar-filters-inner .input-filter-container .tribe-tickets-full-name-row input:active,
+.tribe-tickets-full-name-row .tribe-bar-filters-inner .tribe-bar-views-select:active,
+.tribe-bar-filters-inner .tribe-tickets-full-name-row .tribe-bar-views-select:active,
+.tribe-tickets-full-name-row .tribe-bar-views-inner .input-filter-container input:active,
+.tribe-bar-views-inner .input-filter-container .tribe-tickets-full-name-row input:active,
+.tribe-tickets-full-name-row .tribe-bar-views-inner .tribe-bar-views-select:active,
+.tribe-bar-views-inner .tribe-tickets-full-name-row .tribe-bar-views-select:active, .tribe-tickets-full-name-row .mdl-textfield__input:focus,
+.tribe-tickets-full-name-row .search-form input[type=search]:focus,
+.search-form .tribe-tickets-full-name-row input[type=search]:focus, .tribe-tickets-full-name-row .tribe-bar-filters-inner .input-filter-container input:focus,
+.tribe-bar-filters-inner .input-filter-container .tribe-tickets-full-name-row input:focus,
+.tribe-tickets-full-name-row .tribe-bar-filters-inner .tribe-bar-views-select:focus,
+.tribe-bar-filters-inner .tribe-tickets-full-name-row .tribe-bar-views-select:focus,
+.tribe-tickets-full-name-row .tribe-bar-views-inner .input-filter-container input:focus,
+.tribe-bar-views-inner .input-filter-container .tribe-tickets-full-name-row input:focus,
+.tribe-tickets-full-name-row .tribe-bar-views-inner .tribe-bar-views-select:focus,
+.tribe-bar-views-inner .tribe-tickets-full-name-row .tribe-bar-views-select:focus, .tribe-tickets-email-row .mdl-textfield__input:active,
+.tribe-tickets-email-row .search-form input[type=search]:active,
+.search-form .tribe-tickets-email-row input[type=search]:active, .tribe-tickets-email-row .tribe-bar-filters-inner .input-filter-container input:active,
+.tribe-bar-filters-inner .input-filter-container .tribe-tickets-email-row input:active,
+.tribe-tickets-email-row .tribe-bar-filters-inner .tribe-bar-views-select:active,
+.tribe-bar-filters-inner .tribe-tickets-email-row .tribe-bar-views-select:active,
+.tribe-tickets-email-row .tribe-bar-views-inner .input-filter-container input:active,
+.tribe-bar-views-inner .input-filter-container .tribe-tickets-email-row input:active,
+.tribe-tickets-email-row .tribe-bar-views-inner .tribe-bar-views-select:active,
+.tribe-bar-views-inner .tribe-tickets-email-row .tribe-bar-views-select:active, .tribe-tickets-email-row .mdl-textfield__input:focus,
+.tribe-tickets-email-row .search-form input[type=search]:focus,
+.search-form .tribe-tickets-email-row input[type=search]:focus, .tribe-tickets-email-row .tribe-bar-filters-inner .input-filter-container input:focus,
+.tribe-bar-filters-inner .input-filter-container .tribe-tickets-email-row input:focus,
+.tribe-tickets-email-row .tribe-bar-filters-inner .tribe-bar-views-select:focus,
+.tribe-bar-filters-inner .tribe-tickets-email-row .tribe-bar-views-select:focus,
+.tribe-tickets-email-row .tribe-bar-views-inner .input-filter-container input:focus,
+.tribe-bar-views-inner .input-filter-container .tribe-tickets-email-row input:focus,
+.tribe-tickets-email-row .tribe-bar-views-inner .tribe-bar-views-select:focus,
+.tribe-bar-views-inner .tribe-tickets-email-row .tribe-bar-views-select:focus, .tribe-tickets-order_status-row .mdl-textfield__input:active,
+.tribe-tickets-order_status-row .search-form input[type=search]:active,
+.search-form .tribe-tickets-order_status-row input[type=search]:active, .tribe-tickets-order_status-row .tribe-bar-filters-inner .input-filter-container input:active,
+.tribe-bar-filters-inner .input-filter-container .tribe-tickets-order_status-row input:active,
+.tribe-tickets-order_status-row .tribe-bar-filters-inner .tribe-bar-views-select:active,
+.tribe-bar-filters-inner .tribe-tickets-order_status-row .tribe-bar-views-select:active,
+.tribe-tickets-order_status-row .tribe-bar-views-inner .input-filter-container input:active,
+.tribe-bar-views-inner .input-filter-container .tribe-tickets-order_status-row input:active,
+.tribe-tickets-order_status-row .tribe-bar-views-inner .tribe-bar-views-select:active,
+.tribe-bar-views-inner .tribe-tickets-order_status-row .tribe-bar-views-select:active, .tribe-tickets-order_status-row .mdl-textfield__input:focus, .tribe-tickets-order_status-row .search-form input[type=search]:focus, .search-form .tribe-tickets-order_status-row input[type=search]:focus, .tribe-tickets-order_status-row .tribe-bar-filters-inner .input-filter-container input:focus, .tribe-bar-filters-inner .input-filter-container .tribe-tickets-order_status-row input:focus,
+.tribe-tickets-order_status-row .tribe-bar-filters-inner .tribe-bar-views-select:focus, .tribe-bar-filters-inner .tribe-tickets-order_status-row .tribe-bar-views-select:focus,
+.tribe-tickets-order_status-row .tribe-bar-views-inner .input-filter-container input:focus, .tribe-bar-views-inner .input-filter-container .tribe-tickets-order_status-row input:focus,
+.tribe-tickets-order_status-row .tribe-bar-views-inner .tribe-bar-views-select:focus, .tribe-bar-views-inner .tribe-tickets-order_status-row .tribe-bar-views-select:focus {
+  border-bottom: 2px solid #FFB71B;
+  transition: border-bottom 300ms cubic-bezier(0, 1.68, 0.58, 1); }
+
+/* line 201, C:/wamp/www/pec/src/assets/css/scss/pages/_events.scss */
+.tribe-link-tickets-message {
+  background-color: #f0fafb;
+  border: 0.5px solid #f0fafb;
+  color: #246973;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.54);
+  border-radius: 2px; }
 
 @media print {
   /* line 2, C:/wamp/www/pec/src/assets/css/scss/partials/_print.scss */

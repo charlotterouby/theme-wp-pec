@@ -9,7 +9,7 @@
  *
  */
 if ( ! defined( 'ABSPATH' ) ) {
-	die( '-1' );
+    die( '-1' );
 }
 
 // Setup an array of venue details for use later in the template
@@ -23,51 +23,70 @@ $organizer = tribe_get_organizer();
 
 ?>
 
-<!-- Event Cost -->
-<?php if ( tribe_get_cost() ) : ?>
-	<div class="tribe-events-event-cost">
-		<span><?php echo tribe_get_cost( null, true ); ?></span>
-	</div>
-<?php endif; ?>
+<!-- Entry Image -->
+<div class="post-thumbnail mdl-grid mdl-grid--no-spacing mdl-cell mdl-cell--12-col">
+    <!-- Event Image -->
+    <?php
+        if (has_post_thumbnail()):
+            echo tribe_event_featured_image( null, 'full' );
+        elseif (main_image()):
+            echo main_image();
+        endif;
+    ?>
+</div>
 
 <!-- Event Title -->
 <?php do_action( 'tribe_events_before_the_event_title' ) ?>
-<h2 class="tribe-events-list-event-title">
-	<a class="tribe-event-url" href="<?php echo esc_url( tribe_get_event_link() ); ?>" title="<?php the_title_attribute() ?>" rel="bookmark">
-		<?php the_title() ?>
-	</a>
-</h2>
+<header class="entry-header mdl-cell mdl-cell--12-col mdl-cell--top">
+    <h2 class="tribe-events-list-event-title h6 entry-title">
+        <a class="tribe-event-url" href="<?php echo esc_url( tribe_get_event_link() ); ?>" title="<?php the_title_attribute() ?>" rel="bookmark">
+            <?php the_title() ?>
+        </a>
+    </h2>
+</header>
 <?php do_action( 'tribe_events_after_the_event_title' ) ?>
 
-<!-- Event Meta -->
-<?php do_action( 'tribe_events_before_the_meta' ) ?>
-<div class="tribe-events-event-meta">
-	<div class="author <?php echo esc_attr( $has_venue_address ); ?>">
+<!-- Entry header -->
+<div class="entry-content mdl-cell mdl-cell--12-col">
+    <!-- Event Cost -->
+    <?php if ( tribe_get_cost() ) : ?>
+        <div class="tribe-events-event-cost">
+            <span><?php echo tribe_get_cost( null, true ); ?></span>
+        </div>
+    <?php endif; ?>
 
-		<!-- Schedule & Recurrence Details -->
-		<div class="tribe-event-schedule-details">
-			<?php echo tribe_events_event_schedule_details() ?>
-		</div>
+    <!-- Event Meta -->
+    <?php do_action( 'tribe_events_before_the_meta' ) ?>
+    <div class="tribe-events-event-meta">
+        <div class="author <?php echo esc_attr( $has_venue_address ); ?>">
 
-		<?php if ( $venue_details ) : ?>
-			<!-- Venue Display Info -->
-			<div class="tribe-events-venue-details">
-				<?php echo implode( ', ', $venue_details ); ?>
-			</div> <!-- .tribe-events-venue-details -->
-		<?php endif; ?>
+            <!-- Schedule & Recurrence Details -->
+            <div class="tribe-event-schedule-details">
+                <span><?php echo tribe_events_event_schedule_details() ?></span>
+            </div>
 
-	</div>
-</div><!-- .tribe-events-event-meta -->
-<?php do_action( 'tribe_events_after_the_meta' ) ?>
+            <?php if ( $venue_details ) : ?>
+                <!-- Venue Display Info -->
+                <div class="tribe-events-venue-details">
+                    <span><?php echo implode( ', ', $venue_details ); ?></span>
+                </div> <!-- .tribe-events-venue-details -->
+            <?php endif; ?>
 
-<!-- Event Image -->
-<?php echo tribe_event_featured_image( null, 'medium' ) ?>
+        </div>
+    </div><!-- .tribe-events-event-meta -->
+    <?php do_action( 'tribe_events_after_the_meta' ) ?>
 
-<!-- Event Content -->
-<?php do_action( 'tribe_events_before_the_content' ) ?>
-<div class="tribe-events-list-event-description tribe-events-content">
-	<?php echo tribe_events_get_the_excerpt( null, wp_kses_allowed_html( 'post' ) ); ?>
-	<a href="<?php echo esc_url( tribe_get_event_link() ); ?>" class="tribe-events-read-more" rel="bookmark"><?php esc_html_e( 'Find out more', 'the-events-calendar' ) ?> &raquo;</a>
-</div><!-- .tribe-events-list-event-description -->
-<?php
-do_action( 'tribe_events_after_the_content' );
+    <!-- Event Content -->
+    <?php do_action( 'tribe_events_before_the_content' ) ?>
+    <div class="tribe-events-list-event-description tribe-events-content">
+        <?php echo tribe_events_get_the_excerpt( null, wp_kses_allowed_html( 'post' ) ); ?>
+    </div><!-- .tribe-events-list-event-description -->
+    <?php
+    do_action( 'tribe_events_after_the_content' );?>
+</div>
+
+<div class="entry-footer mdl-cell mdl-cell--12-col mdl-cell--bottom">
+    <a href="<?php echo esc_url( tribe_get_event_link() ); ?>" class="tribe-events-read-more" rel="bookmark"><?php esc_html_e( 'Find out more', 'the-events-calendar' ) ?> &raquo;</a>
+</div>
+
+

@@ -19,11 +19,11 @@
 get_header(); ?>
 
     <section id="primary" class="content-area mdl-grid mdl-grid--no-spacing">
-        <main id="main" class="site-main mdl-grid mdl-grid--no-spacing width-75 mdl-cell mdl-cell--9-col mdl-cell--12-col-phone" role="main">
+        <main id="main" class="site-main mdl-grid width-75 mdl-cell mdl-cell--9-col mdl-cell--12-col-phone" role="main">
         <!-- Yoast SEO -->
         <?php
             if ( function_exists('yoast_breadcrumb') ) {
-                yoast_breadcrumb('<p id="breadcrumbs" class="breadcrumbs mdl-cell mdl-cell mdl-cell--12-col">','</p>');
+                yoast_breadcrumb('<p id="breadcrumbs" class="breadcrumbs mdl-cell mdl-cell--12-col">','</p>');
             }
         ?>
 
@@ -31,7 +31,7 @@ get_header(); ?>
         <?php if ( have_posts() ) : ?>
 
             <!-- .page-header -->
-            <header class="page-header mdl-cell mdl-cell mdl-cell--12-col">
+            <header class="page-header mdl-cell mdl-cell--12-col">
                 <?php
                     the_archive_title( '<h2 class="page-title h1">', '</h2>' );
                     the_archive_description( '<div class="taxonomy-description">', '</div>' );
