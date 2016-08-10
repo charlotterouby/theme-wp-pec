@@ -11,16 +11,16 @@
 // animation background
 @keyframes background-animation {
     0%, 16% {
-        background: url('../img/background-1.jpg') top no-repeat;
+        background: url('../img/background-1.jpg') center 25% no-repeat;
     }
     33%, 50% {
-        background: url('../img/background-2.jpg') top no-repeat;
+        background: url('../img/background-2.jpg') center 25% no-repeat;
     }
     66%, 83% {
-        background: url('../img/background-3.jpg') top no-repeat;
+        background: url('../img/background-4.jpg') center 25% no-repeat;
     }
     100% {
-        background: url('../img/background-1.jpg') top no-repeat;
+        background: url('../img/background-1.jpg') center 25% no-repeat;
     }
 }
 
