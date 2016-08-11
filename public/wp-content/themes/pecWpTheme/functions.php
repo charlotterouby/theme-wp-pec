@@ -383,8 +383,9 @@ require get_template_directory() . '/includes/template-tags.php';
     /*  display child pages on page parent or page brothers
     /*  src: www.wpbeginner.com/wp-tutorials/how-to-display-a-list-of-child-pages-for-a-parent-page-in-wordpress/
     /* ============================================================ */
-    function wpb_list_child_pages(){
+    function wpb_list_child_pages() {
         global $post;
+
         if ( is_page() && $post->post_parent ) {
             $childpages = wp_list_pages('sort_column=menu_order&title_li=&child_of='.$post->post_parent.'&echo=0');
         } else {
@@ -397,6 +398,27 @@ require get_template_directory() . '/includes/template-tags.php';
         return $string;
     }
     add_shortcode('wpb_childpages', 'wpb_list_child_pages');
+
+
+    function list_page_children() {
+        global $post;
+        $my_wp_query = new WP_Query();
+        $all_wp_pages = get_pages( array(
+            'post_type'=>'page',
+            'post_status'=>array('publish')
+        ));
+
+        if ( is_page() && $post->post_parent ) {
+            $children_pages = get_page_children($post->post_parent, $all_wp_pages);
+        } else {
+            $children_pages = get_page_children($post->ID, $all_wp_pages);
+        }
+
+        if($children_pages){
+            return $children_pages;
+        }
+    }
+
 /* ========================================================================================== */
 /*  REGISTER PLUGINS
 /* ========================================================================================== */

@@ -1,3 +1,5 @@
+@import '../../modules/functions';
+@import '../../modules/variables';
 /*------------------------------------*\
     $CONTENTS
 \*------------------------------------*/
@@ -102,6 +104,9 @@ $color-accent-contrast: $color-dark-contrast !default;
 $text-color-primary: unquote("rgba(#{$color-black}, 0.87)") !default;
 $text-link-color: unquote("rgb(#{$color-accent})") !default;
 
+$text-color-primary: palette(gris);
+$text-link-color: palette(bleu);
+
 // Define whether to target elements directly for typographic enhancements.
 // Turning this off means you need to use mdl-* classes more often.
 // Other components may also fail to adhere to MD without these rules.
@@ -120,6 +125,12 @@ $button-hover-color: $button-primary-color !default;
 $button-active-color: unquote("rgba(#{$palette-grey-500}, 0.40)") !default;
 $button-focus-color: unquote("rgba(#{$color-black}, 0.12)") !default;
 
+$button-primary-color: palette(gris, 20);
+$button-secondary-color: palette(gris, dark);
+$button-hover-color: palette(gris, mid-light);
+$button-active-color: palette(gris, 20);
+$button-focus-color: palette(gris, mid-light);
+
 // Colored button colors.
 $button-primary-color-alt: unquote("rgb(#{$color-primary})") !default;
 $button-secondary-color-alt: unquote("rgb(#{$color-primary-contrast})") !default;
@@ -127,8 +138,16 @@ $button-hover-color-alt: unquote("rgb(#{$color-primary})") !default;
 $button-active-color-alt: unquote("rgb(#{$color-primary})") !default;
 $button-focus-color-alt: $button-focus-color !default;
 
+$button-primary-color-alt: palette(bleu);
+$button-secondary-color-alt: palette(jaune);
+$button-hover-color-alt: palette(bleu, mid-light);
+$button-active-color-alt: palette(bleu);
+$button-focus-color-alt: palette(bleu, mid-light);
+
 // Ripple color for colored raised buttons.
 $button-ripple-color-alt: unquote("rgb(#{$color-primary-contrast})") !default;
+
+$button-ripple-color-alt: palette(bleu, 110);
 
 // Disabled button colors.
 $button-primary-color-disabled: unquote("rgba(#{$color-black}, 0.12)") !default;
@@ -302,6 +321,16 @@ $input-text-floating-label-fontsize: 12px !default;
 $input-text-expandable-icon-top: 16px !default;
 
 
+$input-text-font-size: calculateRem(16px);
+$input-text-width: 100%;
+$input-text-padding: calculateRem(4px);
+$input-text-vertical-spacing: calculateRem(20px);
+
+$input-text-button-size: calculateRem(32px);
+$input-text-floating-label-fontsize: calculateRem(12px);
+$input-text-expandable-icon-top: calculateRem(16px);
+
+
 /* SWITCH */
 
 $switch-label-font-size: 16px !default;
@@ -361,6 +390,19 @@ $list-icon-size: 24px !default;
 $list-two-line-height: 72px !default;
 $list-three-line-height: 88px !default;
 
+$list-border:calculateRem(8px);
+$list-min-height: calculateRem(48px);
+$list-min-padding: calculateRem(16px);
+$list-bottom-padding: calculateRem(20px);
+$list-avatar-text-left-distance: calculateRem(72px);
+$list-icon-text-left-distance: calculateRem(72px);
+
+$list-avatar-size: calculateRem(40px);
+$list-icon-size: calculateRem(24px);
+
+$list-two-line-height: calculateRem(40px);
+$list-three-line-height: calculateRem(24px);
+
 /* LAYOUT */
 
 $layout-drawer-narrow: 240px !default;
@@ -410,6 +452,10 @@ $padding: 16px !default;
 $footer-heading-font-size: 24px !default;
 $footer-heading-line-height: (1.5 * $footer-heading-font-size) !default;
 $footer-btn-size: 36px !default;
+
+$padding: calculateRem(16px);
+$footer-heading-font-size: calculateRem(24px);
+$footer-btn-size: calculateRem(36px);
 
 /* CHECKBOX */
 
@@ -506,17 +552,21 @@ $shadow-ambient-shadow-opacity: 0.12 !default;
 
 $grid-desktop-columns: 12 !default;
 $grid-desktop-gutter: 16px !default;
+$grid-desktop-gutter: calculateRem(16px);
 $grid-desktop-margin: 16px !default;
+$grid-desktop-margin: calculateRem(16px);
 
 $grid-desktop-breakpoint: 840px !default;
 
 $grid-tablet-columns: 8 !default;
+$grid-tablet-columns: 12;
 $grid-tablet-gutter: $grid-desktop-gutter !default;
 $grid-tablet-margin: $grid-desktop-margin !default;
 
 $grid-tablet-breakpoint: 480px !default;
 
 $grid-phone-columns: 4 !default;
+$grid-phone-columns: 12;
 $grid-phone-gutter: $grid-desktop-gutter !default;
 $grid-phone-margin: $grid-desktop-margin !default;
 

@@ -1,19 +1,19 @@
 .footer {
-    background-color: palette(gris, 20);
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    @include media($medium){
-        justify-content: space-between;
-        align-items: baseline;
-    }
+    background-color: palette(gris, mid-light);
+    align-items: baseline;
 
     p {
         margin-bottom: 0;
+        color: palette(gris, light);
+    }
+
+    .mdl-mini-footer_right-section {
+        flex-grow: 1;
     }
 
     .secondary-menu .menu {
         margin: 0;
         padding: 0;
+        a {color: palette(gris, light);}
     }
 }

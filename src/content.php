@@ -27,7 +27,6 @@
         ?>
     </header>
     <!-- .entry-content -->
-    <!-- .entry-content -->
     <div class="entry-content mdl-cell mdl-cell--12-col">
         <?php
             /* translators: %s: Name of current post */

@@ -10,11 +10,14 @@
     li {
         list-style: none;
         position: relative;
+        border-radius: 2px;
     }
     a {
         @extend .mdl-navigation__link;
         color: palette(gris, light);
         padding: 0;
+        font-size: ms(0);
+        border-radius: 2px;
     }
     // styles tablet & desktop
     @include media($medium) {
@@ -259,18 +262,17 @@
  *    Style menu réseaux sociaux
  * ============================================================ */
 
-.social-navigation .menu {
+#menu-reseaux-sociaux.menu {
     li:hover,
     li:focus,
     li:active {
         background-color: transparent;
     }
     a {
-        color: palette(bleu, mid-light);
+        color: palette(bleu, 110);
+
         &:hover,
-        &:focus,
-        &:active,
-        &:visited {
+        &:focus {
             color: palette(bleu);
         }
     }

@@ -2,9 +2,8 @@
     $company = ot_get_option( 'company' );
 ?>
 
-    <footer class="footer mdl-grid mdl-grid--no-spacing">
-<!--
-        <div class="copyright mdl-cell">
+    <footer class="footer mdl-mini-footer">
+        <div class="copyright mdl-mini-footer_left-section">
             <p>Copyright &copy;
                 <span class="copyright__year"><?php echo date( 'Y' ); ?></span>
                 <?php if ( $company ) : ?>
@@ -15,8 +14,7 @@
                 . All rights reserved.
             </p>
         </div>
--->
-        <nav id="secondary-menu" class="secondary-menu mdl-cell mdl-cell--8-col mdl-cell--3-offset-tablet mdl-cell--3-offset-desktop  mdl-cell--12-col-phone" role="navigation">
-            <?php wp_nav_menu( array( 'theme_location' => 'secondary', 'menu_class' => 'menu mdl-grid mdl-navigation' ) ); ?>
-        </nav>
+        <div id="secondary-menu" class="secondary-menu mdl-mini-footer_right-section" role="navigation">
+            <?php wp_nav_menu( array( 'theme_location' => 'secondary', 'menu_class' => 'menu mdl-mini-footer_link-list' ) ); ?>
+        </div>
     </footer>

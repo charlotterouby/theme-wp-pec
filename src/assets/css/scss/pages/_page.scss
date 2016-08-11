@@ -2,7 +2,7 @@
     padding: 0;
 }
 .page, .single-post {
-    .entry-header {
+    > .entry-header {
         padding-top: ms(15);
         background: url('../img/default-banner.jpg') fixed no-repeat;
         background-size: 100% !important;
@@ -33,4 +33,10 @@
     justify-content: center;
     align-items: center;
     padding: ms(0);
+}
+
+.child-pages {
+    background-color: palette(bleu, x-light);
+    margin-top: ms(15);
+    padding: ms(-5) 0;
 }

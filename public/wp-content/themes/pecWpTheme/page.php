@@ -16,7 +16,7 @@ get_header(); ?>
     <!-- .content-area -->
     <div id="primary" class="content-area mdl-grid mdl-grid--no-spacing page-content">
         <!-- .site-main -->
-        <main id="main" class="site-content width-75 mdl-cell mdl-cell--9-col mdl-cell--12-col-phone" role="main">
+        <main id="main" class="site-content width-75 mdl-grid mdl-grid--no-spacing mdl-cell mdl-cell--9-col mdl-cell--12-col-phone" role="main">
         <?php
         // Start the loop.
         while ( have_posts() ) : the_post();
