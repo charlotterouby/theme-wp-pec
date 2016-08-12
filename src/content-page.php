@@ -42,14 +42,10 @@
             ) );
         ?>
     </div>
-
-    <?php edit_post_link( __( 'Edit', 'twentyfifteen' ), '<footer class="entry-footer"><span class="edit-link">', '</span></footer><!-- .entry-footer -->' ); ?>
-
 </article><!-- #post-## -->
 
-    <!-- .child-pages -->
-    <div class="child-pages mdl-cell--bottom mdl-cell mdl-cell--12-col">
-        <h4 class="mdl-grid mdl-cell mdl-cell--12-col-phone mdl-cell--10-col width-100">Lire aussi</h4>
-        <?php get_template_part('list-children-pages'); ?>
-    </div>
+<?php edit_post_link( __( 'Edit', 'twentyfifteen' ), '<footer class="entry-footer mdl-cell mdl-cell--12-col"><span class="edit-link">', '</span></footer><!-- .entry-footer -->' ); ?>
+
+<!-- .child-pages -->
+<?php get_template_part('list-children-pages'); ?>
 

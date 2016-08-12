@@ -141,13 +141,14 @@ p {
 
 ul,
 ol {
-    display: inline-block;
+    display: block;
     padding-left: 20px;
     margin-bottom: ms(-5);
     li {
         margin-bottom: ms(-5);
     }
 }
+
 
 a,
 a:active,
@@ -229,7 +230,8 @@ h6,
 }
 
 p,
-ul {
+ul,
+ol {
     font-size: ms(0);
     color: palette(gris);
     line-height: 1.4;

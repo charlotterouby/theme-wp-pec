@@ -36,7 +36,14 @@
 }
 
 .child-pages {
-    background-color: palette(bleu, x-light);
+    background-color: palette(gris, 10);
     margin-top: ms(15);
     padding: ms(-5) 0;
+    .pec-thumbnail {
+        flex-grow: 1;
+    }
+
+    .entry-title {
+        font-size: ms(2);
+    }
 }

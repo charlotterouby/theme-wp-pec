@@ -366,9 +366,9 @@ require get_template_directory() . '/includes/template-tags.php';
         endif;
     }
 
-    /* ============================== */
+    /* ============================================================ */
     /*  Filtre widget Nuage de tags
-    /* ============================== */
+    /* ============================================================ */
     function custom_tag_cloud($args) {
       $args['unit'] = 'em';
       $args['smallest'] = 0.8;
@@ -380,41 +380,91 @@ require get_template_directory() . '/includes/template-tags.php';
     add_filter('widget_tag_cloud_args', 'custom_tag_cloud');
 
     /* ============================================================ */
+    /*  Ajouter des styles perso dans l'éditeur TinyMCE
+    /*  www.creativejuiz.fr/blog/wordpress/ajouter-styles-perso-editeur-tinymce
+    /* ============================================================ */
+    add_filter('mce_buttons_2', 'juiz_mce_buttons_2');
+
+    if ( !function_exists('juiz_mce_buttons_2') ){
+        function juiz_mce_buttons_2($buttons){
+            array_unshift($buttons, 'styleselect');
+            return $buttons;
+        }
+    }
+
+    add_filter('tiny_mce_before_init', 'juiz_mce_before_init');
+    if (!function_exists('juiz_mce_before_init')){
+        function juiz_mce_before_init($styles){
+            // on créé un tableau contenant nos styles
+            $style_formats = array(
+                // chaque style est un nouveau tableau
+                // Style "button vert"
+                array(
+                    'title' => __('Bouton Vert'),
+                    'selector' => 'a',
+                    'classes' => 'mdl-button mdl-button--raised pec-button-vert'
+                ),
+                // Style "button jaune"
+                array(
+                    'title' => __('Bouton Jaune'),
+                    'selector' => 'a',
+                    'classes' => 'mdl-button mdl-button--raised pec-button-jaune'
+                ),
+                // Style "button Bleu"
+                array(
+                    'title' => __('Bouton Bleu'),
+                    'selector' => 'a',
+                    'classes' => 'mdl-button mdl-button--raised pec-button-bleu'
+                ),
+                // Style "button Gris"
+                array(
+                    'title' => __('Bouton Gris'),
+                    'selector' => 'a',
+                    'classes' => 'mdl-button mdl-button--raised pec-button-gris'
+                )
+            );
+
+            // on remplace les styles existants par les nôtres
+            $styles['style_formats'] = json_encode($style_formats);
+            return $styles;
+        }
+    }
+
+    /* ============================================================ */
     /*  display child pages on page parent or page brothers
     /*  src: www.wpbeginner.com/wp-tutorials/how-to-display-a-list-of-child-pages-for-a-parent-page-in-wordpress/
     /* ============================================================ */
-    function wpb_list_child_pages() {
-        global $post;
-
-        if ( is_page() && $post->post_parent ) {
-            $childpages = wp_list_pages('sort_column=menu_order&title_li=&child_of='.$post->post_parent.'&echo=0');
-        } else {
-            $childpages = wp_list_pages('sort_column=menu_order&title_li=&child_of='.$post->ID.'&echo=0');
-        }
-
-        if( $childpages ) {
-            $string = '<ul>'.$childpages.'</ul>';
-        }
-        return $string;
-    }
-    add_shortcode('wpb_childpages', 'wpb_list_child_pages');
-
-
     function list_page_children() {
         global $post;
         $my_wp_query = new WP_Query();
         $all_wp_pages = get_pages( array(
+            'sort_order'=> 'DESC',
             'post_type'=>'page',
             'post_status'=>array('publish')
         ));
-
+        // Si le post a un parent
         if ( is_page() && $post->post_parent ) {
+            //récupérer les données du post parent
+            $parent_page = get_pages( array(
+                'post_type'=>'page',
+                'include'=>array($post->post_parent),
+                'number'=>1
+            ));
+            // récupérer les données des brother posts
             $children_pages = get_page_children($post->post_parent, $all_wp_pages);
         } else {
+            // récupérer les données du post parent
+            $parent_page = $post;
+            // récupérer les données des children posts
             $children_pages = get_page_children($post->ID, $all_wp_pages);
         }
 
         if($children_pages){
+            if(is_array($parent_page)){
+                array_push($children_pages, $parent_page[0]);
+            } else {
+                array_push($children_pages, $parent_page);
+            }
             return $children_pages;
         }
     }
