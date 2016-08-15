@@ -53,7 +53,7 @@
 // boutton submit
 // ==============================
 .form-submit input {
-    @extend %mdl-button--raised;
+    @extend .mdl-button--raised;
     color: palette(gris, light);
     background: palette(jaune);
     &:hover,

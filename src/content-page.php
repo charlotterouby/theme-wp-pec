@@ -12,7 +12,7 @@
     <!-- .entry-header -->
     <header class="entry-header" <?php
             if (has_post_thumbnail()): ?>
-            style="background: url(<?php the_post_thumbnail_url('full'); ?>) no-repeat fixed;"
+            style="background: url(<?php the_post_thumbnail_url('full'); ?>) no-repeat fixed; background-size: cover;"
             <?php endif; ?>>
         <!-- title -->
        <div class="content-header width-100 mdl-cell mdl-cell--10-col mdl-cell--12-col-phone">
@@ -29,7 +29,7 @@
     </header>
 
     <!-- .entry-content -->
-    <div class="entry-content width-100 mdl-cell mdl-cell--10-col mdl-cell--12-col-phone">
+    <div class="entry-content width-100 mdl-cell mdl-cell--10-col mdl-cell--12-col-phone mdl-grid">
         <?php the_content(); ?>
         <?php
             wp_link_pages( array(

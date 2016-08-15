@@ -28,7 +28,7 @@
                 } else {
             ?>
 
-                <article id="post-<?php echo $child->ID; ?>" class="pec-thumbnail mdl-grid mdl-grid--no-spacing mdl-cell mdl-cell--<?php echo $nbrColumns; ?>-col mdl-cell--12-col-phone mdl-cell--order-<?php if($child->post_parent == 0) { echo 1; } else { echo $child->menu_order + 1;}?>">
+                <article id="post-<?php echo $child->ID; ?>" class="pec-thumbnail mdl-grid mdl-grid--no-spacing mdl-cell mdl-cell--12-col mdl-cell--6-col-tablet mdl-cell--<?php echo $nbrColumns; ?>-col-desktop  mdl-cell--order-<?php if($child->post_parent == 0) { echo 1; } else { echo $child->menu_order + 1;}?>">
                     <!-- image thumbnail -->
                     <a href="<?php echo $child->guid;?>" class="post-thumbnail mdl-cell mdl-cell--12-col">
                         <img src="<?php echo get_template_directory_uri();?>/assets/img/<?php echo random_thumbnail(); ?>" alt="default thumbnail">

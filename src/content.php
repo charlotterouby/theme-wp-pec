@@ -10,7 +10,7 @@
  */
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class('pec-thumbnail mdl-grid mdl-grid--no-spacing mdl-cell mdl-cell--4-col mdl-cell--12-col-phone'); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class('pec-thumbnail mdl-grid mdl-grid--no-spacing mdl-cell mdl-cell--12-col mdl-cell--4-col-desktop mdl-cell--6-col-tablet'); ?>>
    <!-- image thumbnail -->
     <?php
         if (has_post_thumbnail()):

@@ -34,7 +34,7 @@ $more = false;
             $post_parent = ' data-parent-post-id="' . absint( $post->post_parent ) . '"';
         }
         ?>
-        <div id="post-<?php the_ID() ?>" class="<?php tribe_events_event_classes(' pec-thumbnail mdl-grid mdl-grid--no-spacing mdl-cell mdl-cell--4-col mdl-cell--12-col-phone') ?>" <?php echo $post_parent; ?>>
+        <div id="post-<?php the_ID() ?>" class="<?php tribe_events_event_classes(' pec-thumbnail mdl-grid mdl-grid--no-spacing mdl-cell mdl-cell--4-col-desktop mdl-cell--12-col mdl-cell--6-col-tablet') ?>" <?php echo $post_parent; ?>>
             <?php tribe_get_template_part( 'list/single', 'event' ) ?>
         </div>
 

@@ -5,7 +5,7 @@
     text-align: center;
 }
 .tribe-events-gmap, .tribe-events-button {
-    @extend %mdl-button;
+    @extend .mdl-button;
     background: palette(bleu);
     color: palette(gris, light);
     &:hover,

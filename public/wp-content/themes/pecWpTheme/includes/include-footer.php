@@ -3,16 +3,22 @@
 ?>
 
     <footer class="footer mdl-mini-footer">
-        <div class="copyright mdl-mini-footer_left-section">
-            <p>Copyright &copy;
-                <span class="copyright__year"><?php echo date( 'Y' ); ?></span>
-                <?php if ( $company ) : ?>
-                    <span class="copyright__company"> <?php echo $company; ?></span>
-                <?php else : ?>
-                    <span class="copyright__company">Provence Energie Citoyenne</span>
-                <?php endif; ?>
-                . All rights reserved.
+        <div class="mdl-mini-footer_left-section">
+            <p>
+                <a href="https://www.facebook.com/ProvenceEnergieCitoyenne/" class="mdl-button mdl-js-button mdl-button--icon">
+                    <i class="icon__facebook material-icons"></i>
+                </a>
+                <a href="https://www.provence-energie-citoyenne.fr/feed" class="mdl-button mdl-js-button mdl-button--icon">
+                    <i class="icon__rss material-icons"></i>
+                </a>
             </p>
+            <form action="souscrire à la newsletter" class="form-newsletter">
+                <div class="mdl-textfield mdl-js-textfield">
+                    <input type="email" id="email subscribed" class="mdl-textfield__input">
+                    <label for="email subscribed" class="mdl-textfield__label">pseudo formulaire inscription newsletter</label>
+                </div>
+                <input type="submit" value="Souscrire" class="mdl-button mdl-js-button mdl-button--raised pec-button-jaune">
+            </form>
         </div>
         <div id="secondary-menu" class="secondary-menu mdl-mini-footer_right-section" role="navigation">
             <?php wp_nav_menu( array( 'theme_location' => 'secondary', 'menu_class' => 'menu mdl-mini-footer_link-list' ) ); ?>

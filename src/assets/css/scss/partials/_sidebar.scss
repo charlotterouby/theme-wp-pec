@@ -60,8 +60,8 @@
         }
     }
     .search-submit {
-        @extend %mdl-button;
-        @extend %mdl-button--raised;
+        @extend .mdl-button;
+        @extend .mdl-button--raised;
         background-color: palette(jaune);
         color: palette(gris, light);
         &:hover,

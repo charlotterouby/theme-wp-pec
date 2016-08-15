@@ -15,8 +15,8 @@
         li.page-prev.nav-previous,
         li.tribe-events-nav-previous,
         li.tribe-events-nav-next {
-            @extend %mdl-button;
-            display: inline;
+            @extend .mdl-button;
+            display: inline !important;
             list-style: none;
             a {
                 background: palette(gris, light);
@@ -39,7 +39,7 @@
         }
         // pagination pages catégories
         .page-numbers {
-            @extend %mdl-button;
+            @extend .mdl-button;
             // box model
             display: inline;
             // dimensions

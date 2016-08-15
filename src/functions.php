@@ -83,8 +83,7 @@ function twentyfifteen_setup() {
 
     // This theme uses wp_nav_menu() in two locations. Social is to be used in a widget menu.
     register_nav_menus( array(
-        'primary' => __( 'Primary Menu',      'twentyfifteen' ),
-        'social'  => __( 'Social Links Menu', 'twentyfifteen' ),
+        'primary' => __( 'Primary Menu', 'twentyfifteen' ),
         'secondary' => __('Secondary Menu')
     ) );
 
@@ -102,7 +101,7 @@ function twentyfifteen_setup() {
      * See: https://codex.wordpress.org/Post_Formats
      */
     add_theme_support( 'post-formats', array(
-        'aside', 'image', 'video', 'link'
+        'aside', 'image', 'video'
     ) );
 
     /*
@@ -126,7 +125,7 @@ function twentyfifteen_widgets_init() {
         'name'          => __( 'Widget Area', 'twentyfifteen' ),
         'id'            => 'sidebar-1',
         'description'   => __( 'Add widgets here to appear in your sidebar.', 'twentyfifteen' ),
-        'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+        'before_widget' => '<aside id="%1$s" class="widget %2$s mdl-cell mdl-cell--6-col-tablet mdl-cell--12-col">',
         'after_widget'  => '</aside>',
         'before_title'  => '<h5 class="widget-title">',
         'after_title'   => '</h5>',
@@ -402,25 +401,109 @@ require get_template_directory() . '/includes/template-tags.php';
                 array(
                     'title' => __('Bouton Vert'),
                     'selector' => 'a',
-                    'classes' => 'mdl-button mdl-button--raised pec-button-vert'
+                    'classes' => 'mdl-button mdl-js-button mdl-button--raised pec-button-vert'
                 ),
                 // Style "button jaune"
                 array(
                     'title' => __('Bouton Jaune'),
                     'selector' => 'a',
-                    'classes' => 'mdl-button mdl-button--raised pec-button-jaune'
+                    'classes' => 'mdl-button mdl-js-button mdl-button--raised pec-button-jaune'
                 ),
                 // Style "button Bleu"
                 array(
                     'title' => __('Bouton Bleu'),
                     'selector' => 'a',
-                    'classes' => 'mdl-button mdl-button--raised pec-button-bleu'
+                    'classes' => 'mdl-button mdl-js-button mdl-button--raised pec-button-bleu'
                 ),
                 // Style "button Gris"
                 array(
                     'title' => __('Bouton Gris'),
                     'selector' => 'a',
-                    'classes' => 'mdl-button mdl-button--raised pec-button-gris'
+                    'classes' => 'mdl-button mdl-js-button mdl-button--raised pec-button-gris'
+                ),
+                // div wrapper tablet & desktop : 1 colonne
+                array(
+                    'title' => __('1 colonne'),
+                    'block' => 'div',
+                    'wrapper' => true,
+                    'classes' => 'mdl-cell mdl-cell--12-col mdl-cell--1-col-tablet mdl-cell--1-col-desktop'
+                ),
+                // div wrapper tablet & desktop : 2 colonnes
+                array(
+                    'title' => __('2 colonnes'),
+                    'block' => 'div',
+                    'wrapper' => true,
+                    'classes' => 'mdl-cell mdl-cell--12-col mdl-cell--2-col-tablet mdl-cell--2-col-desktop'
+                ),
+                // div wrapper tablet & desktop : 3 colonnes
+                array(
+                    'title' => __('3 colonnes'),
+                    'block' => 'div',
+                    'wrapper' => true,
+                    'classes' => 'mdl-cell mdl-cell--12-col mdl-cell--3-col-tablet mdl-cell--3-col-desktop'
+                ),
+                // div wrapper tablet & desktop : 4 colonnes
+                array(
+                    'title' => __('4 colonnes'),
+                    'block' => 'div',
+                    'wrapper' => true,
+                    'classes' => 'mdl-cell mdl-cell--12-col mdl-cell--4-col-tablet mdl-cell--4-col-desktop'
+                ),
+                // div wrapper tablet & desktop : 5 colonnes
+                array(
+                    'title' => __('5 colonnes'),
+                    'block' => 'div',
+                    'wrapper' => true,
+                    'classes' => 'mdl-cell mdl-cell--12-col mdl-cell--5-col-tablet mdl-cell--5-col-desktop'
+                ),
+                // div wrapper tablet & desktop : 6 colonnes
+                array(
+                    'title' => __('6 colonnes'),
+                    'block' => 'div',
+                    'wrapper' => true,
+                    'classes' => 'mdl-cell mdl-cell--12-col mdl-cell--6-col-tablet mdl-cell--6-col-desktop'
+                ),
+                // div wrapper tablet & desktop : 7 colonnes
+                array(
+                    'title' => __('7 colonnes'),
+                    'block' => 'div',
+                    'wrapper' => true,
+                    'classes' => 'mdl-cell mdl-cell--12-col mdl-cell--7-col-tablet mdl-cell--7-col-desktop'
+                ),
+                // div wrapper tablet & desktop : 8 colonnes
+                array(
+                    'title' => __('8 colonnes'),
+                    'block' => 'div',
+                    'wrapper' => true,
+                    'classes' => 'mdl-cell mdl-cell--12-col mdl-cell--8-col-tablet mdl-cell--8-col-desktop'
+                ),
+                // div wrapper tablet & desktop : 9 colonnes
+                array(
+                    'title' => __('9 colonnes'),
+                    'block' => 'div',
+                    'wrapper' => true,
+                    'classes' => 'mdl-cell mdl-cell--12-col mdl-cell--9-col-tablet mdl-cell--9-col-desktop'
+                ),
+                // div wrapper tablet & desktop : 10 colonnes
+                array(
+                    'title' => __('10 colonnes'),
+                    'block' => 'div',
+                    'wrapper' => true,
+                    'classes' => 'mdl-cell mdl-cell--12-col mdl-cell--10-col-tablet mdl-cell--10-col-desktop'
+                ),
+                // div wrapper tablet & desktop : 11 colonnes
+                array(
+                    'title' => __('11 colonnes'),
+                    'block' => 'div',
+                    'wrapper' => true,
+                    'classes' => 'mdl-cell mdl-cell--12-col mdl-cell--11-col-tablet mdl-cell--11-col-desktop'
+                ),
+                // div wrapper tablet & desktop : 12 colonnes
+                array(
+                    'title' => __('12 colonnes'),
+                    'block' => 'div',
+                    'wrapper' => true,
+                    'classes' => 'mdl-cell mdl-cell--12-col'
                 )
             );
 
@@ -432,7 +515,7 @@ require get_template_directory() . '/includes/template-tags.php';
 
     /* ============================================================ */
     /*  display child pages on page parent or page brothers
-    /*  src: www.wpbeginner.com/wp-tutorials/how-to-display-a-list-of-child-pages-for-a-parent-page-in-wordpress/
+    /*  www.wpbeginner.com/wp-tutorials/how-to-display-a-list-of-child-pages-for-a-parent-page-in-wordpress/
     /* ============================================================ */
     function list_page_children() {
         global $post;
@@ -497,33 +580,6 @@ function register_plugins() {
 /* ============================== */
 
         array(
-            'name'               => 'BackupBuddy',
-            'slug'               => 'backupbuddy',
-            'source'             => 'http://ryanaltvater.com/downloads/backupbuddy.zip',
-            'required'           => true,
-            'force_activation'   => true,
-            'force_deactivation' => false,
-            'external_url'       => 'https://ithemes.com/purchase/backupbuddy'
-        ),
-        array(
-            'name'               => 'Disable Comments',
-            'slug'               => 'disable-comments',
-            'source'             => 'https://downloads.wordpress.org/plugin/disable-comments.zip',
-            'required'           => true,
-            'force_activation'   => true,
-            'force_deactivation' => false,
-            'external_url'       => 'https://wordpress.org/plugins/disable-comments'
-        ),
-        array(
-            'name'               => 'Duplicate Post',
-            'slug'               => 'duplicate-post',
-            'source'             => 'https://downloads.wordpress.org/plugin/duplicate-post.2.6.zip',
-            'required'           => true,
-            'force_activation'   => true,
-            'force_deactivation' => false,
-            'external_url'       => 'https://wordpress.org/plugins/duplicate-post'
-        ),
-        array(
             'name'               => 'Relevanssi',
             'slug'               => 'relevanssi',
             'source'             => 'https://downloads.wordpress.org/plugin/relevanssi.3.5.3.zip',
@@ -541,21 +597,35 @@ function register_plugins() {
             'force_deactivation' => false,
             'external_url'       => 'https://wordpress.org/plugins/tinymce-advanced'
         ),
-//        array(
-//            'name'               => 'Wordfence Security',
-//            'slug'               => 'wordfence',
-//            'source'             => 'https://downloads.wordpress.org/plugin/wordfence.6.1.7.zip',
-//            'required'           => true,
-//            'force_activation'   => true,
-//            'force_deactivation' => false,
-//            'external_url'       => 'https://wordpress.org/plugins/wordfence'
-//        ),
+        array(
+            'name'               => 'Wordfence Security',
+            'slug'               => 'wordfence',
+            'source'             => 'https://downloads.wordpress.org/plugin/wordfence.6.1.7.zip',
+            'required'           => true,
+            'force_activation'   => true,
+            'force_deactivation' => false,
+            'external_url'       => 'https://wordpress.org/plugins/wordfence'
+        ),
+
+/* ============================== */
+/*  Needed Plugins
+/* ============================== */
+
+        array(
+            'name'               => 'Disable Comments',
+            'slug'               => 'disable-comments',
+            'source'             => 'https://downloads.wordpress.org/plugin/disable-comments.zip',
+            'required'           => true,
+            'force_activation'   => false,
+            'force_deactivation' => false,
+            'external_url'       => 'https://wordpress.org/plugins/disable-comments'
+        ),
         array(
             'name'               => 'WP-Sweep',
             'slug'               => 'wp-sweep',
             'source'             => 'https://downloads.wordpress.org/plugin/wp-sweep.zip',
             'required'           => true,
-            'force_activation'   => true,
+            'force_activation'   => false,
             'force_deactivation' => false,
             'external_url'       => 'https://wordpress.org/plugins/wp-sweep'
         ),
@@ -564,9 +634,27 @@ function register_plugins() {
             'slug'               => 'wordpress-seo',
             'source'             => 'https://downloads.wordpress.org/plugin/wordpress-seo.3.2.5.zip',
             'required'           => true,
-            'force_activation'   => true,
+            'force_activation'   => false,
             'force_deactivation' => false,
             'external_url'       => 'https://wordpress.org/plugins/wordpress-seo'
+        ),
+        array(
+            'name'               => 'The Events Calendar',
+            'slug'               => 'the-events-calendar',
+            'source'             => 'https://downloads.wordpress.org/plugin/the-events-calendar.4.2.3.zip',
+            'required'           => true,
+            'force_activation'   => false,
+            'force_deactivation' => false,
+            'external_url'       => 'https://wordpress.org/plugins/the-events-calendar/'
+        ),
+        array(
+            'name'               => 'Event Tickets',
+            'slug'               => 'event-tickets',
+            'source'             => 'https://downloads.wordpress.org/plugin/event-tickets.4.2.3.zip',
+            'required'           => true,
+            'force_activation'   => false,
+            'force_deactivation' => false,
+            'external_url'       => 'https://wordpress.org/plugins/event-tickets/'
         ),
 
 
@@ -574,6 +662,24 @@ function register_plugins() {
 /*  Recommended Plugins
 /* ============================== */
 
+        array(
+            'name'               => 'Akismet',
+            'slug'               => 'akismet',
+            'source'             => 'https://downloads.wordpress.org/plugin/akismet.3.1.11.zip',
+            'required'           => false,
+            'force_activation'   => false,
+            'force_deactivation' => false,
+            'external_url'       => 'https://wordpress.org/plugins/akismet/'
+        ),
+        array(
+            'name'               => 'BackupBuddy',
+            'slug'               => 'backupbuddy',
+            'source'             => 'http://ryanaltvater.com/downloads/backupbuddy.zip',
+            'required'           => false,
+            'force_activation'   => false,
+            'force_deactivation' => false,
+            'external_url'       => 'https://ithemes.com/purchase/backupbuddy'
+        ),
         array(
             'name'               => 'BJ Lazy Load',
             'slug'               => 'bj-lazy-load',
@@ -584,40 +690,40 @@ function register_plugins() {
             'external_url'       => 'https://wordpress.org/plugins/bj-lazy-load'
         ),
         array(
-            'name'               => 'Custom User Profile Photo',
-            'slug'               => 'custom-user-profile-photo',
-            'source'             => 'https://downloads.wordpress.org/plugin/custom-user-profile-photo.0.4.zip',
+            'name'               => 'Coming Soon Page & Maintenance Mode par SeedProd',
+            'slug'               => 'coming-soon',
+            'source'             => 'https://downloads.wordpress.org/plugin/coming-soon.5.0.4.zip',
             'required'           => false,
             'force_activation'   => false,
             'force_deactivation' => false,
-            'external_url'       => 'https://wordpress.org/plugins/custom-user-profile-photo'
+            'external_url'       => 'https://wordpress.org/plugins/coming-soon/'
         ),
         array(
-            'name'               => 'Menu Image',
-            'slug'               => 'menu-image',
-            'source'             => 'https://downloads.wordpress.org/plugin/menu-image.zip',
+            'name'               => 'Formidable',
+            'slug'               => 'formidable',
+            'source'             => 'https://downloads.wordpress.org/plugin/formidable.2.02.04.zip',
             'required'           => false,
             'force_activation'   => false,
             'force_deactivation' => false,
-            'external_url'       => 'https://wordpress.org/plugins/menu-image'
+            'external_url'       => 'https://wordpress.org/plugins/formidable/'
         ),
         array(
-            'name'               => 'The Events Calendar',
-            'slug'               => 'the-events-calendar',
-            'source'             => 'https://downloads.wordpress.org/plugin/the-events-calendar.4.2.3.zip',
+            'name'               => 'Social Warfare',
+            'slug'               => 'social-warfare',
+            'source'             => 'https://downloads.wordpress.org/plugin/social-warfare.zip',
             'required'           => false,
             'force_activation'   => false,
             'force_deactivation' => false,
-            'external_url'       => 'https://wordpress.org/plugins/the-events-calendar/'
+            'external_url'       => 'https://wordpress.org/plugins/social-warfare/'
         ),
         array(
-            'name'               => 'Event Tickets',
-            'slug'               => 'event-tickets',
-            'source'             => 'https://downloads.wordpress.org/plugin/event-tickets.4.2.3.zip',
+            'name'               => 'W3 Total Cache',
+            'slug'               => 'w3-total-cache',
+            'source'             => 'https://downloads.wordpress.org/plugin/w3-total-cache.0.9.4.1.zip',
             'required'           => false,
             'force_activation'   => false,
             'force_deactivation' => false,
-            'external_url'       => 'https://wordpress.org/plugins/event-tickets/'
+            'external_url'       => 'https://wordpress.org/plugins/w3-total-cache/'
         )
     );
 

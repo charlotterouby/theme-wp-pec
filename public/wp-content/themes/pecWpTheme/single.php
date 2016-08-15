@@ -10,7 +10,7 @@
 get_header(); ?>
 
     <div id="primary" class="content-area mdl-grid mdl-grid--no-spacing page-content">
-        <main id="main" class="site-content width-75 mdl-cell mdl-cell--9-col mdl-cell--12-col-phone single-article" role="main">
+        <main id="main" class="site-content width-75 mdl-cell mdl-cell--9-col-desktop mdl-cell--12-col single-article" role="main">
         <!-- Content -->
         <?php
         // Start the loop.
@@ -39,7 +39,7 @@ get_header(); ?>
 
         </main><!-- .site-main -->
 
-         <aside class="sidebar mdl-grid mdl-cell mdl-cell--3-col mdl-cell--12-col-phone">
+         <aside class="sidebar mdl-cell mdl-cell--3-col mdl-cell--12-col-phone mdl-cell--12-col-tablet">
             <?php get_sidebar() ?>
         </aside><!-- .sidebar -->
 

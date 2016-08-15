@@ -1,21 +1,19 @@
 /* ==============================
     Classes mdl
    ============================== */
-.mdl-button,
 .post-edit-link,
 .comment-edit-link,
 #cancel-comment-reply-link,
 .comment-reply-link,
 .tribe-events-widget-link a {
-    @extend %mdl-button;
+    @extend .mdl-button;
 }
-.mdl-button--raised,
 .post-edit-link,
 .comment-edit-link,
 #cancel-comment-reply-link,
 .comment-reply-link,
 .tribe-events-widget-link a {
-    @extend %mdl-button--raised;
+    @extend .mdl-button--raised;
 }
 
 /* ==============================

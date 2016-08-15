@@ -25,7 +25,7 @@ $event_id = get_the_ID();
 <article id="tribe-events-content mdl-grid mdl-grid--no-spacing" class="tribe-events-single single-post">
 
     <!-- Notices / .entry-header -->
-    <div class="entry-header" <?php if (has_post_thumbnail()): ?> style="background: url(<?php the_post_thumbnail_url('full'); ?>) no-repeat fixed;"<?php endif; ?>>
+    <div class="entry-header" <?php if (has_post_thumbnail()): ?> style="background: url(<?php the_post_thumbnail_url('full'); ?>) no-repeat fixed; background-size: cover;"<?php endif; ?>>
         <!-- .content-header-->
         <div class="content-header width-100 mdl-cell mdl-cell--10-col mdl-cell--12-col-phone">
             <?php tribe_the_notices() ?>
@@ -52,7 +52,7 @@ $event_id = get_the_ID();
 
     <!-- .entry-content-->
     <?php while ( have_posts() ) :  the_post(); ?>
-        <div id="post-<?php the_ID(); ?>" <?php post_class("entry-content width-100 mdl-cell mdl-cell--10-col mdl-cell--12-col-phone"); ?>>
+        <div id="post-<?php the_ID(); ?>" <?php post_class("entry-content width-100 mdl-cell mdl-cell--10-col mdl-cell--12-col-phone mdl-grid"); ?>>
             <!-- Event content -->
             <?php do_action( 'tribe_events_single_event_before_the_content' ) ?>
             <div class="tribe-events-single-event-description tribe-events-content">
@@ -61,12 +61,12 @@ $event_id = get_the_ID();
             <!-- .tribe-events-single-event-description -->
             <?php do_action( 'tribe_events_single_event_after_the_content' ) ?>
 
-            <!-- Event meta -->
-            <div class="entry-meta-event mdl-grid">
-                <?php do_action( 'tribe_events_single_event_before_the_meta' ) ?>
-                <?php tribe_get_template_part( 'modules/meta' ); ?>
-                <?php do_action( 'tribe_events_single_event_after_the_meta' ) ?>
-            </div>
+        </div>
+        <!-- Event meta -->
+        <div class="entry-meta-event mdl-grid width-100 mdl-cell mdl-cell--10-col mdl-cell--12-col-phone">
+            <?php do_action( 'tribe_events_single_event_before_the_meta' ) ?>
+            <?php tribe_get_template_part( 'modules/meta' ); ?>
+            <?php do_action( 'tribe_events_single_event_after_the_meta' ) ?>
         </div>
 
         <!-- Event footer / pagination -->

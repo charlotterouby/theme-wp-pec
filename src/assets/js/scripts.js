@@ -46,7 +46,7 @@ $(document).ready(function () {
        ============================== */
     $('.entry-meta-event .cart').addClass('mdl-textfield mdl-js-textfield');
     $('.entry-meta-event .cart .tribe-ticket input[type="number"]').addClass('mdl-textfield__input');
-    $('.entry-meta-event .cart .tribe-events-tickets input[type="submit"]').addClass('mdl-button');
+    $('.entry-meta-event .cart .tribe-events-tickets input[type="submit"]').addClass('mdl-button mdl-js-button');
 
     $('.comment-form-comment').addClass('mdl-textfield mdl-js-textfield');
     $('.comment-form-comment label').addClass('mdl-textfield__label');
@@ -64,7 +64,7 @@ $(document).ready(function () {
     $('.comment-form-url label').addClass('mdl-textfield__label');
     $('.comment-form-url input').addClass('mdl-textfield__input');
 
-    $('.form-submit input[type="submit"]').addClass('mdl-button');
+    $('.form-submit input[type="submit"]').addClass('mdl-button mdl-js-button');
 
     /* ==============================
         Footer Copyright Year

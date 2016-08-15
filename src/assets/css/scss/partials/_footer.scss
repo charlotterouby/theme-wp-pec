@@ -7,6 +7,51 @@
         color: palette(gris, light);
     }
 
+    .mdl-mini-footer_left-section {
+        display: flex;
+        align-items: center;
+        max-width: 100%;
+        @include media($small){
+            flex-direction: column;
+        }
+        a {
+            color: palette(gris, light);
+            font-size: ms(3);
+
+            &:hover,
+            &:focus,
+            &:active {
+                color: palette(bleu, mid-light);
+            }
+        }
+        .form-newsletter {
+            display: flex;
+            align-items: center;
+            color: palette(gris, light);
+            font-weight: 100;
+
+            @include media($small){
+                flex-direction: column;
+            }
+
+            .mdl-textfield {
+                padding-left: .5em;
+                padding-right: .5em;
+            }
+
+            label {
+                color: palette(gris, 10);
+                font-weight: 100;
+                padding-left: .5em;
+                padding-right: .5em;
+            }
+
+            input[type="submit"] {
+                margin-left: .5em;
+            }
+        }
+    }
+
     .mdl-mini-footer_right-section {
         flex-grow: 1;
     }

@@ -910,7 +910,7 @@ textarea {
   .comment-form .comment-notes,
   .tribe-events-list-separator-month,
   .tribe-link-tickets-message,
-  .mdl-cell--12-col-phone.mdl-cell--12-col-phone {
+  .mdl-cell--12-col-phone.mdl-cell--12-col-phone, .comment-body .comment-meta, .comment-body .comment-content {
     width: calc(100% - 1rem); }
     /* line 73, C:/wamp/www/pec/src/assets/css/scss/vendors/mdl/_grid.scss */
     .mdl-grid--no-spacing > .mdl-cell--12-col,
@@ -918,7 +918,7 @@ textarea {
     .comment-form .mdl-grid--no-spacing > .logged-in-as,
     .comment-form .mdl-grid--no-spacing > .comment-notes, .mdl-grid--no-spacing > .tribe-events-list-separator-month,
     .mdl-grid--no-spacing > .tribe-link-tickets-message,
-    .mdl-grid--no-spacing > .mdl-cell--12-col-phone.mdl-cell--12-col-phone {
+    .mdl-grid--no-spacing > .mdl-cell--12-col-phone.mdl-cell--12-col-phone, .comment-body .mdl-grid--no-spacing > .comment-meta, .comment-body .mdl-grid--no-spacing > .comment-content {
       width: 100%; }
   /* line 131, C:/wamp/www/pec/src/assets/css/scss/vendors/mdl/_grid.scss */
   .mdl-cell--1-offset,
@@ -1858,8 +1858,7 @@ textarea {
 /* Animations */
 /* Dialog */
 /* line 20, C:/wamp/www/pec/src/assets/css/scss/vendors/mdl/_button.scss */
-.mdl-button,
-.post-edit-link,
+.mdl-button, .post-edit-link,
 .comment-edit-link,
 #cancel-comment-reply-link,
 .comment-reply-link,
@@ -1902,8 +1901,7 @@ textarea {
   line-height: 36px;
   vertical-align: middle; }
   /* line 41, C:/wamp/www/pec/src/assets/css/scss/vendors/mdl/_button.scss */
-  .mdl-button::-moz-focus-inner,
-  .post-edit-link::-moz-focus-inner,
+  .mdl-button::-moz-focus-inner, .post-edit-link::-moz-focus-inner,
   .comment-edit-link::-moz-focus-inner,
   #cancel-comment-reply-link::-moz-focus-inner,
   .comment-reply-link::-moz-focus-inner,
@@ -1917,10 +1915,39 @@ textarea {
   .pagination ul.tribe-events-sub-nav li.tribe-events-nav-next::-moz-focus-inner, .pagination .nav-links .page-numbers::-moz-focus-inner,
   .pagination ul.tribe-events-sub-nav .page-numbers::-moz-focus-inner, .search-form .search-submit::-moz-focus-inner, .tribe-events-gmap::-moz-focus-inner, .tribe-events-button::-moz-focus-inner {
     border: 0; }
+  /* line 55, C:/wamp/www/pec/src/assets/css/scss/vendors/mdl/_button.scss */
+  .mdl-button.mdl-button--colored, .mdl-button--colored.post-edit-link,
+  .mdl-button--colored.comment-edit-link,
+  .mdl-button--colored#cancel-comment-reply-link,
+  .mdl-button--colored.comment-reply-link,
+  .tribe-events-widget-link a.mdl-button--colored, .pagination .nav-links li.mdl-button--colored.page-next.nav-next,
+  .pagination .nav-links li.mdl-button--colored.page-prev.nav-previous,
+  .pagination .nav-links li.mdl-button--colored.tribe-events-nav-previous,
+  .pagination .nav-links li.mdl-button--colored.tribe-events-nav-next,
+  .pagination ul.tribe-events-sub-nav li.mdl-button--colored.page-next.nav-next,
+  .pagination ul.tribe-events-sub-nav li.mdl-button--colored.page-prev.nav-previous,
+  .pagination ul.tribe-events-sub-nav li.mdl-button--colored.tribe-events-nav-previous,
+  .pagination ul.tribe-events-sub-nav li.mdl-button--colored.tribe-events-nav-next, .pagination .nav-links .mdl-button--colored.page-numbers,
+  .pagination ul.tribe-events-sub-nav .mdl-button--colored.page-numbers, .search-form .mdl-button--colored.search-submit, .mdl-button--colored.tribe-events-gmap, .mdl-button--colored.tribe-events-button {
+    color: #308C9A; }
+    /* line 57, C:/wamp/www/pec/src/assets/css/scss/vendors/mdl/_button.scss */
+    .mdl-button.mdl-button--colored:focus:not(:active), .mdl-button--colored.post-edit-link:focus:not(:active),
+    .mdl-button--colored.comment-edit-link:focus:not(:active),
+    .mdl-button--colored#cancel-comment-reply-link:focus:not(:active),
+    .mdl-button--colored.comment-reply-link:focus:not(:active),
+    .tribe-events-widget-link a.mdl-button--colored:focus:not(:active), .pagination .nav-links li.mdl-button--colored.page-next.nav-next:focus:not(:active),
+    .pagination .nav-links li.mdl-button--colored.page-prev.nav-previous:focus:not(:active),
+    .pagination .nav-links li.mdl-button--colored.tribe-events-nav-previous:focus:not(:active),
+    .pagination .nav-links li.mdl-button--colored.tribe-events-nav-next:focus:not(:active),
+    .pagination ul.tribe-events-sub-nav li.mdl-button--colored.page-next.nav-next:focus:not(:active),
+    .pagination ul.tribe-events-sub-nav li.mdl-button--colored.page-prev.nav-previous:focus:not(:active),
+    .pagination ul.tribe-events-sub-nav li.mdl-button--colored.tribe-events-nav-previous:focus:not(:active),
+    .pagination ul.tribe-events-sub-nav li.mdl-button--colored.tribe-events-nav-next:focus:not(:active), .pagination .nav-links .mdl-button--colored.page-numbers:focus:not(:active),
+    .pagination ul.tribe-events-sub-nav .mdl-button--colored.page-numbers:focus:not(:active), .search-form .mdl-button--colored.search-submit:focus:not(:active), .mdl-button--colored.tribe-events-gmap:focus:not(:active), .mdl-button--colored.tribe-events-button:focus:not(:active) {
+      background-color: #40BBCD; }
 
 /* line 63, C:/wamp/www/pec/src/assets/css/scss/vendors/mdl/_button.scss */
-input[type="submit"].mdl-button,
-input[type="submit"].post-edit-link,
+input.mdl-button[type="submit"], input[type="submit"].post-edit-link,
 input[type="submit"].comment-edit-link,
 input[type="submit"]#cancel-comment-reply-link,
 input[type="submit"].comment-reply-link,
@@ -1929,8 +1956,7 @@ input[type="submit"].comment-reply-link,
   -webkit-appearance: none; }
 
 /* line 68, C:/wamp/www/pec/src/assets/css/scss/vendors/mdl/_button.scss */
-.mdl-button--raised,
-.post-edit-link,
+.mdl-button--raised, .post-edit-link,
 .comment-edit-link,
 #cancel-comment-reply-link,
 .comment-reply-link,
@@ -1938,24 +1964,209 @@ input[type="submit"].comment-reply-link,
   background: #cccccc;
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12); }
   /* line 71, C:/wamp/www/pec/src/assets/css/scss/vendors/mdl/_button.scss */
-  .mdl-button--raised:active,
-  .post-edit-link:active,
+  .mdl-button--raised:active, .post-edit-link:active,
   .comment-edit-link:active,
   #cancel-comment-reply-link:active,
   .comment-reply-link:active,
   .tribe-events-widget-link a:active, .form-submit input:active, .search-form .search-submit:active {
     box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.2); }
   /* line 75, C:/wamp/www/pec/src/assets/css/scss/vendors/mdl/_button.scss */
-  .mdl-button--raised:focus:not(:active),
-  .post-edit-link:focus:not(:active),
+  .mdl-button--raised:focus:not(:active), .post-edit-link:focus:not(:active),
   .comment-edit-link:focus:not(:active),
   #cancel-comment-reply-link:focus:not(:active),
   .comment-reply-link:focus:not(:active),
   .tribe-events-widget-link a:focus:not(:active), .form-submit input:focus:not(:active), .search-form .search-submit:focus:not(:active) {
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.18), 0 8px 16px rgba(0, 0, 0, 0.36); }
+  /* line 79, C:/wamp/www/pec/src/assets/css/scss/vendors/mdl/_button.scss */
+  .mdl-button--raised.mdl-button--colored, .mdl-button--colored.post-edit-link,
+  .mdl-button--colored.comment-edit-link,
+  .mdl-button--colored#cancel-comment-reply-link,
+  .mdl-button--colored.comment-reply-link,
+  .tribe-events-widget-link a.mdl-button--colored, .form-submit input.mdl-button--colored, .search-form .mdl-button--colored.search-submit {
+    background: #308C9A;
+    color: #FFB71B; }
+    /* line 91, C:/wamp/www/pec/src/assets/css/scss/vendors/mdl/_button.scss */
+    .mdl-button--raised.mdl-button--colored .mdl-ripple, .mdl-button--colored.post-edit-link .mdl-ripple,
+    .mdl-button--colored.comment-edit-link .mdl-ripple,
+    .mdl-button--colored#cancel-comment-reply-link .mdl-ripple,
+    .mdl-button--colored.comment-reply-link .mdl-ripple,
+    .tribe-events-widget-link a.mdl-button--colored .mdl-ripple, .form-submit input.mdl-button--colored .mdl-ripple, .search-form .mdl-button--colored.search-submit .mdl-ripple {
+      background: #246973; }
+
+/* line 98, C:/wamp/www/pec/src/assets/css/scss/vendors/mdl/_button.scss */
+.mdl-button--fab {
+  border-radius: 50%;
+  font-size: 24px;
+  height: 56px;
+  margin: auto;
+  min-width: 56px;
+  width: 56px;
+  padding: 0;
+  overflow: hidden;
+  background: #cccccc;
+  box-shadow: 0 1px 1.5px 0 rgba(0, 0, 0, 0.12), 0 1px 1px 0 rgba(0, 0, 0, 0.24);
+  position: relative;
+  line-height: normal; }
+  /* line 111, C:/wamp/www/pec/src/assets/css/scss/vendors/mdl/_button.scss */
+  .mdl-button--fab .material-icons {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-12px, -12px);
+    line-height: 24px;
+    width: 24px; }
+  /* line 119, C:/wamp/www/pec/src/assets/css/scss/vendors/mdl/_button.scss */
+  .mdl-button--fab.mdl-button--mini-fab {
+    height: 40px;
+    min-width: 40px;
+    width: 40px; }
+  /* line 124, C:/wamp/www/pec/src/assets/css/scss/vendors/mdl/_button.scss */
+  .mdl-button--fab .mdl-button__ripple-container {
+    border-radius: 50%;
+    -webkit-mask-image: -webkit-radial-gradient(circle, white, black); }
+  /* line 129, C:/wamp/www/pec/src/assets/css/scss/vendors/mdl/_button.scss */
+  .mdl-button--fab:active {
+    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.2); }
+  /* line 133, C:/wamp/www/pec/src/assets/css/scss/vendors/mdl/_button.scss */
+  .mdl-button--fab:focus:not(:active) {
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.18), 0 8px 16px rgba(0, 0, 0, 0.36); }
+  /* line 137, C:/wamp/www/pec/src/assets/css/scss/vendors/mdl/_button.scss */
+  .mdl-button--fab.mdl-button--colored {
+    background: rgb(255,64,129);
+    color: rgb(255,255,255); }
+    /* line 140, C:/wamp/www/pec/src/assets/css/scss/vendors/mdl/_button.scss */
+    .mdl-button--fab.mdl-button--colored:hover {
+      background-color: rgb(255,64,129); }
+    /* line 143, C:/wamp/www/pec/src/assets/css/scss/vendors/mdl/_button.scss */
+    .mdl-button--fab.mdl-button--colored:focus:not(:active) {
+      background-color: rgb(255,64,129); }
+    /* line 146, C:/wamp/www/pec/src/assets/css/scss/vendors/mdl/_button.scss */
+    .mdl-button--fab.mdl-button--colored:active {
+      background-color: rgb(255,64,129); }
+    /* line 149, C:/wamp/www/pec/src/assets/css/scss/vendors/mdl/_button.scss */
+    .mdl-button--fab.mdl-button--colored .mdl-ripple {
+      background: rgb(255,255,255); }
+
+/* line 156, C:/wamp/www/pec/src/assets/css/scss/vendors/mdl/_button.scss */
+.mdl-button--icon {
+  border-radius: 50%;
+  font-size: 24px;
+  height: 32px;
+  margin-left: 0;
+  margin-right: 0;
+  min-width: 32px;
+  width: 32px;
+  padding: 0;
+  overflow: hidden;
+  color: inherit;
+  line-height: normal; }
+  /* line 168, C:/wamp/www/pec/src/assets/css/scss/vendors/mdl/_button.scss */
+  .mdl-button--icon .material-icons {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-12px, -12px);
+    line-height: 24px;
+    width: 24px; }
+  /* line 176, C:/wamp/www/pec/src/assets/css/scss/vendors/mdl/_button.scss */
+  .mdl-button--icon.mdl-button--mini-icon {
+    height: 24px;
+    min-width: 24px;
+    width: 24px; }
+    /* line 180, C:/wamp/www/pec/src/assets/css/scss/vendors/mdl/_button.scss */
+    .mdl-button--icon.mdl-button--mini-icon .material-icons {
+      top: 0px;
+      left: 0px; }
+  /* line 185, C:/wamp/www/pec/src/assets/css/scss/vendors/mdl/_button.scss */
+  .mdl-button--icon .mdl-button__ripple-container {
+    border-radius: 50%;
+    -webkit-mask-image: -webkit-radial-gradient(circle, white, black); }
+
+/* line 193, C:/wamp/www/pec/src/assets/css/scss/vendors/mdl/_button.scss */
+.mdl-button__ripple-container {
+  display: block;
+  height: 100%;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  z-index: 0;
+  overflow: hidden; }
+  /* line 203, C:/wamp/www/pec/src/assets/css/scss/vendors/mdl/_button.scss */
+  .mdl-button[disabled] .mdl-button__ripple-container .mdl-ripple,
+  [disabled].post-edit-link .mdl-button__ripple-container .mdl-ripple,
+  [disabled].comment-edit-link .mdl-button__ripple-container .mdl-ripple,
+  [disabled]#cancel-comment-reply-link .mdl-button__ripple-container .mdl-ripple,
+  [disabled].comment-reply-link .mdl-button__ripple-container .mdl-ripple,
+  .tribe-events-widget-link a[disabled] .mdl-button__ripple-container .mdl-ripple,
+  .pagination .nav-links li[disabled].page-next.nav-next .mdl-button__ripple-container .mdl-ripple,
+  .pagination .nav-links li[disabled].page-prev.nav-previous .mdl-button__ripple-container .mdl-ripple,
+  .pagination .nav-links li[disabled].tribe-events-nav-previous .mdl-button__ripple-container .mdl-ripple,
+  .pagination .nav-links li[disabled].tribe-events-nav-next .mdl-button__ripple-container .mdl-ripple,
+  .pagination ul.tribe-events-sub-nav li[disabled].page-next.nav-next .mdl-button__ripple-container .mdl-ripple,
+  .pagination ul.tribe-events-sub-nav li[disabled].page-prev.nav-previous .mdl-button__ripple-container .mdl-ripple,
+  .pagination ul.tribe-events-sub-nav li[disabled].tribe-events-nav-previous .mdl-button__ripple-container .mdl-ripple,
+  .pagination ul.tribe-events-sub-nav li[disabled].tribe-events-nav-next .mdl-button__ripple-container .mdl-ripple,
+  .pagination .nav-links [disabled].page-numbers .mdl-button__ripple-container .mdl-ripple,
+  .pagination ul.tribe-events-sub-nav [disabled].page-numbers .mdl-button__ripple-container .mdl-ripple,
+  .search-form [disabled].search-submit .mdl-button__ripple-container .mdl-ripple,
+  [disabled].tribe-events-gmap .mdl-button__ripple-container .mdl-ripple,
+  [disabled].tribe-events-button .mdl-button__ripple-container .mdl-ripple,
+  .mdl-button.mdl-button--disabled .mdl-button__ripple-container .mdl-ripple, .mdl-button--disabled.post-edit-link .mdl-button__ripple-container .mdl-ripple,
+  .mdl-button--disabled.comment-edit-link .mdl-button__ripple-container .mdl-ripple,
+  .mdl-button--disabled#cancel-comment-reply-link .mdl-button__ripple-container .mdl-ripple,
+  .mdl-button--disabled.comment-reply-link .mdl-button__ripple-container .mdl-ripple,
+  .tribe-events-widget-link a.mdl-button--disabled .mdl-button__ripple-container .mdl-ripple, .pagination .nav-links li.mdl-button--disabled.page-next.nav-next .mdl-button__ripple-container .mdl-ripple,
+  .pagination .nav-links li.mdl-button--disabled.page-prev.nav-previous .mdl-button__ripple-container .mdl-ripple,
+  .pagination .nav-links li.mdl-button--disabled.tribe-events-nav-previous .mdl-button__ripple-container .mdl-ripple,
+  .pagination .nav-links li.mdl-button--disabled.tribe-events-nav-next .mdl-button__ripple-container .mdl-ripple,
+  .pagination ul.tribe-events-sub-nav li.mdl-button--disabled.page-next.nav-next .mdl-button__ripple-container .mdl-ripple,
+  .pagination ul.tribe-events-sub-nav li.mdl-button--disabled.page-prev.nav-previous .mdl-button__ripple-container .mdl-ripple,
+  .pagination ul.tribe-events-sub-nav li.mdl-button--disabled.tribe-events-nav-previous .mdl-button__ripple-container .mdl-ripple,
+  .pagination ul.tribe-events-sub-nav li.mdl-button--disabled.tribe-events-nav-next .mdl-button__ripple-container .mdl-ripple, .pagination .nav-links .mdl-button--disabled.page-numbers .mdl-button__ripple-container .mdl-ripple,
+  .pagination ul.tribe-events-sub-nav .mdl-button--disabled.page-numbers .mdl-button__ripple-container .mdl-ripple, .search-form .mdl-button--disabled.search-submit .mdl-button__ripple-container .mdl-ripple, .mdl-button--disabled.tribe-events-gmap .mdl-button__ripple-container .mdl-ripple, .mdl-button--disabled.tribe-events-button .mdl-button__ripple-container .mdl-ripple {
+    background-color: transparent; }
+
+/* line 209, C:/wamp/www/pec/src/assets/css/scss/vendors/mdl/_button.scss */
+.mdl-button--primary.mdl-button--primary {
+  color: #308C9A; }
+  /* line 211, C:/wamp/www/pec/src/assets/css/scss/vendors/mdl/_button.scss */
+  .mdl-button--primary.mdl-button--primary .mdl-ripple {
+    background: #FFB71B; }
+  /* line 215, C:/wamp/www/pec/src/assets/css/scss/vendors/mdl/_button.scss */
+  .mdl-button--primary.mdl-button--primary.mdl-button--raised,
+  .mdl-button--primary.mdl-button--primary.post-edit-link,
+  .mdl-button--primary.mdl-button--primary.comment-edit-link,
+  .mdl-button--primary.mdl-button--primary#cancel-comment-reply-link,
+  .mdl-button--primary.mdl-button--primary.comment-reply-link,
+  .tribe-events-widget-link a.mdl-button--primary.mdl-button--primary,
+  .form-submit input.mdl-button--primary.mdl-button--primary,
+  .search-form .mdl-button--primary.mdl-button--primary.search-submit,
+  .mdl-button--primary.mdl-button--primary.mdl-button--fab {
+    color: #FFB71B;
+    background-color: #308C9A; }
+
+/* line 221, C:/wamp/www/pec/src/assets/css/scss/vendors/mdl/_button.scss */
+.mdl-button--accent.mdl-button--accent {
+  color: rgb(255,64,129); }
+  /* line 223, C:/wamp/www/pec/src/assets/css/scss/vendors/mdl/_button.scss */
+  .mdl-button--accent.mdl-button--accent .mdl-ripple {
+    background: rgb(255,255,255); }
+  /* line 227, C:/wamp/www/pec/src/assets/css/scss/vendors/mdl/_button.scss */
+  .mdl-button--accent.mdl-button--accent.mdl-button--raised,
+  .mdl-button--accent.mdl-button--accent.post-edit-link,
+  .mdl-button--accent.mdl-button--accent.comment-edit-link,
+  .mdl-button--accent.mdl-button--accent#cancel-comment-reply-link,
+  .mdl-button--accent.mdl-button--accent.comment-reply-link,
+  .tribe-events-widget-link a.mdl-button--accent.mdl-button--accent,
+  .form-submit input.mdl-button--accent.mdl-button--accent,
+  .search-form .mdl-button--accent.mdl-button--accent.search-submit,
+  .mdl-button--accent.mdl-button--accent.mdl-button--fab {
+    color: rgb(255,255,255);
+    background-color: rgb(255,64,129); }
 
 /* line 237, C:/wamp/www/pec/src/assets/css/scss/vendors/mdl/_button.scss */
-[disabled][disabled].mdl-button,
+.mdl-button[disabled][disabled],
 [disabled][disabled].post-edit-link,
 [disabled][disabled].comment-edit-link,
 [disabled][disabled]#cancel-comment-reply-link,
@@ -1973,23 +2184,68 @@ input[type="submit"].comment-reply-link,
 .pagination ul.tribe-events-sub-nav [disabled][disabled].page-numbers,
 .search-form [disabled][disabled].search-submit,
 [disabled][disabled].tribe-events-gmap,
-[disabled][disabled].tribe-events-button {
+[disabled][disabled].tribe-events-button,
+.mdl-button.mdl-button--disabled.mdl-button--disabled, .mdl-button--disabled.mdl-button--disabled.post-edit-link,
+.mdl-button--disabled.mdl-button--disabled.comment-edit-link,
+.mdl-button--disabled.mdl-button--disabled#cancel-comment-reply-link,
+.mdl-button--disabled.mdl-button--disabled.comment-reply-link,
+.tribe-events-widget-link a.mdl-button--disabled.mdl-button--disabled, .pagination .nav-links li.mdl-button--disabled.mdl-button--disabled.page-next.nav-next,
+.pagination .nav-links li.mdl-button--disabled.mdl-button--disabled.page-prev.nav-previous,
+.pagination .nav-links li.mdl-button--disabled.mdl-button--disabled.tribe-events-nav-previous,
+.pagination .nav-links li.mdl-button--disabled.mdl-button--disabled.tribe-events-nav-next,
+.pagination ul.tribe-events-sub-nav li.mdl-button--disabled.mdl-button--disabled.page-next.nav-next,
+.pagination ul.tribe-events-sub-nav li.mdl-button--disabled.mdl-button--disabled.page-prev.nav-previous,
+.pagination ul.tribe-events-sub-nav li.mdl-button--disabled.mdl-button--disabled.tribe-events-nav-previous,
+.pagination ul.tribe-events-sub-nav li.mdl-button--disabled.mdl-button--disabled.tribe-events-nav-next, .pagination .nav-links .mdl-button--disabled.mdl-button--disabled.page-numbers,
+.pagination ul.tribe-events-sub-nav .mdl-button--disabled.mdl-button--disabled.page-numbers, .search-form .mdl-button--disabled.mdl-button--disabled.search-submit, .mdl-button--disabled.mdl-button--disabled.tribe-events-gmap, .mdl-button--disabled.mdl-button--disabled.tribe-events-button {
   color: rgba(0,0,0, 0.26);
   cursor: default;
   background-color: transparent; }
 
+/* line 245, C:/wamp/www/pec/src/assets/css/scss/vendors/mdl/_button.scss */
+.mdl-button--fab[disabled][disabled],
+.mdl-button--fab.mdl-button--disabled.mdl-button--disabled {
+  background-color: rgba(0,0,0, 0.12);
+  color: rgba(0,0,0, 0.26); }
+
 /* line 253, C:/wamp/www/pec/src/assets/css/scss/vendors/mdl/_button.scss */
-[disabled][disabled].mdl-button--raised,
+.mdl-button--raised[disabled][disabled],
 [disabled][disabled].post-edit-link,
 [disabled][disabled].comment-edit-link,
 [disabled][disabled]#cancel-comment-reply-link,
 [disabled][disabled].comment-reply-link,
 .tribe-events-widget-link a[disabled][disabled],
 .form-submit input[disabled][disabled],
-.search-form [disabled][disabled].search-submit {
+.search-form [disabled][disabled].search-submit,
+.mdl-button--raised.mdl-button--disabled.mdl-button--disabled, .mdl-button--disabled.mdl-button--disabled.post-edit-link,
+.mdl-button--disabled.mdl-button--disabled.comment-edit-link,
+.mdl-button--disabled.mdl-button--disabled#cancel-comment-reply-link,
+.mdl-button--disabled.mdl-button--disabled.comment-reply-link,
+.tribe-events-widget-link a.mdl-button--disabled.mdl-button--disabled, .form-submit input.mdl-button--disabled.mdl-button--disabled, .search-form .mdl-button--disabled.mdl-button--disabled.search-submit {
   background-color: rgba(0,0,0, 0.12);
   color: rgba(0,0,0, 0.26);
   box-shadow: none; }
+
+/* line 262, C:/wamp/www/pec/src/assets/css/scss/vendors/mdl/_button.scss */
+.mdl-button--colored[disabled][disabled],
+.mdl-button--colored.mdl-button--disabled.mdl-button--disabled {
+  color: rgba(0,0,0, 0.26); }
+
+/* line 269, C:/wamp/www/pec/src/assets/css/scss/vendors/mdl/_button.scss */
+.mdl-button .material-icons, .post-edit-link .material-icons,
+.comment-edit-link .material-icons,
+#cancel-comment-reply-link .material-icons,
+.comment-reply-link .material-icons,
+.tribe-events-widget-link a .material-icons, .pagination .nav-links li.page-next.nav-next .material-icons,
+.pagination .nav-links li.page-prev.nav-previous .material-icons,
+.pagination .nav-links li.tribe-events-nav-previous .material-icons,
+.pagination .nav-links li.tribe-events-nav-next .material-icons,
+.pagination ul.tribe-events-sub-nav li.page-next.nav-next .material-icons,
+.pagination ul.tribe-events-sub-nav li.page-prev.nav-previous .material-icons,
+.pagination ul.tribe-events-sub-nav li.tribe-events-nav-previous .material-icons,
+.pagination ul.tribe-events-sub-nav li.tribe-events-nav-next .material-icons, .pagination .nav-links .page-numbers .material-icons,
+.pagination ul.tribe-events-sub-nav .page-numbers .material-icons, .search-form .search-submit .material-icons, .tribe-events-gmap .material-icons, .tribe-events-button .material-icons {
+  vertical-align: middle; }
 
 /**
  * Copyright 2015 Google Inc. All Rights Reserved.
@@ -2182,7 +2438,23 @@ input[type="submit"].comment-reply-link,
   margin: 0;
   padding: 1.25rem 0; }
   /* line 30, C:/wamp/www/pec/src/assets/css/scss/vendors/mdl/_textfield.scss */
-  .mdl-textfield .mdl-button, .search-form .mdl-button {
+  .mdl-textfield .mdl-button, .search-form .mdl-button, .mdl-textfield .post-edit-link, .search-form .post-edit-link, .mdl-textfield .comment-edit-link, .search-form .comment-edit-link, .mdl-textfield #cancel-comment-reply-link, .search-form #cancel-comment-reply-link, .mdl-textfield .comment-reply-link, .search-form .comment-reply-link, .mdl-textfield .tribe-events-widget-link a, .tribe-events-widget-link .mdl-textfield a, .search-form .tribe-events-widget-link a, .tribe-events-widget-link .search-form a, .mdl-textfield .pagination .nav-links li.page-next.nav-next, .pagination .nav-links .mdl-textfield li.page-next.nav-next,
+  .search-form .pagination .nav-links li.page-next.nav-next, .pagination .nav-links .search-form li.page-next.nav-next,
+  .mdl-textfield .pagination .nav-links li.page-prev.nav-previous, .pagination .nav-links .mdl-textfield li.page-prev.nav-previous,
+  .search-form .pagination .nav-links li.page-prev.nav-previous, .pagination .nav-links .search-form li.page-prev.nav-previous,
+  .mdl-textfield .pagination .nav-links li.tribe-events-nav-previous, .pagination .nav-links .mdl-textfield li.tribe-events-nav-previous,
+  .search-form .pagination .nav-links li.tribe-events-nav-previous, .pagination .nav-links .search-form li.tribe-events-nav-previous,
+  .mdl-textfield .pagination .nav-links li.tribe-events-nav-next, .pagination .nav-links .mdl-textfield li.tribe-events-nav-next,
+  .search-form .pagination .nav-links li.tribe-events-nav-next, .pagination .nav-links .search-form li.tribe-events-nav-next,
+  .mdl-textfield .pagination ul.tribe-events-sub-nav li.page-next.nav-next, .pagination ul.tribe-events-sub-nav .mdl-textfield li.page-next.nav-next,
+  .search-form .pagination ul.tribe-events-sub-nav li.page-next.nav-next, .pagination ul.tribe-events-sub-nav .search-form li.page-next.nav-next,
+  .mdl-textfield .pagination ul.tribe-events-sub-nav li.page-prev.nav-previous, .pagination ul.tribe-events-sub-nav .mdl-textfield li.page-prev.nav-previous,
+  .search-form .pagination ul.tribe-events-sub-nav li.page-prev.nav-previous, .pagination ul.tribe-events-sub-nav .search-form li.page-prev.nav-previous,
+  .mdl-textfield .pagination ul.tribe-events-sub-nav li.tribe-events-nav-previous, .pagination ul.tribe-events-sub-nav .mdl-textfield li.tribe-events-nav-previous,
+  .search-form .pagination ul.tribe-events-sub-nav li.tribe-events-nav-previous, .pagination ul.tribe-events-sub-nav .search-form li.tribe-events-nav-previous,
+  .mdl-textfield .pagination ul.tribe-events-sub-nav li.tribe-events-nav-next, .pagination ul.tribe-events-sub-nav .mdl-textfield li.tribe-events-nav-next, .search-form .pagination ul.tribe-events-sub-nav li.tribe-events-nav-next, .pagination ul.tribe-events-sub-nav .search-form li.tribe-events-nav-next, .mdl-textfield .pagination .nav-links .page-numbers, .pagination .nav-links .mdl-textfield .page-numbers,
+  .search-form .pagination .nav-links .page-numbers, .pagination .nav-links .search-form .page-numbers,
+  .mdl-textfield .pagination ul.tribe-events-sub-nav .page-numbers, .pagination ul.tribe-events-sub-nav .mdl-textfield .page-numbers, .search-form .pagination ul.tribe-events-sub-nav .page-numbers, .pagination ul.tribe-events-sub-nav .search-form .page-numbers, .search-form .search-submit, .mdl-textfield .tribe-events-gmap, .search-form .tribe-events-gmap, .mdl-textfield .tribe-events-button, .search-form .tribe-events-button {
     position: absolute;
     bottom: 1.25rem; }
 
@@ -4416,6 +4688,10 @@ input[type="submit"].comment-reply-link,
 .icon__youtube:before {
   content: "\E007"; }
 
+/* line 64, C:/wamp/www/pec/src/assets/css/scss/structure/_typography.scss */
+.icon__rss:before {
+  content: "\E008"; }
+
 /* ==============================
     Fonts
    ============================== */
@@ -4452,24 +4728,27 @@ input[type="submit"].comment-reply-link,
 /* ==============================
     General Rules
    ============================== */
-/* line 112, C:/wamp/www/pec/src/assets/css/scss/structure/_typography.scss */
+/* line 117, C:/wamp/www/pec/src/assets/css/scss/structure/_typography.scss */
 * {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
-/* line 118, C:/wamp/www/pec/src/assets/css/scss/structure/_typography.scss */
+/* line 123, C:/wamp/www/pec/src/assets/css/scss/structure/_typography.scss */
 html {
   font-size: 100%; }
 
-/* line 122, C:/wamp/www/pec/src/assets/css/scss/structure/_typography.scss */
+/* line 127, C:/wamp/www/pec/src/assets/css/scss/structure/_typography.scss */
 body {
   font-family: "Signika Negative", "Tahoma", "Geneva", sans-serif;
   font-weight: normal;
   font-size: 14px;
   font-size: 0.875rem; }
 
-/* line 132, C:/wamp/www/pec/src/assets/css/scss/structure/_typography.scss */
+/* ==============================
+    Titres & paragraphes
+   ============================== */
+/* line 141, C:/wamp/www/pec/src/assets/css/scss/structure/_typography.scss */
 h1,
 h2,
 h3,
@@ -4478,114 +4757,87 @@ h5,
 h6 {
   font-family: "Gloria Hallelujah", "Comic Sans MS", cursive, sans-serif;
   font-weight: normal;
-  margin-top: 0;
   margin-bottom: 0.7242em; }
+  /* line 144, C:/wamp/www/pec/src/assets/css/scss/structure/_typography.scss */
+  .entry-content h1,
+  .entry-content h2,
+  .entry-content h3,
+  .entry-content h4,
+  .entry-content h5,
+  .entry-content h6 {
+    margin-top: 1em; }
 
-/* line 138, C:/wamp/www/pec/src/assets/css/scss/structure/_typography.scss */
-p {
-  margin-bottom: 0.7242em; }
-
-/* line 143, C:/wamp/www/pec/src/assets/css/scss/structure/_typography.scss */
-ul,
-ol {
-  display: block;
-  padding-left: 20px;
-  margin-bottom: 0.7242em; }
-  /* line 147, C:/wamp/www/pec/src/assets/css/scss/structure/_typography.scss */
-  ul li,
-  ol li {
-    margin-bottom: 0.7242em; }
-
-/* line 156, C:/wamp/www/pec/src/assets/css/scss/structure/_typography.scss */
-a,
-a:active,
-a:focus,
-a:visited {
-  text-decoration: none; }
-
-/* line 160, C:/wamp/www/pec/src/assets/css/scss/structure/_typography.scss */
-a {
-  color: #308C9A; }
-  /* line 163, C:/wamp/www/pec/src/assets/css/scss/structure/_typography.scss */
-  a:hover,
-  a:active {
-    color: #40BBCD; }
-
-/* line 168, C:/wamp/www/pec/src/assets/css/scss/structure/_typography.scss */
-sup {
-  top: -5px;
-  margin-left: 2px; }
-
-/* ==============================
-    Modular Scale
-   ============================== */
-/* line 179, C:/wamp/www/pec/src/assets/css/scss/structure/_typography.scss */
+/* line 151, C:/wamp/www/pec/src/assets/css/scss/structure/_typography.scss */
 h1,
 .h1 {
   font-size: 1.67583em;
   color: #308C9A; }
   @media screen and (min-width: 768px) {
-    /* line 179, C:/wamp/www/pec/src/assets/css/scss/structure/_typography.scss */
+    /* line 151, C:/wamp/www/pec/src/assets/css/scss/structure/_typography.scss */
     h1,
     .h1 {
       font-size: 2.8084em; } }
 
-/* line 188, C:/wamp/www/pec/src/assets/css/scss/structure/_typography.scss */
+/* line 160, C:/wamp/www/pec/src/assets/css/scss/structure/_typography.scss */
 h2,
 .h2 {
   font-size: 1.57109em;
   color: #91C160; }
   @media screen and (min-width: 768px) {
-    /* line 188, C:/wamp/www/pec/src/assets/css/scss/structure/_typography.scss */
+    /* line 160, C:/wamp/www/pec/src/assets/css/scss/structure/_typography.scss */
     h2,
     .h2 {
       font-size: 2.46832em; } }
 
-/* line 197, C:/wamp/www/pec/src/assets/css/scss/structure/_typography.scss */
+/* line 169, C:/wamp/www/pec/src/assets/css/scss/structure/_typography.scss */
 h3,
 .h3 {
   font-size: 1.4729em;
   color: #FFB71B; }
   @media screen and (min-width: 768px) {
-    /* line 197, C:/wamp/www/pec/src/assets/css/scss/structure/_typography.scss */
+    /* line 169, C:/wamp/www/pec/src/assets/css/scss/structure/_typography.scss */
     h3,
     .h3 {
       font-size: 2.16943em; } }
 
-/* line 206, C:/wamp/www/pec/src/assets/css/scss/structure/_typography.scss */
+/* line 178, C:/wamp/www/pec/src/assets/css/scss/structure/_typography.scss */
 h4,
 .h4 {
   font-size: 1.38084em;
   color: #308C9A; }
   @media screen and (min-width: 768px) {
-    /* line 206, C:/wamp/www/pec/src/assets/css/scss/structure/_typography.scss */
+    /* line 178, C:/wamp/www/pec/src/assets/css/scss/structure/_typography.scss */
     h4,
     .h4 {
       font-size: 1.90672em; } }
 
-/* line 215, C:/wamp/www/pec/src/assets/css/scss/structure/_typography.scss */
+/* line 187, C:/wamp/www/pec/src/assets/css/scss/structure/_typography.scss */
 h5,
 .h5, #tribe-bar-collapse-toggle {
   font-size: 1.29454em;
   color: #91C160; }
   @media screen and (min-width: 768px) {
-    /* line 215, C:/wamp/www/pec/src/assets/css/scss/structure/_typography.scss */
+    /* line 187, C:/wamp/www/pec/src/assets/css/scss/structure/_typography.scss */
     h5,
     .h5, #tribe-bar-collapse-toggle {
       font-size: 1.67583em; } }
 
-/* line 224, C:/wamp/www/pec/src/assets/css/scss/structure/_typography.scss */
+/* line 196, C:/wamp/www/pec/src/assets/css/scss/structure/_typography.scss */
 h6,
 .h6 {
   font-size: 1.21363em;
   color: #FFB71B; }
   @media screen and (min-width: 768px) {
-    /* line 224, C:/wamp/www/pec/src/assets/css/scss/structure/_typography.scss */
+    /* line 196, C:/wamp/www/pec/src/assets/css/scss/structure/_typography.scss */
     h6,
     .h6 {
       font-size: 1.4729em; } }
 
-/* line 234, C:/wamp/www/pec/src/assets/css/scss/structure/_typography.scss */
+/* line 204, C:/wamp/www/pec/src/assets/css/scss/structure/_typography.scss */
+p {
+  margin-bottom: 0.7242em; }
+
+/* line 211, C:/wamp/www/pec/src/assets/css/scss/structure/_typography.scss */
 p,
 ul,
 ol {
@@ -4594,10 +4846,276 @@ ol {
   line-height: 1.4;
   max-width: 70em; }
 
+/* line 221, C:/wamp/www/pec/src/assets/css/scss/structure/_typography.scss */
+a,
+a:active,
+a:focus,
+a:visited {
+  text-decoration: none; }
+
+/* line 225, C:/wamp/www/pec/src/assets/css/scss/structure/_typography.scss */
+a {
+  color: #308C9A; }
+  /* line 228, C:/wamp/www/pec/src/assets/css/scss/structure/_typography.scss */
+  a:hover,
+  a:active {
+    color: #40BBCD; }
+
+/* ============================================================
+    Lists
+   ============================================================ */
+/* line 237, C:/wamp/www/pec/src/assets/css/scss/structure/_typography.scss */
+ul,
+ol {
+  display: block;
+  padding-left: 20px;
+  margin-bottom: 0.7242em; }
+  /* line 241, C:/wamp/www/pec/src/assets/css/scss/structure/_typography.scss */
+  ul li,
+  ol li {
+    margin-bottom: 0.7242em; }
+
+/* line 246, C:/wamp/www/pec/src/assets/css/scss/structure/_typography.scss */
+ul {
+  list-style: disc; }
+
+/* line 250, C:/wamp/www/pec/src/assets/css/scss/structure/_typography.scss */
+ol {
+  list-style: decimal; }
+
+/* line 255, C:/wamp/www/pec/src/assets/css/scss/structure/_typography.scss */
+li > ul,
+li > ol {
+  margin: 0 0 0 0.7242em; }
+
+/* line 259, C:/wamp/www/pec/src/assets/css/scss/structure/_typography.scss */
+dl {
+  margin: 0 0 28px; }
+
+/* line 263, C:/wamp/www/pec/src/assets/css/scss/structure/_typography.scss */
+dt {
+  font-weight: bold; }
+
+/* line 267, C:/wamp/www/pec/src/assets/css/scss/structure/_typography.scss */
+dd {
+  margin: 0 0 28px; }
+
+/* ============================================================
+    Balises en ligne sur le statut du contenu
+    <ins> <del> <s> <blockquote> <address> <pre> <code> <kbd> <var> <samp>
+   ============================================================ */
+/* line 275, C:/wamp/www/pec/src/assets/css/scss/structure/_typography.scss */
+blockquote {
+  color: #91C160;
+  font-size: 1.13778em;
+  font-style: italic;
+  margin: 0 0 1.13778em -21px;
+  padding-left: 1.06667em;
+  border-left: 10px solid #91C160;
+  quotes: "“" "”" "‘" "’"; }
+
+/* line 285, C:/wamp/www/pec/src/assets/css/scss/structure/_typography.scss */
+blockquote:before {
+  color: #BDDAA0;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em; }
+
+/* line 294, C:/wamp/www/pec/src/assets/css/scss/structure/_typography.scss */
+blockquote > blockquote {
+  margin-left: 0; }
+
+/* line 298, C:/wamp/www/pec/src/assets/css/scss/structure/_typography.scss */
+blockquote p {
+  display: inline;
+  margin-bottom: 1.13778em; }
+
+/* line 303, C:/wamp/www/pec/src/assets/css/scss/structure/_typography.scss */
+blockquote > p:last-child {
+  margin-bottom: 0; }
+
+/* line 308, C:/wamp/www/pec/src/assets/css/scss/structure/_typography.scss */
+blockquote cite,
+blockquote small {
+  color: #5e8734;
+  font-size: 1.06667em; }
+
+/* line 315, C:/wamp/www/pec/src/assets/css/scss/structure/_typography.scss */
+blockquote em,
+blockquote i,
+blockquote cite {
+  font-style: normal; }
+
+/* line 320, C:/wamp/www/pec/src/assets/css/scss/structure/_typography.scss */
+blockquote strong,
+blockquote b {
+  font-weight: 400; }
+
+/* line 330, C:/wamp/www/pec/src/assets/css/scss/structure/_typography.scss */
+address {
+  font-style: italic;
+  margin: 0 0 28px; }
+
+/* line 340, C:/wamp/www/pec/src/assets/css/scss/structure/_typography.scss */
+code,
+kbd,
+tt,
+var,
+samp,
+pre {
+  font-family: Inconsolata, monospace; }
+
+/* line 344, C:/wamp/www/pec/src/assets/css/scss/structure/_typography.scss */
+pre {
+  background-color: #fcfcfc;
+  border: 1px solid #eaeaea;
+  font-size: 1.06667em;
+  margin-bottom: 1.13778em;
+  max-width: 100%;
+  overflow: auto;
+  padding: 1em;
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word; }
+
+/* ============================================================
+    Balises en ligne sémntiques
+    <time> <abbr> <cite> <q> <dfn> <mark> <u> <b> <i> <strong> <em> <small> <big> <sub> <sup> <bdo> <bdi>
+   ============================================================ */
+/* line 364, C:/wamp/www/pec/src/assets/css/scss/structure/_typography.scss */
+dfn,
+cite,
+em,
+i {
+  font-style: italic; }
+
+/* line 368, C:/wamp/www/pec/src/assets/css/scss/structure/_typography.scss */
+sup {
+  top: -5px;
+  margin-left: 2px; }
+
+/* line 374, C:/wamp/www/pec/src/assets/css/scss/structure/_typography.scss */
+sup,
+sub {
+  font-size: 75%;
+  height: 0;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+/* line 382, C:/wamp/www/pec/src/assets/css/scss/structure/_typography.scss */
+sup {
+  bottom: 1ex; }
+
+/* line 386, C:/wamp/www/pec/src/assets/css/scss/structure/_typography.scss */
+sub {
+  top: .5ex; }
+
+/* line 390, C:/wamp/www/pec/src/assets/css/scss/structure/_typography.scss */
+abbr[title] {
+  border-bottom: 1px dotted #eaeaea;
+  cursor: help; }
+
+/* line 396, C:/wamp/www/pec/src/assets/css/scss/structure/_typography.scss */
+mark,
+ins {
+  background-color: #fff9c0;
+  text-decoration: none; }
+
+/* line 401, C:/wamp/www/pec/src/assets/css/scss/structure/_typography.scss */
+small {
+  font-size: 75%; }
+
+/* line 405, C:/wamp/www/pec/src/assets/css/scss/structure/_typography.scss */
+big {
+  font-size: 125%; }
+
+/* line 411, C:/wamp/www/pec/src/assets/css/scss/structure/_typography.scss */
+body.rtl {
+  font-family: Arial, Tahoma, sans-serif; }
+
+/* line 415, C:/wamp/www/pec/src/assets/css/scss/structure/_typography.scss */
+.rtl blockquote {
+  border-left: none;
+  border-right: 4px solid #707070;
+  margin: 0 -21px 35px 0;
+  padding-left: 0;
+  padding-right: 17px; }
+
+/* line 423, C:/wamp/www/pec/src/assets/css/scss/structure/_typography.scss */
+.rtl blockquote > blockquote {
+  margin-left: auto;
+  margin-right: 0; }
+
+/* line 429, C:/wamp/www/pec/src/assets/css/scss/structure/_typography.scss */
+.rtl li > ul,
+.rtl li > ol {
+  margin: 0 23px 0 0; }
+
+/* line 434, C:/wamp/www/pec/src/assets/css/scss/structure/_typography.scss */
+.rtl table th,
+.rtl table caption {
+  text-align: right; }
+
+/* ============================================================
+    Séparations & Tableau
+   ============================================================ */
+/* line 441, C:/wamp/www/pec/src/assets/css/scss/structure/_typography.scss */
+hr {
+  background-color: #eaeaea;
+  border: 0;
+  height: 1px;
+  margin-bottom: 28px; }
+
+/* line 453, C:/wamp/www/pec/src/assets/css/scss/structure/_typography.scss */
+table,
+th,
+td,
+.mce-item-table,
+.mce-item-table th,
+.mce-item-table td {
+  border: 1px solid #eaeaea; }
+
+/* line 457, C:/wamp/www/pec/src/assets/css/scss/structure/_typography.scss */
+table a {
+  color: #333; }
+
+/* line 462, C:/wamp/www/pec/src/assets/css/scss/structure/_typography.scss */
+table,
+.mce-item-table {
+  border-collapse: separate;
+  border-spacing: 0;
+  border-width: 1px 0 0 1px;
+  margin: 0 0 28px;
+  width: 100%; }
+
+/* line 472, C:/wamp/www/pec/src/assets/css/scss/structure/_typography.scss */
+table th,
+.mce-item-table th,
+table caption {
+  border-width: 0 1px 1px 0;
+  font-family: "Noto Serif", serif;
+  font-size: 17px;
+  font-weight: 700;
+  padding: 7px;
+  text-align: left;
+  vertical-align: baseline; }
+
+/* line 483, C:/wamp/www/pec/src/assets/css/scss/structure/_typography.scss */
+table td,
+.mce-item-table td {
+  border-width: 0 1px 1px 0;
+  font-family: "Noto Serif", serif;
+  font-size: 17px;
+  padding: 7px;
+  vertical-align: baseline; }
+
 /* ==============================
     Responsive design
    ============================== */
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px) {
   /* line 4, C:/wamp/www/pec/src/assets/css/scss/structure/_layout.scss */
   .hide-desktop {
     display: none; } }
@@ -4659,7 +5177,7 @@ body {
 /* line 62, C:/wamp/www/pec/src/assets/css/scss/structure/_layout.scss */
 .width-75 {
   max-width: 100%; }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1024px) {
     /* line 62, C:/wamp/www/pec/src/assets/css/scss/structure/_layout.scss */
     .width-75 {
       max-width: 75%; } }
@@ -4680,14 +5198,19 @@ body {
 @media screen and (min-width: 768px) {
   /* line 90, C:/wamp/www/pec/src/assets/css/scss/structure/_layout.scss */
   .pec-thumbnail {
+    max-width: 48%; } }
+
+@media screen and (min-width: 1024px) {
+  /* line 90, C:/wamp/www/pec/src/assets/css/scss/structure/_layout.scss */
+  .pec-thumbnail {
     max-width: 30%; } }
 
-/* line 98, C:/wamp/www/pec/src/assets/css/scss/structure/_layout.scss */
+/* line 101, C:/wamp/www/pec/src/assets/css/scss/structure/_layout.scss */
 .sidebar {
   max-width: 100%;
   max-width: 100vw; }
-  @media screen and (min-width: 768px) {
-    /* line 98, C:/wamp/www/pec/src/assets/css/scss/structure/_layout.scss */
+  @media screen and (min-width: 1024px) {
+    /* line 101, C:/wamp/www/pec/src/assets/css/scss/structure/_layout.scss */
     .sidebar {
       max-width: 25%;
       max-width: 25vw; } }
@@ -4697,43 +5220,97 @@ body {
    ============================================================ */
 /* line 7, C:/wamp/www/pec/src/assets/css/scss/structure/_content.scss */
 img {
-  max-width: 100%; }
+  max-width: 100%;
+  height: auto; }
 
-/* line 10, C:/wamp/www/pec/src/assets/css/scss/structure/_content.scss */
+/* line 11, C:/wamp/www/pec/src/assets/css/scss/structure/_content.scss */
 .alignnone {
   margin: 5px 20px 20px 0; }
 
-/* line 14, C:/wamp/www/pec/src/assets/css/scss/structure/_content.scss */
+/* line 15, C:/wamp/www/pec/src/assets/css/scss/structure/_content.scss */
 img.alignright, a img.alignright {
   float: right;
   margin: 0 0 1em 1em; }
+  @media screen and (max-width: 767px) {
+    /* line 15, C:/wamp/www/pec/src/assets/css/scss/structure/_content.scss */
+    img.alignright, a img.alignright {
+      float: none;
+      margin: auto; } }
 
-/* line 19, C:/wamp/www/pec/src/assets/css/scss/structure/_content.scss */
+/* line 24, C:/wamp/www/pec/src/assets/css/scss/structure/_content.scss */
 img.alignleft, a img.alignleft {
   float: left;
   margin: 0 1em 1em 0; }
+  @media screen and (max-width: 767px) {
+    /* line 24, C:/wamp/www/pec/src/assets/css/scss/structure/_content.scss */
+    img.alignleft, a img.alignleft {
+      float: none;
+      margin: auto; } }
 
-/* line 24, C:/wamp/www/pec/src/assets/css/scss/structure/_content.scss */
+/* line 33, C:/wamp/www/pec/src/assets/css/scss/structure/_content.scss */
 img.aligncenter, a img.aligncenter {
   display: block;
   margin-left: auto;
   margin-right: auto; }
 
-/* line 41, C:/wamp/www/pec/src/assets/css/scss/structure/_content.scss */
+/**
+ * 5.0 Caption
+ */
+/* line 42, C:/wamp/www/pec/src/assets/css/scss/structure/_content.scss */
+.wp-caption {
+  background: transparent;
+  border: none;
+  color: #308C9A;
+  margin: 0 0 28px 0;
+  max-width: 660px;
+  padding: 0;
+  text-align: inherit; }
+
+/* line 52, C:/wamp/www/pec/src/assets/css/scss/structure/_content.scss */
+.wp-caption.alignleft {
+  float: left;
+  margin: 7px 28px 21px 0; }
+  @media screen and (max-width: 767px) {
+    /* line 52, C:/wamp/www/pec/src/assets/css/scss/structure/_content.scss */
+    .wp-caption.alignleft {
+      float: none;
+      margin: auto; } }
+
+/* line 61, C:/wamp/www/pec/src/assets/css/scss/structure/_content.scss */
+.wp-caption.alignright {
+  float: right;
+  margin: 7px 0 21px 28px; }
+  @media screen and (max-width: 767px) {
+    /* line 61, C:/wamp/www/pec/src/assets/css/scss/structure/_content.scss */
+    .wp-caption.alignright {
+      float: none;
+      margin: auto; } }
+
+/* line 70, C:/wamp/www/pec/src/assets/css/scss/structure/_content.scss */
+.wp-caption.aligncenter {
+  margin: 7px auto; }
+
+/* line 75, C:/wamp/www/pec/src/assets/css/scss/structure/_content.scss */
+.wp-caption .wp-caption-text,
+.wp-caption-dd {
+  font-size: 0.9375em;
+  padding: 7px 0; }
+
+/* line 83, C:/wamp/www/pec/src/assets/css/scss/structure/_content.scss */
 hr {
   margin-bottom: 1em; }
 
-/* line 45, C:/wamp/www/pec/src/assets/css/scss/structure/_content.scss */
+/* line 87, C:/wamp/www/pec/src/assets/css/scss/structure/_content.scss */
 .container {
   position: relative;
   max-width: 960px;
   padding: 20px;
   margin: 0 auto; }
-  /* line 50, C:/wamp/www/pec/src/assets/css/scss/structure/_content.scss */
+  /* line 92, C:/wamp/www/pec/src/assets/css/scss/structure/_content.scss */
   .container__video {
     position: relative;
     padding: 30px 0 56.25%; }
-    /* line 55, C:/wamp/www/pec/src/assets/css/scss/structure/_content.scss */
+    /* line 97, C:/wamp/www/pec/src/assets/css/scss/structure/_content.scss */
     .container__video iframe,
     .container__video object,
     .container__video embed {
@@ -5004,13 +5581,13 @@ hr {
 /* ==============================
     liens en forme de boutton
    ============================== */
-/* line 29, C:/wamp/www/pec/src/assets/css/scss/components/_buttons.scss */
+/* line 27, C:/wamp/www/pec/src/assets/css/scss/components/_buttons.scss */
 .pec-button-vert,
 .comment-reply-link,
 .tribe-events-widget-link a {
   background: #91C160;
   color: #fff; }
-  /* line 34, C:/wamp/www/pec/src/assets/css/scss/components/_buttons.scss */
+  /* line 32, C:/wamp/www/pec/src/assets/css/scss/components/_buttons.scss */
   .pec-button-vert:hover,
   .pec-button-vert:focus,
   .pec-button-vert:active,
@@ -5023,12 +5600,12 @@ hr {
     color: #fff;
     background: #5e8734; }
 
-/* line 43, C:/wamp/www/pec/src/assets/css/scss/components/_buttons.scss */
+/* line 41, C:/wamp/www/pec/src/assets/css/scss/components/_buttons.scss */
 .pec-button-jaune,
 #button-decouvrir {
   background: #FFB71B;
   color: #fff; }
-  /* line 48, C:/wamp/www/pec/src/assets/css/scss/components/_buttons.scss */
+  /* line 46, C:/wamp/www/pec/src/assets/css/scss/components/_buttons.scss */
   .pec-button-jaune:hover,
   .pec-button-jaune:focus,
   .pec-button-jaune:active,
@@ -5038,12 +5615,12 @@ hr {
     color: #fff;
     background: #DA9D39; }
 
-/* line 57, C:/wamp/www/pec/src/assets/css/scss/components/_buttons.scss */
+/* line 55, C:/wamp/www/pec/src/assets/css/scss/components/_buttons.scss */
 .pec-button-bleu,
 #button-actualites {
   background: #308C9A;
   color: #fff; }
-  /* line 62, C:/wamp/www/pec/src/assets/css/scss/components/_buttons.scss */
+  /* line 60, C:/wamp/www/pec/src/assets/css/scss/components/_buttons.scss */
   .pec-button-bleu:hover,
   .pec-button-bleu:focus,
   .pec-button-bleu:active,
@@ -5053,13 +5630,13 @@ hr {
     color: #fff;
     background: #246973; }
 
-/* line 73, C:/wamp/www/pec/src/assets/css/scss/components/_buttons.scss */
+/* line 71, C:/wamp/www/pec/src/assets/css/scss/components/_buttons.scss */
 .pec-button-gris,
 .post-edit-link,
 .comment-edit-link,
 #cancel-comment-reply-link {
   color: #4D4D4D; }
-  /* line 77, C:/wamp/www/pec/src/assets/css/scss/components/_buttons.scss */
+  /* line 75, C:/wamp/www/pec/src/assets/css/scss/components/_buttons.scss */
   .pec-button-gris:hover,
   .pec-button-gris:focus,
   .pec-button-gris:active,
@@ -5185,7 +5762,7 @@ hr {
     .pagination ul.tribe-events-sub-nav li.page-prev.nav-previous,
     .pagination ul.tribe-events-sub-nav li.tribe-events-nav-previous,
     .pagination ul.tribe-events-sub-nav li.tribe-events-nav-next {
-      display: inline;
+      display: inline !important;
       list-style: none; }
       /* line 21, C:/wamp/www/pec/src/assets/css/scss/components/_pagination.scss */
       .pagination .nav-links li.page-next.nav-next a,
@@ -5665,21 +6242,22 @@ hr {
 /* line 7, C:/wamp/www/pec/src/assets/css/scss/partials/_comments.scss */
 .comment-body {
   display: flex; }
-  /* line 11, C:/wamp/www/pec/src/assets/css/scss/partials/_comments.scss */
-  .comment-body .comment-meta {
-    max-width: 25%; }
-  /* line 17, C:/wamp/www/pec/src/assets/css/scss/partials/_comments.scss */
+  @media screen and (min-width: 768px) {
+    /* line 11, C:/wamp/www/pec/src/assets/css/scss/partials/_comments.scss */
+    .comment-body .comment-meta {
+      max-width: 25%; } }
+  /* line 20, C:/wamp/www/pec/src/assets/css/scss/partials/_comments.scss */
   .comment-body .comment-author {
     display: flex;
     flex-direction: column;
     align-items: flex-start; }
-    /* line 21, C:/wamp/www/pec/src/assets/css/scss/partials/_comments.scss */
+    /* line 24, C:/wamp/www/pec/src/assets/css/scss/partials/_comments.scss */
     .comment-body .comment-author .fn {
       padding: 5% 0; }
-    /* line 24, C:/wamp/www/pec/src/assets/css/scss/partials/_comments.scss */
+    /* line 27, C:/wamp/www/pec/src/assets/css/scss/partials/_comments.scss */
     .comment-body .comment-author .says {
       display: none; }
-  /* line 29, C:/wamp/www/pec/src/assets/css/scss/partials/_comments.scss */
+  /* line 32, C:/wamp/www/pec/src/assets/css/scss/partials/_comments.scss */
   .comment-body .edit-link {
     display: block;
     margin: 5% 0; }
@@ -5693,13 +6271,54 @@ hr {
     margin-bottom: 0;
     color: #fff; }
   /* line 10, C:/wamp/www/pec/src/assets/css/scss/partials/_footer.scss */
+  .footer .mdl-mini-footer_left-section {
+    display: flex;
+    align-items: center;
+    max-width: 100%; }
+    @media screen and (max-width: 767px) {
+      /* line 10, C:/wamp/www/pec/src/assets/css/scss/partials/_footer.scss */
+      .footer .mdl-mini-footer_left-section {
+        flex-direction: column; } }
+    /* line 17, C:/wamp/www/pec/src/assets/css/scss/partials/_footer.scss */
+    .footer .mdl-mini-footer_left-section a {
+      color: #fff;
+      font-size: 1.21363em; }
+      /* line 23, C:/wamp/www/pec/src/assets/css/scss/partials/_footer.scss */
+      .footer .mdl-mini-footer_left-section a:hover,
+      .footer .mdl-mini-footer_left-section a:focus,
+      .footer .mdl-mini-footer_left-section a:active {
+        color: #40BBCD; }
+    /* line 27, C:/wamp/www/pec/src/assets/css/scss/partials/_footer.scss */
+    .footer .mdl-mini-footer_left-section .form-newsletter {
+      display: flex;
+      align-items: center;
+      color: #fff;
+      font-weight: 100; }
+      @media screen and (max-width: 767px) {
+        /* line 27, C:/wamp/www/pec/src/assets/css/scss/partials/_footer.scss */
+        .footer .mdl-mini-footer_left-section .form-newsletter {
+          flex-direction: column; } }
+      /* line 37, C:/wamp/www/pec/src/assets/css/scss/partials/_footer.scss */
+      .footer .mdl-mini-footer_left-section .form-newsletter .mdl-textfield, .footer .mdl-mini-footer_left-section .form-newsletter .search-form {
+        padding-left: .5em;
+        padding-right: .5em; }
+      /* line 42, C:/wamp/www/pec/src/assets/css/scss/partials/_footer.scss */
+      .footer .mdl-mini-footer_left-section .form-newsletter label {
+        color: #e6e6e6;
+        font-weight: 100;
+        padding-left: .5em;
+        padding-right: .5em; }
+      /* line 49, C:/wamp/www/pec/src/assets/css/scss/partials/_footer.scss */
+      .footer .mdl-mini-footer_left-section .form-newsletter input[type="submit"] {
+        margin-left: .5em; }
+  /* line 55, C:/wamp/www/pec/src/assets/css/scss/partials/_footer.scss */
   .footer .mdl-mini-footer_right-section {
     flex-grow: 1; }
-  /* line 14, C:/wamp/www/pec/src/assets/css/scss/partials/_footer.scss */
+  /* line 59, C:/wamp/www/pec/src/assets/css/scss/partials/_footer.scss */
   .footer .secondary-menu .menu {
     margin: 0;
     padding: 0; }
-    /* line 17, C:/wamp/www/pec/src/assets/css/scss/partials/_footer.scss */
+    /* line 62, C:/wamp/www/pec/src/assets/css/scss/partials/_footer.scss */
     .footer .secondary-menu .menu a {
       color: #fff; }
 
@@ -5709,6 +6328,10 @@ hr {
   margin: 0;
   background-size: cover;
   background: url("../img/background-1.jpg") top no-repeat; }
+  @media screen and (max-width: 767px) {
+    /* line 2, C:/wamp/www/pec/src/assets/css/scss/pages/_home.scss */
+    .container-front-page {
+      background: url("../img/background-1.jpg") 30% 20% no-repeat; } }
   @media screen and (min-width: 768px) {
     /* line 2, C:/wamp/www/pec/src/assets/css/scss/pages/_home.scss */
     .container-front-page {
@@ -5724,7 +6347,7 @@ hr {
   100% {
     background: url("../img/background-1.jpg") center 25% no-repeat; } }
 
-/* line 28, C:/wamp/www/pec/src/assets/css/scss/pages/_home.scss */
+/* line 32, C:/wamp/www/pec/src/assets/css/scss/pages/_home.scss */
 .content-front-page {
   background: rgba(255, 255, 255, 0.8);
   align-self: center;
@@ -5734,23 +6357,42 @@ hr {
   align-items: center;
   border-radius: 2px; }
   @media screen and (min-width: 768px) {
-    /* line 28, C:/wamp/www/pec/src/assets/css/scss/pages/_home.scss */
+    /* line 32, C:/wamp/www/pec/src/assets/css/scss/pages/_home.scss */
     .content-front-page {
       background: rgba(255, 255, 255, 0.98);
-      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.54); } }
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.54);
+      width: calc(58.33333% - 1rem);
+      margin-left: calc(33.33333% + 0.5rem); }
+      /* line 73, C:/wamp/www/pec/src/assets/css/scss/vendors/mdl/_grid.scss */
+      .mdl-grid--no-spacing > .content-front-page {
+        width: 58.33333%; }
+      /* line 85, C:/wamp/www/pec/src/assets/css/scss/vendors/mdl/_grid.scss */
+      .mdl-grid.mdl-grid--no-spacing > .content-front-page, .mdl-grid--no-spacing.comment-form > .content-front-page, .mdl-grid--no-spacing.gallery > .content-front-page, .mdl-grid--no-spacing.comment-body > .content-front-page, .mdl-grid--no-spacing.tribe-link-tickets-message > .content-front-page {
+        margin-left: 33.33333%; } }
+  @media screen and (min-width: 1024px) {
+    /* line 32, C:/wamp/www/pec/src/assets/css/scss/pages/_home.scss */
+    .content-front-page {
+      width: calc(41.66667% - 1rem);
+      margin-left: calc(50% + 0.5rem); }
+      /* line 73, C:/wamp/www/pec/src/assets/css/scss/vendors/mdl/_grid.scss */
+      .mdl-grid--no-spacing > .content-front-page {
+        width: 41.66667%; }
+      /* line 85, C:/wamp/www/pec/src/assets/css/scss/vendors/mdl/_grid.scss */
+      .mdl-grid.mdl-grid--no-spacing > .content-front-page, .mdl-grid--no-spacing.comment-form > .content-front-page, .mdl-grid--no-spacing.gallery > .content-front-page, .mdl-grid--no-spacing.comment-body > .content-front-page, .mdl-grid--no-spacing.tribe-link-tickets-message > .content-front-page {
+        margin-left: 50%; } }
 
-/* line 42, C:/wamp/www/pec/src/assets/css/scss/pages/_home.scss */
+/* line 52, C:/wamp/www/pec/src/assets/css/scss/pages/_home.scss */
 .site-logo {
   text-align: center; }
-  /* line 45, C:/wamp/www/pec/src/assets/css/scss/pages/_home.scss */
+  /* line 55, C:/wamp/www/pec/src/assets/css/scss/pages/_home.scss */
   .site-logo img {
     padding: 2% 0; }
-  /* line 49, C:/wamp/www/pec/src/assets/css/scss/pages/_home.scss */
+  /* line 59, C:/wamp/www/pec/src/assets/css/scss/pages/_home.scss */
   .site-logo q {
     padding: 1em 0;
     font-size: 1.67583em;
     color: #246973; }
-    /* line 54, C:/wamp/www/pec/src/assets/css/scss/pages/_home.scss */
+    /* line 64, C:/wamp/www/pec/src/assets/css/scss/pages/_home.scss */
     .site-logo q::before, .site-logo q::after {
       padding: 0 0.25rem; }
 
@@ -5758,46 +6400,90 @@ hr {
 .page-content .site-main {
   padding: 0; }
 
-/* line 5, C:/wamp/www/pec/src/assets/css/scss/pages/_page.scss */
-.page > .entry-header, .single-post > .entry-header {
+/* line 7, C:/wamp/www/pec/src/assets/css/scss/pages/_page.scss */
+.page > .entry-header,
+.single-post > .entry-header {
   padding-top: 2.63288em;
   background: url("../img/default-banner.jpg") fixed no-repeat;
-  background-size: 100% !important; }
-  /* line 10, C:/wamp/www/pec/src/assets/css/scss/pages/_page.scss */
-  .page > .entry-header .content-header, .single-post > .entry-header .content-header {
+  background-size: cover; }
+  @media screen and (min-width: 1024px) {
+    /* line 7, C:/wamp/www/pec/src/assets/css/scss/pages/_page.scss */
+    .page > .entry-header,
+    .single-post > .entry-header {
+      background-size: 100%; } }
+  /* line 14, C:/wamp/www/pec/src/assets/css/scss/pages/_page.scss */
+  .page > .entry-header .content-header,
+  .single-post > .entry-header .content-header {
     margin-bottom: 2.63288em;
     padding: 1em 1.618em;
     background: rgba(240, 250, 251, 0.8); }
-    /* line 15, C:/wamp/www/pec/src/assets/css/scss/pages/_page.scss */
-    .page > .entry-header .content-header h2, .single-post > .entry-header .content-header h2 {
+    /* line 18, C:/wamp/www/pec/src/assets/css/scss/pages/_page.scss */
+    .page > .entry-header .content-header h2,
+    .single-post > .entry-header .content-header h2 {
       margin: 0.37981em 0; }
 
-/* line 20, C:/wamp/www/pec/src/assets/css/scss/pages/_page.scss */
-.page .page-breadcrumbs, .single-post .page-breadcrumbs {
+/* line 23, C:/wamp/www/pec/src/assets/css/scss/pages/_page.scss */
+.page .page-breadcrumbs,
+.single-post .page-breadcrumbs {
   background: rgba(240, 250, 251, 0.8);
   padding: 0.7242em 0;
   margin-top: 2.63288em; }
 
-/* line 26, C:/wamp/www/pec/src/assets/css/scss/pages/_page.scss */
-.page .entry-content, .single-post .entry-content {
+/* line 28, C:/wamp/www/pec/src/assets/css/scss/pages/_page.scss */
+.page .entry-content,
+.single-post .entry-content {
   padding-top: 3.63559em; }
+  /* line 45, C:/wamp/www/pec/src/assets/css/scss/pages/_page.scss */
+  .page .entry-content p,
+  .page .entry-content ul,
+  .page .entry-content ol,
+  .page .entry-content dl,
+  .page .entry-content h1,
+  .page .entry-content h2,
+  .page .entry-content h3,
+  .page .entry-content h4,
+  .page .entry-content h5,
+  .page .entry-content h6,
+  .page .entry-content code,
+  .page .entry-content kbd,
+  .page .entry-content tt,
+  .page .entry-content var,
+  .page .entry-content samp,
+  .page .entry-content pre,
+  .single-post .entry-content p,
+  .single-post .entry-content ul,
+  .single-post .entry-content ol,
+  .single-post .entry-content dl,
+  .single-post .entry-content h1,
+  .single-post .entry-content h2,
+  .single-post .entry-content h3,
+  .single-post .entry-content h4,
+  .single-post .entry-content h5,
+  .single-post .entry-content h6,
+  .single-post .entry-content code,
+  .single-post .entry-content kbd,
+  .single-post .entry-content tt,
+  .single-post .entry-content var,
+  .single-post .entry-content samp,
+  .single-post .entry-content pre {
+    flex-basis: 100%; }
 
-/* line 31, C:/wamp/www/pec/src/assets/css/scss/pages/_page.scss */
+/* line 51, C:/wamp/www/pec/src/assets/css/scss/pages/_page.scss */
 .entry-footer {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 1em; }
 
-/* line 38, C:/wamp/www/pec/src/assets/css/scss/pages/_page.scss */
+/* line 58, C:/wamp/www/pec/src/assets/css/scss/pages/_page.scss */
 .child-pages {
   background-color: #e6e6e6;
   margin-top: 2.63288em;
   padding: 0.7242em 0; }
-  /* line 42, C:/wamp/www/pec/src/assets/css/scss/pages/_page.scss */
+  /* line 62, C:/wamp/www/pec/src/assets/css/scss/pages/_page.scss */
   .child-pages .pec-thumbnail {
     flex-grow: 1; }
-  /* line 46, C:/wamp/www/pec/src/assets/css/scss/pages/_page.scss */
+  /* line 65, C:/wamp/www/pec/src/assets/css/scss/pages/_page.scss */
   .child-pages .entry-title {
     font-size: 1.13778em; }
 
@@ -5962,15 +6648,37 @@ hr {
     RSVP
    ============================== */
 /* line 157, C:/wamp/www/pec/src/assets/css/scss/pages/_events.scss */
-.cart button[type="submit"].mdl-button {
+.cart button[type="submit"].mdl-button, .cart button[type="submit"].post-edit-link, .cart button[type="submit"].comment-edit-link, .cart button[type="submit"]#cancel-comment-reply-link, .cart button[type="submit"].comment-reply-link, .cart .pagination .nav-links button[type="submit"].page-numbers, .pagination .nav-links .cart button[type="submit"].page-numbers,
+.cart .pagination ul.tribe-events-sub-nav button[type="submit"].page-numbers, .pagination ul.tribe-events-sub-nav .cart button[type="submit"].page-numbers, .cart .search-form button[type="submit"].search-submit, .search-form .cart button[type="submit"].search-submit, .cart button[type="submit"].tribe-events-gmap, .cart button[type="submit"].tribe-events-button {
   position: static;
   bottom: auto;
   background: #FFB71B;
   color: #fff; }
   /* line 164, C:/wamp/www/pec/src/assets/css/scss/pages/_events.scss */
   .cart button[type="submit"].mdl-button:hover,
+  .cart button[type="submit"].post-edit-link:hover,
+  .cart button[type="submit"].comment-edit-link:hover,
+  .cart button[type="submit"]#cancel-comment-reply-link:hover,
+  .cart button[type="submit"].comment-reply-link:hover,
+  .cart .pagination .nav-links button[type="submit"].page-numbers:hover,
+  .pagination .nav-links .cart button[type="submit"].page-numbers:hover,
+  .cart .pagination ul.tribe-events-sub-nav button[type="submit"].page-numbers:hover,
+  .pagination ul.tribe-events-sub-nav .cart button[type="submit"].page-numbers:hover, .cart .search-form button[type="submit"].search-submit:hover,
+  .search-form .cart button[type="submit"].search-submit:hover, .cart button[type="submit"].tribe-events-gmap:hover,
+  .cart button[type="submit"].tribe-events-button:hover,
   .cart button[type="submit"].mdl-button:focus,
-  .cart button[type="submit"].mdl-button:active {
+  .cart button[type="submit"].post-edit-link:focus,
+  .cart button[type="submit"].comment-edit-link:focus,
+  .cart button[type="submit"]#cancel-comment-reply-link:focus,
+  .cart button[type="submit"].comment-reply-link:focus,
+  .cart .pagination .nav-links button[type="submit"].page-numbers:focus,
+  .pagination .nav-links .cart button[type="submit"].page-numbers:focus,
+  .cart .pagination ul.tribe-events-sub-nav button[type="submit"].page-numbers:focus,
+  .pagination ul.tribe-events-sub-nav .cart button[type="submit"].page-numbers:focus, .cart .search-form button[type="submit"].search-submit:focus,
+  .search-form .cart button[type="submit"].search-submit:focus, .cart button[type="submit"].tribe-events-gmap:focus,
+  .cart button[type="submit"].tribe-events-button:focus,
+  .cart button[type="submit"].mdl-button:active, .cart button[type="submit"].post-edit-link:active, .cart button[type="submit"].comment-edit-link:active, .cart button[type="submit"]#cancel-comment-reply-link:active, .cart button[type="submit"].comment-reply-link:active, .cart .pagination .nav-links button[type="submit"].page-numbers:active, .pagination .nav-links .cart button[type="submit"].page-numbers:active,
+  .cart .pagination ul.tribe-events-sub-nav button[type="submit"].page-numbers:active, .pagination ul.tribe-events-sub-nav .cart button[type="submit"].page-numbers:active, .cart .search-form button[type="submit"].search-submit:active, .search-form .cart button[type="submit"].search-submit:active, .cart button[type="submit"].tribe-events-gmap:active, .cart button[type="submit"].tribe-events-button:active {
     color: #fff;
     background: #DA9D39; }
 

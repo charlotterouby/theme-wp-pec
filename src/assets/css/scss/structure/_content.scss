@@ -6,6 +6,7 @@
 // ============================================================
 img {
     max-width: 100%;
+    height: auto;
 }
 .alignnone {
     margin: 5px 20px 20px 0;
@@ -13,27 +14,68 @@ img {
 
 img.alignright, a img.alignright {
     float: right;
-    margin: 0 0 1em 1em
+    margin: 0 0 1em 1em;
+     @include media($small){
+        float: none;
+        margin: auto;
+    }
 }
 
 img.alignleft, a img.alignleft {
     float: left;
-    margin: 0 1em 1em 0
+    margin: 0 1em 1em 0;
+    @include media($small){
+        float: none;
+        margin: auto;
+    }
 }
 
 img.aligncenter, a img.aligncenter {
     display: block;
     margin-left: auto;
-    margin-right: auto
+    margin-right: auto;
+}
+/**
+ * 5.0 Caption
+ */
+
+.wp-caption {
+    background: transparent;
+    border: none;
+    color: palette(bleu);
+    margin: 0 0 28px 0;
+    max-width: 660px;
+    padding: 0;
+    text-align: inherit;
 }
 
-.wp-caption {}
-.wp-caption img {}
-.wp-caption p.wp-caption-text {}
-.wp-smiley {}
-blockquote.left {}
-blockquote.right {}
+.wp-caption.alignleft {
+    float: left;
+    margin: 7px 28px 21px 0;
+    @include media($small){
+        float: none;
+        margin: auto;
+    }
+}
 
+.wp-caption.alignright {
+    float: right;
+    margin: 7px 0 21px 28px;
+    @include media($small){
+        float: none;
+        margin: auto;
+    }
+}
+
+.wp-caption.aligncenter {
+    margin: 7px auto;
+}
+
+.wp-caption .wp-caption-text,
+.wp-caption-dd {
+    font-size: ms(-1);
+    padding: 7px 0;
+}
 
 
 // other styles

@@ -11,7 +11,10 @@
     .comment-meta {
         @extend .mdl-cell;
         @extend .mdl-cell--3-col;
-        max-width: 25%;
+        @extend .mdl-cell--12-col-phone;
+        @include media($medium){
+            max-width: 25%;
+        }
     }
 
     .comment-author {
@@ -34,6 +37,7 @@
     .comment-content {
         @extend .mdl-cell;
         @extend .mdl-cell--9-col;
+        @extend .mdl-cell--12-col-phone;
     }
 
     .reply {

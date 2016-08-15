@@ -171,7 +171,7 @@ $now = current_time( 'timestamp' );
                                         <?php esc_html_e( 'Login to RSVP', 'event-tickets' );?>
                                     </a>
                         <?php else: ?>
-                            <button type="submit" name="tickets_process" value="1" class="button alt mdl-button mdl-button--raised">
+                            <button type="submit" name="tickets_process" value="1" class="button alt mdl-button mdl-js-button mdl-button--raised">
                                 <?php esc_html_e( 'Confirm RSVP', 'event-tickets' );?>
                             </button>
                         <?php endif; ?>

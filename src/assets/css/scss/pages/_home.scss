@@ -4,6 +4,10 @@
     margin: 0;
     background-size: cover;
     background: url('../img/background-1.jpg') top no-repeat;
+
+    @include media($small){
+        background: url('../img/background-1.jpg') 30% 20% no-repeat;
+    }
     @include media($medium){
         animation: background-animation 20s linear 0s 5 forwards;
     }
@@ -37,6 +41,12 @@
     @include media($medium){
         background: transparentize(palette(gris, light), 0.02);
         box-shadow: 0 8px 16px palette(gris, mid-light);
+        @include partial-size(7, 12, $grid-tablet-gutter);
+        @include offset-size(4, 12, $grid-tablet-gutter);
+    }
+    @include media($large){
+        @include partial-size(5, 12, $grid-tablet-gutter);
+        @include offset-size(6, 12, $grid-tablet-gutter);
     }
 }
 .site-logo {

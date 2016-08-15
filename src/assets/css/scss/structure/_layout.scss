@@ -2,7 +2,7 @@
     Responsive design
    ============================== */
 .hide-desktop {
-    @include media($medium) {
+    @include media($large) {
         display: none;
     }
 }
@@ -61,7 +61,7 @@ body {
 
 .width-75 {
     max-width: 100%;
-    @include media($medium) {
+    @include media($large) {
         max-width: 75%;
     }
 }
@@ -89,6 +89,9 @@ body {
 }
 .pec-thumbnail {
     @include media($medium){
+        max-width: 48%;
+    }
+    @include media($large){
         max-width: 30%;
     }
 }
@@ -98,7 +101,7 @@ body {
 .sidebar {
     max-width: 100%;
     max-width: 100vw;
-    @include media($medium){
+    @include media($large){
         max-width: 25%;
         max-width: 25vw;
     }

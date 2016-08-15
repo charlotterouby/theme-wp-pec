@@ -10,7 +10,7 @@ get_header(); ?>
 
 <!-- content -->
 <div class="content-area container-front-page mdl-grid mdl-grid--no-spacing">
-    <div class="site-main content-front-page mdl-cell mdl-cell--5-col mdl-cell--6-offset mdl-cell--12-col-phone mdl-grid">
+    <div class="site-main content-front-page mdl-cell mdl-cell--12-col mdl-grid">
 
         <!-- logo/titre du site -->
         <div class="site-logo mdl-cell mdl-cell--12-col">
@@ -26,10 +26,10 @@ get_header(); ?>
 
             <!-- button découvrir pec -->
             <a href="/presentation-pec" alt="découvrir Provence Energie Citoyenne" id="button-decouvrir"
-            class="mdl-button mdl-button--raised mdl-cell mdl-cell--6-col">Découvrir PEC</a>
+            class="mdl-button mdl-js-button mdl-button--raised mdl-cell mdl-cell--6-col">Découvrir PEC</a>
 
             <!-- button voir actualités -->
-            <a href="/nos-actualites" alt="découvrir les dernières actualités" id="button-actualites" class="mdl-button mdl-button--raised mdl-cell mdl-cell--6-col">Voir les Actualités</a>
+            <a href="/nos-actualites" alt="découvrir les dernières actualités" id="button-actualites" class="mdl-button mdl-js-button mdl-button--raised mdl-cell mdl-cell--6-col">Voir les Actualités</a>
 
         </div>
         <!-- end .redirect-links -->
