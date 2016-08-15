@@ -13,11 +13,11 @@
                 </a>
             </p>
             <form action="souscrire à la newsletter" class="form-newsletter">
-                <div class="mdl-textfield mdl-js-textfield">
-                    <input type="email" id="email subscribed" class="mdl-textfield__input">
-                    <label for="email subscribed" class="mdl-textfield__label">pseudo formulaire inscription newsletter</label>
+                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                    <input type="email" id="email subscribed" class="mdl-textfield__input" placeholder="mon-email@gmail.com">
+                    <label for="email subscribed" class="mdl-textfield__label">Souscrire à la newsletter</label>
                 </div>
-                <input type="submit" value="Souscrire" class="mdl-button mdl-js-button mdl-button--raised pec-button-jaune">
+                <input type="submit" value="Souscrire" class="mdl-button mdl-js-button mdl-button--raised pec-button-jaune" disabled>
             </form>
         </div>
         <div id="secondary-menu" class="secondary-menu mdl-mini-footer_right-section" role="navigation">
