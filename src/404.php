@@ -14,11 +14,11 @@ get_header(); ?>
 
             <section class="error-404 not-found">
                 <header class="page-header mdl-cell mdl-cell mdl-cell--12-col">
-                    <h1 class="page-title"><?php _e( 'Oops! That page can&rsquo;t be found.', 'twentyfifteen' ); ?></h1>
+                    <h1 class="page-title"><?php _e( 'Oops! That page can&rsquo;t be found.', 'pecWpTheme' ); ?></h1>
                 </header><!-- .page-header -->
 
                 <div class="page-content">
-                    <p><?php _e( 'It looks like nothing was found at this location. Maybe try a search?', 'twentyfifteen' ); ?></p>
+                    <p><?php _e( 'It looks like nothing was found at this location. Maybe try a search?', 'pecWpTheme' ); ?></p>
 
                     <?php get_search_form(); ?>
                 </div><!-- .page-content -->

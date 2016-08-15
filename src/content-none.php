@@ -12,7 +12,7 @@
 
 <section class="no-results not-found">
     <header class="content-header width-100 mdl-cell mdl-cell--10-col mdl-cell--12-col-phone">
-        <h2 class="entry-title h1"><?php _e( 'Nothing Found', 'twentyfifteen' ); ?></h2>
+        <h2 class="entry-title h1"><?php _e( 'Nothing Found', 'pecWpTheme' ); ?></h2>
     </header><!-- .page-header -->
     <!-- Yoast SEO -->
     <div class="page-breadcrumbs">
@@ -26,16 +26,16 @@
 
         <?php if ( is_home() && current_user_can( 'publish_posts' ) ) : ?>
 
-            <p><?php printf( __( 'Ready to publish your first post? <a href="%1$s">Get started here</a>.', 'twentyfifteen' ), esc_url( admin_url( 'post-new.php' ) ) ); ?></p>
+            <p><?php printf( __( 'Ready to publish your first post? <a href="%1$s">Get started here</a>.', 'pecWpTheme' ), esc_url( admin_url( 'post-new.php' ) ) ); ?></p>
 
         <?php elseif ( is_search() ) : ?>
 
-            <p><?php _e( 'Sorry, but nothing matched your search terms. Please try again with some different keywords.', 'twentyfifteen' ); ?></p>
+            <p><?php _e( 'Sorry, but nothing matched your search terms. Please try again with some different keywords.', 'pecWpTheme' ); ?></p>
             <?php get_search_form(); ?>
 
         <?php else : ?>
 
-            <p><?php _e( 'It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help.', 'twentyfifteen' ); ?></p>
+            <p><?php _e( 'It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help.', 'pecWpTheme' ); ?></p>
             <?php get_search_form(); ?>
 
         <?php endif; ?>

@@ -14,7 +14,7 @@
     <!-- image thumbnail -->
     <?php
         if (has_post_thumbnail()):
-            twentyfifteen_post_thumbnail();
+            pecWpTheme_post_thumbnail();
         elseif (main_image()):
             echo main_image();
         endif;
@@ -34,13 +34,13 @@
 
         <!-- .entry-footer -->
         <footer class="entry-footer">
-            <?php twentyfifteen_entry_meta(); ?>
-            <?php edit_post_link( __( 'Edit', 'twentyfifteen' ), '<span class="edit-link">', '</span>' ); ?>
+            <?php pecWpTheme_entry_meta(); ?>
+            <?php edit_post_link( __( 'Edit', 'pecWpTheme' ), '<span class="edit-link">', '</span>' ); ?>
         </footer>
 
     <?php else : ?>
 
-        <?php edit_post_link( __( 'Edit', 'twentyfifteen' ), '<footer class="entry-footer"><span class="edit-link">', '</span></footer><!-- .entry-footer -->' ); ?>
+        <?php edit_post_link( __( 'Edit', 'pecWpTheme' ), '<footer class="entry-footer"><span class="edit-link">', '</span></footer><!-- .entry-footer -->' ); ?>
 
     <?php endif; ?>
 

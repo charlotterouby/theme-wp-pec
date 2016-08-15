@@ -14,7 +14,7 @@
    <!-- image thumbnail -->
     <?php
         if (has_post_thumbnail()):
-            twentyfifteen_post_thumbnail();
+            pecWpTheme_post_thumbnail();
         elseif (main_image()):
             echo main_image();
         endif;
@@ -33,11 +33,11 @@
             the_excerpt();
 
             wp_link_pages( array(
-                'before'      => '<div class="page-links"><span class="page-links-title">' . __( 'Pages:', 'twentyfifteen' ) . '</span>',
+                'before'      => '<div class="page-links"><span class="page-links-title">' . __( 'Pages:', 'pecWpTheme' ) . '</span>',
                 'after'       => '</div>',
                 'link_before' => '<span>',
                 'link_after'  => '</span>',
-                'pagelink'    => '<span class="screen-reader-text">' . __( 'Page', 'twentyfifteen' ) . ' </span>%',
+                'pagelink'    => '<span class="screen-reader-text">' . __( 'Page', 'pecWpTheme' ) . ' </span>%',
                 'separator'   => '<span class="screen-reader-text"> | </span>',
             ) );
         ?>
@@ -45,7 +45,7 @@
 
     <!-- .entry-footer -->
     <footer class="entry-footer mdl-cell mdl-cell--12-col mdl-cell--bottom">
-        <?php twentyfifteen_entry_meta(); ?>
+        <?php pecWpTheme_entry_meta(); ?>
     </footer>
 
 </article><!-- #post-## -->

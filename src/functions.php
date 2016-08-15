@@ -42,7 +42,7 @@ if ( version_compare( $GLOBALS['wp_version'], '4.1-alpha', '<' ) ) {
     require get_template_directory() . '/includes/back-compat.php';
 }
 
-if ( ! function_exists( 'twentyfifteen_setup' ) ) :
+if ( ! function_exists( 'pecWpTheme_setup' ) ) :
 /**
  * Sets up theme defaults and registers support for various WordPress features.
  *
@@ -52,15 +52,15 @@ if ( ! function_exists( 'twentyfifteen_setup' ) ) :
  *
  * @since Twenty Fifteen 1.0
  */
-function twentyfifteen_setup() {
+function pecWpTheme_setup() {
 
     /*
      * Make theme available for translation.
      * Translations can be filed in the /languages/ directory.
-     * If you're building a theme based on twentyfifteen, use a find and replace
-     * to change 'twentyfifteen' to the name of your theme in all the template files
+     * If you're building a theme based on pecWpTheme, use a find and replace
+     * to change 'pecWpTheme' to the name of your theme in all the template files
      */
-    load_theme_textdomain( 'twentyfifteen', get_template_directory() . '/languages' );
+    load_theme_textdomain( 'pecWpTheme', get_template_directory() . '/languages' );
 
     // Add default posts and comments RSS feed links to head.
     add_theme_support( 'automatic-feed-links' );
@@ -83,7 +83,7 @@ function twentyfifteen_setup() {
 
     // This theme uses wp_nav_menu() in two locations. Social is to be used in a widget menu.
     register_nav_menus( array(
-        'primary' => __( 'Primary Menu', 'twentyfifteen' ),
+        'primary' => __( 'Primary Menu', 'pecWpTheme' ),
         'secondary' => __('Secondary Menu')
     ) );
 
@@ -108,10 +108,10 @@ function twentyfifteen_setup() {
      * This theme styles the visual editor to resemble the theme style,
      * specifically font, colors, icons, and column width.
      */
-    add_editor_style( array( 'assets/css/editor-style.css', 'genericons/genericons.css', twentyfifteen_fonts_url() ) );
+    add_editor_style( array( 'assets/css/editor-style.css', 'genericons/genericons.css', pecWpTheme_fonts_url() ) );
 }
-endif; // twentyfifteen_setup
-add_action( 'after_setup_theme', 'twentyfifteen_setup' );
+endif; // pecWpTheme_setup
+add_action( 'after_setup_theme', 'pecWpTheme_setup' );
 
 /**
  * Register widget area.
@@ -120,20 +120,20 @@ add_action( 'after_setup_theme', 'twentyfifteen_setup' );
  *
  * @link https://codex.wordpress.org/Function_Reference/register_sidebar
  */
-function twentyfifteen_widgets_init() {
+function pecWpTheme_widgets_init() {
     register_sidebar( array(
-        'name'          => __( 'Widget Area', 'twentyfifteen' ),
+        'name'          => __( 'Widget Area', 'pecWpTheme' ),
         'id'            => 'sidebar-1',
-        'description'   => __( 'Add widgets here to appear in your sidebar.', 'twentyfifteen' ),
+        'description'   => __( 'Add widgets here to appear in your sidebar.', 'pecWpTheme' ),
         'before_widget' => '<aside id="%1$s" class="widget %2$s mdl-cell mdl-cell--6-col-tablet mdl-cell--12-col">',
         'after_widget'  => '</aside>',
         'before_title'  => '<h5 class="widget-title">',
         'after_title'   => '</h5>',
     ) );
 }
-add_action( 'widgets_init', 'twentyfifteen_widgets_init' );
+add_action( 'widgets_init', 'pecWpTheme_widgets_init' );
 
-if ( ! function_exists( 'twentyfifteen_fonts_url' ) ) :
+if ( ! function_exists( 'pecWpTheme_fonts_url' ) ) :
 /**
  * Register Google fonts for Twenty Fifteen.
  *
@@ -141,28 +141,28 @@ if ( ! function_exists( 'twentyfifteen_fonts_url' ) ) :
  *
  * @return string Google fonts URL for the theme.
  */
-function twentyfifteen_fonts_url() {
+function pecWpTheme_fonts_url() {
     $fonts_url = '';
     $fonts     = array();
     $subsets   = 'latin,latin-ext';
 
     /* translators: If there are characters in your language that are not supported by Noto Sans, translate this to 'off'. Do not translate into your own language. */
-    if ( 'off' !== _x( 'on', 'Noto Sans font: on or off', 'twentyfifteen' ) ) {
+    if ( 'off' !== _x( 'on', 'Noto Sans font: on or off', 'pecWpTheme' ) ) {
         $fonts[] = 'Noto Sans:400italic,700italic,400,700';
     }
 
     /* translators: If there are characters in your language that are not supported by Noto Serif, translate this to 'off'. Do not translate into your own language. */
-    if ( 'off' !== _x( 'on', 'Noto Serif font: on or off', 'twentyfifteen' ) ) {
+    if ( 'off' !== _x( 'on', 'Noto Serif font: on or off', 'pecWpTheme' ) ) {
         $fonts[] = 'Noto Serif:400italic,700italic,400,700';
     }
 
     /* translators: If there are characters in your language that are not supported by Inconsolata, translate this to 'off'. Do not translate into your own language. */
-    if ( 'off' !== _x( 'on', 'Inconsolata font: on or off', 'twentyfifteen' ) ) {
+    if ( 'off' !== _x( 'on', 'Inconsolata font: on or off', 'pecWpTheme' ) ) {
         $fonts[] = 'Inconsolata:400,700';
     }
 
     /* translators: To add an additional character subset specific to your language, translate this to 'greek', 'cyrillic', 'devanagari' or 'vietnamese'. Do not translate into your own language. */
-    $subset = _x( 'no-subset', 'Add new subset (greek, cyrillic, devanagari, vietnamese)', 'twentyfifteen' );
+    $subset = _x( 'no-subset', 'Add new subset (greek, cyrillic, devanagari, vietnamese)', 'pecWpTheme' );
 
     if ( 'cyrillic' == $subset ) {
         $subsets .= ',cyrillic,cyrillic-ext';
@@ -193,7 +193,7 @@ endif;
  *
  * @see wp_add_inline_style()
  */
-function twentyfifteen_post_nav_background() {
+function pecWpTheme_post_nav_background() {
     if ( ! is_single() ) {
         return;
     }
@@ -224,9 +224,9 @@ function twentyfifteen_post_nav_background() {
         ';
     }
 
-    wp_add_inline_style( 'twentyfifteen-style', $css );
+    wp_add_inline_style( 'pecWpTheme-style', $css );
 }
-add_action( 'wp_enqueue_scripts', 'twentyfifteen_post_nav_background' );
+add_action( 'wp_enqueue_scripts', 'pecWpTheme_post_nav_background' );
 
 /**
  * Display descriptions in main navigation.
@@ -239,14 +239,14 @@ add_action( 'wp_enqueue_scripts', 'twentyfifteen_post_nav_background' );
  * @param array   $args        wp_nav_menu() arguments.
  * @return string Menu item with possible description.
  */
-function twentyfifteen_nav_description( $item_output, $item, $depth, $args ) {
+function pecWpTheme_nav_description( $item_output, $item, $depth, $args ) {
     if ( 'primary' == $args->theme_location && $item->description ) {
         $item_output = str_replace( $args->link_after . '</a>', '<div class="menu-item-description">' . $item->description . '</div>' . $args->link_after . '</a>', $item_output );
     }
 
     return $item_output;
 }
-add_filter( 'walker_nav_menu_start_el', 'twentyfifteen_nav_description', 10, 4 );
+add_filter( 'walker_nav_menu_start_el', 'pecWpTheme_nav_description', 10, 4 );
 
 /**
  * Add a `screen-reader-text` class to the search form's submit button.
@@ -256,10 +256,10 @@ add_filter( 'walker_nav_menu_start_el', 'twentyfifteen_nav_description', 10, 4 )
  * @param string $html Search form HTML.
  * @return string Modified search form HTML.
  */
-function twentyfifteen_search_form_modify( $html ) {
+function pecWpTheme_search_form_modify( $html ) {
     return str_replace( 'class="search-submit"', 'class="search-submit screen-reader-text"', $html );
 }
-add_filter( 'get_search_form', 'twentyfifteen_search_form_modify' );
+add_filter( 'get_search_form', 'pecWpTheme_search_form_modify' );
 
 /**
  * Custom template tags for this theme.

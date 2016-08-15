@@ -33,18 +33,18 @@
         <?php the_content(); ?>
         <?php
             wp_link_pages( array(
-                'before'      => '<div class="page-links"><span class="page-links-title">' . __( 'Pages:', 'twentyfifteen' ) . '</span>',
+                'before'      => '<div class="page-links"><span class="page-links-title">' . __( 'Pages:', 'pecWpTheme' ) . '</span>',
                 'after'       => '</div>',
                 'link_before' => '<span>',
                 'link_after'  => '</span>',
-                'pagelink'    => '<span class="screen-reader-text">' . __( 'Page', 'twentyfifteen' ) . ' </span>%',
+                'pagelink'    => '<span class="screen-reader-text">' . __( 'Page', 'pecWpTheme' ) . ' </span>%',
                 'separator'   => '<span class="screen-reader-text">, </span>',
             ) );
         ?>
     </div>
 </article><!-- #post-## -->
 
-<?php edit_post_link( __( 'Edit', 'twentyfifteen' ), '<footer class="entry-footer mdl-cell mdl-cell--12-col"><span class="edit-link">', '</span></footer><!-- .entry-footer -->' ); ?>
+<?php edit_post_link( __( 'Edit', 'pecWpTheme' ), '<footer class="entry-footer mdl-cell mdl-cell--12-col"><span class="edit-link">', '</span></footer><!-- .entry-footer -->' ); ?>
 
 <!-- .child-pages -->
 <?php get_template_part('list-children-pages'); ?>

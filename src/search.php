@@ -22,7 +22,7 @@ get_header(); ?>
 
             <!-- .page-header -->
             <header class="page-header mdl-cell mdl-cell--12-col">
-                <h2 class="page-title h1"><?php printf( __( 'Search Results for: %s', 'twentyfifteen' ), get_search_query() ); ?></h2>
+                <h2 class="page-title h1"><?php printf( __( 'Search Results for: %s', 'pecWpTheme' ), get_search_query() ); ?></h2>
             </header>
 
             <!-- .masonry-grid -->
@@ -45,9 +45,9 @@ get_header(); ?>
             <?php
             // Previous/next page navigation.
             the_posts_pagination( array(
-                'prev_text'          => __( 'Previous page', 'twentyfifteen' ),
-                'next_text'          => __( 'Next page', 'twentyfifteen' ),
-                'before_page_number' => '<span class="meta-nav screen-reader-text">' . __( 'Page', 'twentyfifteen' ) . ' </span>',
+                'prev_text'          => __( 'Previous page', 'pecWpTheme' ),
+                'next_text'          => __( 'Next page', 'pecWpTheme' ),
+                'before_page_number' => '<span class="meta-nav screen-reader-text">' . __( 'Page', 'pecWpTheme' ) . ' </span>',
             ) );
 
         // If no content, include the "No posts found" template.
