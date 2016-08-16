@@ -8,7 +8,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2016-08-15 13:41+0200\n"
+"PO-Revision-Date: 2016-08-16 10:05+0200\n"
 "Language-Team: \n"
 "X-Generator: Poedit 1.8.8\n"
 "Last-Translator: \n"
@@ -86,37 +86,41 @@ msgid ""
 "Sorry, but nothing matched your search terms. Please try again with some "
 "different keywords."
 msgstr ""
+"Désolé mais aucun résultat ne correspond à votre recherche. S'il vous plaît, "
+"essayez avec d'autres mots clés. "
 
 #: content-none.php:31
 msgid ""
 "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
 "searching can help."
 msgstr ""
+"Il semblerait que nous ne puissions trouver ce que vous voulez voir. Peut-"
+"être qu'une recherche vous aidera à le trouver."
 
 #. Author URI of the plugin/theme
 #: footer.php:25
 msgid "https://wordpress.org/"
-msgstr ""
+msgstr "https://wordpress.org/"
 
 #: footer.php:25
 msgid "Proudly powered by %s"
-msgstr ""
+msgstr "Fièrement propulser par %s"
 
 #: functions.php:85
 msgid "Primary Menu"
-msgstr ""
+msgstr "Menu principal"
 
 #: functions.php:86
 msgid "Social Links Menu"
-msgstr ""
+msgstr "Menu des liens Réseaux Sociaux"
 
 #: functions.php:147
 msgid "Widget Area"
-msgstr ""
+msgstr "Zone de Widget"
 
 #: functions.php:149
 msgid "Add widgets here to appear in your sidebar."
-msgstr ""
+msgstr "Ajouter des widgets ici pour les faire apparaître dans votre sidebar."
 
 #. Translators: If there are characters in your language that are not supported
 #. by Noto Sans, translate this to 'off'. Do not translate into your own
@@ -124,7 +128,7 @@ msgstr ""
 #: functions.php:175
 msgctxt "Noto Sans font: on or off"
 msgid "on"
-msgstr ""
+msgstr "on"
 
 #. Translators: If there are characters in your language that are not supported
 #. by Noto Serif, translate this to 'off'. Do not translate into your own
@@ -132,7 +136,7 @@ msgstr ""
 #: functions.php:183
 msgctxt "Noto Serif font: on or off"
 msgid "on"
-msgstr ""
+msgstr "on"
 
 #. Translators: If there are characters in your language that are not supported
 #. by Inconsolata, translate this to 'off'. Do not translate into your own
@@ -140,7 +144,7 @@ msgstr ""
 #: functions.php:191
 msgctxt "Inconsolata font: on or off"
 msgid "on"
-msgstr ""
+msgstr "on"
 
 #. Translators: To add an additional character subset specific to your
 #. language, translate this to 'greek', 'cyrillic', 'devanagari' or
@@ -148,31 +152,31 @@ msgstr ""
 #: functions.php:199
 msgctxt "Add new subset (greek, cyrillic, devanagari, vietnamese)"
 msgid "no-subset"
-msgstr ""
+msgstr "pas de sous-jeu de caractères"
 
 #: functions.php:269
 msgid "expand child menu"
-msgstr ""
+msgstr "Développer le menu enfant"
 
 #: functions.php:270
 msgid "collapse child menu"
-msgstr ""
+msgstr "Réduire le menu enfant"
 
 #: header.php:26
 msgid "Skip to content"
-msgstr ""
+msgstr "Passer au contenu"
 
 #: header.php:45
 msgid "Menu and widgets"
-msgstr ""
+msgstr "Menu et Widgets"
 
 #: image.php:24
 msgid "Previous Image"
-msgstr ""
+msgstr "Image précédente"
 
 #: image.php:24
 msgid "Next Image"
-msgstr ""
+msgstr "Image Suivante"
 
 #: image.php:84
 msgctxt "Parent post link"
@@ -180,136 +184,144 @@ msgid ""
 "<span class=\"meta-nav\">Published in</span><span class=\"post-title\">"
 "%title</span>"
 msgstr ""
+"<span class=« meta-nav »>Publié dans</span> <span class=« post-titre »>"
+"%title</span>"
 
 #: inc/back-compat.php:37 inc/back-compat.php:47 inc/back-compat.php:60
 msgid ""
 "Twenty Fifteen requires at least WordPress version 4.1. You are running "
 "version %s. Please upgrade and try again."
 msgstr ""
+"%s requiert au moins WordPress 4.1. Vous êtes actuellement en version %s. "
+"Merci de mettre à jour et de réessayer."
 
 #: inc/customizer.php:44
 msgid "Base Color Scheme"
-msgstr ""
+msgstr "Nuancier de base"
 
 #: inc/customizer.php:59
 msgid "Header and Sidebar Text Color"
-msgstr ""
+msgstr "Couleur du texte d’en-tête et de la barre latérale"
 
 #: inc/customizer.php:60 inc/customizer.php:76 inc/customizer.php:81
 msgid "Applied to the header on small screens and the sidebar on wide screens."
 msgstr ""
+"Appliqué à l’en-tête sur les petits écrans et à la barre latérale sur les "
+"écrans larges."
 
 #: inc/customizer.php:75
 msgid "Header and Sidebar Background Color"
-msgstr ""
+msgstr "Couleur de fond de l'en-tête et de la barre latérale."
 
 #: inc/customizer.php:150
 msgid "Default"
-msgstr ""
+msgstr "Défaut"
 
 #: inc/customizer.php:161
 msgid "Dark"
-msgstr ""
+msgstr "Sombre"
 
 #: inc/customizer.php:172
 msgid "Yellow"
-msgstr ""
+msgstr "Jaune"
 
 #: inc/customizer.php:183
 msgid "Pink"
-msgstr ""
+msgstr "Rose"
 
 #: inc/customizer.php:194
 msgid "Purple"
-msgstr ""
+msgstr "Violet"
 
 #: inc/customizer.php:205
 msgid "Blue"
-msgstr ""
+msgstr "Bleu"
 
 #: inc/template-tags.php:23
 msgid "Comment navigation"
-msgstr ""
+msgstr "Pagination des commentaires"
 
 #: inc/template-tags.php:26
 msgid "Older Comments"
-msgstr ""
+msgstr "Commentaires plus anciens"
 
 #: inc/template-tags.php:30
 msgid "Newer Comments"
-msgstr ""
+msgstr "Commentaires plus récents"
 
 #: inc/template-tags.php:49
 msgid "Featured"
-msgstr ""
+msgstr "Mis en avant"
 
 #: inc/template-tags.php:55
 msgctxt "Used before post format."
 msgid "Format"
-msgstr ""
+msgstr "Format"
 
 #: inc/template-tags.php:76
 msgctxt "Used before publish date."
 msgid "Posted on"
-msgstr ""
+msgstr "Publié le :"
 
 #: inc/template-tags.php:85
 msgctxt "Used before post author name."
 msgid "Author"
-msgstr ""
+msgstr "Auteur :"
 
 #: inc/template-tags.php:91 inc/template-tags.php:99
 msgctxt "Used between list items, there is a space after the comma."
 msgid ", "
-msgstr ""
+msgstr ", "
 
 #: inc/template-tags.php:94
 msgctxt "Used before category names."
 msgid "Categories"
-msgstr ""
+msgstr "Catégories :"
 
 #: inc/template-tags.php:102
 msgctxt "Used before tag names."
 msgid "Tags"
-msgstr ""
+msgstr "Etiquettes : "
 
 #: inc/template-tags.php:113
 msgctxt "Used before full size attachment link."
 msgid "Full size"
-msgstr ""
+msgstr "Taille originale"
 
 #. translators: %s: post title
 #: inc/template-tags.php:123
 msgid "Leave a comment<span class=\"screen-reader-text\"> on %s</span>"
 msgstr ""
+"Laisser un commentaire<span class=\"screen-reader-text\"> à propos de %s</"
+"span>"
 
 #: search.php:18
 msgid "Search Results for: %s"
-msgstr ""
+msgstr "Résultats de la recherche pour : %s"
 
 #: single.php:33
 msgid "Next"
-msgstr ""
+msgstr "Suivant"
 
 #: single.php:34
 msgid "Next post:"
-msgstr ""
+msgstr "Article suivant :"
 
 #: single.php:36
 msgid "Previous"
-msgstr ""
+msgstr "Précédent"
 
 #: single.php:37
 msgid "Previous post:"
-msgstr ""
+msgstr "Article précédent :"
 
 #. Theme Name of the plugin/theme
 msgid "Twenty Fifteen"
-msgstr ""
+msgstr "Twenty Fifteen"
 
 #. Theme URI of the plugin/theme
 msgid "https://wordpress.org/themes/twentyfifteen/"
-msgstr ""
+msgstr "https://wordpress.org/themes/twentyfifteen/"
 
 #. Description of the plugin/theme
 msgid ""
@@ -320,7 +332,13 @@ msgid ""
 "regardless of whether your visitors arrive by smartphone, tablet, laptop, or "
 "desktop computer."
 msgstr ""
+"Notre thème par défault 2015 est propre, orienté en direction d'un blog et "
+"conçu pour la clarté. La typographie simple et france de Twenty Fifteen est "
+"lisible sur un large panel de taille d'écrans, et convient pour de "
+"nombreuses langues. Nous l'avons conçu avec une approche mobile-first, c'est-"
+"à-dire que votre contenu est mis en valeur que votre visiteur arrive par "
+"smartphone, tablette, ordinateur portable ou de bureau."
 
 #. Author of the plugin/theme
 msgid "the WordPress team"
-msgstr ""
+msgstr "L'équipe WordPress"
