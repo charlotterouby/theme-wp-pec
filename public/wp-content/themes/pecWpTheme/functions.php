@@ -602,7 +602,7 @@ function register_plugins() {
             'slug'               => 'wordfence',
             'source'             => 'https://downloads.wordpress.org/plugin/wordfence.6.1.7.zip',
             'required'           => true,
-            'force_activation'   => true,
+            'force_activation'   => false,
             'force_deactivation' => false,
             'external_url'       => 'https://wordpress.org/plugins/wordfence'
         ),

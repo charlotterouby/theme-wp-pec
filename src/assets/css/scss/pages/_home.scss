@@ -1,35 +1,91 @@
 //Container Front Page
 .container-front-page {
+    position:relative;
     flex-grow: 1;
     margin: 0;
-    background-size: cover;
-    background: url('../img/background-1.jpg') top no-repeat;
+    overflow: hidden;
 
-    @include media($small){
-        background: url('../img/background-1.jpg') 30% 20% no-repeat;
+    .background-front-page {
+        position: absolute;
+        left:0;
+
+        @include media($small){
+                height: 150%;
+                max-width: none;
+                left: -40%;
+        }
     }
-    @include media($medium){
-        animation: background-animation 20s linear 0s 5 forwards;
+
+
+    /* ==========================================================================================
+     * 1) Start with two images absolutely positioned on top of each other.
+     * 2) Use CSS keyframes to define 3 states, one with top images transparent, one with it opaque.
+     *         algorithm to determine the percentages and timings:
+     *
+     *         For "n" images You must define:
+     *         a = presentation time for one image
+     *         b = duration for cross fading
+     *         Total animation-duration is of course t =(a+b)*n
+     *
+     *         animation-delay = t/n or = a+b
+     *
+     *         Percentage for keyframes:
+     *
+     *         1) 0%
+     *         2) a/t*100%
+     *         3) (a+b)/t*100% = 1/n*100%
+     *         4) 100%-(b/t*100%)
+     *         5) 100%
+     *
+     * 3) Set the animations number of iterations to infinite.
+     * ========================================================================================== */
+    .background-top {
+        animation-name: background-animation-2;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+        animation-duration: 18s;
+    }
+
+    .background-middle {
+        animation-name: background-animation-2;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+        animation-duration: 18s;
+        animation-delay: 6s;
+    }
+
+    .background-bottom {
+        animation-name: background-animation-2;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+        animation-duration: 18s;
+        animation-delay: 12s;
     }
 }
-// animation background
-@keyframes background-animation {
-    0%, 16% {
-        background: url('../img/background-1.jpg') center 25% no-repeat;
+
+
+@keyframes background-animation-2 {
+    0% {
+        opacity:1;
     }
-    33%, 50% {
-        background: url('../img/background-2.jpg') center 25% no-repeat;
+    22.22% {
+        opacity:1;
     }
-    66%, 83% {
-        background: url('../img/background-4.jpg') center 25% no-repeat;
+    33.33% {
+        opacity:0;
+    }
+    88.89%{
+        opacity:0;
     }
     100% {
-        background: url('../img/background-1.jpg') center 25% no-repeat;
+        opacity:1;
     }
 }
+
 
 //Content Front-Page
 .content-front-page {
+    z-index: 99;
     background: transparentize(palette(gris, light), 0.2);
     align-self: center;
     padding: ms(5);

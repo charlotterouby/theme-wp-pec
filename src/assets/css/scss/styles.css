@@ -5166,7 +5166,7 @@ body {
 /* line 49, C:/wamp/www/pec/src/assets/css/scss/structure/_layout.scss */
 .content-area {
   margin: 0;
-  min-height: 80vh;
+  min-height: 77vh;
   justify-content: space-between; }
 
 /* line 57, C:/wamp/www/pec/src/assets/css/scss/structure/_layout.scss */
@@ -6324,31 +6324,78 @@ hr {
 
 /* line 2, C:/wamp/www/pec/src/assets/css/scss/pages/_home.scss */
 .container-front-page {
+  position: relative;
   flex-grow: 1;
   margin: 0;
-  background-size: cover;
-  background: url("../img/background-1.jpg") top no-repeat; }
-  @media screen and (max-width: 767px) {
-    /* line 2, C:/wamp/www/pec/src/assets/css/scss/pages/_home.scss */
-    .container-front-page {
-      background: url("../img/background-1.jpg") 30% 20% no-repeat; } }
-  @media screen and (min-width: 768px) {
-    /* line 2, C:/wamp/www/pec/src/assets/css/scss/pages/_home.scss */
-    .container-front-page {
-      animation: background-animation 20s linear 0s 5 forwards; } }
+  overflow: hidden;
+  /* ==========================================================================================
+     * 1) Start with two images absolutely positioned on top of each other.
+     * 2) Use CSS keyframes to define 3 states, one with top images transparent, one with it opaque.
+     *         algorithm to determine the percentages and timings:
+     *
+     *         For "n" images You must define:
+     *         a = presentation time for one image
+     *         b = duration for cross fading
+     *         Total animation-duration is of course t =(a+b)*n
+     *
+     *         animation-delay = t/n or = a+b
+     *
+     *         Percentage for keyframes:
+     *
+     *         1) 0%
+     *         2) a/t*100%
+     *         3) (a+b)/t*100% = 1/n*100%
+     *         4) 100%-(b/t*100%)
+     *         5) 100%
+     *
+     * 3) Set the animations number of iterations to infinite.
+     * ========================================================================================== */ }
+  /* line 8, C:/wamp/www/pec/src/assets/css/scss/pages/_home.scss */
+  .container-front-page .background-front-page {
+    position: absolute;
+    left: 0; }
+    @media screen and (max-width: 767px) {
+      /* line 8, C:/wamp/www/pec/src/assets/css/scss/pages/_home.scss */
+      .container-front-page .background-front-page {
+        height: 150%;
+        max-width: none;
+        left: -40%; } }
+  /* line 42, C:/wamp/www/pec/src/assets/css/scss/pages/_home.scss */
+  .container-front-page .background-top {
+    animation-name: background-animation-2;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 18s; }
+  /* line 49, C:/wamp/www/pec/src/assets/css/scss/pages/_home.scss */
+  .container-front-page .background-middle {
+    animation-name: background-animation-2;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 18s;
+    animation-delay: 6s; }
+  /* line 57, C:/wamp/www/pec/src/assets/css/scss/pages/_home.scss */
+  .container-front-page .background-bottom {
+    animation-name: background-animation-2;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 18s;
+    animation-delay: 12s; }
 
-@keyframes background-animation {
-  0%, 16% {
-    background: url("../img/background-1.jpg") center 25% no-repeat; }
-  33%, 50% {
-    background: url("../img/background-2.jpg") center 25% no-repeat; }
-  66%, 83% {
-    background: url("../img/background-4.jpg") center 25% no-repeat; }
+@keyframes background-animation-2 {
+  0% {
+    opacity: 1; }
+  22.22% {
+    opacity: 1; }
+  33.33% {
+    opacity: 0; }
+  88.89% {
+    opacity: 0; }
   100% {
-    background: url("../img/background-1.jpg") center 25% no-repeat; } }
+    opacity: 1; } }
 
-/* line 32, C:/wamp/www/pec/src/assets/css/scss/pages/_home.scss */
+/* line 87, C:/wamp/www/pec/src/assets/css/scss/pages/_home.scss */
 .content-front-page {
+  z-index: 99;
   background: rgba(255, 255, 255, 0.8);
   align-self: center;
   padding: 1.38084em;
@@ -6357,7 +6404,7 @@ hr {
   align-items: center;
   border-radius: 2px; }
   @media screen and (min-width: 768px) {
-    /* line 32, C:/wamp/www/pec/src/assets/css/scss/pages/_home.scss */
+    /* line 87, C:/wamp/www/pec/src/assets/css/scss/pages/_home.scss */
     .content-front-page {
       background: rgba(255, 255, 255, 0.98);
       box-shadow: 0 8px 16px rgba(0, 0, 0, 0.54);
@@ -6370,7 +6417,7 @@ hr {
       .mdl-grid.mdl-grid--no-spacing > .content-front-page, .mdl-grid--no-spacing.comment-form > .content-front-page, .mdl-grid--no-spacing.gallery > .content-front-page, .mdl-grid--no-spacing.comment-body > .content-front-page, .mdl-grid--no-spacing.tribe-link-tickets-message > .content-front-page {
         margin-left: 33.33333%; } }
   @media screen and (min-width: 1024px) {
-    /* line 32, C:/wamp/www/pec/src/assets/css/scss/pages/_home.scss */
+    /* line 87, C:/wamp/www/pec/src/assets/css/scss/pages/_home.scss */
     .content-front-page {
       width: calc(41.66667% - 1rem);
       margin-left: calc(50% + 0.5rem); }
@@ -6381,18 +6428,18 @@ hr {
       .mdl-grid.mdl-grid--no-spacing > .content-front-page, .mdl-grid--no-spacing.comment-form > .content-front-page, .mdl-grid--no-spacing.gallery > .content-front-page, .mdl-grid--no-spacing.comment-body > .content-front-page, .mdl-grid--no-spacing.tribe-link-tickets-message > .content-front-page {
         margin-left: 50%; } }
 
-/* line 52, C:/wamp/www/pec/src/assets/css/scss/pages/_home.scss */
+/* line 108, C:/wamp/www/pec/src/assets/css/scss/pages/_home.scss */
 .site-logo {
   text-align: center; }
-  /* line 55, C:/wamp/www/pec/src/assets/css/scss/pages/_home.scss */
+  /* line 111, C:/wamp/www/pec/src/assets/css/scss/pages/_home.scss */
   .site-logo img {
     padding: 2% 0; }
-  /* line 59, C:/wamp/www/pec/src/assets/css/scss/pages/_home.scss */
+  /* line 115, C:/wamp/www/pec/src/assets/css/scss/pages/_home.scss */
   .site-logo q {
     padding: 1em 0;
     font-size: 1.67583em;
     color: #246973; }
-    /* line 64, C:/wamp/www/pec/src/assets/css/scss/pages/_home.scss */
+    /* line 120, C:/wamp/www/pec/src/assets/css/scss/pages/_home.scss */
     .site-logo q::before, .site-logo q::after {
       padding: 0 0.25rem; }
 

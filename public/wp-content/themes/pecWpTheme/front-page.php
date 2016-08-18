@@ -34,6 +34,9 @@ get_header(); ?>
         </div>
         <!-- end .redirect-links -->
     </div>
+   <img src="<?php echo get_template_directory_uri(); ?>/assets/img/background-1.jpg" alt="les fondateurs de Provence Energie Citoyenne" class="background-top background-front-page">
+   <img src="<?php echo get_template_directory_uri(); ?>/assets/img/background-2.jpg" alt="le moulin de la Marie-Thérèse" class="background-middle background-front-page">
+   <img src="<?php echo get_template_directory_uri(); ?>/assets/img/background-4.jpg" alt="le barrage de la Marie-Thérèse" class="background-bottom background-front-page">
 </div>
 
 <?php get_footer(); ?>
