@@ -18,7 +18,7 @@
 
 
     /* ==========================================================================================
-     * 1) Start with two images absolutely positioned on top of each other.
+     * 1) Start with 3 images absolutely positioned on top of each other.
      * 2) Use CSS keyframes to define 3 states, one with top images transparent, one with it opaque.
      *         algorithm to determine the percentages and timings:
      *
@@ -44,6 +44,7 @@
         animation-timing-function: ease-in-out;
         animation-iteration-count: infinite;
         animation-duration: 18s;
+        animation-delay: 0s;
     }
 
     .background-middle {
