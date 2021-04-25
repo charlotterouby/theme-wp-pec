@@ -810,7 +810,7 @@ if ( ! class_exists( 'OT_Settings' ) ) {
     public function get_sections( $page = array() ) {
       
       if ( empty( $page ) )
-        return false;
+        return [];
           
       /* check for sections */
       if ( isset( $page['sections'] ) && ! empty( $page['sections'] ) ) {
@@ -820,7 +820,7 @@ if ( ! class_exists( 'OT_Settings' ) ) {
         
       }
       
-      return false;
+      return [];
     }
     
     /**
