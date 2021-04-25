@@ -83,8 +83,8 @@ function pecWpTheme_setup() {
 
     // This theme uses wp_nav_menu() in two locations. Social is to be used in a widget menu.
     register_nav_menus( array(
-        'primary' => __( 'Primary Menu', 'pecWpTheme' ),
-        'secondary' => __('Secondary Menu')
+        'primary' => __( 'Entête de page', 'pecWpTheme' ),
+        'secondary' => __('Pied de page')
     ) );
 
     /*

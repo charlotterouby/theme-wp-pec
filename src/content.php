@@ -10,7 +10,7 @@
  */
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class('pec-thumbnail mdl-grid mdl-grid--no-spacing mdl-cell mdl-cell--12-col mdl-cell--4-col-desktop mdl-cell--6-col-tablet'); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class('pec-thumbnail'); ?>>
    <!-- image thumbnail -->
     <?php
         if (has_post_thumbnail()):
@@ -21,13 +21,13 @@
     ?>
 
     <!-- .entry-header -->
-    <header class="entry-header mdl-cell mdl-cell--12-col mdl-cell--top">
+    <header class="entry-header">
         <?php
             the_title( sprintf( '<h3 class="entry-title h6"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h3>' );
         ?>
     </header>
     <!-- .entry-content -->
-    <div class="entry-content mdl-cell mdl-cell--12-col">
+    <div class="entry-content">
         <?php
             /* translators: %s: Name of current post */
             the_excerpt();
@@ -44,7 +44,7 @@
     </div>
 
     <!-- .entry-footer -->
-    <footer class="entry-footer mdl-cell mdl-cell--12-col mdl-cell--bottom">
+    <footer class="entry-footer">
         <?php pecWpTheme_entry_meta(); ?>
     </footer>
 

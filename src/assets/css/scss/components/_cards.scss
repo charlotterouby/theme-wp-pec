@@ -2,63 +2,73 @@
     Card style
    ============================== */
 .pec-thumbnail {
-    //position
-    position: relative;
-    //apparence
-    background-color: palette(gris, light);
-    border: palette(gris);
-    border-radius: $base-border-radius;
-    box-shadow: 0 2px 4px palette(gris);
-    margin: 0 $card-margin $base-spacing $card-margin;
-    //animations
-    cursor: pointer;
-    transition: all 0.2s ease-in-out;
-    // ==============================
-    // img card
-    // ==============================
-    .post-thumbnail {
-        display: block;
-        max-height: 150px;
-        overflow: hidden;
-        align-items: flex-start;
-        img {
-            @include border-top-radius($base-border-radius);
-            opacity: 1;
-            transition: all 0.2s ease-in-out;
-            width: 100%;
-            height: auto;
-        }
-    }
-    // ==============================
-    // card content text
-    // ==============================
-    .entry {
-        &-header,
-        &-content,
-        &-footer {
-            padding: ms(-5);
-        }
+	//position
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	//apparence
+	background-color: palette(gris, light);
+	border: palette(gris);
+	border-radius: $base-border-radius;
+	box-shadow: 0 2px 4px palette(gris);
+	margin: 0 $card-margin $base-spacing $card-margin;
+	//animations
+	cursor: pointer;
+	transition: all 0.2s ease-in-out;
+	// ==============================
+	// img card
+	// ==============================
+	.post-thumbnail {
+		display: block;
+		max-height: 150px;
+		overflow: hidden;
+		margin: 0;
+		width: 100%;
+		img {
+			@include border-top-radius($base-border-radius);
+			opacity: 1;
+			transition: all 0.2s ease-in-out;
+			width: 100%;
+			height: auto;
+		}
+	}
+	// ==============================
+	// card content text
+	// ==============================
+	.entry {
+		&-header,
+		&-content,
+		&-footer {
+			padding: ms(-5);
+		}
 
-        &-footer {
-//            position: absolute;
-            bottom: 0;
-            //box model
-            width: 100%;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-            //apparence
-            background-color: palette(gris, 10);
-            span {
-                flex-basis: 50%;
-                text-align: center;
-            }
-            .tags-links {
-                display: none;
-            }
-        }
-    }
-    .posted-on time:not(:last-of-type) {
-        display: none;
-    }
+		&-header .entry-title {
+			margin-bottom: 0;
+		}
+
+		&-content {
+			flex: 1;
+		}
+
+		&-footer {
+			bottom: 0;
+			width: 100%;
+			display: inline;
+			//apparence
+			background-color: palette(gris, 5);
+
+			& > span:not(:first-child)::before {
+				content: " | ";
+			}
+			.tags-links {
+				display: none;
+			}
+		}
+	}
+	.entry-header + .entry-content {
+		padding-top: 0;
+	}
+	.posted-on time:not(:last-of-type) {
+		display: none;
+	}
 }

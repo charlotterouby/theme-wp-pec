@@ -29,7 +29,7 @@
     </header>
 
     <!-- .entry-content -->
-    <div class="entry-content width-100 mdl-cell mdl-cell--10-col mdl-cell--12-col-phone mdl-grid">
+    <div class="entry-content width-100 mdl-cell mdl-cell--10-col mdl-cell--12-col-phone">
         <?php the_content(); ?>
         <?php
             wp_link_pages( array(

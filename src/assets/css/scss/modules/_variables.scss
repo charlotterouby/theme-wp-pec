@@ -22,40 +22,41 @@ $ms-ratio: $minor-second;
 $black: palette(gris, dark);
 $white: palette(gris, light);
 $palettes: (
-    bleu: (
-        150: darken(#308C9A, 50%),
-        140: darken(#308C9A, 40%),
-        130: darken(#308C9A, 30%),
-        120: darken(#308C9A, 20%),
-        110: darken(#308C9A, 10%),
-        base: #308C9A,
-        mid-light: #40BBCD,
-        light: #B3E4EB,
-        x-light: lighten(#B3E4EB, 15%)
-    ),
-    jaune: (
-        dark: #493200,
-        mid-dark: #DA9D39,
-        base: #FFB71B,
-        mid-light: #FFD476,
-        light: #FFF7E4,
-        x-light: lighten(#FFF7E4, 2%)
-    ),
-    vert: (
-        dark: darken(#91C160, 50%),
-        mid-dark: darken(#91C160, 20%),
-        base: #91C160,
-        mid-light: #BDDAA0,
-        light: lighten(#91C160, 35%)
-    ),
-    gris: (
-        dark: #000,
-        base: #4D4D4D,
-        mid-light: rgba(0,0,0,.54),
-        20: darken(#fff, 20%),
-        10: darken(#fff, 10%),
-        light: #fff
-    )
+	bleu: (
+		150: darken(#308c9a, 50%),
+		140: darken(#308c9a, 40%),
+		130: darken(#308c9a, 30%),
+		120: darken(#308c9a, 20%),
+		110: darken(#308c9a, 10%),
+		base: #308c9a,
+		mid-light: #40bbcd,
+		light: #b3e4eb,
+		x-light: lighten(#b3e4eb, 15%),
+	),
+	jaune: (
+		dark: #493200,
+		mid-dark: #da9d39,
+		base: #ffb71b,
+		mid-light: #ffd476,
+		light: #fff7e4,
+		x-light: lighten(#fff7e4, 2%),
+	),
+	vert: (
+		dark: darken(#91c160, 50%),
+		mid-dark: darken(#91c160, 20%),
+		base: #91c160,
+		mid-light: #bddaa0,
+		light: lighten(#91c160, 35%),
+	),
+	gris: (
+		dark: #000,
+		base: #4d4d4d,
+		mid-light: rgba(0, 0, 0, 0.54),
+		20: darken(#fff, 20%),
+		10: darken(#fff, 10%),
+		5: darken(#fff, 5%),
+		light: #fff,
+	),
 );
 //    Brand Colors
 $facebookBlue: #3b5998;
@@ -80,7 +81,7 @@ $card-background: palette(gris, light);
 $card-header-background: palette(gris, light);
 $card-margin: 1em;
 $card-image-hover-opacity: 0.7;
-$card-image-hover-color: #F8F2B4;
+$card-image-hover-color: #f8f2b4;
 $base-spacing: 1em;
 //    Navigation
 $navigation-background: palette(vert);

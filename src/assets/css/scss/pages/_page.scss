@@ -1,68 +1,68 @@
 .page-content .site-main {
-    padding: 0;
+	padding: 0;
 }
 
 .page,
 .single-post {
-    > .entry-header {
-        padding-top: ms(15);
-        background: url('../img/default-banner.jpg') fixed no-repeat;
-        background-size: cover;
-        @include media($large){
-            background-size: 100%;
-        }
-        .content-header {
-            margin-bottom: ms(15);
-            padding: ms(0) $gutter;
-            background: transparentize(palette(bleu, x-light), 0.2);
-            h2 {
-                margin: ms(-15) 0;
-            }
-        }
-    }
-    .page-breadcrumbs {
-        background: transparentize(palette(bleu, x-light), 0.2);
-        padding: ms(-5) 0;
-        margin-top: ms(15);
-    }
-    .entry-content {
-        padding-top: ms(20);
-        p,
-        ul,
-        ol,
-        dl,
-        h1,
-        h2,
-        h3,
-        h4,
-        h5,
-        h6,
-        code,
-        kbd,
-        tt,
-        var,
-        samp,
-        pre {
-            flex-basis: 100%;
-        }
-    }
+	> .entry-header {
+		padding-top: ms(15);
+		background: url("../img/default-banner.jpg") fixed no-repeat;
+		background-size: cover;
+		@include media($large) {
+			background-size: 100%;
+		}
+		.content-header {
+			margin-bottom: ms(15);
+			padding: ms(0) $gutter;
+			background: transparentize(palette(bleu, x-light), 0.4);
+			h2 {
+				margin: ms(-15) 0;
+			}
+		}
+	}
+	.page-breadcrumbs {
+		background: transparentize(palette(bleu, x-light), 0.4);
+		padding: ms(-5) 0;
+		margin-top: ms(15);
+	}
+	.entry-content {
+		padding-top: ms(20);
+		p,
+		ul,
+		ol,
+		dl,
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6,
+		code,
+		kbd,
+		tt,
+		var,
+		samp,
+		pre {
+			flex-basis: 100%;
+		}
+	}
 }
 
 .entry-footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: ms(0);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: ms(0);
 }
 
 .child-pages {
-    background-color: palette(gris, 10);
-    margin-top: ms(15);
-    padding: ms(-5) 0;
-    .pec-thumbnail {
-        flex-grow: 1;
-    }
-    .entry-title {
-        font-size: ms(2);
-    }
+	background-color: palette(gris, 10);
+	margin-top: ms(15);
+	padding: ms(-5) 0;
+	.pec-thumbnail {
+		flex-grow: 1;
+	}
+	.entry-title {
+		font-size: ms(2);
+	}
 }
